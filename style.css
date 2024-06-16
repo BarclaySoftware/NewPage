@@ -1,26 +1,21 @@
 @font-face {
-    font-family: 'Cambrigg Sans';
-    src: url(https://delivercdn.pages.dev/NewPage/CambriggSans.ttf);
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Element Sans';
+    src: url(https://onweb.pages.dev/global/fonts/ElementSans.ttf);
 }
 
 @font-face {
-    font-family: 'Cambrigg Sans Bold';
-    src: url(https://delivercdn.pages.dev/NewPage/CambriggSans-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'Element Sans Bold';
+    src: url(https://onweb.pages.dev/global/fonts/ElementSans-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'Seosevka';
-    src: url(https://delivercdn.pages.dev/NewPage/seosevka.ttf);
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Element Sans Mono';
+    src: url(https://onweb.pages.dev/global/fonts/ElementSansMono.ttf);
 }
+
 
 html, body {
-    font-family: 'Cambrigg Sans', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Element Sans', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -46,7 +41,7 @@ html, body {
 }
 
 #editor {
-    font-family: 'Seosevka', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Element Sans Mono', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 50%;
     overflow: none;
 }
@@ -54,45 +49,45 @@ html, body {
 #divider {
     width: 3px;
     cursor: ew-resize;
-    background-color: #000;
+    background-color: #293955;
 }
 
 #preview {
     flex: 1;
     overflow: auto;
     background-color: #ffffff;
-    border-left: 1px solid #000;
+    border-left: 1px solid #293955;
 }
 
 .button-container {
     display: flex;
     justify-content: flex-end;
     padding: 8px;
-    background-color: #000000;
+    background-color: #d6dbe9;
 }
 
 button {
-    font-family: 'Cambrigg Sans', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Element Sans Bold', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     margin-right: 8px;
     padding: 6px 12px;
     cursor: pointer;
-    background-color: #212121;
-    color: #ffffff;
+    background-color: #cfd6e5;
+    color: #28354a;
     border: none;
     border-radius: 4px;
 }
 
 button:hover {
-    background-color: #3474f0;
-    color: #ffffff;
+    background-color: #fff29d;
+    color: #28354a;
 }
 
 select {
-    font-family: 'Cambrigg Sans', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Element Sans', 'TwemojiRubisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-    background-color: #212121;
-    color: #ffffff;
+    background-color: #cfd6e5;
+    color: #28354a;
     border: none;
     margin-right: 8px;
     padding: 6px 12px;
@@ -117,25 +112,29 @@ iframe {
 }
 
 ::-webkit-scrollbar {
-    background: #272822;
+    background: #e8e8ec;
 }
 
 ::-webkit-scrollbar-track {
-    background: #272822;
+    background: #e8e8ec;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #8f908a;
-    border-radius: 10px;
-    border: 3px solid #272822;
+    background-color: #c2c3c9;
+    border-radius: 0px;
+    border: 4px solid #e8e8ec;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #f8f8f0;
+    background-color: #c2c3c9;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #f8f8f0;
+    background-color: #c2c3c9;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 60px;
 }
 
 @media (max-width: 768px) {

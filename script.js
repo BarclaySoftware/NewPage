@@ -1,9 +1,9 @@
 var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/chaos");
+    editor.setTheme("ace/theme/dreamweaver");
     editor.session.setMode("ace/mode/html");
     editor.setOptions({
-        fontSize: "18px",
-        fontFamily: 'Seosevka, TwemojiRubisco, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
+        fontSize: "16px",
+        fontFamily: 'Element Sans Mono, TwemojiRubisco, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
         wrap: false,
         showPrintMargin: false,
         enableBasicAutocompletion: true,
@@ -113,6 +113,17 @@ var editor = ace.edit("editor");
             isResizing = false;
             document.body.style.cursor = 'default';
         }
+    });
+
+    document.getElementById('openInNewTabButton').addEventListener('click', function() {
+        const previewContent = document.getElementById('preview').contentWindow.document.documentElement.outerHTML;
+        const newWindow = window.open();
+        newWindow.document.write(previewContent);
+        newWindow.document.close();
+    });
+
+    document.addEventListener('contextmenu', function () {
+        preventDefault();
     });
 
     updatePreview();
