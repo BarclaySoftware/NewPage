@@ -3,7 +3,7 @@ var editor = ace.edit("editor");
     editor.session.setMode("ace/mode/html");
     editor.setOptions({
         fontSize: "16px",
-        fontFamily: 'Element Sans Mono, TwemojiRubisco, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
+        fontFamily: 'monospace, TwemojiRubisco, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
         wrap: false,
         showPrintMargin: false,
         enableBasicAutocompletion: true,
