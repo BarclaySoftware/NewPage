@@ -2,31 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewPage - Basic HTML Editor on the Web</title>
-    <link rel="icon" type="image/png" href="https://delivercdn.pages.dev/HtmStorm/icon.png" sizes="30x30">
-    <link rel="icon" type="image/png" href="https://delivercdn.pages.dev/HtmStorm/icon.png" sizes="600x600">
+    <title>Page2HTML</title>
+    <link rel="shortcut icon" href="https://rubisco.pages.dev/assets/favicon.png" type="image/x-icon">
+    <link href="./library/style.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ext-language_tools.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ext-settings_menu.js"></script>
 </head>
 <body>
-    <img id="logo" src="https://delivercdn.pages.dev/HtmStorm/icon.png" alt="Logo">
+    <header>Page2HTML</header>
+    <!-- Word Processor UI -->
     <div class="button-container">
-        <select id="lineWrapSelect">
-            <option value="off">Line Wrap: Off</option>
-            <option value="on">Line Wrap: On</option>
-        </select>
-        <button id="openButton">📂 Open</button>
-        <button id="saveButton">💾 Save</button>
+        <button class="btn" id="saveBtn">Save</button>
+        <button class="btn" id="clearBtn">Clear</button>
     </div>
-    <div id="editor-container">
+    <div class="editor-container">
         <div id="editor"></div>
-        <div id="divider"></div>
-        <iframe id="preview"></iframe>
     </div>
+    <script src="./library/editor.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

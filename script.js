@@ -1,129 +1,28 @@
-var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/dreamweaver");
-    editor.session.setMode("ace/mode/html");
-    editor.setOptions({
-        fontSize: "16px",
-        fontFamily: 'monospace, TwemojiRubisco, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
-        wrap: false,
-        showPrintMargin: false,
-        enableBasicAutocompletion: true,
-        enableLiveAutocompletion: true,
-        enableSnippets: true
-    });
+// Initialize Jodit editor
+const editor = new Rubisco('#editor', {
+    height: 400,
+    toolbarSticky: false,
+    buttons: "find,undo,redo,print,spellcheck,copyformat,eraser,about, |,paragraph, |,font, |,fontsize, |,bold,italic,underline,strikethrough,brush, |,cut,copy,paste,selectall, |,hr,fullsize |,link,image,video,file,table,symbols |,align,lineHeight,ul,ol, |,indent,outdent, |,superscript,subscript, |,source,preview",
+    spellcheck: true,
+});
 
-    function openFile() {
-        var input = document.createElement('input');
-        input.type = 'file';
-        input.accept = 'text/html';
-        input.onchange = function(event) {
-            var file = event.target.files[0];
-            var reader = new FileReader();
-            reader.onload = function() {
-                editor.setValue(reader.result);
-                document.title = file.name + " - HtmStorm";
-                updatePreview();
-            };
-            reader.readAsText(file);
-        };
-        input.click();
-    }
-
-    function saveFile() {
-        var content = editor.getValue();
-        var blob = new Blob([content], { type: 'text/html' });
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url;
-        var currentDate = new Date().toISOString().slice(0, 19).replace(/[-T:/]/g, '');
-        var fileName = 'html_' + currentDate + '.html';
-        a.download = fileName;
-        document.title = fileName;
+// Save button action
+document.getElementById('saveBtn').addEventListener('click', function() {
+    const content = editor.value;
+    if(content) {
+        const blob = new Blob([`<!DOCTYPE html>\n<html>\n<head>\n<meta charset='UTF-8'>\n<title>Saved Content</title>\n<link rel='stylesheet' type='text/css' href='https://docsuite.pages.dev/page2html/global.css'>\n</head>\n<body>\n${content}\n</body>\n</html>`], { type: 'text/html' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'saved_content.html';
         document.body.appendChild(a);
         a.click();
-        window.URL.revokeObjectURL(url);
         document.body.removeChild(a);
-        isModified = false;
+    } else {
+        alert('Editor is empty!');
     }
+});
 
-    document.getElementById('openButton').addEventListener('click', openFile);
-    document.getElementById('saveButton').addEventListener('click', saveFile);
-
-    var isModified = false;
-
-    editor.session.on('change', function() {
-        isModified = true;
-        var fileName = document.title;
-        if (!fileName.endsWith('*')) {
-            fileName += "*";
-        }
-        document.title = fileName;
-        updatePreview();
-    });
-
-    function updatePreview() {
-        var preview = document.getElementById('preview');
-        preview.srcdoc = editor.getValue();
-    }
-
-    window.addEventListener('beforeunload', function(e) {
-        if (isModified) {
-            var confirmationMessage = 'You have unsaved changes. Are you sure you want to leave?';
-            e.returnValue = confirmationMessage;
-            return confirmationMessage;
-        }
-    });
-
-    document.getElementById('lineWrapSelect').addEventListener('change', function() {
-        var value = this.value === 'on';
-        editor.setOption('wrap', value);
-    });
-
-    window.addEventListener('keydown', function(event) {
-        if (event.ctrlKey && event.key === 's') {
-            event.preventDefault();
-            saveFile();
-        } else if (event.ctrlKey && event.key === 'o') {
-            event.preventDefault();
-            openFile();
-        }
-    });
-
-    var divider = document.getElementById('divider');
-    var editorContainer = document.getElementById('editor-container');
-    var editorElement = document.getElementById('editor');
-    var isResizing = false;
-
-    divider.addEventListener('mousedown', function(e) {
-        isResizing = true;
-        document.body.style.cursor = 'ew-resize';
-    });
-
-    document.addEventListener('mousemove', function(e) {
-        if (isResizing) {
-            var offsetRight = editorContainer.clientWidth - (e.clientX - editorContainer.offsetLeft);
-            var editorWidth = editorContainer.clientWidth - offsetRight;
-            editorWidth = Math.max(editorWidth, 100);
-            editorElement.style.width = editorWidth + 'px';
-            editor.resize();
-        }
-    });
-
-    document.addEventListener('mouseup', function() {
-        if (isResizing) {
-            isResizing = false;
-            document.body.style.cursor = 'default';
-        }
-    });
-
-    document.getElementById('openInNewTabButton').addEventListener('click', function() {
-        const previewContent = document.getElementById('preview').contentWindow.document.documentElement.outerHTML;
-        const newWindow = window.open();
-        newWindow.document.write(previewContent);
-        newWindow.document.close();
-    });
-
-    document.addEventListener('contextmenu', function () {
-        preventDefault();
-    });
-
-    updatePreview();
+// Clear button action
+document.getElementById('clearBtn').addEventListener('click', function() {
+    editor.value = '';
+});

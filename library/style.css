@@ -1,0 +1,6008 @@
+@import url(https://vortixsys.pages.dev/fonts/library.css);
+
+.rubisco-ui-group {
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    max-width: 100%
+}
+
+.rubisco-ui-group_line_true {
+    display: flex;
+    justify-content: stretch
+}
+
+.rubisco-ui-group_separated_true:not(:last-child):not(.rubisco-ui-group_before-spacer_true):after {
+    border-left: 0;
+    border-right: 1px solid var(--rb-color-border);
+    content: "";
+    cursor: default;
+    margin: 2px;
+    padding: 0
+}
+
+.rubisco-ui-group:last-child {
+    border-bottom: 0
+}
+
+.rubisco-ui-list {
+    display: flex;
+    flex-direction: column
+}
+
+.rubisco-ui-list_mode_vertical .rubisco-ui-group {
+    background-color: transparent;
+    border: 0;
+    flex-direction: column
+}
+
+.rubisco-ui-list_mode_vertical .rubisco-toolbar-button {
+    height: auto;
+    min-height: var(--rb-button-size)
+}
+
+.rubisco-ui-list_mode_vertical .rubisco-toolbar-button__button {
+    cursor: pointer;
+    height: auto;
+    min-height: var(--rb-button-size);
+    width: 100%
+}
+
+.rubisco-ui-list_mode_vertical .rubisco-toolbar-button__text:not(:empty) {
+    justify-content: left
+}
+
+.rubisco-ui-separator {
+    border-left: 0;
+    border-right: 1px solid var(--rb-color-border);
+    cursor: default;
+    margin: 2px;
+    padding: 0
+}
+
+.rubisco-ui-break {
+    border-top: 1px solid var(--rb-color-border);
+    flex-basis: 100%;
+    height: 0 !important;
+    width: 0
+}
+
+.rubisco-ui-spacer {
+    flex: 1
+}
+
+.rubisco-ui-button-icon-text__icon {
+    display: none
+}
+
+.rubisco-ui-button-icon-text__icon:not(:empty) {
+    display: inline-flex
+}
+
+.rubisco-ui-button-icon-text__text {
+    display: none
+}
+
+.rubisco-ui-button-icon-text__text:not(:empty) {
+    display: inline-flex;
+    flex-grow: 1;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.rubisco-ui-button-icon-text_context_menu .rubisco-ui-button-icon-text__text {
+    justify-content: left;
+    padding-left: var(--rb-padding-default);
+    position: relative
+}
+
+.rubisco-ui-button-icon-text_context_menu .rubisco-ui-button-icon-text__text:before {
+    border-left: 1px solid var(--rb-color-border);
+    content: "";
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: calc(var(--rb-padding-default)*-1)
+}
+
+.rubisco-ui-button-icon-text__icon:not(:empty)+.rubisco-ui-button-icon-text__text:not(:empty) {
+    margin-left: var(--rb-padding-default)
+}
+
+.rubisco-ui-button-icon-text__icon:empty+.rubisco-ui-button-icon-text__text:not(:empty) {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button-clear,
+.rubisco-ui-button_clear {
+    appearance: none;
+    background: 0 0;
+    border: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-style: normal;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none
+}
+
+.rubisco-ui-button-sizes {
+    height: 34px;
+    min-width: 34px
+}
+
+.rubisco-ui-button-sizes .rubisco-icon {
+    height: 14px;
+    width: 14px
+}
+
+.rubisco-ui-button-sizes button {
+    appearance: none;
+    height: 34px;
+    min-width: 34px;
+    padding: 0
+}
+
+.rubisco-ui-button-sizes_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button-sizes_size_tiny {
+    height: 16px;
+    min-width: 16px
+}
+
+.rubisco-ui-button-sizes_size_tiny .rubisco-icon {
+    height: 8px;
+    width: 8px
+}
+
+.rubisco-ui-button-sizes_size_tiny button {
+    appearance: none;
+    height: 16px;
+    min-width: 16px;
+    padding: 0
+}
+
+.rubisco-ui-button-sizes_size_tiny_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button-sizes_size_xsmall {
+    height: 22px;
+    min-width: 22px
+}
+
+.rubisco-ui-button-sizes_size_xsmall .rubisco-icon {
+    height: 10px;
+    width: 10px
+}
+
+.rubisco-ui-button-sizes_size_xsmall button {
+    appearance: none;
+    height: 22px;
+    min-width: 22px;
+    padding: 0
+}
+
+.rubisco-ui-button-sizes_size_xsmall_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button-sizes_size_small {
+    height: 28px;
+    min-width: 28px
+}
+
+.rubisco-ui-button-sizes_size_small .rubisco-icon {
+    height: 12px;
+    width: 12px
+}
+
+.rubisco-ui-button-sizes_size_small button {
+    appearance: none;
+    height: 28px;
+    min-width: 28px;
+    padding: 0
+}
+
+.rubisco-ui-button-sizes_size_small_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button-sizes_size_large {
+    height: 40px;
+    min-width: 40px
+}
+
+.rubisco-ui-button-sizes_size_large .rubisco-icon {
+    height: 16px;
+    width: 16px
+}
+
+.rubisco-ui-button-sizes_size_large button {
+    appearance: none;
+    height: 40px;
+    min-width: 40px;
+    padding: 0
+}
+
+.rubisco-ui-button-sizes_size_large_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button-variants_variant_outline {
+    border: 1px solid var(--rb-color-border)
+}
+
+.rubisco-ui-button-variants_variant_default {
+    background-color: #e3e3e3;
+    color: #212529
+}
+
+.rubisco-ui-button-variants_variant_default svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button-variants_variant_default [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button-variants_variant_default:hover:not([disabled]) {
+    background-color: #c9cdd1;
+    color: #212529
+}
+
+.rubisco-ui-button-variants_variant_default:hover:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button-variants_variant_default:active:not([disabled]) {
+    background-color: #dae0e5;
+    color: #212529
+}
+
+.rubisco-ui-button-variants_variant_default:active:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button-variants_variant_default:focus:not([disabled]) {
+    outline: 1px dashed #dae0e5
+}
+
+.rubisco-ui-button-variants_variant_primary {
+    background-color: #007bff;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_primary svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_primary [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button-variants_variant_primary:hover:not([disabled]) {
+    background-color: #0069d9;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_primary:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_primary:active:not([disabled]) {
+    background-color: #0062cc;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_primary:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_primary:focus:not([disabled]) {
+    outline: 1px dashed #0062cc
+}
+
+.rubisco-ui-button-variants_variant_secondary {
+    background-color: #d8d8d8;
+    border-radius: 0;
+    color: #212529
+}
+
+.rubisco-ui-button-variants_variant_secondary svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button-variants_variant_secondary [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button-variants_variant_secondary:hover:not([disabled]) {
+    background-color: #c9cdd1;
+    color: #212529
+}
+
+.rubisco-ui-button-variants_variant_secondary:hover:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button-variants_variant_secondary:active:not([disabled]) {
+    background-color: #dae0e5;
+    color: #212529
+}
+
+.rubisco-ui-button-variants_variant_secondary:active:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button-variants_variant_secondary:focus:not([disabled]) {
+    outline: 1px dashed #dae0e5
+}
+
+.rubisco-ui-button-variants_variant_success {
+    background-color: #28a745;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_success svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_success [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button-variants_variant_success:hover:not([disabled]) {
+    background-color: #218838;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_success:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_success:active:not([disabled]) {
+    background-color: #1e7e34;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_success:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_success:focus:not([disabled]) {
+    outline: 1px dashed #1e7e34
+}
+
+.rubisco-ui-button-variants_variant_danger {
+    background-color: #dc3545;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_danger svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_danger [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button-variants_variant_danger:hover:not([disabled]) {
+    background-color: #c82333;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_danger:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_danger:active:not([disabled]) {
+    background-color: #bd2130;
+    color: #fff
+}
+
+.rubisco-ui-button-variants_variant_danger:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button-variants_variant_danger:focus:not([disabled]) {
+    outline: 1px dashed #bd2130
+}
+
+.rubisco-ui-button-style {
+    border-radius: var(--rb-border-radius-default);
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button,
+.rubisco-ui-button-style {
+    align-items: center;
+    color: var(--rb-color-text-icons);
+    display: inline-flex;
+    justify-content: center
+}
+
+.rubisco-ui-button {
+    appearance: none;
+    background: 0 0;
+    border: 0;
+    border-radius: var(--rb-border-radius-default);
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-style: normal;
+    height: 34px;
+    min-width: 34px;
+    outline: 0;
+    padding: 0;
+    padding: 0 var(--rb-padding-default);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none
+}
+
+.rubisco-ui-button:focus-visible:not([disabled]),
+.rubisco-ui-button:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-ui-button:active:not([disabled]),
+.rubisco-ui-button[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-ui-button[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-ui-button[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-ui-button .rubisco-icon {
+    height: 14px;
+    width: 14px
+}
+
+.rubisco-ui-button button {
+    appearance: none;
+    height: 34px;
+    min-width: 34px;
+    padding: 0
+}
+
+.rubisco-ui-button_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button_size_tiny {
+    height: 16px;
+    min-width: 16px
+}
+
+.rubisco-ui-button_size_tiny .rubisco-icon {
+    height: 8px;
+    width: 8px
+}
+
+.rubisco-ui-button_size_tiny button {
+    appearance: none;
+    height: 16px;
+    min-width: 16px;
+    padding: 0
+}
+
+.rubisco-ui-button_size_tiny_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button_size_xsmall {
+    height: 22px;
+    min-width: 22px
+}
+
+.rubisco-ui-button_size_xsmall .rubisco-icon {
+    height: 10px;
+    width: 10px
+}
+
+.rubisco-ui-button_size_xsmall button {
+    appearance: none;
+    height: 22px;
+    min-width: 22px;
+    padding: 0
+}
+
+.rubisco-ui-button_size_xsmall_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button_size_small {
+    height: 28px;
+    min-width: 28px
+}
+
+.rubisco-ui-button_size_small .rubisco-icon {
+    height: 12px;
+    width: 12px
+}
+
+.rubisco-ui-button_size_small button {
+    appearance: none;
+    height: 28px;
+    min-width: 28px;
+    padding: 0
+}
+
+.rubisco-ui-button_size_small_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button_size_large {
+    height: 40px;
+    min-width: 40px
+}
+
+.rubisco-ui-button_size_large .rubisco-icon {
+    height: 16px;
+    width: 16px
+}
+
+.rubisco-ui-button_size_large button {
+    appearance: none;
+    height: 40px;
+    min-width: 40px;
+    padding: 0
+}
+
+.rubisco-ui-button_size_large_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button__icon {
+    display: none
+}
+
+.rubisco-ui-button__icon:not(:empty) {
+    display: inline-flex
+}
+
+.rubisco-ui-button__text {
+    display: none
+}
+
+.rubisco-ui-button__text:not(:empty) {
+    display: inline-flex;
+    flex-grow: 1;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.rubisco-ui-button_context_menu .rubisco-ui-button__text {
+    justify-content: left;
+    padding-left: var(--rb-padding-default);
+    position: relative
+}
+
+.rubisco-ui-button_context_menu .rubisco-ui-button__text:before {
+    border-left: 1px solid var(--rb-color-border);
+    content: "";
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: calc(var(--rb-padding-default)*-1)
+}
+
+.rubisco-ui-button__icon:not(:empty)+.rubisco-ui-button__text:not(:empty) {
+    margin-left: var(--rb-padding-default)
+}
+
+.rubisco-ui-button__icon:empty+.rubisco-ui-button__text:not(:empty) {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-button:focus:not([disabled]) {
+    outline: 1px dashed var(--rb-color-background-selection)
+}
+
+.rubisco-ui-button_variant_outline {
+    border: 1px solid var(--rb-color-border)
+}
+
+.rubisco-ui-button_variant_default {
+    background-color: #e3e3e3;
+    color: #212529
+}
+
+.rubisco-ui-button_variant_default svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button_variant_default [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button_variant_default:hover:not([disabled]) {
+    background-color: #c9cdd1;
+    color: #212529
+}
+
+.rubisco-ui-button_variant_default:hover:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button_variant_default:active:not([disabled]) {
+    background-color: #dae0e5;
+    color: #212529
+}
+
+.rubisco-ui-button_variant_default:active:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button_variant_default:focus:not([disabled]) {
+    outline: 1px dashed #dae0e5
+}
+
+.rubisco-ui-button_variant_primary {
+    background-color: #007bff;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_primary svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_primary [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button_variant_primary:hover:not([disabled]) {
+    background-color: #0069d9;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_primary:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_primary:active:not([disabled]) {
+    background-color: #0062cc;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_primary:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_primary:focus:not([disabled]) {
+    outline: 1px dashed #0062cc
+}
+
+.rubisco-ui-button_variant_secondary {
+    background-color: #d8d8d8;
+    border-radius: 0;
+    color: #212529
+}
+
+.rubisco-ui-button_variant_secondary svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button_variant_secondary [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button_variant_secondary:hover:not([disabled]) {
+    background-color: #c9cdd1;
+    color: #212529
+}
+
+.rubisco-ui-button_variant_secondary:hover:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button_variant_secondary:active:not([disabled]) {
+    background-color: #dae0e5;
+    color: #212529
+}
+
+.rubisco-ui-button_variant_secondary:active:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-ui-button_variant_secondary:focus:not([disabled]) {
+    outline: 1px dashed #dae0e5
+}
+
+.rubisco-ui-button_variant_success {
+    background-color: #28a745;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_success svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_success [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button_variant_success:hover:not([disabled]) {
+    background-color: #218838;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_success:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_success:active:not([disabled]) {
+    background-color: #1e7e34;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_success:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_success:focus:not([disabled]) {
+    outline: 1px dashed #1e7e34
+}
+
+.rubisco-ui-button_variant_danger {
+    background-color: #dc3545;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_danger svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_danger [disabled] {
+    opacity: .7
+}
+
+.rubisco-ui-button_variant_danger:hover:not([disabled]) {
+    background-color: #c82333;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_danger:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_danger:active:not([disabled]) {
+    background-color: #bd2130;
+    color: #fff
+}
+
+.rubisco-ui-button_variant_danger:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-ui-button_variant_danger:focus:not([disabled]) {
+    outline: 1px dashed #bd2130
+}
+
+.rubisco-ui-button-group {
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-ui-button-group__label {
+    color: var(--rb-color-label);
+    display: block;
+    font-size: .8em;
+    margin-bottom: calc(var(--rb-padding-default)/4)
+}
+
+.rubisco-ui-button-group__options {
+    display: flex;
+    justify-content: flex-start
+}
+
+.rubisco-ui-button-group .rubisco-ui-button:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0
+}
+
+.rubisco-ui-button-group .rubisco-ui-button+.rubisco-ui-button {
+    border-bottom-left-radius: 0;
+    border-left: 1px solid var(--rb-color-button-background-hover-opacity40);
+    border-top-left-radius: 0
+}
+
+.rubisco-ui-button-group .rubisco-ui-button[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    border-left: 0;
+    box-shadow: inset 0 0 3px 0 var(--rb-color-dark);
+    color: var(--rb-color-dark);
+    outline: 0
+}
+
+.rubisco-ui-button-group .rubisco-ui-button[aria-pressed=true]:not([disabled])+.rubisco-ui-button {
+    border: 0
+}
+
+:root {
+    --rb-tooltip-color: #fff;
+    --rb-tooltip-background-color: rgba(0, 0, 0, .7);
+    --rb-tooltip-sfx-shadow: rgba(0, 0, 0, .15);
+    --rb-tooltip-border-width: 0;
+    --rb-tooltip-border-color: #e5e5e5
+}
+
+.rubisco-ui-tooltip {
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    background-clip: padding-box;
+    background-color: var(--rb-tooltip-background-color);
+    border-radius: 4px;
+    box-shadow: 0 0 0 var(--rb-tooltip-border-width) var(--rb-tooltip-border-color), 0 8px 20px var(--rb-tooltip-border-width) var(--rb-tooltip-sfx-shadow);
+    color: var(--rb-tooltip-color);
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-small);
+    line-height: 1.4;
+    max-width: 120px;
+    opacity: 0;
+    outline: none;
+    pointer-events: none;
+    position: fixed;
+    text-rendering: optimizelegibility;
+    transform: translate(-50%, calc(var(--rb-padding-default)/2));
+    transition: opacity .2s ease 0s;
+    user-select: none;
+    white-space: normal;
+    width: auto;
+    z-index: var(--rb-z-index-tooltip)
+}
+
+@media (max-width:768px) {
+    .rubisco-ui-tooltip {
+        display: none
+    }
+}
+
+.rubisco-ui-tooltip__content {
+    padding: calc(var(--rb-padding-default)/2) calc(var(--rb-padding-default)*1.5)
+}
+
+.rubisco-ui-tooltip.rubisco-ui-tooltip_visible_true {
+    opacity: 1
+}
+
+.rubisco-ui-block {
+    align-items: center;
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-ui-block_width_full {
+    width: 100%
+}
+
+.rubisco-ui-block_align_full {
+    justify-content: space-between
+}
+
+.rubisco-ui-block_align_right {
+    justify-content: flex-end
+}
+
+.rubisco-ui-block_padding_true {
+    padding: var(--rb-padding-default)
+}
+
+.rubisco-ui-label {
+    color: var(--rb-color-label);
+    display: block;
+    font-size: .8em;
+    margin-bottom: calc(var(--rb-padding-default)/4)
+}
+
+.rubisco-ui-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-ui-input__input {
+    appearance: none;
+    background-color: var(--rb-color-white);
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    height: var(--rb-input-height);
+    line-height: 1.2;
+    outline: none;
+    padding: 0 var(--rb-padding-default);
+    width: 100%
+}
+
+.rubisco-ui-input__input[disabled] {
+    background-color: #f0f0f0;
+    color: var(--rb-color-border)
+}
+
+.rubisco-ui-input__input_has-error_true {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco-ui-input__input:focus {
+    outline: 0
+}
+
+.rubisco-ui-input_theme_dark .rubisco-ui-input__input {
+    background-color: var(--rb-color-gray)
+}
+
+.rubisco-ui-input_has-error_true .rubisco-ui-input__input {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco-ui-input__error,
+.rubisco-ui-input__label {
+    color: var(--rb-color-label);
+    display: block;
+    font-size: .8em;
+    margin-bottom: calc(var(--rb-padding-default)/4)
+}
+
+.rubisco-ui-input__error,
+.rubisco-ui-input_has-error_true .rubisco-ui-input__label {
+    color: var(--rb-color-error)
+}
+
+.rubisco-ui-input__wrapper {
+    align-items: center;
+    background-color: var(--rb-color-white);
+    border: 1px solid var(--rb-color-border);
+    display: flex;
+    justify-content: stretch;
+    min-width: 200px
+}
+
+@media (max-width:480px) {
+    .rubisco-ui-input__wrapper {
+        min-width: 140px
+    }
+}
+
+.rubisco-ui-input_theme_dark .rubisco-ui-input__wrapper {
+    background-color: var(--rb-color-gray);
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-ui-input_focused_true .rubisco-ui-input__wrapper {
+    border-color: var(--rb-color-border-selected)
+}
+
+.rubisco-ui-input__icon:not(:empty) {
+    align-items: center;
+    display: flex;
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-input__icon:not(:empty) svg {
+    height: 16px;
+    width: 16px;
+    fill: var(--rb-color-border)
+}
+
+.rubisco-ui-input__icon:not(:empty)+.rubisco-ui-input__input {
+    padding-left: 0
+}
+
+.rubisco-ui-input__clear {
+    align-items: center;
+    display: flex;
+    opacity: .8;
+    padding: 0 var(--rb-padding-default) 0 0
+}
+
+.rubisco-ui-input__clear:active {
+    opacity: 1;
+    transform: scale(1.1)
+}
+
+.rubisco-ui-input__clear svg {
+    height: 12px;
+    width: 12px;
+    fill: var(--rb-color-border)
+}
+
+.rubisco-ui-input_theme_dark .rubisco-ui-input__clear svg,
+.rubisco-ui-input_theme_dark .rubisco-ui-input__icon svg {
+    fill: var(--rb-color-dark)
+}
+
+.rubisco-ui-block .rubisco-ui-input {
+    margin-bottom: 0
+}
+
+.rubisco-ui-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-ui-select__input {
+    appearance: none;
+    background-color: var(--rb-color-white);
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    height: var(--rb-input-height);
+    line-height: 1.2;
+    outline: none;
+    padding: 0 var(--rb-padding-default);
+    width: 100%
+}
+
+.rubisco-ui-select__input[disabled] {
+    background-color: #f0f0f0;
+    color: var(--rb-color-border)
+}
+
+.rubisco-ui-select__input_has-error_true {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco-ui-select__input:focus {
+    outline: 0
+}
+
+.rubisco-ui-select_theme_dark .rubisco-ui-select__input {
+    background-color: var(--rb-color-gray)
+}
+
+.rubisco-ui-select_has-error_true .rubisco-ui-select__input {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco-ui-select__error,
+.rubisco-ui-select__label {
+    color: var(--rb-color-label);
+    display: block;
+    font-size: .8em;
+    margin-bottom: calc(var(--rb-padding-default)/4)
+}
+
+.rubisco-ui-select__error,
+.rubisco-ui-select_has-error_true .rubisco-ui-select__label {
+    color: var(--rb-color-error)
+}
+
+.rubisco-ui-select__wrapper {
+    align-items: center;
+    background-color: var(--rb-color-white);
+    border: 1px solid var(--rb-color-border);
+    display: flex;
+    justify-content: stretch;
+    min-width: 200px
+}
+
+@media (max-width:480px) {
+    .rubisco-ui-select__wrapper {
+        min-width: 140px
+    }
+}
+
+.rubisco-ui-select_theme_dark .rubisco-ui-select__wrapper {
+    background-color: var(--rb-color-gray);
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-ui-select_focused_true .rubisco-ui-select__wrapper {
+    border-color: var(--rb-color-border-selected)
+}
+
+.rubisco-ui-select__icon:not(:empty) {
+    align-items: center;
+    display: flex;
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-select__icon:not(:empty) svg {
+    height: 16px;
+    width: 16px;
+    fill: var(--rb-color-border)
+}
+
+.rubisco-ui-select__icon:not(:empty)+.rubisco-ui-select__input {
+    padding-left: 0
+}
+
+.rubisco-ui-select__clear {
+    align-items: center;
+    display: flex;
+    opacity: .8;
+    padding: 0 var(--rb-padding-default) 0 0
+}
+
+.rubisco-ui-select__clear:active {
+    opacity: 1;
+    transform: scale(1.1)
+}
+
+.rubisco-ui-select__clear svg {
+    height: 12px;
+    width: 12px;
+    fill: var(--rb-color-border)
+}
+
+.rubisco-ui-select_theme_dark .rubisco-ui-select__clear svg,
+.rubisco-ui-select_theme_dark .rubisco-ui-select__icon svg {
+    fill: var(--rb-color-dark)
+}
+
+.rubisco-ui-select__input {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJMYXllcl8xIiBkYXRhLW5hbWU9IkxheWVyIDEiIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NH08L3N0eWxlPjwvZGVmcz48dGl0bGU+YXJyb3dzPC90aXRsZT48cGF0aCBkPSJNMCAwaDQuOTV2MTBIMHoiIHN0eWxlPSJmaWxsOiNmZmYiLz48cGF0aCBkPSJtMS40MSA0LjY3IDEuMDctMS40OSAxLjA2IDEuNDl6TTMuNTQgNS4zMyAyLjQ4IDYuODIgMS40MSA1LjMzeiIgY2xhc3M9ImNscy0yIi8+PC9zdmc+);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    padding-right: calc(var(--rb-padding-default)*2)
+}
+
+.rubisco-ui-select_size_tiny {
+    margin-bottom: 0
+}
+
+.rubisco-ui-select_size_tiny .rubisco-ui-select__input {
+    --rb-height: calc(var(--rb-input-height)/1.8);
+    height: var(--rb-height);
+    line-height: var(--rb-height)
+}
+
+.rubisco-ui-select_variant_outline .rubisco-ui-select__wrapper {
+    border: 0
+}
+
+.rubisco-ui-select_variant_outline .rubisco-ui-select__wrapper select {
+    outline: 0
+}
+
+.rubisco-ui-select_width_auto {
+    width: auto
+}
+
+.rubisco-ui-select_width_auto .rubisco-ui-select__wrapper {
+    min-width: auto
+}
+
+.rubisco-ui-text-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--rb-padding-default);
+    width: 100%
+}
+
+.rubisco-ui-text-area__input {
+    appearance: none;
+    background-color: var(--rb-color-white);
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    height: var(--rb-input-height);
+    line-height: 1.2;
+    outline: none;
+    padding: 0 var(--rb-padding-default);
+    width: 100%
+}
+
+.rubisco-ui-text-area__input[disabled] {
+    background-color: #f0f0f0;
+    color: var(--rb-color-border)
+}
+
+.rubisco-ui-text-area__input_has-error_true {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco-ui-text-area__input:focus {
+    outline: 0
+}
+
+.rubisco-ui-text-area_theme_dark .rubisco-ui-text-area__input {
+    background-color: var(--rb-color-gray)
+}
+
+.rubisco-ui-text-area_has-error_true .rubisco-ui-text-area__input {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco-ui-text-area__error,
+.rubisco-ui-text-area__label {
+    color: var(--rb-color-label);
+    display: block;
+    font-size: .8em;
+    margin-bottom: calc(var(--rb-padding-default)/4)
+}
+
+.rubisco-ui-text-area__error,
+.rubisco-ui-text-area_has-error_true .rubisco-ui-text-area__label {
+    color: var(--rb-color-error)
+}
+
+.rubisco-ui-text-area__wrapper {
+    align-items: center;
+    background-color: var(--rb-color-white);
+    border: 1px solid var(--rb-color-border);
+    display: flex;
+    justify-content: stretch;
+    min-width: 200px
+}
+
+@media (max-width:480px) {
+    .rubisco-ui-text-area__wrapper {
+        min-width: 140px
+    }
+}
+
+.rubisco-ui-text-area_theme_dark .rubisco-ui-text-area__wrapper {
+    background-color: var(--rb-color-gray);
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-ui-text-area_focused_true .rubisco-ui-text-area__wrapper {
+    border-color: var(--rb-color-border-selected)
+}
+
+.rubisco-ui-text-area__icon:not(:empty) {
+    align-items: center;
+    display: flex;
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-ui-text-area__icon:not(:empty) svg {
+    height: 16px;
+    width: 16px;
+    fill: var(--rb-color-border)
+}
+
+.rubisco-ui-text-area__icon:not(:empty)+.rubisco-ui-text-area__input {
+    padding-left: 0
+}
+
+.rubisco-ui-text-area__clear {
+    align-items: center;
+    display: flex;
+    opacity: .8;
+    padding: 0 var(--rb-padding-default) 0 0
+}
+
+.rubisco-ui-text-area__clear:active {
+    opacity: 1;
+    transform: scale(1.1)
+}
+
+.rubisco-ui-text-area__clear svg {
+    height: 12px;
+    width: 12px;
+    fill: var(--rb-color-border)
+}
+
+.rubisco-ui-text-area_theme_dark .rubisco-ui-text-area__clear svg,
+.rubisco-ui-text-area_theme_dark .rubisco-ui-text-area__icon svg {
+    fill: var(--rb-color-dark)
+}
+
+.rubisco-ui-text-area__wrapper {
+    flex: 1
+}
+
+.rubisco-ui-text-area__input {
+    height: 100%;
+    min-height: 60px;
+    padding: var(--rb-padding-default)
+}
+
+.rubisco-ui-checkbox {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-ui-checkbox__input {
+    margin-right: var(--rb-padding-default)
+}
+
+.rubisco-ui-checkbox_switch_true .rubisco-ui-checkbox__wrapper {
+    display: inline-block;
+    height: 34px;
+    margin-right: var(--rb-padding-default);
+    position: relative;
+    width: 60px
+}
+
+.rubisco-ui-checkbox_switch_true .rubisco-ui-checkbox__wrapper input {
+    height: 0;
+    opacity: 0;
+    width: 0
+}
+
+.rubisco-ui-checkbox_switch_true .rubisco-ui-checkbox__switch-slider {
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    inset: 0;
+    position: absolute;
+    transition: .4s
+}
+
+.rubisco-ui-checkbox_switch_true .rubisco-ui-checkbox__switch-slider:before {
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px
+}
+
+.rubisco-ui-checkbox_switch_true.rubisco-ui-checkbox_checked_true .rubisco-ui-checkbox__switch-slider {
+    background-color: #2196f3
+}
+
+.rubisco-ui-checkbox_switch_true.rubisco-ui-checkbox_checked_true .rubisco-ui-checkbox__switch-slider:before {
+    transform: translateX(26px)
+}
+
+.rubisco-ui-checkbox_switch_true.rubisco-ui-checkbox_focused_true .rubisco-ui-checkbox__switch-slider {
+    box-shadow: 0 0 1px #2196f3
+}
+
+.rubisco-ui-block .rubisco-ui-checkbox {
+    margin-bottom: 0
+}
+
+.rubisco-ui-file-input {
+    overflow: hidden;
+    position: relative
+}
+
+.rubisco-ui-file-input__input {
+    bottom: 0;
+    cursor: pointer;
+    font-size: 400px;
+    margin: 0 calc(var(--rb-padding-default)*-1) 0 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+:root {
+    --rb-popup-box-shadow: 0 4px 1px -2px rgba(76, 76, 76, .2), 0 3px 3px 0 rgba(76, 76, 76, .15), 0 1px 4px 0 rgba(76, 76, 76, .13);
+    --rb-popup-max-height: max(50vh, 350px)
+}
+
+.rubisco-popup {
+    background: 0 0;
+    border: 0;
+    box-shadow: var(--rb-popup-box-shadow);
+    display: inline-block;
+    float: none;
+    height: auto;
+    margin: 0;
+    max-width: none;
+    outline: 0;
+    padding: 0;
+    position: static;
+    position: fixed;
+    transform: translateZ(0);
+    width: auto;
+    z-index: var(--rb-z-index-popup)
+}
+
+.rubisco-popup__content {
+    background: var(--rb-color-background-default);
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    max-height: var(--rb-popup-max-height, 400px);
+    overflow: auto;
+    padding: var(--rb-padding-default);
+    /* overflow-scrolling: touch */
+}
+
+.rubisco-popup_padding_false .rubisco-popup__content {
+    padding: 0
+}
+
+.rubisco-popup_max-height_false .rubisco-popup__content {
+    max-height: fit-content
+}
+
+@keyframes a {
+    30% {
+        opacity: .6
+    }
+
+    60% {
+        opacity: 0
+    }
+
+    to {
+        opacity: .6
+    }
+}
+
+.rubisco-progress-bar {
+    border-radius: 1px;
+    height: 2px;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    z-index: 2147483647
+}
+
+.rubisco-progress-bar div {
+    background: var(--rb-color-background-progress);
+    height: 2px;
+    position: relative;
+    transition: width .5s ease-out, opacity .5s linear;
+    will-change: width, opacity
+}
+
+.rubisco-progress-bar div:after,
+.rubisco-progress-bar div:before {
+    animation: a 2s ease-out 0s infinite;
+    border-radius: 100%;
+    box-shadow: var(--rb-color-background-progress) 1px 0 6px 1px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    opacity: .6;
+    position: absolute;
+    top: 0
+}
+
+.rubisco-progress-bar div:before {
+    right: -80px;
+    width: 180px;
+    clip: rect(-6px, 90px, 14px, -6px)
+}
+
+.rubisco-progress-bar div:after {
+    right: 0;
+    width: 20px;
+    clip: rect(-6px, 22px, 14px, var(--rb-padding-default))
+}
+
+:root {
+    --rb-em-color-border: #b6d4fe;
+    --rb-em-color-bg: #cfe2ff;
+    --rb-em-color-color: #084298;
+    --rb-em-border-radius: 0.375rem;
+    --rb-em-padding: 0.5rem 1rem;
+    --rb-em-font-size: 1rem
+}
+
+.rubisco-ui-messages {
+    bottom: 0;
+    height: 0;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 3
+}
+
+.rubisco-ui-message {
+    background: var(--rb-em-color-bg);
+    border: 1px solid var(--rb-em-color-border);
+    border-radius: var(--rb-em-border-radius);
+    bottom: 0;
+    color: var(--rb-em-color-color);
+    cursor: pointer;
+    display: block;
+    font-size: var(--rb-em-font-size);
+    opacity: 0;
+    padding: var(--rb-em-padding);
+    position: absolute;
+    right: calc(var(--rb-padding-default)/2);
+    transition: opacity .1s linear, bottom .3s linear, transform .1s ease-out;
+    white-space: pre
+}
+
+.rubisco-ui-message_active_true {
+    opacity: 1
+}
+
+.rubisco-ui-message:active {
+    transform: scale(.76)
+}
+
+.rubisco-ui-message_variant_secondary {
+    --rb-em-color-border: #d3d6d8;
+    --rb-em-color-bg: #e2e3e5;
+    --rb-em-color-color: #41464b
+}
+
+.rubisco-ui-message_variant_danger,
+.rubisco-ui-message_variant_error,
+.rubisco-ui-message_variant_secondary {
+    background: var(--rb-em-color-bg);
+    border-color: var(--rb-em-color-border);
+    color: var(--rb-em-color-color)
+}
+
+.rubisco-ui-message_variant_danger,
+.rubisco-ui-message_variant_error {
+    --rb-em-color-border: #f5c2c7;
+    --rb-em-color-bg: #f8d7da;
+    --rb-em-color-color: #842029
+}
+
+.rubisco-ui-message_variant_success {
+    --rb-em-color-border: #badbcc;
+    --rb-em-color-bg: #d1e7dd;
+    --rb-em-color-color: #0f5132;
+    background: var(--rb-em-color-bg);
+    border-color: var(--rb-em-color-border);
+    color: var(--rb-em-color-color)
+}
+
+.rubisco-toolbar-collection,
+.rubisco-toolbar-editor-collection {
+    display: flex;
+    flex-direction: column
+}
+
+.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent calc(var(--rb-button-size) - 1px), var(--rb-color-border) var(--rb-button-size));
+    position: relative
+}
+
+.rubisco-toolbar-collection_mode_horizontal:after,
+.rubisco-toolbar-editor-collection_mode_horizontal:after {
+    background-color: var(--rb-color-background-default);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.rubisco-toolbar-collection_size_tiny,
+.rubisco-toolbar-editor-collection_size_tiny {
+    --rb-button-icon-size: 8px
+}
+
+.rubisco-toolbar-collection_size_tiny.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-collection_size_tiny.rubisco-toolbar-editor-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_tiny.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_tiny.rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent 19px, var(--rb-color-border) 20px)
+}
+
+.rubisco-toolbar-collection_size_xsmall,
+.rubisco-toolbar-editor-collection_size_xsmall {
+    --rb-button-icon-size: 10px
+}
+
+.rubisco-toolbar-collection_size_xsmall.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-collection_size_xsmall.rubisco-toolbar-editor-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_xsmall.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_xsmall.rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent 25px, var(--rb-color-border) 26px)
+}
+
+.rubisco-toolbar-collection_size_small,
+.rubisco-toolbar-editor-collection_size_small {
+    --rb-button-icon-size: 12px
+}
+
+.rubisco-toolbar-collection_size_small.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-collection_size_small.rubisco-toolbar-editor-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_small.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_small.rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent 31px, var(--rb-color-border) 32px)
+}
+
+.rubisco-toolbar-collection_size_middle,
+.rubisco-toolbar-editor-collection_size_middle {
+    --rb-button-icon-size: 14px
+}
+
+.rubisco-toolbar-collection_size_middle.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-collection_size_middle.rubisco-toolbar-editor-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_middle.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_middle.rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent 37px, var(--rb-color-border) 38px)
+}
+
+.rubisco-toolbar-collection_size_large,
+.rubisco-toolbar-editor-collection_size_large {
+    --rb-button-icon-size: 16px
+}
+
+.rubisco-toolbar-collection_size_large.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-collection_size_large.rubisco-toolbar-editor-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_large.rubisco-toolbar-collection_mode_horizontal,
+.rubisco-toolbar-editor-collection_size_large.rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent 43px, var(--rb-color-border) 44px)
+}
+
+.rubisco-toolbar-collection_mode_vertical .rubisco-ui-group,
+.rubisco-toolbar-editor-collection_mode_vertical .rubisco-ui-group {
+    background-color: transparent;
+    border: 0;
+    flex-direction: column
+}
+
+.rubisco-toolbar-collection_mode_vertical .rubisco-toolbar-button,
+.rubisco-toolbar-editor-collection_mode_vertical .rubisco-toolbar-button {
+    height: auto;
+    min-height: var(--rb-button-size)
+}
+
+.rubisco-toolbar-collection_mode_vertical .rubisco-toolbar-button__button,
+.rubisco-toolbar-editor-collection_mode_vertical .rubisco-toolbar-button__button {
+    cursor: pointer;
+    height: auto;
+    min-height: var(--rb-button-size);
+    width: 100%
+}
+
+.rubisco-toolbar-collection_mode_vertical .rubisco-toolbar-button__text:not(:empty),
+.rubisco-toolbar-editor-collection_mode_vertical .rubisco-toolbar-button__text:not(:empty) {
+    justify-content: left
+}
+
+.rubisco-toolbar-collection .rubisco-toolbar-button,
+.rubisco-toolbar-collection .rubisco-toolbar-content,
+.rubisco-toolbar-collection .rubisco-toolbar-select,
+.rubisco-toolbar-editor-collection .rubisco-toolbar-button,
+.rubisco-toolbar-editor-collection .rubisco-toolbar-content,
+.rubisco-toolbar-editor-collection .rubisco-toolbar-select {
+    margin: var(--rb-margin-v) 1px;
+    padding: 0
+}
+
+.rubisco-dialog .rubisco-toolbar-collection_mode_horizontal,
+.rubisco-dialog .rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: none
+}
+
+:root {
+    --rb-button-trigger-size: 14px
+}
+
+.rubisco-toolbar-button {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: var(--rb-border-radius-default);
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    min-width: 34px;
+    overflow: hidden
+}
+
+.rubisco-toolbar-button__icon {
+    display: none
+}
+
+.rubisco-toolbar-button__icon:not(:empty) {
+    display: inline-flex
+}
+
+.rubisco-toolbar-button__text {
+    display: none
+}
+
+.rubisco-toolbar-button__text:not(:empty) {
+    display: inline-flex;
+    flex-grow: 1;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.rubisco-toolbar-button_context_menu .rubisco-toolbar-button__text {
+    justify-content: left;
+    padding-left: var(--rb-padding-default);
+    position: relative
+}
+
+.rubisco-toolbar-button_context_menu .rubisco-toolbar-button__text:before {
+    border-left: 1px solid var(--rb-color-border);
+    content: "";
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: calc(var(--rb-padding-default)*-1)
+}
+
+.rubisco-toolbar-button__icon:not(:empty)+.rubisco-toolbar-button__text:not(:empty) {
+    margin-left: var(--rb-padding-default)
+}
+
+.rubisco-toolbar-button__icon:empty+.rubisco-toolbar-button__text:not(:empty) {
+    padding: 0 var(--rb-padding-default);
+    padding: 0
+}
+
+.rubisco-toolbar-button .rubisco-icon {
+    height: 14px;
+    width: 14px
+}
+
+.rubisco-toolbar-button button {
+    appearance: none;
+    height: 34px;
+    min-width: 34px;
+    padding: 0
+}
+
+.rubisco-toolbar-button_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-button_size_tiny {
+    height: 16px;
+    min-width: 16px
+}
+
+.rubisco-toolbar-button_size_tiny .rubisco-icon {
+    height: 8px;
+    width: 8px
+}
+
+.rubisco-toolbar-button_size_tiny button {
+    appearance: none;
+    height: 16px;
+    min-width: 16px;
+    padding: 0
+}
+
+.rubisco-toolbar-button_size_tiny_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-button_size_xsmall {
+    height: 22px;
+    min-width: 22px
+}
+
+.rubisco-toolbar-button_size_xsmall .rubisco-icon {
+    height: 10px;
+    width: 10px
+}
+
+.rubisco-toolbar-button_size_xsmall button {
+    appearance: none;
+    height: 22px;
+    min-width: 22px;
+    padding: 0
+}
+
+.rubisco-toolbar-button_size_xsmall_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-button_size_small {
+    height: 28px;
+    min-width: 28px
+}
+
+.rubisco-toolbar-button_size_small .rubisco-icon {
+    height: 12px;
+    width: 12px
+}
+
+.rubisco-toolbar-button_size_small button {
+    appearance: none;
+    height: 28px;
+    min-width: 28px;
+    padding: 0
+}
+
+.rubisco-toolbar-button_size_small_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-button_size_large {
+    height: 40px;
+    min-width: 40px
+}
+
+.rubisco-toolbar-button_size_large .rubisco-icon {
+    height: 16px;
+    width: 16px
+}
+
+.rubisco-toolbar-button_size_large button {
+    appearance: none;
+    height: 40px;
+    min-width: 40px;
+    padding: 0
+}
+
+.rubisco-toolbar-button_size_large_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-button__button {
+    align-items: center;
+    appearance: none;
+    background: 0 0;
+    border: 0;
+    border-radius: var(--rb-border-radius-default);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--rb-color-text-icons);
+    cursor: pointer;
+    display: inline-flex;
+    font-style: normal;
+    justify-content: center;
+    outline: 0;
+    padding: 0;
+    padding: 0 var(--rb-padding-default);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none
+}
+
+.rubisco-toolbar-button__button:focus-visible:not([disabled]),
+.rubisco-toolbar-button__button:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-button__button:active:not([disabled]),
+.rubisco-toolbar-button__button[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-toolbar-button__button[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-toolbar-button__button[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-toolbar-button__trigger {
+    align-items: center;
+    border-radius: 0 var(--rb-border-radius-default) var(--rb-border-radius-default) 0;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: .4;
+    --rb-button-trigger-size: 14px;
+    width: calc(var(--rb-button-trigger-size, 14px) + 2px)
+}
+
+.rubisco-toolbar-button__trigger:focus-visible:not([disabled]),
+.rubisco-toolbar-button__trigger:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-button__trigger:active:not([disabled]),
+.rubisco-toolbar-button__trigger[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-toolbar-button__trigger[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-toolbar-button__trigger[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-toolbar-button__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 14px) - 4px)
+}
+
+.rubisco-toolbar-button_size_tiny .rubisco-toolbar-button__trigger {
+    --rb-button-trigger-size: 8px;
+    width: calc(var(--rb-button-trigger-size, 8px) + 2px)
+}
+
+.rubisco-toolbar-button_size_tiny .rubisco-toolbar-button__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 8px) - 4px)
+}
+
+.rubisco-toolbar-button_size_xsmall .rubisco-toolbar-button__trigger {
+    --rb-button-trigger-size: 10px;
+    width: calc(var(--rb-button-trigger-size, 10px) + 2px)
+}
+
+.rubisco-toolbar-button_size_xsmall .rubisco-toolbar-button__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 10px) - 4px)
+}
+
+.rubisco-toolbar-button_size_small .rubisco-toolbar-button__trigger {
+    --rb-button-trigger-size: 12px;
+    width: calc(var(--rb-button-trigger-size, 12px) + 2px)
+}
+
+.rubisco-toolbar-button_size_small .rubisco-toolbar-button__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 12px) - 4px)
+}
+
+.rubisco-toolbar-button_size_large .rubisco-toolbar-button__trigger {
+    --rb-button-trigger-size: 16px;
+    width: calc(var(--rb-button-trigger-size, 16px) + 2px)
+}
+
+.rubisco-toolbar-button_size_large .rubisco-toolbar-button__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 16px) - 4px)
+}
+
+.rubisco-toolbar-button_with-trigger_true .rubisco-toolbar-button__button {
+    border-radius: var(--rb-border-radius-default) 0 0 var(--rb-border-radius-default)
+}
+
+.rubisco-toolbar-button_with-trigger_true:hover:not([disabled]) {
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-toolbar-button_stroke_false svg {
+    stroke: none
+}
+
+.rubisco-toolbar-content {
+    align-items: center;
+    appearance: none;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: var(--rb-border-radius-default);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--rb-color-text-icons);
+    cursor: pointer;
+    display: inline-flex;
+    font-style: normal;
+    height: 34px;
+    justify-content: center;
+    min-width: 34px;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none
+}
+
+.rubisco-toolbar-content:focus-visible:not([disabled]),
+.rubisco-toolbar-content:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-content:active:not([disabled]),
+.rubisco-toolbar-content[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-toolbar-content[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-toolbar-content[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-toolbar-content .rubisco-icon {
+    height: 14px;
+    width: 14px
+}
+
+.rubisco-toolbar-content button {
+    appearance: none;
+    height: 34px;
+    min-width: 34px;
+    padding: 0
+}
+
+.rubisco-toolbar-content_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content_size_tiny {
+    height: 16px;
+    min-width: 16px
+}
+
+.rubisco-toolbar-content_size_tiny .rubisco-icon {
+    height: 8px;
+    width: 8px
+}
+
+.rubisco-toolbar-content_size_tiny button {
+    appearance: none;
+    height: 16px;
+    min-width: 16px;
+    padding: 0
+}
+
+.rubisco-toolbar-content_size_tiny_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content_size_xsmall {
+    height: 22px;
+    min-width: 22px
+}
+
+.rubisco-toolbar-content_size_xsmall .rubisco-icon {
+    height: 10px;
+    width: 10px
+}
+
+.rubisco-toolbar-content_size_xsmall button {
+    appearance: none;
+    height: 22px;
+    min-width: 22px;
+    padding: 0
+}
+
+.rubisco-toolbar-content_size_xsmall_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content_size_small {
+    height: 28px;
+    min-width: 28px
+}
+
+.rubisco-toolbar-content_size_small .rubisco-icon {
+    height: 12px;
+    width: 12px
+}
+
+.rubisco-toolbar-content_size_small button {
+    appearance: none;
+    height: 28px;
+    min-width: 28px;
+    padding: 0
+}
+
+.rubisco-toolbar-content_size_small_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content_size_large {
+    height: 40px;
+    min-width: 40px
+}
+
+.rubisco-toolbar-content_size_large .rubisco-icon {
+    height: 16px;
+    width: 16px
+}
+
+.rubisco-toolbar-content_size_large button {
+    appearance: none;
+    height: 40px;
+    min-width: 40px;
+    padding: 0
+}
+
+.rubisco-toolbar-content_size_large_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content__icon {
+    display: none
+}
+
+.rubisco-toolbar-content__icon:not(:empty) {
+    display: inline-flex
+}
+
+.rubisco-toolbar-content__text {
+    display: none
+}
+
+.rubisco-toolbar-content__text:not(:empty) {
+    display: inline-flex;
+    flex-grow: 1;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.rubisco-toolbar-content_context_menu .rubisco-toolbar-content__text {
+    justify-content: left;
+    padding-left: var(--rb-padding-default);
+    position: relative
+}
+
+.rubisco-toolbar-content_context_menu .rubisco-toolbar-content__text:before {
+    border-left: 1px solid var(--rb-color-border);
+    content: "";
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: calc(var(--rb-padding-default)*-1)
+}
+
+.rubisco-toolbar-content__icon:not(:empty)+.rubisco-toolbar-content__text:not(:empty) {
+    margin-left: var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content__icon:empty+.rubisco-toolbar-content__text:not(:empty) {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-content:focus:not([disabled]) {
+    outline: 1px dashed var(--rb-color-background-selection)
+}
+
+.rubisco-toolbar-content_variant_outline {
+    border: 1px solid var(--rb-color-border)
+}
+
+.rubisco-toolbar-content_variant_default {
+    background-color: #e3e3e3;
+    color: #212529
+}
+
+.rubisco-toolbar-content_variant_default svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-toolbar-content_variant_default [disabled] {
+    opacity: .7
+}
+
+.rubisco-toolbar-content_variant_default:hover:not([disabled]) {
+    background-color: #c9cdd1;
+    color: #212529
+}
+
+.rubisco-toolbar-content_variant_default:hover:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-toolbar-content_variant_default:active:not([disabled]) {
+    background-color: #dae0e5;
+    color: #212529
+}
+
+.rubisco-toolbar-content_variant_default:active:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-toolbar-content_variant_default:focus:not([disabled]) {
+    outline: 1px dashed #dae0e5
+}
+
+.rubisco-toolbar-content_variant_primary {
+    background-color: #007bff;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_primary svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_primary [disabled] {
+    opacity: .7
+}
+
+.rubisco-toolbar-content_variant_primary:hover:not([disabled]) {
+    background-color: #0069d9;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_primary:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_primary:active:not([disabled]) {
+    background-color: #0062cc;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_primary:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_primary:focus:not([disabled]) {
+    outline: 1px dashed #0062cc
+}
+
+.rubisco-toolbar-content_variant_secondary {
+    background-color: #d8d8d8;
+    border-radius: 0;
+    color: #212529
+}
+
+.rubisco-toolbar-content_variant_secondary svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-toolbar-content_variant_secondary [disabled] {
+    opacity: .7
+}
+
+.rubisco-toolbar-content_variant_secondary:hover:not([disabled]) {
+    background-color: #c9cdd1;
+    color: #212529
+}
+
+.rubisco-toolbar-content_variant_secondary:hover:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-toolbar-content_variant_secondary:active:not([disabled]) {
+    background-color: #dae0e5;
+    color: #212529
+}
+
+.rubisco-toolbar-content_variant_secondary:active:not([disabled]) svg {
+    fill: #212529;
+    stroke: #212529
+}
+
+.rubisco-toolbar-content_variant_secondary:focus:not([disabled]) {
+    outline: 1px dashed #dae0e5
+}
+
+.rubisco-toolbar-content_variant_success {
+    background-color: #28a745;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_success svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_success [disabled] {
+    opacity: .7
+}
+
+.rubisco-toolbar-content_variant_success:hover:not([disabled]) {
+    background-color: #218838;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_success:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_success:active:not([disabled]) {
+    background-color: #1e7e34;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_success:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_success:focus:not([disabled]) {
+    outline: 1px dashed #1e7e34
+}
+
+.rubisco-toolbar-content_variant_danger {
+    background-color: #dc3545;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_danger svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_danger [disabled] {
+    opacity: .7
+}
+
+.rubisco-toolbar-content_variant_danger:hover:not([disabled]) {
+    background-color: #c82333;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_danger:hover:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_danger:active:not([disabled]) {
+    background-color: #bd2130;
+    color: #fff
+}
+
+.rubisco-toolbar-content_variant_danger:active:not([disabled]) svg {
+    fill: #fff;
+    stroke: #fff
+}
+
+.rubisco-toolbar-content_variant_danger:focus:not([disabled]) {
+    outline: 1px dashed #bd2130
+}
+
+.rubisco-toolbar-content:hover:not([disabled]) {
+    background-color: transparent;
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-select {
+    --rb-color-button-background-hover-opacity40: hsla(0, 0%, 86%, .2);
+    --rb-color-button-background-hover-opacity60: hsla(0, 0%, 86%, .1);
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: var(--rb-border-radius-default);
+    cursor: pointer;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    justify-content: space-between;
+    min-width: 34px;
+    min-width: 100px;
+    overflow: hidden
+}
+
+.rubisco-toolbar-select__icon {
+    display: none
+}
+
+.rubisco-toolbar-select__icon:not(:empty) {
+    display: inline-flex
+}
+
+.rubisco-toolbar-select__text {
+    display: none
+}
+
+.rubisco-toolbar-select__text:not(:empty) {
+    display: inline-flex;
+    flex-grow: 1;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.rubisco-toolbar-select_context_menu .rubisco-toolbar-select__text {
+    justify-content: left;
+    padding-left: var(--rb-padding-default);
+    position: relative
+}
+
+.rubisco-toolbar-select_context_menu .rubisco-toolbar-select__text:before {
+    border-left: 1px solid var(--rb-color-border);
+    content: "";
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: calc(var(--rb-padding-default)*-1)
+}
+
+.rubisco-toolbar-select__icon:not(:empty)+.rubisco-toolbar-select__text:not(:empty) {
+    margin-left: var(--rb-padding-default)
+}
+
+.rubisco-toolbar-select__icon:empty+.rubisco-toolbar-select__text:not(:empty) {
+    padding: 0 var(--rb-padding-default);
+    padding: 0
+}
+
+.rubisco-toolbar-select .rubisco-icon {
+    height: 14px;
+    width: 14px
+}
+
+.rubisco-toolbar-select button {
+    appearance: none;
+    height: 34px;
+    min-width: 34px;
+    padding: 0
+}
+
+.rubisco-toolbar-select_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-select_size_tiny {
+    height: 16px;
+    min-width: 16px
+}
+
+.rubisco-toolbar-select_size_tiny .rubisco-icon {
+    height: 8px;
+    width: 8px
+}
+
+.rubisco-toolbar-select_size_tiny button {
+    appearance: none;
+    height: 16px;
+    min-width: 16px;
+    padding: 0
+}
+
+.rubisco-toolbar-select_size_tiny_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-select_size_xsmall {
+    height: 22px;
+    min-width: 22px
+}
+
+.rubisco-toolbar-select_size_xsmall .rubisco-icon {
+    height: 10px;
+    width: 10px
+}
+
+.rubisco-toolbar-select_size_xsmall button {
+    appearance: none;
+    height: 22px;
+    min-width: 22px;
+    padding: 0
+}
+
+.rubisco-toolbar-select_size_xsmall_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-select_size_small {
+    height: 28px;
+    min-width: 28px
+}
+
+.rubisco-toolbar-select_size_small .rubisco-icon {
+    height: 12px;
+    width: 12px
+}
+
+.rubisco-toolbar-select_size_small button {
+    appearance: none;
+    height: 28px;
+    min-width: 28px;
+    padding: 0
+}
+
+.rubisco-toolbar-select_size_small_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-select_size_large {
+    height: 40px;
+    min-width: 40px
+}
+
+.rubisco-toolbar-select_size_large .rubisco-icon {
+    height: 16px;
+    width: 16px
+}
+
+.rubisco-toolbar-select_size_large button {
+    appearance: none;
+    height: 40px;
+    min-width: 40px;
+    padding: 0
+}
+
+.rubisco-toolbar-select_size_large_text-icons_true button {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-toolbar-select__button {
+    align-items: center;
+    appearance: none;
+    background: 0 0;
+    border: 0;
+    border-radius: var(--rb-border-radius-default);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--rb-color-text-icons);
+    cursor: pointer;
+    display: inline-flex;
+    font-style: normal;
+    justify-content: center;
+    outline: 0;
+    padding: 0;
+    padding: 0 var(--rb-padding-default);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none
+}
+
+.rubisco-toolbar-select__button:focus-visible:not([disabled]),
+.rubisco-toolbar-select__button:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-select__button:active:not([disabled]),
+.rubisco-toolbar-select__button[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-toolbar-select__button[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-toolbar-select__button[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-toolbar-select__trigger {
+    align-items: center;
+    border-radius: 0 var(--rb-border-radius-default) var(--rb-border-radius-default) 0;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: .4;
+    --rb-button-trigger-size: 14px;
+    width: calc(var(--rb-button-trigger-size, 14px) + 2px)
+}
+
+.rubisco-toolbar-select__trigger:focus-visible:not([disabled]),
+.rubisco-toolbar-select__trigger:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-select__trigger:active:not([disabled]),
+.rubisco-toolbar-select__trigger[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-toolbar-select__trigger[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-toolbar-select__trigger[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-toolbar-select__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 14px) - 4px)
+}
+
+.rubisco-toolbar-select_size_tiny .rubisco-toolbar-select__trigger {
+    --rb-button-trigger-size: 8px;
+    width: calc(var(--rb-button-trigger-size, 8px) + 2px)
+}
+
+.rubisco-toolbar-select_size_tiny .rubisco-toolbar-select__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 8px) - 4px)
+}
+
+.rubisco-toolbar-select_size_xsmall .rubisco-toolbar-select__trigger {
+    --rb-button-trigger-size: 10px;
+    width: calc(var(--rb-button-trigger-size, 10px) + 2px)
+}
+
+.rubisco-toolbar-select_size_xsmall .rubisco-toolbar-select__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 10px) - 4px)
+}
+
+.rubisco-toolbar-select_size_small .rubisco-toolbar-select__trigger {
+    --rb-button-trigger-size: 12px;
+    width: calc(var(--rb-button-trigger-size, 12px) + 2px)
+}
+
+.rubisco-toolbar-select_size_small .rubisco-toolbar-select__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 12px) - 4px)
+}
+
+.rubisco-toolbar-select_size_large .rubisco-toolbar-select__trigger {
+    --rb-button-trigger-size: 16px;
+    width: calc(var(--rb-button-trigger-size, 16px) + 2px)
+}
+
+.rubisco-toolbar-select_size_large .rubisco-toolbar-select__trigger svg {
+    width: calc(var(--rb-button-trigger-size, 16px) - 4px)
+}
+
+.rubisco-toolbar-select_with-trigger_true .rubisco-toolbar-button__button {
+    border-radius: var(--rb-border-radius-default) 0 0 var(--rb-border-radius-default)
+}
+
+.rubisco-toolbar-select_with-trigger_true:hover:not([disabled]) {
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-toolbar-select_stroke_false svg {
+    stroke: none
+}
+
+.rubisco-toolbar-select:focus-visible:not([disabled]),
+.rubisco-toolbar-select:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover);
+    opacity: 1;
+    outline: 0
+}
+
+.rubisco-toolbar-select:active:not([disabled]),
+.rubisco-toolbar-select[aria-pressed=true]:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity40);
+    outline: 0
+}
+
+.rubisco-toolbar-select[aria-pressed=true]:hover:not([disabled]) {
+    background-color: var(--rb-color-button-background-hover-opacity60)
+}
+
+.rubisco-toolbar-select[disabled] {
+    opacity: .3;
+    pointer-events: none
+}
+
+.rubisco-toolbar-select__text:not(:empty) {
+    justify-content: left
+}
+
+.rubisco-toolbar-select__button {
+    flex: 1
+}
+
+.rubisco-toolbar__box:not(:empty) {
+    --rb-color-background-default: var(--rb-color-panel);
+    background-color: var(--rb-color-background-default);
+    border-bottom: 1px solid var(--rb-color-border);
+    border-radius: var(--rb-border-radius-default) var(--rb-border-radius-default) 0 0;
+    overflow: hidden
+}
+
+.rubisco-toolbar__box:not(:empty) .rubisco-toolbar-editor-collection:after {
+    background-color: var(--rb-color-panel)
+}
+
+.rubisco-dialog {
+    border: 0;
+    box-sizing: border-box;
+    display: none;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    height: 0;
+    position: absolute;
+    width: 0;
+    will-change: left, top, width, height
+}
+
+.rubisco-dialog_moved_true {
+    user-select: none
+}
+
+.rubisco-dialog * {
+    box-sizing: border-box
+}
+
+.rubisco-dialog .rubisco_elfinder,
+.rubisco-dialog .rubisco_elfinder * {
+    box-sizing: initial
+}
+
+.rubisco-dialog__overlay {
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    z-index: var(--rb-z-index-dialog-overlay)
+}
+
+.rubisco-dialog_static_true .rubisco-dialog__overlay {
+    display: none
+}
+
+.rubisco-dialog_active_true,
+.rubisco-dialog_modal_true .rubisco-dialog__overlay {
+    display: block
+}
+
+.rubisco-dialog__panel {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    left: 0;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    min-width: 200px;
+    position: fixed;
+    top: 0;
+    z-index: var(--rb-z-index-dialog);
+    --rb-box-shadow-blur: calc(var(--rb-padding-default)*2);
+    --rb-box-shadow-1: 0 var(--rb-padding-default) var(--rb-box-shadow-blur) rgba(0, 0, 0, .19);
+    box-shadow: var(--rb-box-shadow-1), 0 6px 6px rgba(0, 0, 0, .23);
+    text-align: left;
+    white-space: normal
+}
+
+@media (max-width:480px) {
+    .rubisco-dialog:not(.rubisco-dialog_adaptive_false) .rubisco-dialog__panel {
+        height: 100% !important;
+        left: 0 !important;
+        max-width: 100%;
+        top: 0 !important;
+        width: 100% !important
+    }
+}
+
+.rubisco-dialog_static_true {
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    position: relative;
+    width: auto;
+    z-index: inherit
+}
+
+.rubisco-dialog_static_true .rubisco-dialog__panel {
+    border: 1px solid var(--rb-color-border);
+    box-shadow: none;
+    left: auto !important;
+    position: relative;
+    top: auto !important;
+    width: 100% !important;
+    z-index: inherit
+}
+
+.rubisco-dialog_theme_dark,
+.rubisco-dialog_theme_dark .rubisco-dialog__panel {
+    background-color: var(--rb-dark-background-darknes);
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog__header {
+    border-bottom: 1px solid var(--rb-color-border);
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    text-align: left
+}
+
+.rubisco-dialog__header-title,
+.rubisco-dialog__header-toolbar {
+    align-items: center;
+    display: flex;
+    flex-shrink: 3;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 var(--rb-padding-default);
+    vertical-align: top
+}
+
+@media (max-width:480px) {
+    .rubisco-dialog__header-toolbar {
+        padding-left: 0
+    }
+}
+
+.rubisco-dialog__header-button {
+    color: #222;
+    flex-basis: 48px;
+    font-size: 28px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s ease 0s
+}
+
+.rubisco-dialog__header-button:hover {
+    background-color: var(--rb-color-background-button-hover)
+}
+
+.rubisco-dialog__header .rubisco_toolbar {
+    background: transparent;
+    border: 0;
+    box-shadow: none
+}
+
+.rubisco-dialog__header .rubisco_toolbar>li.rubisco-toolbar-button .rubisco-input {
+    padding-left: var(--rb-padding-default);
+    width: auto
+}
+
+@media (max-width:480px) {
+    .rubisco-dialog:not(.rubisco-dialog_adaptive_false) .rubisco-dialog__header {
+        flex-direction: column
+    }
+}
+
+.rubisco-dialog_slim_true .rubisco-dialog__header {
+    min-height: 10px
+}
+
+.rubisco-dialog_slim_true .rubisco-dialog__header-title,
+.rubisco-dialog_slim_true .rubisco-dialog__header-toolbar {
+    padding: 0 calc(var(--rb-padding-default)/4)
+}
+
+.rubisco-dialog_theme_dark .rubisco-dialog__header {
+    border-color: var(--rb-color-dark)
+}
+
+.rubisco-dialog_fullsize_true .rubisco-dialog__header {
+    cursor: default
+}
+
+.rubisco-dialog__content {
+    flex: 1;
+    min-height: 100px;
+    overflow: auto
+}
+
+.rubisco-dialog__content .rubisco-form__group {
+    margin-bottom: calc(var(--rb-padding-default)*1.5);
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-dialog__content .rubisco-form__group:first-child {
+    margin-top: var(--rb-padding-default)
+}
+
+.rubisco-dialog__content .rubisco-form__group .rubisco-input_group {
+    border-collapse: separate;
+    display: table;
+    width: 100%
+}
+
+.rubisco-dialog__content .rubisco-form__group .rubisco-input_group>* {
+    display: table-cell;
+    height: 34px;
+    vertical-align: middle
+}
+
+.rubisco-dialog__content .rubisco-form__group .rubisco-input_group>input {
+    margin: 0 !important
+}
+
+.rubisco-dialog__content .rubisco-form__group .rubisco-input_group>input:not([class*=col-]) {
+    width: 100%
+}
+
+.rubisco-dialog__content .rubisco-form__group .rubisco-input_group-buttons {
+    font-size: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%
+}
+
+.rubisco-dialog__content .rubisco-form__group .rubisco-input_group-buttons>.rubisco-button {
+    border: 1px solid var(--rb-color-border);
+    border-radius: 0;
+    height: 34px;
+    line-height: 34px;
+    margin-left: -1px
+}
+
+.rubisco-dialog__footer {
+    display: none;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: var(--rb-padding-default)
+}
+
+.rubisco-dialog__footer button {
+    margin-right: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-dialog__footer button:last-child {
+    margin-right: 0
+}
+
+.rubisco-dialog__column {
+    display: flex
+}
+
+.rubisco-dialog__resizer {
+    display: none;
+    position: relative
+}
+
+.rubisco-dialog__resizer svg {
+    bottom: 0;
+    cursor: nwse-resize;
+    height: 12px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 12px;
+    fill: var(--rb-color-gray-dark);
+    user-select: none
+}
+
+.rubisco-dialog_resizable_true .rubisco-dialog__resizer {
+    display: block
+}
+
+@media (max-width:480px) {
+    .rubisco-dialog__resizer {
+        display: none
+    }
+}
+
+.rubisco-dialog_prompt {
+    max-width: 300px;
+    min-width: 200px;
+    padding: var(--rb-padding-default);
+    word-break: break-all
+}
+
+.rubisco-dialog_prompt label {
+    display: block;
+    margin-bottom: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-dialog_alert {
+    max-width: 300px;
+    min-width: 200px;
+    padding: var(--rb-padding-default);
+    word-break: break-all
+}
+
+.rubisco-dialog_footer_true .rubisco-dialog__footer {
+    display: flex
+}
+
+.rubisco_fullsize .rubisco-dialog__panel {
+    height: 100% !important;
+    inset: 0 !important;
+    width: 100% !important
+}
+
+.rubisco_fullsize .rubisco-dialog__panel .rubisco-dialog__resizer {
+    display: none
+}
+
+.rubisco-dialog .rubisco-ui-messages {
+    z-index: var(--rb-z-index-dialog)
+}
+
+.rubisco-context-menu {
+    background: 0 0;
+    border: 0;
+    box-shadow: var(--rb-popup-box-shadow);
+    display: inline-block;
+    float: none;
+    height: auto;
+    margin: 0;
+    max-width: none;
+    outline: 0;
+    padding: 0;
+    position: static;
+    position: fixed;
+    transform: translateZ(0);
+    width: auto;
+    z-index: var(--rb-z-index-popup);
+    z-index: var(--rb-z-index-context-menu)
+}
+
+.rubisco-context-menu,
+.rubisco-context-menu__content {
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default)
+}
+
+.rubisco-context-menu__content {
+    background: var(--rb-color-background-default);
+    max-height: var(--rb-popup-max-height, 400px);
+    overflow: auto;
+    padding: var(--rb-padding-default);
+    /* overflow-scrolling: touch */
+}
+
+.rubisco-context-menu_padding_false .rubisco-context-menu__content {
+    padding: 0
+}
+
+.rubisco-context-menu_max-height_false .rubisco-context-menu__content {
+    max-height: fit-content
+}
+
+.rubisco-context-menu .rubisco-ui-button {
+    display: flex
+}
+
+.rubisco-context-menu button {
+    width: 100%
+}
+
+.rubisco-context-menu_theme_dark {
+    background-color: var(--rb-dark-background-color)
+}
+
+:root {
+    --rb-image-editor-resizer-border-color: #05ff00;
+    --rb-image-editor-resizer-target-size: padding-default;
+    --rb-image-editor-resizer-target-border-color: #383838;
+    --rb-image-editor-resizer-target-bg-color: #8c7878
+}
+
+.rubisco-image-editor {
+    height: 100%;
+    overflow: hidden;
+    padding: var(--rb-padding-default);
+    width: 100%
+}
+
+@media (max-width:768px) {
+    .rubisco-image-editor {
+        height: auto
+    }
+}
+
+.rubisco-image-editor>div,
+.rubisco-image-editor>div>div {
+    height: 100%
+}
+
+@media (max-width:768px) {
+
+    .rubisco-image-editor>div,
+    .rubisco-image-editor>div>div {
+        height: auto;
+        min-height: 200px
+    }
+}
+
+.rubisco-image-editor * {
+    box-sizing: border-box
+}
+
+.rubisco-image-editor .rubisco-image-editor__slider-title {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid hsla(0, 0%, 62%, .31);
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1em;
+    padding: .8em 1em;
+    text-overflow: ellipsis;
+    text-shadow: #f3f3f3 0 1px 0;
+    user-select: none;
+    white-space: nowrap
+}
+
+.rubisco-image-editor .rubisco-image-editor__slider-title svg {
+    display: inline-block;
+    margin-right: var(--rb-padding-default);
+    vertical-align: middle;
+    width: 16px
+}
+
+.rubisco-image-editor .rubisco-image-editor__slider-content {
+    display: none
+}
+
+.rubisco-image-editor .rubisco-image-editor__slider.rubisco-image-editor_active .rubisco-image-editor__slider-title {
+    background-color: #5d5d5d;
+    color: #fff;
+    text-shadow: #000 0 1px 0
+}
+
+.rubisco-image-editor .rubisco-image-editor__slider.rubisco-image-editor_active .rubisco-image-editor__slider-title svg {
+    fill: #fff
+}
+
+.rubisco-image-editor .rubisco-image-editor__slider.rubisco-image-editor_active .rubisco-image-editor__slider-content {
+    display: block
+}
+
+.rubisco-image-editor__area {
+    background-color: #eee;
+    background-image: linear-gradient(45deg, var(--rb-color-border) 25%, transparent 25%, transparent 75%, var(--rb-color-border) 75%, var(--rb-color-border)), linear-gradient(45deg, var(--rb-color-border) 25%, transparent 25%, transparent 75%, var(--rb-color-border) 75%, var(--rb-color-border));
+    background-position: 0 0, 15px 15px;
+    background-size: 30px 30px;
+    display: none;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    width: 100%
+}
+
+.rubisco-image-editor__area.rubisco-image-editor_active {
+    display: block
+}
+
+.rubisco-image-editor__area .rubisco-image-editor__box {
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+    z-index: 1
+}
+
+.rubisco-image-editor__area .rubisco-image-editor__box img {
+    max-height: 100%;
+    max-width: 100%;
+    user-select: none
+}
+
+.rubisco-image-editor__area .rubisco-image-editor__croper,
+.rubisco-image-editor__area .rubisco-image-editor__resizer {
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    box-shadow: 0 0 11px #000;
+    height: 100px;
+    left: 20px;
+    pointer-events: none;
+    position: absolute;
+    top: var(--rb-padding-default);
+    width: 100px;
+    z-index: 2
+}
+
+.rubisco-image-editor__area .rubisco-image-editor__croper i.rubisco_bottomright,
+.rubisco-image-editor__area .rubisco-image-editor__resizer i.rubisco_bottomright {
+    background-color: var(--rb-image-editor-resizer-target-bg-color);
+    border: 1px solid var(--rb-image-editor-resizer-target-border-color);
+    border-radius: 50%;
+    bottom: calc(var(--rb-padding-default)*-1);
+    box-shadow: 0 0 11px #000;
+    cursor: se-resize;
+    display: inline-block;
+    height: 20px;
+    pointer-events: all;
+    position: absolute;
+    right: calc(var(--rb-padding-default)*-1);
+    width: 20px;
+    z-index: 4
+}
+
+.rubisco-image-editor__area .rubisco-image-editor__croper i.rubisco_bottomright:active,
+.rubisco-image-editor__area .rubisco-image-editor__resizer i.rubisco_bottomright:active {
+    border: 1px solid #ff0
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop {
+    background: #eee;
+    height: 100%;
+    line-height: 100%;
+    position: relative;
+    text-align: center
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop .rubisco-image-editor__box {
+    height: 100%;
+    line-height: 100%;
+    overflow: visible;
+    pointer-events: all;
+    text-align: left
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop .rubisco-image-editor__box img {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop .rubisco-image-editor__box:after {
+    background: hsla(0, 0%, 100%, .3);
+    content: "";
+    inset: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 1
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop .rubisco-image-editor__box .rubisco-image-editor__croper {
+    cursor: move;
+    pointer-events: all
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop .rubisco-image-editor__box .rubisco-image-editor__croper i.rubisco-image-editor__sizes {
+    background: rgba(0, 0, 0, .2);
+    border-radius: .4em;
+    bottom: -30px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    left: 100%;
+    padding: 9px 6px;
+    position: absolute;
+    text-align: center;
+    text-shadow: none;
+    white-space: pre
+}
+
+.rubisco-image-editor__area.rubisco-image-editor__area_crop.rubisco-image-editor_active {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.rubisco-file-browser-files {
+    display: none;
+    height: 100%;
+    overflow-anchor: auto;
+    position: relative;
+    vertical-align: top
+}
+
+.rubisco-file-browser-files .rubisco-button {
+    border-radius: 0
+}
+
+.rubisco-file-browser-files_loading_true:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.rubisco-file-browser-files_loading_true:after {
+    animation: b 2s ease-out 0s infinite;
+    background: url(data:image/png;base64,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) no-repeat 50%;
+    background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    height: var(--rb-icon-loader-size);
+    left: 50%;
+    margin-left: calc(var(--rb-icon-loader-size)/-2);
+    margin-top: calc(var(--rb-icon-loader-size)/-2);
+    opacity: .7;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    width: var(--rb-icon-loader-size);
+    will-change: transform
+}
+
+.rubisco-file-browser-files::-webkit-scrollbar {
+    width: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-file-browser-files::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3)
+}
+
+.rubisco-file-browser-files::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    outline: 1px solid #708090
+}
+
+.rubisco-file-browser-files_active_true {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding: calc(var(--rb-padding-default)/2);
+    width: 100%
+}
+
+.rubisco-file-browser-files__item {
+    align-items: center;
+    border: 1px solid var(--rb-color-border);
+    display: flex;
+    font-size: 0;
+    height: var(--rb-col-size);
+    justify-content: center;
+    margin: calc(var(--rb-padding-default)/2);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: border .1s linear, bottom .1s linear;
+    width: var(--rb-col-size)
+}
+
+@media (max-width:480px) {
+    .rubisco-file-browser-files__item {
+        width: calc(50% - var(--rb-padding-default))
+    }
+}
+
+.rubisco-file-browser-files__item img {
+    max-width: 100%
+}
+
+.rubisco-file-browser-files__item:hover {
+    border-color: #433b5c
+}
+
+.rubisco-file-browser-files__item_active_true {
+    background-color: var(--rb-color-border-active);
+    border-color: var(--rb-color-border-selected)
+}
+
+.rubisco-file-browser-files__item_active_true .rubisco-file-browser-files__item-info {
+    background-color: var(--rb-color-border-active);
+    color: #fff;
+    text-shadow: none
+}
+
+.rubisco-file-browser-files__item-info {
+    background-color: var(--rb-info-background);
+    bottom: 0;
+    color: #333;
+    font-size: 14px;
+    left: 0;
+    line-height: 16px;
+    opacity: .85;
+    overflow: visible;
+    padding: .3em .6em;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    text-shadow: #eee 0 1px 0;
+    transition: opacity .4s ease;
+    white-space: normal
+}
+
+.rubisco-file-browser-files__item-info>span {
+    display: block;
+    font-size: .75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.rubisco-file-browser-files__item-info>span.rubisco-file-browser-files__item-info-filename {
+    font-size: .9em;
+    font-weight: 700
+}
+
+.rubisco-file-browser-files__item:hover:not(.rubisco-file-browser-files__item_active_true) .rubisco-file-browser-files__item-info {
+    bottom: -100px
+}
+
+.rubisco-file-browser-files_view_list {
+    scroll-behavior: smooth
+}
+
+.rubisco-file-browser-files_view_list a {
+    border-width: 0 0 1px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%
+}
+
+.rubisco-file-browser-files_view_list a img {
+    display: inline-block;
+    margin-left: 4px;
+    max-width: 16px;
+    min-width: 16px;
+    vertical-align: middle
+}
+
+.rubisco-file-browser-files_view_list a .rubisco-file-browser-files__item-info {
+    background-color: transparent;
+    display: inline-block;
+    font-size: 0;
+    height: 100%;
+    line-height: inherit;
+    margin-left: 4px;
+    padding: 0;
+    position: static;
+    vertical-align: middle;
+    width: calc(100% - 20px)
+}
+
+.rubisco-file-browser-files_view_list a .rubisco-file-browser-files__item-info>span {
+    display: inline-block;
+    font-size: 12px;
+    height: 100%
+}
+
+.rubisco-file-browser-files_view_list a .rubisco-file-browser-files__item-info-filename {
+    width: 50%
+}
+
+.rubisco-file-browser-files_view_list a .rubisco-file-browser-files__item-info-filechanged,
+.rubisco-file-browser-files_view_list a .rubisco-file-browser-files__item-info-filesize {
+    width: 25%
+}
+
+.rubisco-file-browser-files_view_list a:hover {
+    background-color: #433b5c
+}
+
+.rubisco-file-browser-files_view_list a:hover .rubisco-file-browser-files__item-info {
+    color: #fff;
+    text-shadow: none
+}
+
+.rubisco-file-browser-files_view_list a:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+:root {
+    --rb-color-folder-title: #b1b1b1
+}
+
+.rubisco-file-browser-tree {
+    --rb-color-background-filebrowser-folders: #3f3f3f;
+    display: none;
+    height: 100%;
+    overflow-anchor: auto;
+    position: relative;
+    vertical-align: top
+}
+
+.rubisco-file-browser-tree .rubisco-button {
+    border-radius: 0
+}
+
+.rubisco-file-browser-tree_loading_true:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.rubisco-file-browser-tree_loading_true:after {
+    animation: b 2s ease-out 0s infinite;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAABRsSURBVHja7F1/aJfVGn/33RgUg8FiNfK2WCykyS7GLoYyUbwYipZMumgLo+iPS9HlXhSHkRXdislESxMz0mapuaFo2myjkfnNlTQ2FrbTu8NvLVcrdbpcfGvxrfs823m/vXt3fjznvOedzr0PPJzzPe+7d+97Ps95nuc851fGAw884CD98ccfI1Jqmc3UpEyQz4FkMqRTgYshn8fymZ57SyGbzf5mENIOz9+ngE9Atg/SLkhPQHoWeEDn3SmpSZlJnvf7ypUrTpb7IyMjY+gGN6WWmaY84l2T3c+u58D1csjOgvwsyBdBvsDRo2zgMl/ZNM59vcAJ4Dj8nzikLa5QmBLv28YCfPd3li7gPHBMwKdcEwhCJgN6FoLOWJtUgiWovALG04FXsbI44xbgw8AplbaU/Q+ZQNgGf0gA/JWhC1aQyle1eN91rPRKKKuEsjzZvSph0m2RiutpIYRrfZC8B+l7kB6jgq0CnQIy9X39v2NYQW5FeUFQlQVN/aALyiYBPw/5M5B+Dvw02vMggqcDukEl57F3xHf9H747+4bA5oD6dzqaYEgAqIDbBl9RhvZ4H/B5yL+IDp3oXhmwNkm3lTLn80VIz+O3QFqm2/rHwgeI6QDOa006LZ3Q4lHNNwK3AVeYAD4WgmHQUivYNzWyb7xufICYaavXVbuKZ6MXfwRVJ+TnXW+Am/oMnNaO3/Y5pPitcyh/a6LqtXwAt+J01LVFEzAJ0jpIj7JunJYd1wHchnBQHUSC3Uan8WPgPVgHlBiBCcAkH4Da2i2DjwGZlcy5W0K17zLwVb9NgaY4iJpawJs+BCnWwUo3SKXT4oOAP8IHCFsIfMCguj8JaQ2kOaaA227d10ALuIR1gHVxErjctPtHBd8btSR3A4MIgSePAZxqVPeQlthq7ZRuZVABCVkLuGkJpGgKsY4ybfUEVO84qhsoAzSgrUfHZ1UQVe99B6o2oMYdwg7latAq5iROGoueQExW6UE0gCe/ANIh9SZ6jqkWsN3STZ0rHWEgpkNmEvILxqQbSAXaAPxqSBswQkbpbpo6fGPR0m3GBYjBIIwqNjCTEAr4wkBQUA0AjKNrdZCu0okAqgQhTKCDhFxV91BNgsDuYx3WQZptG3xtDUCJEDKvthGuLVEJlq4gUMyAylfQERadPrhKOHTmB3Ces4RFEXNsgW8UClbZcEhxqPQIpHOord2k1ZsAH4YvYNJXN3EgWX4Ocw4LbIEvDQSJfADJtULWxSuj+BBUP4DaC6D0DkyFg6JKTVo/5brvXqzbo2zSi3af3/9bGgrW1Ar5kH4MXEzVHEHVf5CuYZC4fti9AoI/gXX8Eda5Tp9f9I4xWWsnOoc5zNMv1okjmKp/vzay3epNJ4+YmALdoWBPWTHksc5zTU1AekqYt7LcWTruTYTZQdmQHoB0GuXv/de8L8e7xrsuA8kPNtx3AZIOxp3APc7wvD6kvi+//DLh3nvPPfegWs1jf4dBGGxpOA+hlOXzgw7VBjEBnDKcs4jzDOZDOmjqD2SJQFGBx9JaSOcQ7xVO2RIJhf86AfB+Z3huHs7Ra2pra+ugtubTp0+jMLgC0e6/ftddd6EgzMO5iGwSaq4NITCdLczy6GzXAj8KnDIxAaM0AKeViwCtgbRSNgGUJwQyDaACngO4w6S/CXgb8KEvvvgiFUaw59y5c64mWXvnnXdmsirbYxjpdP6cXh6oS0g1Bb48zpFEzValA3663pcuXaoleSzFltBIlWhRmWx+v6yMcQJ4PU7A/Oyzz/qca0R33HEHrjlAEJa73rns24JqA0keTUGTjglIJpNOxsMPP6wLfiGkx53hxRbcewwXc1BAx0u4gGMNcP2nn36acq4juv322ytZ5K7UlhBo5LER3AvcTXU60wKgYbsyWTCi3LTV6wLvKesGrvrkk0/qneucCgoKHoJkHbxvYRAhMMij/zMbVzZRTMAvv/wycj4AoRv4Mk7oII4HkLp+vC6drwxt/FrgKeMBfKTe3t69UMFTgPG9B3WcQdMeBsvjhJJqnYGqjMrKSmr/tZxNWAi87o9i+1l5O6SPNjc3dzrjlPLz83HyC/aWpqk0gWZUUHZtJvxuUZmAtAYgtHycr/a6qIXz2DQI5OH1UDRjPIOPdOHChU6o+JmQXW+68JYS4vUB/bozvN5RGAImdwPZA3AC51RKrMAfyBHFGCRBnz4oe7ypqemgc4PQxYsX0YytuOWWW3BRaa3DWd0U1A/w/Z4KvBx4jcoExAitE6dzPStr3RR/QKQ5fOUJ4PsaGxtvGPC9dOnSJfyu+7ALa9MJFPx+lkU05YNBBDVdg0uwKc4eAWCZ83cC8jM+/PDDLucGpr6+Pvy+GWz/ASs9AMFvd7ax1ATEFOBjmLdSBraN3gBwHHhmQ0NDrzMB6PLly73MUYubOs3EiB/GJebyTEB6QogCnGrV6KAFR7AVeP4HH3ww4EwgunLlCn7vfACi1UQDqMb5PWUvm5qAB3HESXNomKz2GaOHv/DAgQNJZwJSf38/fvdC3J5G1iPQnf3jK5sGvx80MQHP69hxHWZ/2wN8//vvv3/BmcD0008/XWCaoEcUJ6C0eoUWeFbXBOBCzTKKJ2/YExgEXrRv374eJyLn6tWrWA+LAJRBy+o/rQUQUx0TsFwzRKzLK/bu3dseQf8nDQwMYH2sCOL0ibx9Vr6cagIKmf0nxe8pguC7vn/Pnj2bIshH088//4z1st+m+veUI6ZFFBOwLGj/XqIh0O4/HkEtJgDmcZ4/EED9e69VKk0ACoDN1u/jqrq6uv4IZjElk0msnypbwPs0wTKVCUBnYbLuMC5REA7v3r37vQhikhBgPTWrTAEFeB9NZt3C0SbAr/6DdPM4jF7/PyNotUzBU26vgAo8x+7zri3jmgAgnOrbKYrVB9QEb+zcubMrgpVOv/76K9bXGzrACwTJfw1D+9k8EzAXOE8GviEPAK+JIDXSAlhvA7yWTWztvMfiXM65PBNQrgLfUBi2v/vuu70RnPo0ODjYC0BtN3D2VNfLR5gAz04eRn17yb0p4A0RlIEI6y+la/MV1xf4fYACSEtDiP031dbWRrY/AP32229dAGCTrs1XrHHEaesFXh+gXCfooyEM2yIIrdC2ADZ/1D1eM+CagHLJ5ExTxrl9hyLsrDiDWI99EjApgPvLRwhAmQh4HV/Axwe3bt06GMEXnFKpFK4tOBgQcH95WdoEAE01nc8Xi8VEArA3gs4q7VWpfsHaCpEg4GrnoeXhOEKUw3u4yZYqbGo4Lk2KR5hZpcOsXjO9GIm0AYFycTErmoDJVLWu0Tto3bJly0CEmT36/fffkzh/UKfVE3yLkix3Xx+v5FjYaaslgiwUZxDrdbrm38guF6EAFFKAF5kEwcFPrRFcoVCrIdAiKsSlYUWqFi/zBwTXOiKsQqGOIKe1cQRmSAPkmYIv0ADY9Yuif+GYgC5Wv9kB1L6X8lAA8k3BFwhB94YNG1IRXPYJutwpINwBpNjSI/O5AhDQGUxEUIVKCRMBEGiFIQG4yX+Daf+fPacvwihUM2Czfm/KcgMLtjZZhudEY//hks2VVJlZ7tJvi5SMMApVA9gMsOVkXYvDFiO6fggFACUqJ6qKcaMBbD5uAH2AlE0fIKJxRSnUAGizcykePtWzjOo1VA2gpa0V2CVRALBbURDwQV4qiGAKVQDyLZ571JfFum0lFqTJvScvgilUytPxAxSY9boawMbD3OtFEUahaoAinQap0gA4JSzhPswSFz733HOZEVT2KZlMYr0WesGV7KpOoQRqgG6DVi4rx5EqjFWfjSCz3vqLHd9IoGyYnoBjNwpAwhBoWXlpJAChCECpv66p5ycJBCSBcwI7daZ7E83FtAiuUGgaT/WLACaYhk4MBCVk0UDKWb2c3+URVqFogOm8OqccqMW5d+Dmm29OuGsDOyw7gmUvvfRSFBCySFevXsX6LBO1cIoG8NEQ5u7KoFbLi0Kz3fODI7JGeHbwTSJADcxCq1cAWnR39yYIQUWEmVX1X2G6SYTgnhavABwL0uoF91dUV1dnR9AFp/7+fjysq0IGvIEGODYkAOwa7t/XYXl3kDzgBRF8Vgg3eczT2SqGYP97vBoA83ELrd6/WPSJCDsr6v8Jw91BRdfS6za9ewQ1qVo9RQv47plXU1NTHEFoTpcvX8aTwueJgKdoAI4wpE8Y9e4SdtgdGLK4S1gm8L8jGAO1fqy/TNmiUE1hQIwPj9AADOQk7ugRdJ9ADj+2bt26aI6AAV26dAnr7THqnsFEYTgEnBRtFl0fwk6hOcCrIjiNaBXOAKIcuq3hG4w4fTXma+lNOEHEZFs4hcA8+eqrr0a+gAZdvHgRbf+TsrMDDMxBr2v/eT7A0L5+8HN7AKdPFhncHMGqZftfB84Wga0yBwKtsN1hk4B5PsCIrd0C2HwRz924cWNlBK2afvzxx0rX89c5Qo4gCNv85bwDI7r8XUKqynfL/KmHazZt2pQbQSymH374AffuqeEB7gWXCrzHFCCmXf5niE4NWxPkJFAJ41GmtRHMUtWP9TNrbYScgQZYo3NoFEYF21WmgAq8776KzZs3Px1BPZq+//57rJcKXhg3oClo90b/qCeHvqLjA2j6B+u2bNlSFkH+J3333XdlAMo6ntq3cJroK6K4gOzgyP2oBaj2nqIdPGXYKzjw5ptvToqgd5yenh5U+Qcgmy07UdxQA7QD7xfFClSnh68Oelag6H5n+Fj6j9566638iQz++fPn8wGMRq/dV4EviwVwrq0W9QpUJsAdINof5LRQxfNLgBu2bt06IaePffvttzrbp8EZ3r6dDL7sQEkfyAdVW82rjo9H/hdkB2y2ft89eEB149tvvz2hlqh/8803OazlTzMFX6ENcKLvU7LgEMUEuIc9vqLb+inBJE8ezyo+un379gkxaPT111/rbx4FEGbJwOd1A2VdQ9896Pj1qIrbMSJI6yHpNGnpGlHFqVgp77zzzg29tjCRSBQx8KfKWrmJBvDkO4HXU3oI7pQwFUDpc/8s9ABk14uB23bs2HFDTiU7d+7cAqj4NrbESxtojeAQYjWoOnyaqwF4AsFSnDm81lT1y2YZ+cpwLmHDzp07a3bt2nVDTCrt6urKBq5hDl8eBXCTHgGjtWxTaVK8IEYFjKWrvVPIdU8VE2kMgUCsBD6ye/fukvEM/ldffVUCFX4EsitVtl3UYjU0wDHg1dQIodQJFJShKXgE0j5dLaACn6MJkKcDH6+rq6uur68fV72EM2fO5Jw9e7YasseBp5u0cKoQsDxO9Vrqqn6R2hdGAjWEoBvSR03B9wPNA95HGDVcBXxqz549D40H8E+fPo3vecoZntGTreqzmwgBRyDw2Plu3TBxxmuvvcYFUQYwy+OQ5UoV6DITQzEJnGsdbLSyfvHixdfVptSnTp2qZMJaqtsVVtWbAiP0zap498ryt956q5OxYcMGyj/gpbhbxS5IlwSJBQQYYsZVzWtREBYtWnTN9ic+efIkOq1LmM9SZDKplioQgrJ6ZpZTVODd32kBIEoZL0UvvdFdCBoUfGo8gXM0/UHgHTireeHChaFrhePHj+N0dzxqdxnwg2xwS0vD6YIvwAOnd89nvhkZerbuu+02J2Pjxo0UKZO9GM7w+crbFMIgCmiqAXj39bO5DPFYLNY8b948ayeXtLW1lbIT1mcxzjVZUGtqCjh44Bj/34H7ZXjJhCItAAHAd1Mc0fvcPYAqCPhBhIHDF5jP0MF2QkmwE02HTMjs2bPTpqOlpSXPVeHABSwoVcLsOebzTWZH2fADOClO7ZqB3yfDTWUSUACyiHZG9UJY0SiNH7PKIjsiqt6BooegIhTMOYxHUTweN3q26EAN/wkr3t+qvEaKczbvxzoXPcf7brL/a9oNFKXYPZzpnUpGlX6dbqHIDIRNlIWXsuibbrbQkGLdzoQ0YfJ/uJFAamsndllw19HZzDlxVGFmkcqilFnSEFotnnKNOlZPGQX0lWOdzoa01xR47nCwDtBEpwbHoedj94wy0KSKCOoIQhgaQrXZgkoYdMCXPAvrcr57WITuXEHlcLCu00cQGjza7BEcRjbRAFSNQAXXVAh0zuY1BV/Q2r3pekixnz+oGRomvVtMV9Vr3I/98RXAC73LzoM4grIWb1sIxgp8iSnAOlsIKdZhynB8QG8wiKIBDPyCQ5C9F0cRKY6gDFwZ2DaFIEzwCS3e3b/nXlzKras1dFr/KA2go/5FLVRwfzdzDtfodgupZoFqGohbqIYGPsH+Yx3NxF6V7D2omkXlmMZM1T8PDMXfoUl4BruKkHaaaANbtj2MnoEJ+L6/72RdvGe8Kt9kjqBOj4SsAUyvce7BCSV/Ba6C/EBYXcSg5oIKtqkj5ikbgLSKqfwWaheRWqZ6j1gIAFPuQW2AI3lTIN0b1CSonMSwYgCU6wqQ8NunsOHcQcozVKZIVwhiKjVuMEihY0YwevgPSDG0eUy3ezjWYOsEhRRAHWPf/A93Egc1MKTj+FGEIGZhIEgJiMzPYPlmHNxgjmLTtRSCsOw+o2YWzcNvbTYIBVsVgrQGsAW+6cCSJx9nUcS/QbrfVAjCDgQZ/P1+yOM33Q9pPMizqCaAKgSxsMCntk6B2sdVyYsh/QvwC7hriY4QhCkUGi0e3/kF/AYow29pJ8YArJkAihDEwgRfVyNw8rif7X+B74Y8qs03nOGNDq0IgQ3Afff0sXecAfm72bv3UFoxpdWbtH7V32cFcfgoLcyCEKQdJ9zVHNL/AM9ijOP808MYD/CP7UvuO8ZGP+OMB3nP4T1PNfYvey/KXAPKd2XpevA27iWYANk9g8yZamblOa5A4FQtZ/jEsjybWsBTaX1sQkbcA/iACAQd0E2EQgU8RUiyKC02qGnQjS6qwPP9LQJwiLFLuUwQcBuaIiYQuBjTPc8wk/32VtYJFq104xQnmLlJMPuNNr3fUEuQQtDUVm8DeNcc/F+AAQBKd8HaIWdjwQAAAABJRU5ErkJggg==) no-repeat 50%;
+    background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    height: var(--rb-icon-loader-size);
+    left: 50%;
+    margin-left: calc(var(--rb-icon-loader-size)/-2);
+    margin-top: calc(var(--rb-icon-loader-size)/-2);
+    opacity: .7;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    width: var(--rb-icon-loader-size);
+    will-change: transform
+}
+
+.rubisco-file-browser-tree::-webkit-scrollbar {
+    width: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-file-browser-tree::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3)
+}
+
+.rubisco-file-browser-tree::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    outline: 1px solid #708090
+}
+
+.rubisco-file-browser-tree_active_true {
+    background-color: var(--rb-color-background-filebrowser-folders);
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+    min-width: 200px;
+    overflow-y: auto;
+    width: var(--rb-first-column);
+    z-index: 2
+}
+
+@media (max-width:480px) {
+    .rubisco-file-browser-tree_active_true {
+        height: 100px;
+        max-width: 100%;
+        width: auto
+    }
+}
+
+.rubisco-file-browser-tree_active_true::-webkit-scrollbar {
+    width: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-file-browser-tree_active_true::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3)
+}
+
+.rubisco-file-browser-tree_active_true::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 50%, .5);
+    outline: 1px solid #708090
+}
+
+.rubisco-file-browser-tree__item {
+    align-items: center;
+    border-bottom: 1px solid #474747;
+    color: var(--rb-color-folder-title);
+    display: flex;
+    justify-content: space-between;
+    min-height: 38px;
+    padding: calc(var(--rb-padding-default)/2) var(--rb-padding-default);
+    position: relative;
+    text-decoration: none;
+    transition: background-color .2s ease 0s;
+    word-break: break-all
+}
+
+.rubisco-file-browser-tree__item-title {
+    color: var(--rb-color-folder-title);
+    flex: 1
+}
+
+.rubisco-file-browser-tree__item .rubisco-icon_folder {
+    align-items: center;
+    display: flex;
+    height: calc(var(--rb-icon-size) + 4px);
+    justify-content: center;
+    margin-left: calc(var(--rb-padding-default)/2);
+    opacity: .3;
+    width: calc(var(--rb-icon-size) + 4px)
+}
+
+.rubisco-file-browser-tree__item .rubisco-icon_folder svg {
+    height: var(--rb-icon-size);
+    width: var(--rb-icon-size);
+    fill: var(--rb-color-folder-title) !important;
+    stroke: var(--rb-color-folder-title) !important
+}
+
+.rubisco-file-browser-tree__item .rubisco-icon_folder:hover {
+    background: #696969
+}
+
+.rubisco-file-browser-tree__item:hover {
+    background-color: var(--rb-color-background-button-hover)
+}
+
+.rubisco-file-browser-tree__item:hover-title {
+    color: var(--rb-color-text)
+}
+
+.rubisco-file-browser-tree__item:hover i.rubisco-icon_folder {
+    opacity: .6
+}
+
+.rubisco-file-browser-tree__source-title {
+    background: #5a5a5a;
+    border-bottom: 1px solid #484848;
+    color: #969696;
+    display: block;
+    font-size: 12px;
+    padding: 2px 4px;
+    position: relative;
+    user-select: none;
+    word-break: break-all
+}
+
+a+.rubisco-file-browser-tree__source-title {
+    margin-top: var(--rb-padding-default)
+}
+
+:root {
+    --rb-first-column: 31%;
+    --rb-cols: 4;
+    --rb-info-background: #e9e9e9;
+    --rb-icon-size: 12px;
+    --rb-col-size: 150px
+}
+
+.rubisco-file-browser {
+    display: flex;
+    font-family: var(--rb-font-ui);
+    height: 100%
+}
+
+.rubisco-file-browser_no-files_true {
+    padding: var(--rb-padding-default)
+}
+
+@media (max-width:480px) {
+    .rubisco-file-browser {
+        flex-flow: column-reverse
+    }
+}
+
+.rubisco-dialog .rubisco-dialog__header-title.rubisco-file-browser__title-box {
+    align-items: center;
+    display: flex;
+    padding-left: var(--rb-padding-default)
+}
+
+.rubisco-file-browser-preview {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    max-height: 100%;
+    max-width: min(100%, 1000px);
+    min-height: min(100%, 500px);
+    min-width: 400px;
+    position: relative;
+    text-align: center
+}
+
+@media (max-width:768px) {
+    .rubisco-file-browser-preview {
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        min-height: auto;
+        min-width: auto
+    }
+}
+
+.rubisco-file-browser-preview__box {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center
+}
+
+.rubisco-file-browser-preview__navigation {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.rubisco-file-browser-preview__navigation_arrow_next {
+    left: auto;
+    right: 0
+}
+
+.rubisco-file-browser-preview__navigation svg {
+    height: 45px;
+    position: relative;
+    top: 50%;
+    width: 45px;
+    fill: #9e9ba7;
+    transform: translateY(-50%);
+    transition: fill .3s linear
+}
+
+.rubisco-file-browser-preview__navigation:hover svg {
+    fill: #000
+}
+
+.rubisco-file-browser-preview img {
+    max-height: 100%;
+    max-width: 100%
+}
+
+.rubisco-status-bar {
+    align-items: center;
+    background-color: var(--rb-color-panel);
+    border-radius: 0 0 var(--rb-border-radius-default) var(--rb-border-radius-default);
+    color: var(--rb-color-text-icons);
+    display: flex;
+    font-size: var(--rb-font-size-small);
+    height: 20px;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0 calc(var(--rb-padding-default)/2);
+    text-transform: uppercase
+}
+
+.rubisco-status-bar_resize-handle_true {
+    padding-right: 14px
+}
+
+.rubisco-status-bar:before {
+    content: "";
+    flex: auto;
+    order: 1
+}
+
+.rubisco-status-bar .rubisco-status-bar__item {
+    line-height: 1.5714em;
+    margin: 0 var(--rb-padding-default) 0 0;
+    order: 0;
+    padding: 0
+}
+
+.rubisco-status-bar .rubisco-status-bar__item,
+.rubisco-status-bar .rubisco-status-bar__item>span {
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    font-size: var(--rb-font-size-small)
+}
+
+.rubisco-status-bar .rubisco-status-bar__item.rubisco-status-bar__item-right {
+    margin: 0 0 0 var(--rb-padding-default);
+    order: 2
+}
+
+.rubisco-status-bar .rubisco-status-bar__item a {
+    border-radius: 3px;
+    cursor: default;
+    text-decoration: none
+}
+
+.rubisco-status-bar .rubisco-status-bar__item a:hover {
+    background-color: var(--rb-color-background-gray);
+    text-decoration: none
+}
+
+.rubisco-status-bar a.rubisco-status-bar-link {
+    font-family: var(--rb-font-ui);
+    cursor: pointer
+}
+
+.rubisco-status-bar a.rubisco-status-bar-link,
+.rubisco-status-bar a.rubisco-status-bar-link:hover,
+.rubisco-status-bar a.rubisco-status-bar-link:visited {
+    background-color: transparent;
+    color: var(--rb-color-text-icons)
+}
+
+.rubisco-status-bar a.rubisco-status-bar-link:hover {
+    text-decoration: underline
+}
+
+.rubisco-workplace+.rubisco-status-bar:not(:empty) {
+    border-top: 1px solid var(--rb-color-border)
+}
+
+.rubisco_disabled .rubisco-status-bar {
+    opacity: .4
+}
+
+.rubisco-drag-and-drop__file-box,
+.rubisco_uploadfile_button {
+    border: 1px dashed var(--rb-color-gray);
+    margin: var(--rb-padding-default) 0;
+    overflow: hidden;
+    padding: 25px 0;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.rubisco-drag-and-drop__file-box:hover,
+.rubisco_uploadfile_button:hover {
+    background-color: var(--rb-color-background-button-hover)
+}
+
+.rubisco-drag-and-drop__file-box input,
+.rubisco_uploadfile_button input {
+    cursor: pointer;
+    font-size: 400px;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute
+}
+
+@media (max-width:768px) {
+    .rubisco-drag-and-drop__file-box {
+        max-width: 100%;
+        min-width: var(--rb-width-input-min);
+        width: auto
+    }
+}
+
+.rubisco-about {
+    padding: 20px
+}
+
+.rubisco-about a {
+    color: #459ce7;
+    text-decoration: none
+}
+
+.rubisco-about a:focus,
+.rubisco-about a:hover {
+    color: #23527c;
+    outline: 0;
+    text-decoration: underline
+}
+
+.rubisco-about div {
+    margin-bottom: calc(var(--rb-padding-default)/2)
+}
+
+:root {
+    --rb-anl-color-new-line: var(--rb-color-border);
+    --rb-anl-handle-size: 20px;
+    --rb-anl-handle-offset: calc(100% - var(--rb-anl-handle-size))
+}
+
+.rubisco-add-new-line {
+    display: block;
+    height: 1px;
+    outline: none;
+    position: fixed;
+    top: 0;
+    z-index: 1
+}
+
+.rubisco-add-new-line,
+.rubisco-add-new-line * {
+    box-sizing: border-box
+}
+
+.rubisco-add-new-line:after {
+    background-color: var(--rb-anl-color-new-line);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%
+}
+
+.rubisco-add-new-line span {
+    align-items: center;
+    background: var(--rb-color-background-button-hover-opacity30);
+    border: 1px solid var(--rb-anl-color-new-line);
+    cursor: pointer;
+    display: flex;
+    height: var(--rb-anl-handle-size);
+    justify-content: center;
+    left: var(--rb-anl-handle-offset);
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: var(--rb-anl-handle-size)
+}
+
+.rubisco-add-new-line span:hover {
+    background: var(--rb-color-background-button-hover)
+}
+
+.rubisco-add-new-line svg {
+    width: calc(var(--rb-anl-handle-size)/2);
+    fill: var(--rb-anl-color-new-line)
+}
+
+.rubisco-source__mode .rubisco-add-new-line {
+    display: none !important
+}
+
+:root {
+    --rb-color-picker-cell-size: 24px
+}
+
+.rubisco-color-picker {
+    margin: 0;
+    text-align: left;
+    user-select: none
+}
+
+.rubisco-color-picker__group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(var(--rb-padding-default)/2);
+    max-width: calc(var(--rb-color-picker-cell-size)*10);
+    white-space: normal
+}
+
+.rubisco-color-picker__color-item {
+    border: 1px solid transparent;
+    display: block;
+    height: var(--rb-color-picker-cell-size);
+    text-align: center;
+    text-decoration: none;
+    /* vertical-align: middle; */
+    width: var(--rb-color-picker-cell-size)
+}
+
+.rubisco-color-picker__color-item:hover {
+    border-color: #000
+}
+
+.rubisco-color-picker__color-item:active,
+.rubisco-color-picker__color-item_active_true {
+    border: 2px solid var(--rb-color-border-selected)
+}
+
+.rubisco-color-picker__native svg {
+    display: inline-block;
+    height: 16px;
+    margin-right: 4px;
+    width: 16px
+}
+
+.rubisco-color-picker__native input {
+    appearance: none;
+    border: none;
+    height: 18px;
+    padding: 0;
+    width: 18px
+}
+
+.rubisco-color-picker__native input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0
+}
+
+.rubisco-color-picker__native input input[type=color]::-webkit-color-swatch {
+    border: none
+}
+
+.rubisco-tabs {
+    --rb-box-shadow-tabs: 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons {
+    background-color: var(--rb-color-background-light-gray);
+    border-radius: var(--rb-border-radius-default);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--rb-padding-default);
+    margin-top: calc(var(--rb-padding-default)/2);
+    padding: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button {
+    color: var(--rb-color-placeholder)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button svg {
+    fill: var(--rb-color-placeholder)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]),
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) {
+    box-shadow: var(--rb-box-shadow-tabs);
+    color: var(--rb-color-text-icons)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]),
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]) .rubisco-ui-button__text,
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]),
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) .rubisco-ui-button__text {
+    background-color: var(--rb-color-background-default)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]) svg,
+.rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) svg {
+    fill: var(--rb-color-text-icons)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons>* {
+    cursor: pointer;
+    margin-left: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-tabs .rubisco-tabs__buttons>:only-of-type {
+    width: 100%
+}
+
+.rubisco-tabs .rubisco-tabs__buttons>:first-child {
+    margin-left: 0
+}
+
+@media (max-width:480px) {
+    .rubisco-tabs .rubisco-tabs__buttons {
+        display: block
+    }
+
+    .rubisco-tabs .rubisco-tabs__buttons>* {
+        margin-left: 0;
+        width: 100%
+    }
+}
+
+.rubisco-tabs__button {
+    max-width: 210px;
+    min-width: 80px
+}
+
+.rubisco-tabs__button .rubisco-ui-button__text {
+    flex: 1;
+    justify-content: space-around;
+    white-space: nowrap
+}
+
+.rubisco-tabs__button_columns_3 {
+    width: 33.33333%
+}
+
+.rubisco-tabs__button_columns_2 {
+    width: 50%
+}
+
+.rubisco-tabs .rubisco-tabs__wrapper .rubisco-tab {
+    display: none
+}
+
+.rubisco-tabs .rubisco-tabs__wrapper .rubisco-tab.rubisco-tab_active {
+    display: block
+}
+
+.rubisco-tabs .rubisco-tabs__wrapper .rubisco-tab.rubisco-tab_empty {
+    min-height: 100px;
+    min-width: 220px
+}
+
+.rubisco-dialog_theme_dark .rubisco-tabs .rubisco-tabs__buttons,
+.rubisco_theme_dark .rubisco-tabs .rubisco-tabs__buttons {
+    background-color: var(--rb-dark-background-color);
+    border-radius: var(--rb-border-radius-default)
+}
+
+.rubisco-dialog_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]) .rubisco-ui-button__text,
+.rubisco-dialog_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) .rubisco-ui-button__text,
+.rubisco_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]) .rubisco-ui-button__text,
+.rubisco_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) .rubisco-ui-button__text {
+    color: var(--rb-dark-toolbar-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]) svg,
+.rubisco-dialog_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) svg,
+.rubisco_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button:active:not([disabled]) svg,
+.rubisco_theme_dark .rubisco-tabs .rubisco-tabs__buttons .rubisco-ui-button[aria-pressed=true]:not([disabled]) svg {
+    fill: var(--rb-color-text-icons)
+}
+
+.rubisco_fullsize-box_true {
+    overflow: visible !important;
+    position: static !important;
+    z-index: var(--rb-z-index-full-size) !important
+}
+
+body.rubisco_fullsize-box_true,
+html.rubisco_fullsize-box_true {
+    height: 0 !important;
+    overflow: hidden !important;
+    width: 0 !important
+}
+
+html.rubisco_fullsize-box_true {
+    position: fixed !important
+}
+
+.rubisco_fullsize {
+    inset: 0;
+    max-width: none !important;
+    position: absolute;
+    z-index: var(--rb-z-index-full-size)
+}
+
+.rubisco_fullsize .toolbar {
+    width: 100% !important
+}
+
+.rubisco_fullsize .rubisco__area,
+.rubisco_fullsize .rubisco_editor {
+    height: 100%
+}
+
+.rubisco-ui-image-position-tab__lockMargin>svg,
+.rubisco-ui-image-position-tab__lockSize>svg,
+.rubisco-ui-image-properties-form__lockMargin>svg,
+.rubisco-ui-image-properties-form__lockSize>svg {
+    display: inline-block;
+    height: var(--rb-icon-middle-size);
+    overflow: hidden;
+    width: var(--rb-icon-middle-size);
+    fill: var(--rb-color-dark);
+    line-height: var(--rb-icon-middle-size);
+    transform-origin: 0 0 !important;
+    vertical-align: middle
+}
+
+.rubisco-ui-image-position-tab__view-box,
+.rubisco-ui-image-properties-form__view-box {
+    padding: var(--rb-padding-default)
+}
+
+.rubisco-ui-image-position-tab__imageView,
+.rubisco-ui-image-properties-form__imageView {
+    align-items: center;
+    background-color: var(--rb-color-background-light-gray);
+    display: flex;
+    height: var(--rb-width-default);
+    justify-content: center;
+    margin: 0 0 var(--rb-padding-default);
+    padding: 0
+}
+
+.rubisco-ui-image-position-tab__imageView img,
+.rubisco-ui-image-properties-form__imageView img {
+    max-height: 100%;
+    max-width: 100%
+}
+
+.rubisco-ui-image-position-tab__imageSizes.rubisco-form__group,
+.rubisco-ui-image-properties-form__imageSizes.rubisco-form__group {
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    min-width: auto;
+    padding: 0
+}
+
+.rubisco-ui-image-position-tab__imageSizes.rubisco-form__group a,
+.rubisco-ui-image-properties-form__imageSizes.rubisco-form__group a {
+    cursor: pointer;
+    display: inline-block
+}
+
+.rubisco-ui-image-position-tab .rubisco-form__group,
+.rubisco-ui-image-properties-form .rubisco-form__group {
+    padding: 0
+}
+
+.rubisco-ui-image-position-tab__tabsBox,
+.rubisco-ui-image-properties-form__tabsBox {
+    padding: 0 var(--rb-padding-default)
+}
+
+.rubisco-dialog_theme_dark .rubisco-ui-image-properties-form__imageView,
+.rubisco_theme_dark .rubisco-ui-image-properties-form__imageView {
+    background-color: var(--rb-dark-background-color)
+}
+
+.rubisco-ui-image-properties-form_lock_true:before {
+    background-color: var(--rb-color-button-background-hover-opacity60);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3
+}
+
+.rubisco-ui-image-properties-form_lock_true:after {
+    animation: b 2s ease-out 0s infinite;
+    background: url(data:image/png;base64,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) no-repeat 50%;
+    background-size: 100% 100%;
+    background-size: var(--rb-icon-loader-size);
+    content: "";
+    display: inline-block;
+    height: var(--rb-icon-loader-size);
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    width: var(--rb-icon-loader-size);
+    will-change: transform
+}
+
+.rubisco-popup-inline__container {
+    min-width: 700px;
+    z-index: 1300
+}
+
+.rubisco-paste-storage {
+    max-width: 600px;
+    padding: var(--rb-padding-default)
+}
+
+@media (max-width:768px) {
+    .rubisco-paste-storage {
+        max-width: 100%
+    }
+}
+
+.rubisco-paste-storage>div {
+    border: 1px solid var(--rb-color-border);
+    max-height: 300px;
+    max-width: 100%
+}
+
+.rubisco-paste-storage>div:first-child {
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-paste-storage>div:first-child a {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    color: var(--rb-color-default);
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    outline: none;
+    overflow: hidden;
+    padding: calc(var(--rb-padding-default)/2);
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: pre
+}
+
+.rubisco-paste-storage>div:first-child a.rubisco_active {
+    background-color: var(--rb-dark-background-color);
+    color: var(--rb-color-white)
+}
+
+.rubisco-paste-storage>div:first-child a:focus {
+    outline: none
+}
+
+.rubisco-paste-storage>div:last-child {
+    overflow: auto;
+    padding: var(--rb-padding-default)
+}
+
+.rubisco-paste-storage>div:last-child li,
+.rubisco-paste-storage>div:last-child ul {
+    margin: 0
+}
+
+.rubisco-placeholder {
+    color: var(--rb-color-placeholder);
+    display: block;
+    left: 0;
+    padding: var(--rb-padding-default);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    user-select: none !important;
+    width: 100%;
+    z-index: 1
+}
+
+.rubisco__preview-box table {
+    border: none;
+    border-collapse: collapse;
+    empty-cells: show;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    max-width: 100%
+}
+
+.rubisco__preview-box table tr {
+    user-select: none
+}
+
+.rubisco__preview-box table tr td,
+.rubisco__preview-box table tr th {
+    border: 1px solid var(--rb-color-border);
+    min-width: 2em;
+    padding: .4em;
+    user-select: text;
+    vertical-align: middle
+}
+
+.rubisco-table-resizer {
+    cursor: col-resize;
+    margin-left: calc(var(--rb-padding-default)/-2);
+    padding-left: calc(var(--rb-padding-default)/2);
+    padding-right: calc(var(--rb-padding-default)/2);
+    position: absolute;
+    z-index: 3
+}
+
+.rubisco-table-resizer:after {
+    border: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0
+}
+
+.rubisco-table-resizer_moved {
+    background-color: var(--rb-color-background-selection);
+    z-index: 2
+}
+
+.rubisco-table-resizer_moved:after {
+    border-right: 1px solid moved
+}
+
+[data-rubisco_iframe_wrapper] {
+    display: block;
+    position: relative;
+    user-select: none
+}
+
+[data-rubisco_iframe_wrapper] iframe {
+    position: relative
+}
+
+[data-rubisco_iframe_wrapper]:after {
+    background: transparent;
+    content: "";
+    cursor: pointer;
+    display: block;
+    inset: 0;
+    position: absolute;
+    z-index: 1
+}
+
+[data-rubisco_iframe_wrapper][data-rubisco-wrapper_active=true] iframe {
+    z-index: 2
+}
+
+.rubisco_lock [data-rubisco-wrapper_active=true] iframe {
+    z-index: 1
+}
+
+:root {
+    --rb-viewer-width: 70px;
+    --rb-viewer-height: 24px;
+    --rb-resizer-handle-size: 10px;
+    --rb-resizer-border-color: #98c1f1;
+    --rb-resizer-handle-color: #5ba4f3;
+    --rb-resizer-handle-hover-color: #537ebb
+}
+
+.rubisco-resizer {
+    font-size: 0;
+    height: 100px;
+    left: 0;
+    outline: 3px solid var(--rb-resizer-border-color);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100px
+}
+
+.rubisco-resizer,
+.rubisco-resizer * {
+    box-sizing: border-box
+}
+
+.rubisco-resizer>span {
+    background-color: var(--rb-color-placeholder);
+    color: var(--rb-color-white);
+    display: inline-block;
+    font-size: 12px;
+    height: var(--rb-viewer-height);
+    left: 50%;
+    line-height: var(--rb-viewer-height);
+    margin-left: calc(var(--rb-viewer-width)/-2);
+    margin-top: calc(var(--rb-viewer-height)/-2);
+    opacity: 0;
+    overflow: visible;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transition: opacity .2s linear;
+    width: var(--rb-viewer-width)
+}
+
+.rubisco-resizer>div {
+    background-color: var(--rb-resizer-handle-color);
+    display: inline-block;
+    height: var(--rb-resizer-handle-size);
+    pointer-events: all;
+    position: absolute;
+    width: var(--rb-resizer-handle-size);
+    z-index: 4
+}
+
+.rubisco-resizer>div:hover {
+    background-color: var(--rb-resizer-handle-hover-color)
+}
+
+.rubisco-resizer>div:first-child {
+    cursor: nwse-resize;
+    left: calc(var(--rb-resizer-handle-size)/-2);
+    top: calc(var(--rb-resizer-handle-size)/-2)
+}
+
+.rubisco-resizer>div:nth-child(2) {
+    cursor: nesw-resize;
+    right: calc(var(--rb-resizer-handle-size)/-2);
+    top: calc(var(--rb-resizer-handle-size)/-2)
+}
+
+.rubisco-resizer>div:nth-child(3) {
+    bottom: calc(var(--rb-resizer-handle-size)/-2);
+    cursor: nwse-resize;
+    right: calc(var(--rb-resizer-handle-size)/-2)
+}
+
+.rubisco-resizer>div:nth-child(4) {
+    bottom: calc(var(--rb-resizer-handle-size)/-2);
+    cursor: nesw-resize;
+    left: calc(var(--rb-resizer-handle-size)/-2)
+}
+
+@media (max-width:768px) {
+    .rubisco-resizer>div :root {
+        --rb-resizer-handle-size: calc(var(--rb-resizer-handle-size)*2)
+    }
+}
+
+:root {
+    --rb-height-search: 30px;
+    --rb-width-search: 320px;
+    --rb-width-search-input-box: 60%;
+    --rb-width-search-count-box: 15%;
+    --rb-transform-button-active: 0.95;
+    --rb-timeout-button-active: 0.1s
+}
+
+.rubisco-ui-search {
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0
+}
+
+.rubisco-ui-search_sticky_true {
+    position: fixed
+}
+
+.rubisco-ui-search__box {
+    background-color: var(--rb-color-panel);
+    border: solid var(--rb-color-border);
+    border-width: 0 0 1px 1px;
+    display: flex;
+    max-width: 100vw;
+    padding: calc(var(--rb-padding-default)/2);
+    position: absolute;
+    right: 0;
+    width: var(--rb-width-search)
+}
+
+.rubisco-ui-search__box input {
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+    margin: 0;
+    outline: none;
+    padding: 0 var(--rb-padding-default);
+    width: 100%
+}
+
+.rubisco-ui-search__box input[data-ref=replace] {
+    display: none
+}
+
+.rubisco-ui-search__box input:not(:focus)+input:not(:focus) {
+    border-top: 1px solid var(--rb-color-border)
+}
+
+.rubisco-ui-search__buttons,
+.rubisco-ui-search__counts,
+.rubisco-ui-search__inputs {
+    height: var(--rb-height-search)
+}
+
+.rubisco-ui-search__inputs {
+    padding-right: calc(var(--rb-padding-default)/2);
+    width: var(--rb-width-search-input-box)
+}
+
+.rubisco-ui-search__counts {
+    border-left: 1px solid var(--rb-color-border);
+    color: var(--rb-color-border);
+    width: var(--rb-width-search-count-box)
+}
+
+.rubisco-ui-search__buttons,
+.rubisco-ui-search__counts {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.rubisco-ui-search__buttons {
+    flex: 1;
+    padding-left: 0
+}
+
+.rubisco-ui-search__buttons button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 100%;
+    margin-right: 1%;
+    width: 32%
+}
+
+.rubisco-ui-search__buttons button[data-ref=replace-btn] {
+    border: 1px solid var(--rb-color-border);
+    display: none;
+    margin-top: 2px;
+    width: 100%
+}
+
+.rubisco-ui-search__buttons button:hover {
+    background-color: var(--rb-color-background-button-hover)
+}
+
+.rubisco-ui-search__buttons button:focus {
+    border: 1px solid var(--rb-color-background-selection-opacity50)
+}
+
+.rubisco-ui-search__buttons button:active {
+    border: 1px solid var(--rb-color-background-selection);
+    transform: scale(var(--rb-transform-button-active))
+}
+
+.rubisco-ui-search_empty-query_true [data-ref=next],
+.rubisco-ui-search_empty-query_true [data-ref=prev] {
+    opacity: .5
+}
+
+.rubisco-ui-search_replace_true .rubisco-ui-search__counts,
+.rubisco-ui-search_replace_true .rubisco-ui-search__inputs {
+    height: calc(var(--rb-height-search)*2)
+}
+
+.rubisco-ui-search_replace_true .rubisco-ui-search__counts input,
+.rubisco-ui-search_replace_true .rubisco-ui-search__inputs input {
+    height: 50%;
+    transition: background-color var(--rb-timeout-button-active) linear
+}
+
+.rubisco-ui-search_replace_true .rubisco-ui-search__counts input:focus,
+.rubisco-ui-search_replace_true .rubisco-ui-search__inputs input:focus {
+    box-shadow: inset 0 0 3px 0 var(--rb-color-border)
+}
+
+.rubisco-ui-search_replace_true .rubisco-ui-search__counts input[data-ref=replace],
+.rubisco-ui-search_replace_true .rubisco-ui-search__inputs input[data-ref=replace] {
+    display: block
+}
+
+.rubisco-ui-search_replace_true .rubisco-ui-search__buttons {
+    flex-wrap: wrap
+}
+
+.rubisco-ui-search_replace_true .rubisco-ui-search__buttons button[data-ref=replace-btn] {
+    display: block
+}
+
+::highlight(rubisco-search-result),
+[rb-tmp-selection] {
+    background-color: var(--rb-color-background-selection);
+    color: var(--rb-color-text-selection)
+}
+
+.rubisco-container:not(.rubisco_inline) {
+    min-height: 100px
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-workplace {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 50px;
+    overflow: hidden
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-editor__resize {
+    position: relative
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-editor__resize svg {
+    bottom: 0;
+    cursor: nwse-resize;
+    height: 12px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 12px;
+    fill: var(--rb-color-gray-dark);
+    user-select: none
+}
+
+.rubisco-source {
+    background-color: var(--rb-color-source-area);
+    display: none;
+    flex: auto;
+    overflow: auto;
+    position: relative
+}
+
+.rubisco-source,
+.rubisco-source .rubisco-source__mirror-fake {
+    min-height: 100%
+}
+
+.rubisco-source * {
+    font: 12px/normal Monaco, Menlo, Ubuntu Mono, Consolas, source-code-pro, monospace
+}
+
+.rubisco-container.rubisco-source__mode .rubisco-wysiwyg,
+.rubisco-container.rubisco-source__mode .rubisco-wysiwyg_iframe {
+    display: none !important
+}
+
+.rubisco-container.rubisco-source__mode .rubisco-source {
+    display: block !important
+}
+
+.rubisco-container.rubisco_split_mode .rubisco-workplace {
+    flex-flow: row nowrap
+}
+
+.rubisco-container.rubisco_split_mode .rubisco-source,
+.rubisco-container.rubisco_split_mode .rubisco-wysiwyg,
+.rubisco-container.rubisco_split_mode .rubisco-wysiwyg_iframe {
+    display: block !important;
+    flex: 1;
+    width: 50%
+}
+
+.rubisco-source__mirror {
+    background: var(--rb-color-source-area);
+    border: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #f0f0f0;
+    height: 100%;
+    line-height: 1.5;
+    font: 12px/normal Monaco, Menlo, Ubuntu Mono, Consolas, source-code-pro, monospace;
+    margin: 0;
+    min-height: 100%;
+    outline: none;
+    overflow: auto;
+    padding: var(--rb-padding-default);
+    resize: none;
+    tab-size: 2em;
+    white-space: pre-wrap;
+    width: 100%;
+    z-index: 2
+}
+
+.rubisco-source__mirror::selection {
+    background: var(--rb-color-selection-area)
+}
+
+.rubisco_sticky-dummy_toolbar {
+    display: none
+}
+
+.rubisco_sticky>.rubisco-toolbar__box {
+    border-bottom: 1px solid var(--rb-color-border);
+    left: auto;
+    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 3
+}
+
+.rubisco_sticky .rubisco_sticky-dummy_toolbar {
+    display: block
+}
+
+.rubisco-symbols {
+    padding: var(--rb-padding-default);
+    width: 460px
+}
+
+.rubisco-symbols__container {
+    display: flex
+}
+
+.rubisco-symbols__container_table {
+    width: 88%
+}
+
+.rubisco-symbols__container_preview {
+    width: 12%
+}
+
+.rubisco-symbols__preview {
+    border: 1px solid var(--rb-color-border);
+    font-size: 34px;
+    padding: 20px 0;
+    text-align: center
+}
+
+.rubisco-symbols__table {
+    border: 0;
+    border-spacing: 0;
+    table-layout: fixed
+}
+
+.rubisco-symbols__table td {
+    padding: 0
+}
+
+.rubisco-symbols__table td a {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    color: var(--rb-color-text);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: calc(var(--rb-height-element-default)*1.2);
+    line-height: calc(var(--rb-height-element-default)*1.2);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    width: calc(var(--rb-width-element-default)*1.2)
+}
+
+.rubisco-symbols__table td a:focus,
+.rubisco-symbols__table td a:hover {
+    outline: 2px solid var(--rb-color-border)
+}
+
+.rubisco-ui-ai-assistant {
+    min-width: 460px;
+    padding: var(--rb-padding-default);
+    width: 100%
+}
+
+@media (max-width:768px) {
+    .rubisco-ui-ai-assistant {
+        min-width: 100%
+    }
+}
+
+.rubisco-ui-ai-assistant__body {
+    margin-bottom: 10px
+}
+
+.rubisco-ui-ai-assistant__prompt-row {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 10px
+}
+
+.rubisco-ui-ai-assistant__prompt-row-label {
+    margin-right: 10px
+}
+
+.rubisco-ui-ai-assistant__prompt-row-input {
+    flex: 1;
+    margin-right: 10px
+}
+
+.rubisco-ui-ai-assistant__prompt-row .rubisco-icon_ai_assistant {
+    cursor: pointer;
+    height: 22px;
+    width: 22px
+}
+
+.rubisco-ui-ai-assistant__prompt-row .rubisco-ui-button {
+    margin-right: 10px
+}
+
+.rubisco-ui-ai-assistant__prompt-row .rubisco-ui-button_ai_assistant {
+    margin-right: 0;
+    margin-top: 20px
+}
+
+.rubisco-ui-ai-assistant__results {
+    border-color: var(--rb-color-label);
+    border-style: solid;
+    border-width: 1px;
+    height: 300px;
+    line-height: 1.5;
+    max-width: 460px;
+    min-height: 300px;
+    min-width: 100%;
+    overflow: auto;
+    padding: var(--rb-padding-default);
+    position: relative
+}
+
+.rubisco-ui-ai-assistant__results p {
+    margin: 0 0 10px
+}
+
+.rubisco-ui-ai-assistant__close {
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.rubisco-ui-ai-assistant_hide_true {
+    display: none
+}
+
+.rubisco-ui-ai-assistant__spinner:before {
+    animation: b .6s linear infinite;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #8817c3;
+    box-sizing: border-box;
+    content: "";
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    width: 30px
+}
+
+.rubisco-ui-ai-assistant__error {
+    color: var(--rb-color-error)
+}
+
+.rubisco-context table,
+.rubisco-wysiwyg table {
+    border: none;
+    border-collapse: collapse;
+    empty-cells: show;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    max-width: 100%
+}
+
+.rubisco-context table tr,
+.rubisco-wysiwyg table tr {
+    user-select: none
+}
+
+.rubisco-context table tr td,
+.rubisco-context table tr th,
+.rubisco-wysiwyg table tr td,
+.rubisco-wysiwyg table tr th {
+    border: 1px solid var(--rb-color-border);
+    min-width: 2em;
+    padding: .4em;
+    user-select: text;
+    vertical-align: middle
+}
+
+.rubisco-form__inserter {
+    --rb-color-table-cell-background-hover: var(--rb-color-button-background-hover)
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box {
+    display: flex
+}
+
+@media (max-width:768px) {
+    .rubisco-form__inserter .rubisco-form__table-creator-box {
+        flex-direction: column
+    }
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__container {
+    font-size: 0;
+    margin: 0;
+    min-width: 180px;
+    padding: 0
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__container>div>span {
+    border: 1px solid var(--rb-color-border);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: var(--rb-height-element-default);
+    margin-bottom: 2px;
+    margin-left: 2px;
+    vertical-align: top;
+    width: var(--rb-width-element-default)
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__container>div>span:first-child {
+    margin-left: 0
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__container>div>span.rubisco_hovered {
+    background: var(--rb-color-table-cell-background-hover);
+    border-color: var(--rb-color-table-cell-background-hover)
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__options {
+    font-size: var(--rb-font-size-default)
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__options label {
+    padding-top: 0;
+    text-align: left
+}
+
+.rubisco-form__inserter .rubisco-form__table-creator-box .rubisco-form__options label input {
+    margin-right: var(--rb-padding-default)
+}
+
+.rubisco-form__inserter label {
+    font-size: 14px;
+    margin: 0;
+    padding: 8px;
+    text-align: center
+}
+
+.rubisco-xpath {
+    align-items: center;
+    display: flex;
+    margin-left: calc(var(--rb-padding-default)/-2)
+}
+
+.rubisco-xpath__item {
+    display: flex;
+    height: var(--rb-font-size-small);
+    line-height: calc(var(--rb-font-size-small) - 1px)
+}
+
+.rubisco-xpath__item a {
+    color: var(--rb-color-default);
+    font-size: var(--rb-font-size-small);
+    margin-left: 2px;
+    outline: 0;
+    padding: 0 3px
+}
+
+:root {
+    --rb-color-white: #fff;
+    --rb-color-gray: #dadada;
+    --rb-color-gray-dark: #a5a5a5;
+    --rb-color-dark: #4c4c4c;
+    --rb-color-blue: #b5d6fd;
+    --rb-color-light-blue: rgba(181, 214, 253, .5);
+    --rb-color-red: #ff3b3b;
+    --rb-color-light-red: rgba(255, 59, 59, .4);
+    --rb-color-default: var(--rb-color-dark);
+    --rb-color-text: #222;
+    --rb-color-label: var(--rb-color-gray-dark);
+    --rb-color-error: var(--rb-color-red);
+    --rb-color-border: var(--rb-color-gray);
+    --rb-color-border-dark: var(--rb-color-dark);
+    --rb-color-border-selected: #1e88e5;
+    --rb-color-border-active: #b5b5b5;
+    --rb-color-selection: var(--rb-color-dark);
+    --rb-color-selection-area: #bdbdbd;
+    --rb-color-separator: var(--rb-color-border);
+    --rb-color-placeholder: var(--rb-color-gray-dark);
+    --rb-color-panel: #f9f9f9;
+    --rb-color-resizer: #c8c8c8;
+    --rb-color-background-default: var(--rb-color-white);
+    --rb-color-background-light-gray: #f5f5f6;
+    --rb-color-background-gray: var(--rb-color-gray);
+    --rb-color-background-gray-hover: #f8f8f8;
+    --rb-color-background-button-hover: #ecebe9;
+    --rb-color-background-button-hover-opacity30: hsla(40, 7%, 92%, .3);
+    --rb-color-background-progress: #b91f1f;
+    --rb-color-background-active: #2196f3;
+    --rb-color-background-selection: #b5d6fd;
+    --rb-color-text-selection: var(--rb-color-white);
+    --rb-color-background-selection-opacity50: rgba(181, 214, 253, .995);
+    --rb-color-source-area: #323232;
+    --rb-color-button-background-hover: #dcdcdc;
+    --rb-color-button-background-hover-opacity40: hsla(0, 0%, 86%, .4);
+    --rb-color-button-background-hover-opacity60: hsla(0, 0%, 86%, .6);
+    --rb-font-ui: sans-serif;
+    --rb-font-default: sans-serif;
+    --rb-font-size-default: 14px;
+    --rb-font-size-small: 11px;
+    --rb-color-text-icons: rgba(0, 0, 0, .75);
+    --rb-color-icon: var(--rb-color-dark);
+    --rb-padding-default: 8px;
+    --rb-border-radius-default: 3px;
+    --rb-icon-tiny-size: 8px;
+    --rb-icon-xsmall-size: 10px;
+    --rb-icon-small-size: 12px;
+    --rb-icon-middle-size: 14px;
+    --rb-icon-large-size: 16px;
+    --rb-z-index-full-size: 100000;
+    --rb-z-index-popup: 10000001;
+    --rb-z-index-dialog-overlay: 20000003;
+    --rb-z-index-dialog: 20000004;
+    --rb-z-index-context-menu: 30000005;
+    --rb-z-index-tooltip: 30000006;
+    --rb-icon-loader-size: 48px;
+    --rb-width-element-default: 18px;
+    --rb-height-element-default: 18px;
+    --rb-dark-background-color: #575757;
+    --rb-dark-background-ligher: silver;
+    --rb-dark-background-darknes: #353535;
+    --rb-dark-border-color: #444;
+    --rb-dark-text-color: #d1cccc;
+    --rb-dark-text-color-opacity80: hsla(0, 5%, 81%, .8);
+    --rb-dark-text-color-opacity50: hsla(0, 5%, 81%, .5);
+    --rb-dark-icon-color: silver;
+    --rb-dark-toolbar-color: #5f5c5c;
+    --rb-dark-toolbar-seperator-color1: rgba(81, 81, 81, .41);
+    --rb-dark-toolbar-seperator-color2: #686767;
+    --rb-dark-toolbar-seperator-color-opacity80: hsla(0, 0%, 41%, .8);
+    --rb-dark-toolbar-seperator-color3: hsla(0, 0%, 41%, .75);
+    --rb-dark-color-border-selected: #152f5f;
+    --rb-width-default: 180px;
+    --rb-width-input-min: var(--rb-width-default);
+    --rb-input-height: 32px;
+    --rb-button-icon-size: 14px;
+    --rb-margin-v: 2px;
+    --rb-button-df-size: calc((var(--rb-button-icon-size) - 4px)*2);
+    --rb-button-size: calc(var(--rb-button-icon-size) + var(--rb-button-df-size) + var(--rb-margin-v)*2);
+    --rb-focus-input-box-shadow: 0 0 0 0.05rem rgba(0, 123, 255, .25)
+}
+
+.rubisco-wysiwyg {
+    font-family: var(--rb-font-default) !important;
+    outline: 0
+}
+
+.rubisco-wysiwyg ::selection,
+.rubisco-wysiwyg::selection {
+    background: #b5d6fd;
+    color: #4c4c4c
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-wysiwyg {
+    margin: 0;
+    outline: 0;
+    overflow-x: auto;
+    padding: 8px;
+    position: relative
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-wysiwyg img {
+    max-width: 100%;
+    position: relative
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-wysiwyg rubisco-media {
+    position: relative
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-wysiwyg rubisco-media * {
+    position: relative;
+    z-index: 0
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-wysiwyg rubisco-media:before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: 1
+}
+
+:root {
+    --rb-switche-width: 60px;
+    --rb-switche-height: 32px;
+    --rb-switche-slider-margin: 4px;
+    --rb-switche-slider-size: calc(var(--rb-switche-height) - var(--rb-switche-slider-margin)*2)
+}
+
+.rubisco-form {
+    color: var(--rb-color-default);
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default)
+}
+
+.rubisco-form.rubisco_error {
+    border-color: var(--rb-color-error);
+    box-shadow: inset 0 0 3px 0 hsla(0, 0%, 74%, .3)
+}
+
+@media (max-width:768px) {
+    .rubisco-form {
+        min-width: 150px
+    }
+}
+
+.rubisco-form button {
+    background: #d6d6d6;
+    border: none;
+    color: var(--rb-color-dark);
+    cursor: pointer;
+    font-size: 16px;
+    height: 36px;
+    line-height: 1;
+    margin-bottom: var(--rb-padding-default);
+    margin-top: var(--rb-padding-default);
+    outline: none;
+    padding: var(--rb-padding-default);
+    text-decoration: none;
+    transition: background .2s ease 0s
+}
+
+.rubisco-form button:hover {
+    background-color: var(--rb-color-background-button-hover);
+    color: var(--rb-color-dark)
+}
+
+.rubisco-form button:active {
+    background: var(--rb-color-background-button-hover);
+    color: var(--rb-color-dark)
+}
+
+.rubisco-form label {
+    align-items: center;
+    display: flex;
+    margin-bottom: var(--rb-padding-default);
+    text-align: left;
+    white-space: nowrap
+}
+
+.rubisco-form label:last-child {
+    margin-bottom: 0
+}
+
+.rubisco-form .rubisco-form__center {
+    justify-content: center
+}
+
+.rubisco .rubisco-input,
+.rubisco .rubisco-select,
+.rubisco .rubisco-textarea {
+    appearance: none;
+    background-color: var(--rb-color-white);
+    border: 1px solid var(--rb-color-border);
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: var(--rb-font-ui);
+    font-size: var(--rb-font-size-default);
+    height: var(--rb-input-height);
+    line-height: 1.2;
+    outline: none;
+    padding: 0 var(--rb-padding-default);
+    width: 100%
+}
+
+.rubisco .rubisco-input[disabled],
+.rubisco .rubisco-select[disabled],
+.rubisco .rubisco-textarea[disabled] {
+    background-color: #f0f0f0;
+    color: var(--rb-color-border)
+}
+
+.rubisco .rubisco-input_has-error_true,
+.rubisco .rubisco-select_has-error_true,
+.rubisco .rubisco-textarea_has-error_true {
+    border-color: var(--rb-color-red)
+}
+
+.rubisco .rubisco-input:focus {
+    border-color: #66afe9;
+    outline: 0
+}
+
+.rubisco-checkbox {
+    border: 0;
+    cursor: pointer;
+    height: 16px;
+    margin: 0 calc(var(--rb-padding-default)/2) 0 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    width: 16px;
+    z-index: 2
+}
+
+.rubisco-select {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 4.95 10'%3E%3Cdefs%3E%3Cstyle%3E.cls-2{fill:%23444}%3C/style%3E%3C/defs%3E%3Ctitle%3Earrows%3C/title%3E%3Cpath d='M0 0h4.95v10H0z' style='fill:%23fff'/%3E%3Cpath d='m1.41 4.67 1.07-1.49 1.06 1.49zM3.54 5.33 2.48 6.82 1.41 5.33z' class='cls-2'/%3E%3C/svg%3E");
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    padding-right: calc(var(--rb-padding-default)*2)
+}
+
+.rubisco-textarea {
+    height: auto
+}
+
+.rubisco-form__group,
+.rubisco-textarea {
+    min-width: var(--rb-width-input-min)
+}
+
+.rubisco-form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-form__group label {
+    margin-bottom: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-button {
+    align-items: center;
+    background-color: var(--rb-color-background-gray);
+    border: 0;
+    border-radius: .25rem;
+    color: var(--rb-color-default);
+    cursor: pointer;
+    display: inline-flex;
+    height: calc(var(--rb-padding-default)*4);
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    padding: 0 var(--rb-padding-default);
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    width: auto
+}
+
+.rubisco-button svg {
+    display: inline-block;
+    height: 24px;
+    width: 24px
+}
+
+.rubisco-button svg+span {
+    margin-left: calc(var(--rb-padding-default)/2)
+}
+
+.rubisco-button:active,
+.rubisco-button:focus {
+    outline: 0
+}
+
+.rubisco-button.disabled {
+    opacity: .7
+}
+
+.rubisco-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: var(--rb-padding-default)
+}
+
+.rubisco-button .rubisco_icon,
+.rubisco-button svg,
+.rubisco-dialog__header .rubisco_icon,
+.rubisco-dialog__header svg {
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px
+}
+
+.rubisco-switcher-wrapper {
+    align-items: center;
+    display: flex
+}
+
+.rubisco-switcher-wrapper .rubisco-switcher+span {
+    margin-left: var(--rb-padding-default)
+}
+
+.rubisco-switcher {
+    display: inline-block;
+    height: var(--rb-switche-height);
+    position: relative;
+    width: var(--rb-switche-width)
+}
+
+.rubisco-switcher input {
+    height: 0;
+    opacity: 0;
+    width: 0
+}
+
+.rubisco-switcher .rubisco-switcher__slider {
+    background-color: var(--rb-color-gray);
+    border-radius: var(--rb-switche-height);
+    cursor: pointer;
+    inset: 0;
+    position: absolute;
+    transition: .4s
+}
+
+.rubisco-switcher .rubisco-switcher__slider:before {
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: var(--rb-switche-slider-margin);
+    content: "";
+    height: var(--rb-switche-slider-size);
+    left: var(--rb-switche-slider-margin);
+    position: absolute;
+    transition: .4s;
+    width: var(--rb-switche-slider-size)
+}
+
+input:checked+.rubisco-switcher__slider {
+    background-color: var(--rb-color-background-active)
+}
+
+input:checked+.rubisco-switcher__slider:before {
+    transform: translateX(calc(var(--rb-switche-width) - var(--rb-switche-slider-margin)*2 - var(--rb-switche-slider-size)))
+}
+
+input:focus+.rubisco-switcher__slider {
+    box-shadow: 0 0 1px var(--rb-color-background-active)
+}
+
+.rubisco-button-group {
+    display: flex
+}
+
+.rubisco-button-group input {
+    display: none
+}
+
+.rubisco-button-group button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center
+}
+
+.rubisco-button-group button+button {
+    margin-left: -1px
+}
+
+.rubisco-button-group button:first-child,
+.rubisco-button-group input:first-child+button {
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    border-top-right-radius: 0
+}
+
+.rubisco-button-group button:last-child,
+.rubisco-button-group input:last-child+button {
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    border-top-left-radius: 0
+}
+
+.rubisco-button-group input[type=checkbox]:checked+button,
+.rubisco-button-group input[type=checkbox]:not(:checked)+button+button {
+    background-image: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .3), 0 1px 2px rgba(0, 0, 0, .05)
+}
+
+.rubisco_text_icons .rubisco_icon {
+    font-size: var(--rb-font-size-default);
+    width: auto
+}
+
+.rubisco_text_icons .rubisco_icon:first-letter {
+    text-transform: uppercase
+}
+
+.rubisco_text_icons .rubisco-tabs .rubisco-tabs__buttons>a {
+    font-family: var(--rb-font-ui);
+    width: auto
+}
+
+.rubisco_text_icons .rubisco-tabs .rubisco-tabs__buttons>a i {
+    width: auto
+}
+
+.rubisco_text_icons.rubisco-dialog .rubisco-button,
+.rubisco_text_icons.rubisco-dialog .rubisco-dialog__header a {
+    color: var(--rb-color-text-icons);
+    font-family: var(--rb-font-ui);
+    padding: var(--rb-padding-default);
+    width: auto
+}
+
+.rubisco_text_icons.rubisco-dialog .rubisco-button .rubisco_icon,
+.rubisco_text_icons.rubisco-dialog .rubisco-dialog__header a .rubisco_icon {
+    width: auto
+}
+
+.rubisco-grid {
+    display: flex;
+    width: 100%
+}
+
+.rubisco-grid.rubisco-grid_column {
+    flex-direction: column
+}
+
+@media (max-width:480px) {
+    .rubisco-grid.rubisco-grid_xs-column {
+        flex-direction: column
+    }
+}
+
+.rubisco-grid [class*=rubisco_col-] {
+    flex: 1 1 auto
+}
+
+.rubisco-grid .rubisco_col-lg-5-5 {
+    width: 100%
+}
+
+.rubisco-grid .rubisco_col-lg-4-5 {
+    width: 80%
+}
+
+.rubisco-grid .rubisco_col-lg-3-5 {
+    width: 60%
+}
+
+.rubisco-grid .rubisco_col-lg-2-5 {
+    width: 40%
+}
+
+.rubisco-grid .rubisco_col-lg-1-5 {
+    width: 20%
+}
+
+.rubisco-grid .rubisco_col-lg-4-4 {
+    width: 100%
+}
+
+.rubisco-grid .rubisco_col-lg-3-4 {
+    width: 75%
+}
+
+.rubisco-grid .rubisco_col-lg-2-4 {
+    width: 50%
+}
+
+.rubisco-grid .rubisco_col-lg-1-4 {
+    width: 25%
+}
+
+@media (max-width:992px) {
+    .rubisco-grid .rubisco_col-md-5-5 {
+        width: 100%
+    }
+
+    .rubisco-grid .rubisco_col-md-4-5 {
+        width: 80%
+    }
+
+    .rubisco-grid .rubisco_col-md-3-5 {
+        width: 60%
+    }
+
+    .rubisco-grid .rubisco_col-md-2-5 {
+        width: 40%
+    }
+
+    .rubisco-grid .rubisco_col-md-1-5 {
+        width: 20%
+    }
+
+    .rubisco-grid .rubisco_col-md-4-4 {
+        width: 100%
+    }
+
+    .rubisco-grid .rubisco_col-md-3-4 {
+        width: 75%
+    }
+
+    .rubisco-grid .rubisco_col-md-2-4 {
+        width: 50%
+    }
+
+    .rubisco-grid .rubisco_col-md-1-4 {
+        width: 25%
+    }
+}
+
+@media (max-width:768px) {
+    .rubisco-grid .rubisco_col-sm-5-5 {
+        width: 100%
+    }
+
+    .rubisco-grid .rubisco_col-sm-4-5 {
+        width: 80%
+    }
+
+    .rubisco-grid .rubisco_col-sm-3-5 {
+        width: 60%
+    }
+
+    .rubisco-grid .rubisco_col-sm-2-5 {
+        width: 40%
+    }
+
+    .rubisco-grid .rubisco_col-sm-1-5 {
+        width: 20%
+    }
+
+    .rubisco-grid .rubisco_col-sm-4-4 {
+        width: 100%
+    }
+
+    .rubisco-grid .rubisco_col-sm-3-4 {
+        width: 75%
+    }
+
+    .rubisco-grid .rubisco_col-sm-2-4 {
+        width: 50%
+    }
+
+    .rubisco-grid .rubisco_col-sm-1-4 {
+        width: 25%
+    }
+}
+
+@media (max-width:480px) {
+    .rubisco-grid .rubisco_col-xs-5-5 {
+        width: 100%
+    }
+
+    .rubisco-grid .rubisco_col-xs-4-5 {
+        width: 80%
+    }
+
+    .rubisco-grid .rubisco_col-xs-3-5 {
+        width: 60%
+    }
+
+    .rubisco-grid .rubisco_col-xs-2-5 {
+        width: 40%
+    }
+
+    .rubisco-grid .rubisco_col-xs-1-5 {
+        width: 20%
+    }
+
+    .rubisco-grid .rubisco_col-xs-4-4 {
+        width: 100%
+    }
+
+    .rubisco-grid .rubisco_col-xs-3-4 {
+        width: 75%
+    }
+
+    .rubisco-grid .rubisco_col-xs-2-4 {
+        width: 50%
+    }
+
+    .rubisco-grid .rubisco_col-xs-1-4 {
+        width: 25%
+    }
+}
+
+@keyframes b {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.rubisco-icon_loader {
+    animation: b 2s ease-out 0s infinite;
+    background: url(data:image/png;base64,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) no-repeat 50%;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: var(--rb-icon-loader-size);
+    vertical-align: middle;
+    width: var(--rb-icon-loader-size);
+    will-change: transform
+}
+
+.rubisco-icon {
+    background: 50% no-repeat;
+    background-size: contain;
+    height: 14px;
+    overflow: visible;
+    width: 14px;
+    fill: var(--rb-color-icon);
+    transform-origin: 0 0 !important
+}
+
+.rubisco-icon,
+.rubisco-icon_close {
+    stroke: var(--rb-color-icon)
+}
+
+svg.rubisco-icon {
+    height: auto;
+    isolation: isolate
+}
+
+.rubisco-icon_text {
+    font-size: 14px
+}
+
+.rubisco,
+.rubisco *,
+.rubisco-container,
+.rubisco-container * {
+    box-sizing: border-box
+}
+
+.rubisco .rubisco-workplace,
+.rubisco-container .rubisco-workplace {
+    overflow: auto;
+    position: relative
+}
+
+.rubisco .rubisco-workplace .rubisco-wysiwyg,
+.rubisco .rubisco-workplace .rubisco-wysiwyg_iframe,
+.rubisco-container .rubisco-workplace .rubisco-wysiwyg,
+.rubisco-container .rubisco-workplace .rubisco-wysiwyg_iframe {
+    height: 100%;
+    width: 100%
+}
+
+.rubisco-wysiwyg [contenteditable=false] {
+    cursor: default
+}
+
+.rubisco-container:not(.rubisco_inline) {
+    background-color: var(--rb-color-background-light-gray);
+    border: 1px solid var(--rb-color-border);
+    border-radius: var(--rb-border-radius-default)
+}
+
+.rubisco-container:not(.rubisco_inline) .rubisco-workplace {
+    background-color: var(--rb-color-background-default);
+    border: 0 solid var(--rb-color-border);
+    max-height: 100%
+}
+
+.rubisco-container:not(.rubisco_inline).rubisco_disabled {
+    background: var(--rb-color-background-gray)
+}
+
+.rubisco-container:not(.rubisco_inline).rubisco_disabled .rubisco-workplace {
+    opacity: .4
+}
+
+.rubisco_disabled,
+.rubisco_lock {
+    user-select: none !important
+}
+
+.rubisco_hidden {
+    display: none !important
+}
+
+.rubisco_vertical_middle {
+    align-items: center;
+    display: flex
+}
+
+.rubisco-box {
+    background: 0 0;
+    border: 0;
+    float: none;
+    height: auto;
+    margin: 0;
+    max-width: none;
+    outline: 0;
+    padding: 0;
+    position: static;
+    width: auto
+}
+
+.rubisco-dialog_theme_dark,
+.rubisco_theme_dark {
+    --rb-color-border: #6b6b6b;
+    --rb-color-text: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar-collection_mode_horizontal,
+.rubisco-dialog_theme_dark .rubisco-toolbar-editor-collection_mode_horizontal,
+.rubisco_theme_dark .rubisco-toolbar-collection_mode_horizontal,
+.rubisco_theme_dark .rubisco-toolbar-editor-collection_mode_horizontal {
+    background-image: repeating-linear-gradient(transparent 0, transparent calc(var(--rb-button-size) - 1px), var(--rb-color-border) var(--rb-button-size))
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar-collection_mode_horizontal:after,
+.rubisco-dialog_theme_dark .rubisco-toolbar-editor-collection_mode_horizontal:after,
+.rubisco_theme_dark .rubisco-toolbar-collection_mode_horizontal:after,
+.rubisco_theme_dark .rubisco-toolbar-editor-collection_mode_horizontal:after {
+    background-color: var(--rb-color-border)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar__box:not(:empty),
+.rubisco_theme_dark .rubisco-toolbar__box:not(:empty) {
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar__box:not(:empty) .rubisco-toolbar-editor-collection:after,
+.rubisco_theme_dark .rubisco-toolbar__box:not(:empty) .rubisco-toolbar-editor-collection:after {
+    background-color: var(--rb-color-border)
+}
+
+.rubisco-dialog_theme_dark .rubisco-ui-group_separated_true:not(:last-child, .rubisco-ui-group_before-spacer_true):after,
+.rubisco_theme_dark .rubisco-ui-group_separated_true:not(:last-child, .rubisco-ui-group_before-spacer_true):after {
+    border-right-color: var(--rb-color-border)
+}
+
+.rubisco-dialog_theme_dark.rubisco-container,
+.rubisco_theme_dark.rubisco-container {
+    background-color: var(--rb-dark-background-color);
+    border-color: var(--rb-color-border)
+}
+
+.rubisco-dialog_theme_dark.rubisco-container.rubisco_disabled,
+.rubisco_theme_dark.rubisco-container.rubisco_disabled {
+    background-color: var(--rb-dark-background-color)
+}
+
+.rubisco-dialog_theme_dark.rubisco-container:not(.rubisco_inline) .rubisco-workplace,
+.rubisco_theme_dark.rubisco-container:not(.rubisco_inline) .rubisco-workplace {
+    border-color: var(--rb-dark-background-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-popup__content,
+.rubisco_theme_dark .rubisco-popup__content {
+    background: var(--rb-dark-background-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar-button,
+.rubisco-dialog_theme_dark .rubisco-toolbar-select,
+.rubisco-dialog_theme_dark .rubisco-ui-button,
+.rubisco_theme_dark .rubisco-toolbar-button,
+.rubisco_theme_dark .rubisco-toolbar-select,
+.rubisco_theme_dark .rubisco-ui-button {
+    --rb-color-icon: var(--rb-dark-icon-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar-button__text,
+.rubisco-dialog_theme_dark .rubisco-toolbar-select__text,
+.rubisco-dialog_theme_dark .rubisco-ui-button__text,
+.rubisco_theme_dark .rubisco-toolbar-button__text,
+.rubisco_theme_dark .rubisco-toolbar-select__text,
+.rubisco_theme_dark .rubisco-ui-button__text {
+    color: var(--rb-color-text)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar-button .rubisco-icon,
+.rubisco-dialog_theme_dark .rubisco-toolbar-button svg,
+.rubisco-dialog_theme_dark .rubisco-toolbar-button__trigger,
+.rubisco-dialog_theme_dark .rubisco-toolbar-select .rubisco-icon,
+.rubisco-dialog_theme_dark .rubisco-toolbar-select svg,
+.rubisco-dialog_theme_dark .rubisco-toolbar-select__trigger,
+.rubisco-dialog_theme_dark .rubisco-ui-button .rubisco-icon,
+.rubisco-dialog_theme_dark .rubisco-ui-button svg,
+.rubisco-dialog_theme_dark .rubisco-ui-button__trigger,
+.rubisco_theme_dark .rubisco-toolbar-button .rubisco-icon,
+.rubisco_theme_dark .rubisco-toolbar-button svg,
+.rubisco_theme_dark .rubisco-toolbar-button__trigger,
+.rubisco_theme_dark .rubisco-toolbar-select .rubisco-icon,
+.rubisco_theme_dark .rubisco-toolbar-select svg,
+.rubisco_theme_dark .rubisco-toolbar-select__trigger,
+.rubisco_theme_dark .rubisco-ui-button .rubisco-icon,
+.rubisco_theme_dark .rubisco-ui-button svg,
+.rubisco_theme_dark .rubisco-ui-button__trigger {
+    fill: var(--rb-color-icon);
+    stroke: var(--rb-color-icon)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar-button:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-button__button:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-button__text:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-button__trigger:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-select:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-select__button:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-select__text:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-toolbar-select__trigger:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-ui-button:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-ui-button__button:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-ui-button__text:hover:not([disabled]),
+.rubisco-dialog_theme_dark .rubisco-ui-button__trigger:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-button:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-button__button:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-button__text:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-button__trigger:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-select:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-select__button:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-select__text:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-toolbar-select__trigger:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-ui-button:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-ui-button__button:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-ui-button__text:hover:not([disabled]),
+.rubisco_theme_dark .rubisco-ui-button__trigger:hover:not([disabled]) {
+    --rb-color-text: var(--rb-dark-background-color);
+    --rb-color-icon: var(--rb-dark-background-color);
+    background-color: var(--rb-dark-background-ligher);
+    color: var(--rb-dark-background-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-status-bar,
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty),
+.rubisco_theme_dark .rubisco-status-bar,
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) {
+    background-color: var(--rb-dark-toolbar-color);
+    border-color: var(--rb-color-border);
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-status-bar,
+.rubisco-dialog_theme_dark .rubisco-status-bar .rubisco-status-bar__item a,
+.rubisco-dialog_theme_dark .rubisco-status-bar .rubisco-status-bar__item span,
+.rubisco-dialog_theme_dark .rubisco-status-bar a.rubisco-status-bar-link,
+.rubisco-dialog_theme_dark .rubisco-status-bar a.rubisco-status-bar-link:hover,
+.rubisco-dialog_theme_dark .rubisco-status-bar a.rubisco-status-bar-link:visited,
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty),
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) .rubisco-status-bar__item a,
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) .rubisco-status-bar__item span,
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) a.rubisco-status-bar-link,
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) a.rubisco-status-bar-link:hover,
+.rubisco-dialog_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) a.rubisco-status-bar-link:visited,
+.rubisco_theme_dark .rubisco-status-bar,
+.rubisco_theme_dark .rubisco-status-bar .rubisco-status-bar__item a,
+.rubisco_theme_dark .rubisco-status-bar .rubisco-status-bar__item span,
+.rubisco_theme_dark .rubisco-status-bar a.rubisco-status-bar-link,
+.rubisco_theme_dark .rubisco-status-bar a.rubisco-status-bar-link:hover,
+.rubisco_theme_dark .rubisco-status-bar a.rubisco-status-bar-link:visited,
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty),
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) .rubisco-status-bar__item a,
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) .rubisco-status-bar__item span,
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) a.rubisco-status-bar-link,
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) a.rubisco-status-bar-link:hover,
+.rubisco_theme_dark .rubisco-workplace+.rubisco-status-bar:not(:empty) a.rubisco-status-bar-link:visited {
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-toolbar__box:not(:empty),
+.rubisco_theme_dark .rubisco-toolbar__box:not(:empty) {
+    background: var(--rb-dark-toolbar-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-icon-close,
+.rubisco_theme_dark .rubisco-icon-close {
+    stroke: var(--rb-dark-icon-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-wysiwyg,
+.rubisco-dialog_theme_dark .rubisco-wysiwyg_iframe,
+.rubisco_theme_dark .rubisco-wysiwyg,
+.rubisco_theme_dark .rubisco-wysiwyg_iframe {
+    background-color: var(--rb-dark-background-color);
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-form input[type=text],
+.rubisco-dialog_theme_dark .rubisco-form input[type=url],
+.rubisco-dialog_theme_dark .rubisco-form textarea,
+.rubisco_theme_dark .rubisco-form input[type=text],
+.rubisco_theme_dark .rubisco-form input[type=url],
+.rubisco_theme_dark .rubisco-form textarea {
+    background-color: var(--rb-dark-toolbar-seperator-color1);
+    border-color: var(--rb-dark-toolbar-seperator-color2);
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-form button,
+.rubisco_theme_dark .rubisco-form button {
+    background-color: var(--rb-dark-toolbar-seperator-color3);
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-placeholder,
+.rubisco_theme_dark .rubisco-placeholder {
+    color: var(--rb-dark-text-color-opacity80)
+}
+
+.rubisco-dialog_theme_dark .rubisco-drag-and-drop__file-box,
+.rubisco-dialog_theme_dark .rubisco_uploadfile_button,
+.rubisco_theme_dark .rubisco-drag-and-drop__file-box,
+.rubisco_theme_dark .rubisco_uploadfile_button {
+    color: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-drag-and-drop__file-box:hover,
+.rubisco-dialog_theme_dark .rubisco_uploadfile_button:hover,
+.rubisco_theme_dark .rubisco-drag-and-drop__file-box:hover,
+.rubisco_theme_dark .rubisco_uploadfile_button:hover {
+    background-color: var(--rb-dark-toolbar-seperator-color3)
+}
+
+.rubisco-dialog_theme_dark .rubisco-add-new-line:before,
+.rubisco_theme_dark .rubisco-add-new-line:before {
+    border-top-color: var(--rb-dark-toolbar-seperator-color2)
+}
+
+.rubisco-dialog_theme_dark .rubisco-add-new-line span,
+.rubisco_theme_dark .rubisco-add-new-line span {
+    background: var(--rb-dark-toolbar-seperator-color3);
+    border-color: var(--rb-dark-toolbar-seperator-color2)
+}
+
+.rubisco-dialog_theme_dark .rubisco-add-new-line span svg,
+.rubisco_theme_dark .rubisco-add-new-line span svg {
+    fill: var(--rb-dark-text-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-resizer>i,
+.rubisco_theme_dark .rubisco-resizer>i {
+    background: var(--rb-dark-toolbar-seperator-color3);
+    border-color: var(--rb-dark-icon-color)
+}
+
+.rubisco-dialog_theme_dark .rubisco-input,
+.rubisco-dialog_theme_dark .rubisco-select,
+.rubisco_theme_dark .rubisco-input,
+.rubisco_theme_dark .rubisco-select {
+    background-color: var(--rb-dark-background-ligher);
+    border-color: var(--rb-dark-border-color);
+    color: var(--rb-dark-border-color)
+}
+
+.rubisco-dialog_theme_dark.rubisco-dialog,
+.rubisco_theme_dark.rubisco-dialog {
+    background-color: var(--rb-dark-background-color)
+}
+
+.rubisco-dialog_theme_dark.rubisco-dialog .rubisco-dialog__header,
+.rubisco-dialog_theme_dark.rubisco-dialog .rubisco-filebrowser__files.active .rubisco-filebrowser__files-item,
+.rubisco_theme_dark.rubisco-dialog .rubisco-dialog__header,
+.rubisco_theme_dark.rubisco-dialog .rubisco-filebrowser__files.active .rubisco-filebrowser__files-item {
+    border-color: var(--rb-dark-border-color)
+}
+
+.rubisco-dialog_theme_dark.rubisco-dialog .rubisco-filebrowser__files.active .rubisco-filebrowser__files-item-info,
+.rubisco_theme_dark.rubisco-dialog .rubisco-filebrowser__files.active .rubisco-filebrowser__files-item-info {
+    background-color: var(--rb-dark-text-color)
+}
