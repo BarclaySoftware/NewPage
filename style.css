@@ -1,16 +1,18 @@
 @import url(https://vortixsys.pages.dev/fonts/library.css);
 
 body {
-    font-family: sans-serif;
+    font-family: 'Rubisco Sans Text', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c0c0c0;
+    background-color: #e8eeef;
 }
 
 header {
-    font-family: sans-serif;
+    font-family: 'Rubisco Sans', sans-serif;
+    font-weight: 700;
     /* background-color: #3f48cc; */
-    background: linear-gradient(90deg, #000080, #1084d0);
+    /* background: linear-gradient(90deg, #000080, #1084d0); */
+    background: #0055d4;
     padding: 10px;
     color: white;
     text-align: center;
@@ -23,8 +25,8 @@ header {
 }
 
 :root {
---rb-color-panel: #c0c0c0;
---rb-color-icon: #000000;
+    --rb-color-panel: #ffffff;
+    --rb-color-icon: #4d4d4d;
 }
 
 #editor {
@@ -41,17 +43,32 @@ header {
 }
 
 .btn {
-    font-family: sans-serif;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #000080;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
     cursor: pointer;
-    font-size: 16px;
+    font-family: 'Rubisco Sans Text', sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    margin: 5px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
 }
 
 .btn:hover {
-    background-color: #000080;
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+.btn:focus {
+    border-color: #4285f4;
+    outline: none;
 }

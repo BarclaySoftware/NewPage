@@ -1,4 +1,6 @@
-// Initialize Jodit editor
+// Copyright (c) 2026 Rubisco Group. All Rights Reserved.
+
+// Initialize the editor
 const editor = new Rubisco('#editor', {
     height: 400,
     toolbarSticky: false,
@@ -6,11 +8,11 @@ const editor = new Rubisco('#editor', {
     spellcheck: true,
 });
 
-// Save button action
+// Save button
 document.getElementById('saveBtn').addEventListener('click', function() {
     const content = editor.value;
     if(content) {
-        const blob = new Blob([`<!DOCTYPE html>\n<html>\n<head>\n<meta charset='UTF-8'>\n<title>Saved Content</title>\n<link rel='stylesheet' type='text/css' href='https://pageperfect.pages.dev/global.css'>\n</head>\n<body>\n${content}\n</body>\n</html>`], { type: 'text/html' });
+        const blob = new Blob([`<!doctype html>\n<html>\n<head>\n    <meta charset='UTF-8'>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Saved Content</title>\n    <link rel="shortcut icon" href="https://pageperfect.pages.dev/favicon.svg" type="image/x-icon">\n    <link rel='stylesheet' type='text/css' href='https://pageperfect.pages.dev/global.css'>\n</head>\n<body>\n    ${content}\n</body>\n</html>`], { type: 'text/html' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
         a.download = 'saved_content.html';
@@ -22,7 +24,7 @@ document.getElementById('saveBtn').addEventListener('click', function() {
     }
 });
 
-// Clear button action
+// Clear button
 document.getElementById('clearBtn').addEventListener('click', function() {
     editor.value = '';
 });
