@@ -15382,15 +15382,15 @@
                             // "Helvetica, sans-serif": "Helvetica",
                             // "Impact, Charcoal, sans-serif": "Impact",
                             // "Verdana, Geneva, sans-serif": "Verdana",
-                            "'Rubisco Sans'": "Rubisco Sans",
-                            "'Rubisco Sans Text'": "RS Text",
-                            "'Rubisco Sans Code'": "RS Code",
                             "sans-serif": "Sans-Serif",
                             "monospace": "Monospace",
                             "serif": "Serif",
                             "cursive": "Cursive",
                             "fantasy": "Fantasy",
                             "system-ui": "System",
+                            "'Rubisco Sans'": "Rubisco Sans",
+                            "'Rubisco Sans Text'": "RS Text",
+                            "'Rubisco Sans Code'": "RS Code",
                         },
                         childTemplate(t, e, s) {
                             let i = !1;
