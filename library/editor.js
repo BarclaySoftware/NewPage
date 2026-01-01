@@ -15388,9 +15388,9 @@
                             "cursive": "Cursive",
                             "fantasy": "Fantasy",
                             "system-ui": "System",
-                            "'PagePerfect Sans'": "PagePerfect Sans",
-                            "'PagePerfect Sans Text'": "RS Text",
-                            "'PagePerfect Sans Code'": "RS Code",
+                            "'Rubisco Sans'": "Rubisco Sans",
+                            "'Rubisco Sans Text'": "RS Text",
+                            "'Rubisco Sans Code'": "RS Code",
                         },
                         childTemplate(t, e, s) {
                             let i = !1;
