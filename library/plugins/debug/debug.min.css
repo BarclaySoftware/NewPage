@@ -1,4 +1,4 @@
-.rubisco-debug {
+.pageperfect-debug {
     align-items: stretch;
     background: #f6f6f6;
     display: flex;
@@ -7,29 +7,29 @@
     position: relative
 }
 
-.rubisco-debug>* {
+.pageperfect-debug>* {
     padding: var(--jd-padding-default)
 }
 
-.rubisco-debug__tree {
+.pageperfect-debug__tree {
     width: 40%
 }
 
-.rubisco-debug__tree .rubisco-debug__tree-elm-name {
+.pageperfect-debug__tree .pageperfect-debug__tree-elm-name {
     color: #052e88
 }
 
-.rubisco-debug__tree .rubisco-debug__tree-element_selected {
+.pageperfect-debug__tree .pageperfect-debug__tree-element_selected {
     background: #1e7e34;
     color: #fff
 }
 
-.rubisco-debug__tree .rubisco-debug__tree-cursor {
+.pageperfect-debug__tree .pageperfect-debug__tree-cursor {
     background: #dc3232;
     color: #fff
 }
 
-.rubisco-debug__events {
+.pageperfect-debug__events {
     background: #1e7e34;
     color: #fff;
     max-height: 500px;
@@ -37,12 +37,12 @@
     width: 40%
 }
 
-.rubisco-debug__events span {
+.pageperfect-debug__events span {
     color: #cacaca;
     font-size: .8em
 }
 
-.rubisco-debug__events .rubisco-debug__events-clear {
+.pageperfect-debug__events .pageperfect-debug__events-clear {
     color: red;
     cursor: pointer;
     padding: 5px;

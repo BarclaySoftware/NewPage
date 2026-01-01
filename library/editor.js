@@ -1,8 +1,8 @@
 /*!
- * rubisco - Rubisco is an awesome and useful wysiwyg editor with filebrowser
+ * PagePerfect Content Editor - An awesome and useful WYSIWYG editor for HTML.
  * Rubisco Group <https://rubisco.pages.dev/>
  * Version: v4.5.8
- * Url: https://rubisco.pages.dev/
+ * Url: https://pageperfect.pages.dev/
  * License(s): MIT
  */
 
@@ -329,7 +329,7 @@
                     const a = new Map;
                     class l {
                         get componentName() {
-                            return this.__componentName || (this.__componentName = "rubisco-" + (0, n.kebabCase)(((0, n.isFunction)(this.className) ? this.className() : "") || (0, n.getClassName)(this))), this.__componentName
+                            return this.__componentName || (this.__componentName = "pageperfect-" + (0, n.kebabCase)(((0, n.isFunction)(this.className) ? this.className() : "") || (0, n.getClassName)(this))), this.__componentName
                         }
                         getFullElName(t, e, s) {
                             const i = [this.componentName];
@@ -360,7 +360,7 @@
                             return t.hookStatus(r.f.beforeDestruct, (() => !this.isInDestruct && this.destruct())), this
                         }
                         constructor() {
-                            this.async = new i.j, this.ownerWindow = window, this.__componentStatus = r.f.beforeInit, this.uid = "rubisco-uid-" + (0, o.w9)()
+                            this.async = new i.j, this.ownerWindow = window, this.__componentStatus = r.f.beforeInit, this.uid = "pageperfect-uid-" + (0, o.w9)()
                         }
                         destruct() {
                             this.setStatus(r.f.destructed), this.async && (this.async.destruct(), this.async = void 0), a.get(this) && a.delete(this), this.ownerWindow = void 0
@@ -434,7 +434,7 @@
                     var i = s(37474);
                     class r extends i.u {
                         get j() {
-                            return this.rubisco
+                            return this.pageperfect
                         }
                         get defaultTimeout() {
                             return this.j.defaultTimeout
@@ -443,7 +443,7 @@
                             return this.j.i18n(t, ...e)
                         }
                         setParentView(t) {
-                            return this.rubisco = t, t.components.add(this), this
+                            return this.pageperfect = t, t.components.add(this), this
                         }
                         constructor(t) {
                             super(), this.setParentView(t)
@@ -659,7 +659,7 @@
                         a = !0;
                     let l = !1;
                     const c = !1,
-                        u = "https://rubisco.pages.dev/",
+                        u = "https://pageperfect.pages.dev/",
                         d = () => l = !0,
                         h = {},
                         p = "\ufeff",
@@ -672,10 +672,10 @@
                         _ = () => /[\s\n\t\r\uFEFF\u200b]+$/g,
                         w = "undefined" != typeof window ? window : void 0,
                         C = "undefined" != typeof document ? document : void 0,
-                        k = /^(ADDRESS|ARTICLE|ASIDE|BLOCKQUOTE|CANVAS|DD|DFN|DIV|DL|DT|FIELDSET|FIGCAPTION|FIGURE|FOOTER|FORM|H[1-6]|HEADER|HGROUP|HR|LI|MAIN|NAV|NOSCRIPT|OUTPUT|P|PRE|RUBY|SCRIPT|STYLE|OBJECT|OL|SECTION|IFRAME|RUBISCO|RUBISCO-MEDIA|UL|TR|TD|TH|TBODY|THEAD|TFOOT|TABLE|BODY|HTML|VIDEO)$/i,
+                        k = /^(ADDRESS|ARTICLE|ASIDE|BLOCKQUOTE|CANVAS|DD|DFN|DIV|DL|DT|FIELDSET|FIGCAPTION|FIGURE|FOOTER|FORM|H[1-6]|HEADER|HGROUP|HR|LI|MAIN|NAV|NOSCRIPT|OUTPUT|P|PRE|RUBY|SCRIPT|STYLE|OBJECT|OL|SECTION|IFRAME|PAGEPERFECT|PAGEPERFECT-MEDIA|UL|TR|TD|TH|TBODY|THEAD|TFOOT|TABLE|BODY|HTML|VIDEO)$/i,
                         S = /^(STRONG|SPAN|I|EM|B|SUP|SUB|A|U)$/i,
                         T = new Set(["ul", "ol"]),
-                        E = ["img", "video", "svg", "iframe", "script", "input", "textarea", "link", "rubisco", "rubisco-media"],
+                        E = ["img", "video", "svg", "iframe", "script", "input", "textarea", "link", "pageperfect", "pageperfect-media"],
                         x = new Set([...E, "br", "hr"]),
                         I = new Set(E),
                         j = "Meta",
@@ -703,7 +703,7 @@
                         X = G ? "text" : "text/plain",
                         Z = G ? "html" : "text/html",
                         Q = G ? "rtf" : "text/rtf",
-                        tt = "rubisco-selection_marker",
+                        tt = "pageperfect-selection_marker",
                         et = 300,
                         st = "insert_as_html",
                         it = "insert_clear_html",
@@ -745,7 +745,7 @@
                             const s = C.querySelectorAll("script[src]");
                             return s && s.length ? e(s[s.length - 1].src) : w.location.href
                         })(),
-                        ut = "data-rubisco-temp",
+                        ut = "data-pageperfect-temp",
                         dt = {},
                         ht = "clipboard",
                         pt = "source-consumer",
@@ -892,7 +892,7 @@
                             const e = a.apply(this, t);
                             return l && r.J.isElement(e) && c.set(this.constructor, e), l ? e.cloneNode(!0) : e
                         }, t.hookStatus(i.f.ready, (t => {
-                            const e = (0, o.hH)(t) ? t : t.rubisco;
+                            const e = (0, o.hH)(t) ? t : t.pageperfect;
                             l = !!e.options.cache
                         }))
                     }
@@ -1119,7 +1119,7 @@
 
                     function o(t, e) {
                         t.hookStatus(i.f.ready, (t => {
-                            const s = (0, r.h)(t) ? t : t.rubisco,
+                            const s = (0, r.h)(t) ? t : t.pageperfect,
                                 i = `${s.options.namespace}${t.componentName}_prop_${e}`,
                                 o = t[e];
                             Object.defineProperty(t, e, {
@@ -1192,7 +1192,7 @@
                             const h = e?.immediately ?? !0,
                                 p = e?.context,
                                 m = e => {
-                                    const i = (0, l.h)(e) ? e : e.rubisco;
+                                    const i = (0, l.h)(e) ? e : e.pageperfect;
                                     let c = (t, ...s) => {
                                         if (!e.isInDestruct) return e[d](t, ...s)
                                     };
@@ -1560,7 +1560,7 @@
                             return !!l.isElement(t) && ((0, o.rg)(t) || "true" === (0, a.attr)(t, i.TEMP_ATTR))
                         }
                         static replaceTemporaryFromString(t) {
-                            return t.replace(/<([a-z]+)[^>]+data-rubisco-temp[^>]+>(.+?)<\/\1>/gi, "$2")
+                            return t.replace(/<([a-z]+)[^>]+data-pageperfect-temp[^>]+>(.+?)<\/\1>/gi, "$2")
                         }
                         static temporaryList(t) {
                             return (0, a.$$)(`[${i.TEMP_ATTR}]`, t)
@@ -1815,7 +1815,7 @@
                             })), i
                         }
                         constructor(t) {
-                            this.__domEventsMap = new Map, this.__mutedEvents = new Set, this.__key = "__RubiscoEventEmitterNamespaces", this.__doc = i.globalDocument, this.__prepareEvent = t => {
+                            this.__domEventsMap = new Map, this.__mutedEvents = new Set, this.__key = "__PagePerfectEventEmitterNamespaces", this.__doc = i.globalDocument, this.__prepareEvent = t => {
                                 t.cancelBubble || (t.composed && (0, n.T)(t.composedPath) && t.composedPath()[0] && Object.defineProperty(t, "target", {
                                     value: t.composedPath()[0],
                                     configurable: !0,
@@ -1970,7 +1970,7 @@
                     });
                     var i = s(42448);
                     s(28712);
-                    const r = "RubiscoEventDefaultNamespace";
+                    const r = "PagePerfectEventDefaultNamespace";
                     class o {
                         constructor() {
                             this.__store = new Map
@@ -2069,7 +2069,7 @@
                         _ = new WeakMap;
 
                     function w(t, e, s = "div", i = !1) {
-                        const c = (0, o.K)(e) ? e : e ? (0, l.u)(e.prototype) : "rubisco-utils",
+                        const c = (0, o.K)(e) ? e : e ? (0, l.u)(e.prototype) : "pageperfect-utils",
                             u = _.get(t) || {},
                             h = c + s,
                             p = (0, n.h)(t) ? t : t.j;
@@ -2082,13 +2082,13 @@
                                 m = (0, r.y)(t) && t.o.shadowRoot ? t.o.shadowRoot : i
                             }
                             const o = e.element(s, {
-                                className: `rubisco rubisco-${(0,a.k)(c)}-container rubisco-box`
+                                className: `pageperfect pageperfect-${(0,a.k)(c)}-container pageperfect-box`
                             });
-                            o.classList.add("rubisco_theme_" + (p.o.theme || "default")), m.appendChild(o), u[h] = o, t.hookStatus("beforeDestruct", (() => {
+                            o.classList.add("pageperfect_theme_" + (p.o.theme || "default")), m.appendChild(o), u[h] = o, t.hookStatus("beforeDestruct", (() => {
                                 p.events.off(o), d.J.safeRemove(o), delete u[h], Object.keys(u).length && _.delete(t)
                             })), _.set(t, u), p.events.fire("getContainer", o)
                         }
-                        return u[h].classList.remove("rubisco_theme_default", "rubisco_theme_dark"), u[h].classList.add("rubisco_theme_" + (p.o.theme || "default")), u[h]
+                        return u[h].classList.remove("pageperfect_theme_default", "pageperfect_theme_dark"), u[h].classList.add("pageperfect_theme_" + (p.o.theme || "default")), u[h]
                     }
 
                     function C(t, e, s) {
@@ -2458,7 +2458,7 @@
                     var i = s(69052);
 
                     function r(t) {
-                        return !!(t && t instanceof Object && (0, i.T)(t.constructor) && ("undefined" != typeof Rubisco && t instanceof Rubisco || t.isRubisco))
+                        return !!(t && t instanceof Object && (0, i.T)(t.constructor) && ("undefined" != typeof PagePerfect && t instanceof PagePerfect || t.isPagePerfect))
                     }
                 },
                 82201(t, e, s) {
@@ -2902,14 +2902,14 @@
                             if (!r) return;
                             if (s && i.J.isTag(t, s)) {
                                 const r = t.nodeName.toLowerCase(),
-                                    o = i.J.isTag(t, c) ? `%%%rubisco-single-${r}%%%` : `%%%rubisco-${r}%%%${u(t.innerHTML,e,s)}%%%/rubisco-${r}%%%`;
+                                    o = i.J.isTag(t, c) ? `%%%pageperfect-single-${r}%%%` : `%%%pageperfect-${r}%%%${u(t.innerHTML,e,s)}%%%/pageperfect-${r}%%%`;
                                 return i.J.before(t, e.createTextNode(o)), void i.J.safeRemove(t)
                             }
                             if (i.J.isTag(t, l)) return void i.J.safeRemove(t);
                             if (!i.J.isTag(t, a)) return;
                             const o = t.nextSibling;
                             i.J.isText(o) && /^\s/.test(o.nodeValue || "") || o && r.insertBefore(e.createTextNode(" "), o)
-                        })), (0, o.Bq)(d.innerText).replace(/%%%(\/)?rubisco(-single)?-([\w\n]+)%%%/g, ((t, e, s, i) => `<${e?"/":""}${i}>`))
+                        })), (0, o.Bq)(d.innerText).replace(/%%%(\/)?pageperfect(-single)?-([\w\n]+)%%%/g, ((t, e, s, i) => `<${e?"/":""}${i}>`))
                     }
                 },
                 65147(t, e, s) {
@@ -2996,7 +2996,7 @@
                         isInt() {
                             return o.E6
                         },
-                        isRubiscoObject() {
+                        isPagePerfectObject() {
                             return o.y0
                         },
                         isLicense() {
@@ -3133,7 +3133,7 @@
                         u = s(6589),
                         d = s(97369),
                         h = {};
-                    for (var p in d) 0 > ["default", "asArray", "splitArray", "toArray", "clearTimeout", "setTimeout", "hasBrowserColorPicker", "hasContainer", "isAbortError", "isArray", "isBoolean", "isDestructable", "isEqual", "isFastEqual", "isFunction", "isHTML", "isHtmlFromWord", "isInitable", "isInt", "isRubiscoObject", "isLicense", "isMarker", "isNativeFunction", "isNumber", "isNumeric", "isPlainObject", "isPromise", "isSet", "isString", "isStringArray", "isURL", "isValidName", "isViewObject", "isVoid", "isWindow", "colorToHex", "applyStyles", "cleanFromWord", "htmlspecialchars", "nl2br", "safeHTML", "sanitizeHTMLElement", "stripTags", "NUMBER_FIELDS_REG", "normalizeColor", "normalizeCssNumericValue", "normalizeCssValue", "normalizeKeyAliases", "normalizeLicense", "normalizePath", "normalizeRelativePath", "normalizeSize", "normalizeUrl", "getContentWidth", "getScrollParent", "innerWidth", "offset", "position", "size", "CamelCaseToKebabCase", "camelCase", "fuzzySearchIndex", "i18n", "kebabCase", "sprintf", "stringify", "trim", "trimChars", "trimInv", "ucfirst"].indexOf(p) && (h[p] = (t => d[t]).bind(0, p));
+                    for (var p in d) 0 > ["default", "asArray", "splitArray", "toArray", "clearTimeout", "setTimeout", "hasBrowserColorPicker", "hasContainer", "isAbortError", "isArray", "isBoolean", "isDestructable", "isEqual", "isFastEqual", "isFunction", "isHTML", "isHtmlFromWord", "isInitable", "isInt", "isPagePerfectObject", "isLicense", "isMarker", "isNativeFunction", "isNumber", "isNumeric", "isPlainObject", "isPromise", "isSet", "isString", "isStringArray", "isURL", "isValidName", "isViewObject", "isVoid", "isWindow", "colorToHex", "applyStyles", "cleanFromWord", "htmlspecialchars", "nl2br", "safeHTML", "sanitizeHTMLElement", "stripTags", "NUMBER_FIELDS_REG", "normalizeColor", "normalizeCssNumericValue", "normalizeCssValue", "normalizeKeyAliases", "normalizeLicense", "normalizePath", "normalizeRelativePath", "normalizeSize", "normalizeUrl", "getContentWidth", "getScrollParent", "innerWidth", "offset", "position", "size", "CamelCaseToKebabCase", "camelCase", "fuzzySearchIndex", "i18n", "kebabCase", "sprintf", "stringify", "trim", "trimChars", "trimInv", "ucfirst"].indexOf(p) && (h[p] = (t => d[t]).bind(0, p));
                     s.d(e, h)
                 },
                 65499(t, e, s) {
@@ -4520,7 +4520,7 @@
                         try {
                             const a = t.e.fire("beforePreviewBox", e, s);
                             if (null != a) return a;
-                            let u = t.c.div("rubisco__preview-box rubisco-context");
+                            let u = t.c.div("pageperfect__preview-box pageperfect-context");
                             l && l.appendChild(u), (0, n.A)(u, {
                                 position: "relative",
                                 padding: 16
@@ -4793,7 +4793,7 @@
                     }
 
                     function l(t, e) {
-                        (0, o.C)(e, "data-editor_id", t.id), !e.component && Object.defineProperty(e, "rubisco", {
+                        (0, o.C)(e, "data-editor_id", t.id), !e.component && Object.defineProperty(e, "pageperfect", {
                             value: t
                         })
                     }
@@ -5052,10 +5052,10 @@
                             }))
                         }
                         __afterInit() {
-                            this.__inited = !0, this.setStatus(r.f.ready), this.afterInit(this.rubisco)
+                            this.__inited = !0, this.setStatus(r.f.ready), this.afterInit(this.pageperfect)
                         }
                         init(t) {
-                            this.rubisco.isReady && (this.afterInit(this.rubisco), this.__afterPluginSystemInit(), this.rubisco.e.fire("rebuildToolbar"))
+                            this.pageperfect.isReady && (this.afterInit(this.pageperfect), this.__afterPluginSystemInit(), this.pageperfect.e.fire("rebuildToolbar"))
                         }
                         __beforeDestruct() {
                             if (this.isInDestruct) return;
@@ -5356,12 +5356,12 @@
                         d = s(46602);
                     class h {
                         constructor(t) {
-                            this.rubisco = t, t.e.on("removeMarkers", (() => {
+                            this.pageperfect = t, t.e.on("removeMarkers", (() => {
                                 this.removeMarkers()
                             }))
                         }
                         get j() {
-                            return this.rubisco
+                            return this.pageperfect
                         }
                         errorNode(t) {
                             if (!n.J.isNode(t)) throw (0, a.error)("Parameter node must be instance of Node")
@@ -5706,7 +5706,7 @@
                             return ""
                         }* wrapInTagGen(t) {
                             if (this.isCollapsed()) {
-                                const e = this.rubisco.createInside.element("font", r.INVISIBLE_SPACE);
+                                const e = this.pageperfect.createInside.element("font", r.INVISIBLE_SPACE);
                                 return this.insertNode(e, !1, !1), t && t[0] && e.appendChild(t[0]), yield e, void n.J.unwrap(e)
                             }(0, a.$$)("*[style*=font-size]", this.area).forEach((t => {
                                 (0, a.attr)(t, "data-font-size", "" + t.style.fontSize), t.style.removeProperty("font-size")
@@ -6315,7 +6315,7 @@
                             mode: r.DI,
                             element: c.value,
                             next: o.x.START,
-                            rubisco: t,
+                            pageperfect: t,
                             style: e
                         };
                         for (; c && !c.done;) {
@@ -6449,7 +6449,7 @@
                                 exec(t) {
                                     const {
                                         element: e,
-                                        rubisco: s,
+                                        pageperfect: s,
                                         style: i,
                                         mode: l,
                                         collapsed: c
@@ -6481,7 +6481,7 @@
                                 exec(t) {
                                     const {
                                         element: e,
-                                        rubisco: s,
+                                        pageperfect: s,
                                         mode: n
                                     } = t;
                                     if (n !== o.DI && n !== o.OJ && n !== o.dj) return {
@@ -6502,7 +6502,7 @@
                             [a.TOGGLE_LIST]: {
                                 exec: t => ({
                                     ...t,
-                                    mode: (0, n.ks)(t.style, t.element, t.rubisco, t.mode),
+                                    mode: (0, n.ks)(t.style, t.element, t.pageperfect, t.mode),
                                     next: a.END
                                 })
                             },
@@ -6510,7 +6510,7 @@
                                 exec(t) {
                                     const {
                                         element: e,
-                                        rubisco: s,
+                                        pageperfect: s,
                                         style: i
                                     } = t, r = (0, n.$s)(i, e, s.editor);
                                     return i.elementIsBlock || (0, n.yP)(r, e, s), {
@@ -6540,7 +6540,7 @@
                                 exec(t) {
                                     const {
                                         element: e,
-                                        rubisco: s,
+                                        pageperfect: s,
                                         style: i
                                     } = t, r = (0, n.LV)(i, e, s);
                                     return {
@@ -6556,7 +6556,7 @@
                                     const {
                                         style: e,
                                         element: s,
-                                        rubisco: i
+                                        pageperfect: i
                                     } = t;
                                     return (0, n.Yx)(e, s, i, o.DI, !0) !== o.DI ? {
                                         ...t,
@@ -6575,7 +6575,7 @@
                                     const {
                                         style: e,
                                         element: s,
-                                        rubisco: i,
+                                        pageperfect: i,
                                         mode: l
                                     } = t, c = (0, n.Yx)(e, s, i, t.mode);
                                     return l !== o.Zk && c === o.Ag && !s.attributes.length && r.J.isTag(s, e.element) ? {
@@ -6599,7 +6599,7 @@
                                 })
                             },
                             [a.REPLACE_DEFAULT]: {
-                                exec: t => (r.J.replace(t.element, t.style.defaultTag, t.rubisco.createInside, !0), {
+                                exec: t => (r.J.replace(t.element, t.style.defaultTag, t.pageperfect.createInside, !0), {
                                     ...t,
                                     mode: o.dj,
                                     next: a.END
@@ -6623,7 +6623,7 @@
                     const i = (() => {
                         let t;
                         return () => (void 0 === t && (t = (() => {
-                            const t = "___Rubisco___" + Math.random();
+                            const t = "___PagePerfect___" + Math.random();
                             try {
                                 localStorage.setItem(t, "1");
                                 const e = "1" === localStorage.getItem(t);
@@ -6715,7 +6715,7 @@
                     var i = s(83260),
                         r = s(17800),
                         o = s(2788);
-                    const n = "Rubisco_";
+                    const n = "PagePerfect_";
                     class a {
                         set(t, e) {
                             return this.provider.set((0, i.x)(this.prefix + t), e), this
@@ -6900,7 +6900,7 @@
                             this.setMod("variant", this.state.variant)
                         }
                         onChangeText() {
-                            this.text.textContent = this.rubisco.i18n(this.state.text)
+                            this.text.textContent = this.pageperfect.i18n(this.state.text)
                         }
                         onChangeTextSetMode() {
                             this.setMod("text-icons", !!this.state.text.trim().length)
@@ -7034,7 +7034,7 @@
                                 text: t.state.text,
                                 value: t.state.value
                             })));
-                            this.rubisco.e.fire(this, "select", e), this.options.onChange?.(e)
+                            this.pageperfect.e.fire(this, "select", e), this.options.onChange?.(e)
                         }
                     };
                     a = (0, i.Cg)([r.s], a)
@@ -7077,7 +7077,7 @@
                         c = s(27594),
                         u = s(97369),
                         d = s(29780);
-                    const h = ["scroll.tooltip", "rubiscoCloseDialog", "mouseleave.tooltip"],
+                    const h = ["scroll.tooltip", "pageperfectCloseDialog", "mouseleave.tooltip"],
                         p = ["escape.tooltip", "change.tooltip", "changePlace.tooltip", "afterOpenPopup.tooltip", "hidePopup.tooltip", "beforePopupClose.tooltip", "closeAllPopups.tooltip"];
                     let m = i = class t extends d.D {
                         className() {
@@ -7122,7 +7122,7 @@
                             const e = (0, u.attr)(t.target, "aria-label");
                             if (!e) return;
                             if ((0, u.attr)(t.target, "disabled")) return;
-                            if (!t.target.className.includes("rubisco")) return;
+                            if (!t.target.className.includes("pageperfect")) return;
                             this.__currentTarget = t.target;
                             const s = t.target;
                             this.__open((() => {
@@ -7818,7 +7818,7 @@
                             super(t), this.mode = "horizontal", this.removeButtons = []
                         }
                         makeGroup() {
-                            return new l.U(this.rubisco)
+                            return new l.U(this.pageperfect)
                         }
                         get buttons() {
                             return this.allChildren.filter((t => r.u.isInstanceOf(t, a.lD)))
@@ -8020,9 +8020,9 @@
                             if (n) s = t.c.span(), (0, r.A)(s, "backgroundImage", "url(" + n.replace("{basePath}", t?.basePath || "") + ")");
                             else {
                                 const e = c || o.get(i, "") || t.o.extraIcons?.[i];
-                                e && (s = t.c.fromHTML(e.trim()), /^<svg/i.test(i) || s.classList.add("rubisco-icon_" + l))
+                                e && (s = t.c.fromHTML(e.trim()), /^<svg/i.test(i) || s.classList.add("pageperfect-icon_" + l))
                             }
-                            return s && (s.classList.add("rubisco-icon"), s.style.fill = a, t.o.cache && this.__cache.set(u, s.cloneNode(!0))), s
+                            return s && (s.classList.add("pageperfect-icon"), s.style.fill = a, t.o.cache && this.__cache.set(u, s.cloneNode(!0))), s
                         }
                     }
                     o.icons = {}, o.__cache = new Map
@@ -8148,9 +8148,9 @@
                             return this.updatePosition(), this
                         }
                         open(t, e = !1, s) {
-                            if ((0, l.markOwner)(this.rubisco, this.container), this.container.classList.add("rubisco_theme_" + this.rubisco.o.theme), this.__calculateZIndex(), this.isOpened = !0, this.__addGlobalListeners(), this.__targetBound = e ? this.getKeepBound(t) : t, s) s.appendChild(this.container);
+                            if ((0, l.markOwner)(this.pageperfect, this.container), this.container.classList.add("pageperfect_theme_" + this.pageperfect.o.theme), this.__calculateZIndex(), this.isOpened = !0, this.__addGlobalListeners(), this.__targetBound = e ? this.getKeepBound(t) : t, s) s.appendChild(this.container);
                             else {
-                                const t = (0, a.My)(this.rubisco, h);
+                                const t = (0, a.My)(this.pageperfect, h);
                                 s !== this.container.parentElement && t.appendChild(this.container)
                             }
                             return this.updatePosition(), this.j.e.fire(this, "afterOpen"), this.j.e.fire("afterOpenPopup", this), this
@@ -8366,7 +8366,7 @@
                             } : t))
                         }
                         constructor(t, e = !1) {
-                            super(t, e), this.toolbar = (0, m.$K)(this), this.__defaultToolbarContainer = this.c.div("rubisco-toolbar__box"), this.registeredButtons = new Set, this.groupToButtons = {}, this.isRubisco = !1, this.__tooltip = new d.SB(this), this.isRubisco = e, this.e.on("beforeToolbarBuild", this.beforeToolbarBuild)
+                            super(t, e), this.toolbar = (0, m.$K)(this), this.__defaultToolbarContainer = this.c.div("pageperfect-toolbar__box"), this.registeredButtons = new Set, this.groupToButtons = {}, this.isPagePerfect = !1, this.__tooltip = new d.SB(this), this.isPagePerfect = e, this.e.on("beforeToolbarBuild", this.beforeToolbarBuild)
                         }
                         destruct() {
                             this.isDestructed || (this.setStatus(r.f.beforeDestruct), this.e.off("beforeToolbarBuild", this.beforeToolbarBuild), this.__tooltip.destruct(), this.toolbar.destruct(), this.toolbar = void 0, super.destruct())
@@ -8477,7 +8477,7 @@
                             e && Object.keys(e).forEach((t => this.e.on(t, e[t])))
                         }
                         constructor(t, e = !1) {
-                            super(), this.isRubisco = e, this.isView = !0, this.parent = null, this.mods = {}, this.components = new Set, this.OPTIONS = i.defaultOptions, this.__isFullSize = !1, this.__whoLocked = "", this.isLockedNotBy = t => this.isLocked && this.__whoLocked !== t, this.__modulesInstances = new Map, this.id = "" + (new Date).getTime(), this.initOptions(t), this.initOwners(), this.events = new m.bk(this.od), this.create = new c.X(this.od), this.container = this.c.div("rubisco " + this.componentName)
+                            super(), this.isPagePerfect = e, this.isView = !0, this.parent = null, this.mods = {}, this.components = new Set, this.OPTIONS = i.defaultOptions, this.__isFullSize = !1, this.__whoLocked = "", this.isLockedNotBy = t => this.isLocked && this.__whoLocked !== t, this.__modulesInstances = new Map, this.id = "" + (new Date).getTime(), this.initOptions(t), this.initOwners(), this.events = new m.bk(this.od), this.create = new c.X(this.od), this.container = this.c.div("pageperfect " + this.componentName)
                         }
                         getInstance(t, e) {
                             const s = (0, f.isFunction)(t) ? t.prototype.className() : t,
@@ -8524,7 +8524,7 @@
                     "use strict";
                     s.d(e, {
                         x() {
-                            return Rubisco
+                            return PagePerfect
                         }
                     });
                     var i, r = s(31635),
@@ -8536,11 +8536,11 @@
                         u = s(58597),
                         d = s(36115),
                         h = s(37435);
-                    const p = "data-rubisco-default-style-display",
-                        m = "data-rubisco-default-classes";
-                    let Rubisco = i = class Rubisco extends h.ViewWithToolbar {
+                    const p = "data-pageperfect-default-style-display",
+                        m = "data-pageperfect-default-classes";
+                    let PagePerfect = i = class PagePerfect extends h.ViewWithToolbar {
                         className() {
-                            return "Rubisco"
+                            return "PagePerfect"
                         }
                         waitForReady() {
                             return this.isReady ? Promise.resolve(this) : this.async.promise((t => {
@@ -8549,7 +8549,7 @@
                         }
                         static get ready() {
                             return new Promise((t => {
-                                a.RR.on("rubiscoready", t)
+                                a.RR.on("pageperfectready", t)
                             }))
                         }
                         get text() {
@@ -8566,8 +8566,8 @@
                         static make(t, e) {
                             return new this(t, e)
                         }
-                        static isRubiscoAssigned(t) {
-                            return t && (0, l.isRubiscoObject)(t.component) && !t.component.isInDestruct
+                        static isPagePerfectAssigned(t) {
+                            return t && (0, l.isPagePerfectObject)(t.component) && !t.component.isInDestruct
                         }
                         static get defaultOptions() {
                             return d.T.defaultOptions
@@ -8687,7 +8687,7 @@
                         getEditorValue(t = !0, e) {
                             let s;
                             if (s = this.e.fire("beforeGetValueFromEditor", e), void 0 !== s) return s;
-                            s = this.getNativeEditorValue().replace(o.INVISIBLE_SPACE_REG_EXP(), ""), t && (s = s.replace(/<span[^>]+id="rubisco-selection_marker_[^>]+><\/span>/g, "")), "<br>" === s && (s = "");
+                            s = this.getNativeEditorValue().replace(o.INVISIBLE_SPACE_REG_EXP(), ""), t && (s = s.replace(/<span[^>]+id="pageperfect-selection_marker_[^>]+><\/span>/g, "")), "<br>" === s && (s = "");
                             const i = {
                                 value: s
                             };
@@ -8776,10 +8776,10 @@
                             }
                         }
                         lock(t = "any") {
-                            return !!super.lock(t) && (this.__selectionLocked = this.s.save(), this.s.clear(), this.editor.classList.add("rubisco_lock"), this.e.fire("lock", !0), !0)
+                            return !!super.lock(t) && (this.__selectionLocked = this.s.save(), this.s.clear(), this.editor.classList.add("pageperfect_lock"), this.e.fire("lock", !0), !0)
                         }
                         unlock() {
-                            return !!super.unlock() && (this.editor.classList.remove("rubisco_lock"), this.__selectionLocked && this.s.restore(), this.e.fire("lock", !1), !0)
+                            return !!super.unlock() && (this.editor.classList.remove("pageperfect_lock"), this.__selectionLocked && this.s.restore(), this.e.fire("lock", !1), !0)
                         }
                         getMode() {
                             return this.mode
@@ -8797,8 +8797,8 @@
                                 s = {
                                     mode: parseInt("" + t, 10)
                                 },
-                                i = ["rubisco-wysiwyg_mode", "rubisco-source__mode", "rubisco_split_mode"];
-                            !1 !== this.e.fire("beforeSetMode", s) && (this.__mode = [o.MODE_SOURCE, o.MODE_WYSIWYG, o.MODE_SPLIT].includes(s.mode) ? s.mode : o.MODE_WYSIWYG, this.o.saveModeInStorage && this.storage.set("rubisco_default_mode", this.mode), i.forEach((t => {
+                                i = ["pageperfect-wysiwyg_mode", "pageperfect-source__mode", "pageperfect_split_mode"];
+                            !1 !== this.e.fire("beforeSetMode", s) && (this.__mode = [o.MODE_SOURCE, o.MODE_WYSIWYG, o.MODE_SPLIT].includes(s.mode) ? s.mode : o.MODE_WYSIWYG, this.o.saveModeInStorage && this.storage.set("pageperfect_default_mode", this.mode), i.forEach((t => {
                                 this.container.classList.remove(t)
                             })), this.container.classList.add(i[this.mode - 1]), e !== this.getMode() && this.e.fire("afterSetMode"))
                         }
@@ -8809,7 +8809,7 @@
                         setDisabled(t) {
                             this.o.disabled = t;
                             const e = this.__wasReadOnly;
-                            this.setReadOnly(t || e), this.__wasReadOnly = e, this.editor && (this.editor.setAttribute("aria-disabled", "" + t), this.container.classList.toggle("rubisco_disabled", t), this.e.fire("disabled", t))
+                            this.setReadOnly(t || e), this.__wasReadOnly = e, this.editor && (this.editor.setAttribute("aria-disabled", "" + t), this.container.classList.toggle("pageperfect_disabled", t), this.e.fire("disabled", t))
                         }
                         getDisabled() {
                             return this.o.disabled
@@ -8835,10 +8835,10 @@
                             this.editorWindow = this.o.ownerWindow, this.ownerWindow = this.o.ownerWindow
                         }
                         constructor(t, e) {
-                            super(e, !0), this.isRubisco = !0, this.commands = new Map, this.__selectionLocked = null, this.__wasReadOnly = !1, this.editorIsActive = !1, this.__mode = o.MODE_WYSIWYG, this.__callChangeCount = 0, this.__isSilentChange = !1, this.__elementToPlace = new Map;
+                            super(e, !0), this.isPagePerfect = !0, this.commands = new Map, this.__selectionLocked = null, this.__wasReadOnly = !1, this.editorIsActive = !1, this.__mode = o.MODE_WYSIWYG, this.__callChangeCount = 0, this.__isSilentChange = !1, this.__elementToPlace = new Map;
                             try {
                                 const e = (0, l.resolveElement)(t, this.o.shadowRoot || this.od);
-                                if (i.isRubiscoAssigned(e)) return e.component
+                                if (i.isPagePerfectAssigned(e)) return e.component
                             } catch (t) {
                                 if (!o.IS_PROD) throw t;
                                 throw this.destruct(), t
@@ -8865,8 +8865,8 @@
                                 let i = t.value;
                                 void 0 === d.T.defaultOptions[s] || e && void 0 !== e[s] || (-1 !== ["readonly", "disabled"].indexOf(s) && (i = "" === i || "true" === i), /^[0-9]+(\.)?([0-9]+)?$/.test("" + i) && (i = Number(i)), this.options[s] = i)
                             }));
-                            let i = this.c.div("rubisco-container");
-                            i.classList.add("rubisco"), i.classList.add("rubisco-container"), i.classList.add("rubisco_theme_" + (this.o.theme || "default")), g(this.o.className, i), this.o.containerStyle && (0, l.css)(i, this.o.containerStyle);
+                            let i = this.c.div("pageperfect-container");
+                            i.classList.add("pageperfect"), i.classList.add("pageperfect-container"), i.classList.add("pageperfect_theme_" + (this.o.theme || "default")), g(this.o.className, i), this.o.containerStyle && (0, l.css)(i, this.o.containerStyle);
                             const {
                                 styleValues: r
                             } = this.o;
@@ -8875,8 +8875,8 @@
                                 i.style.setProperty("--rb-" + e, r[t])
                             })), i.setAttribute("contenteditable", "false");
                             let o = null;
-                            this.o.inline && (-1 === ["TEXTAREA", "INPUT"].indexOf(s.nodeName) && (i = s, s.setAttribute(m, "" + s.className), o = i.innerHTML, i.innerHTML = ""), i.classList.add("rubisco_inline"), i.classList.add("rubisco-container")), s !== i && (s.style.display && s.setAttribute(p, s.style.display), s.style.display = "none");
-                            const n = this.c.div("rubisco-workplace", {
+                            this.o.inline && (-1 === ["TEXTAREA", "INPUT"].indexOf(s.nodeName) && (i = s, s.setAttribute(m, "" + s.className), o = i.innerHTML, i.innerHTML = ""), i.classList.add("pageperfect_inline"), i.classList.add("pageperfect-container")), s !== i && (s.style.display && s.setAttribute(p, s.style.display), s.style.display = "none");
+                            const n = this.c.div("pageperfect-workplace", {
                                 contenteditable: !1
                             });
                             i.appendChild(n), s.parentNode && s !== i && s.parentNode.insertBefore(i, s), Object.defineProperty(s, "component", {
@@ -8884,7 +8884,7 @@
                                 configurable: !0,
                                 value: this
                             });
-                            const a = this.c.div("rubisco-wysiwyg", {
+                            const a = this.c.div("pageperfect-wysiwyg", {
                                 contenteditable: !0,
                                 "aria-disabled": !1,
                                 tabindex: this.o.tabIndex
@@ -8923,7 +8923,7 @@
                                 } else null != t && this.setEditorValue(t);
                                 let e = this.o.defaultMode;
                                 if (this.o.saveModeInStorage) {
-                                    const t = this.storage.get("rubisco_default_mode");
+                                    const t = this.storage.get("pageperfect_default_mode");
                                     "string" == typeof t && (e = parseInt(t, 10))
                                 }
                                 this.setMode(e), this.o.readonly && (this.__wasReadOnly = !1, this.setReadOnly(!0)), this.o.disabled && this.setDisabled(!0);
@@ -9008,9 +9008,9 @@
                     function g(t, e) {
                         t && t.split(/\s+/).forEach((t => e.classList.add(t)))
                     }
-                    Rubisco.fatMode = o.FAT_MODE, Rubisco.plugins = a.fg, Rubisco.modules = a.av, Rubisco.ns = a.av, Rubisco.decorators = {}, Rubisco.constants = o, Rubisco.instances = a.VF, Rubisco.lang = o.lang, Rubisco.core = {
+                    PagePerfect.fatMode = o.FAT_MODE, PagePerfect.plugins = a.fg, PagePerfect.modules = a.av, PagePerfect.ns = a.av, PagePerfect.decorators = {}, PagePerfect.constants = o, PagePerfect.instances = a.VF, PagePerfect.lang = o.lang, PagePerfect.core = {
                         Plugin: h.Plugin
-                    }, (0, r.Cg)([n.cache], Rubisco.prototype, "createInside", null), (0, r.Cg)([n.cache], Rubisco.prototype, "message", null), (0, r.Cg)([n.cache], Rubisco.prototype, "s", null), (0, r.Cg)([n.cache], Rubisco.prototype, "uploader", null), (0, r.Cg)([n.cache], Rubisco.prototype, "filebrowser", null), (0, r.Cg)([(0, n.throttle)()], Rubisco.prototype, "synchronizeValues", null), (0, r.Cg)([(0, n.watch)(":internalChange")], Rubisco.prototype, "updateElementValue", null), (0, r.Cg)([n.autobind], Rubisco.prototype, "__prepareWYSIWYGEditor", null), Rubisco = i = (0, r.Cg)([(0, n.derive)(u.z)], Rubisco)
+                    }, (0, r.Cg)([n.cache], PagePerfect.prototype, "createInside", null), (0, r.Cg)([n.cache], PagePerfect.prototype, "message", null), (0, r.Cg)([n.cache], PagePerfect.prototype, "s", null), (0, r.Cg)([n.cache], PagePerfect.prototype, "uploader", null), (0, r.Cg)([n.cache], PagePerfect.prototype, "filebrowser", null), (0, r.Cg)([(0, n.throttle)()], PagePerfect.prototype, "synchronizeValues", null), (0, r.Cg)([(0, n.watch)(":internalChange")], PagePerfect.prototype, "updateElementValue", null), (0, r.Cg)([n.autobind], PagePerfect.prototype, "__prepareWYSIWYGEditor", null), PagePerfect = i = (0, r.Cg)([(0, n.derive)(u.z)], PagePerfect)
                 },
                 74470(t, e, s) {
                     "use strict";
@@ -9094,8 +9094,8 @@
                             const i = this;
                             i.clear(), (0, o.c)(s) && (s.forEach((t => {
                                 if (!t) return;
-                                const e = (0, n.$n)(this.rubisco, t.icon || "empty", t.title);
-                                this.rubisco && e.setParentView(this.rubisco), e.setMod("context", "menu"), e.onAction((e => (t.exec?.call(i, e), i.clear(), i.close(), !1))), this.append(e)
+                                const e = (0, n.$n)(this.pageperfect, t.icon || "empty", t.title);
+                                this.pageperfect && e.setParentView(this.pageperfect), e.setMod("context", "menu"), e.onAction((e => (t.exec?.call(i, e), i.clear(), i.close(), !1))), this.append(e)
                             })), this.open((() => ({
                                 left: t,
                                 top: e,
@@ -9119,7 +9119,7 @@
                         n = s(92032),
                         a = s(58006);
 
-                    function l(t, e, s, l = "rubisco-dialog_alert") {
+                    function l(t, e, s, l = "pageperfect-dialog_alert") {
                         (0, o.T)(e) && (s = e, e = void 0);
                         const c = this instanceof a.l ? this : new a.l({
                                 closeOnClickOverlay: !0
@@ -9148,7 +9148,7 @@
                         const n = this instanceof o.l ? this : new o.l({
                                 closeOnClickOverlay: !0
                             }),
-                            a = n.c.fromHTML('<form class="rubisco-dialog_prompt"></form>'),
+                            a = n.c.fromHTML('<form class="pageperfect-dialog_prompt"></form>'),
                             l = n.c.element("label");
                         (0, i.T)(e) && (s = e, e = void 0), l.appendChild(n.c.fromHTML(t)), a.appendChild(l);
                         const c = t => () => {
@@ -9276,7 +9276,7 @@
                         getMaxZIndexDialog() {
                             let t, e, s = 0,
                                 i = this;
-                            return (0, h.$$)(".rubisco-dialog", this.destination).forEach((r => {
+                            return (0, h.$$)(".pageperfect-dialog", this.destination).forEach((r => {
                                 t = r.component, e = parseInt((0, h.css)(r, "zIndex"), 10), t.isOpened && !isNaN(e) && e > s && (i = t, s = e)
                             })), i
                         }
@@ -9284,7 +9284,7 @@
                             if (this.getMod("static")) return;
                             let t = 20000004,
                                 e = 0;
-                            (0, h.$$)(".rubisco-dialog", this.destination).forEach((s => {
+                            (0, h.$$)(".pageperfect-dialog", this.destination).forEach((s => {
                                 e = parseInt((0, h.css)(s, "zIndex"), 10), t = Math.max(isNaN(e) ? 0 : e, t)
                             })), this.container.style.zIndex = "" + (t + 1)
                         }
@@ -9306,7 +9306,7 @@
                             const {
                                 e: t
                             } = this;
-                            return !1 === t.fire(this, "beforeClose") || !1 === t.fire("beforeClose", this) || (this.setMod("active", !1), this.isOpened = !1, this.isFullSize && this.toggleFullSize(!1), l.J.safeRemove(this.container), this.__removeGlobalResizeListeners(), t.fire(this, "afterClose"), t.fire(this.ow, "rubiscoCloseDialog"), this.destroyAfterClose && this.destruct()), this
+                            return !1 === t.fire(this, "beforeClose") || !1 === t.fire("beforeClose", this) || (this.setMod("active", !1), this.isOpened = !1, this.isFullSize && this.toggleFullSize(!1), l.J.safeRemove(this.container), this.__removeGlobalResizeListeners(), t.fire(this, "afterClose"), t.fire(this.ow, "pageperfectCloseDialog"), this.destroyAfterClose && this.destruct()), this
                         }
                         constructor(t = {}) {
                             super(t), this.destroyAfterClose = !1, this.moved = !1, this.resizable = !1, this.draggable = !1, this.startX = 0, this.startY = 0, this.startPoint = {
@@ -9324,7 +9324,7 @@
                             const e = this;
                             e.options = (0, h.ConfigProto)(t, (0, h.ConfigProto)(f.T.prototype.dialog, i.defaultOptions)), l.J.safeRemove(e.container);
                             const s = this.getFullElName.bind(this);
-                            e.container = this.c.fromHTML(`<div class="rubisco rubisco-dialog ${this.componentName}">\n\t\t\t\t<div class="${s("overlay")}"></div>\n\t\t\t\t<div class="${this.getFullElName("panel")}">\n\t\t\t\t\t<div class="${s("header")}">\n\t\t\t\t\t\t<div class="${s("header-title")}"></div>\n\t\t\t\t\t\t<div class="${s("header-toolbar")}"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="${s("content")}"></div>\n\t\t\t\t\t<div class="${s("footer")}"></div>\n\t\t\t\t\t<div class="${s("resizer")}">${p.In.get("resize_handler")}</div>\n\t\t\t\t</div>\n\t\t\t</div>`), "rtl" === e.options.direction && (e.container.style.direction = "rtl", e.container.setAttribute("dir", "rtl")), this.o.zIndex && (this.container.style.zIndex = "" + this.o.zIndex), (0, h.attr)(e.container, "role", "dialog"), Object.defineProperty(e.container, "component", {
+                            e.container = this.c.fromHTML(`<div class="pageperfect pageperfect-dialog ${this.componentName}">\n\t\t\t\t<div class="${s("overlay")}"></div>\n\t\t\t\t<div class="${this.getFullElName("panel")}">\n\t\t\t\t\t<div class="${s("header")}">\n\t\t\t\t\t\t<div class="${s("header-title")}"></div>\n\t\t\t\t\t\t<div class="${s("header-toolbar")}"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="${s("content")}"></div>\n\t\t\t\t\t<div class="${s("footer")}"></div>\n\t\t\t\t\t<div class="${s("resizer")}">${p.In.get("resize_handler")}</div>\n\t\t\t\t</div>\n\t\t\t</div>`), "rtl" === e.options.direction && (e.container.style.direction = "rtl", e.container.setAttribute("dir", "rtl")), this.o.zIndex && (this.container.style.zIndex = "" + this.o.zIndex), (0, h.attr)(e.container, "role", "dialog"), Object.defineProperty(e.container, "component", {
                                 value: this
                             }), e.setMod("theme", e.o.theme || "default").setMod("resizable", !!e.o.resizable);
                             const r = e.getElm("panel"),
@@ -9399,11 +9399,11 @@
                             u = (0, o.$n)(c, "cancel", "Cancel"),
                             d = (0, o.$n)(c, "ok", "Ok"),
                             h = c.c.element("form", {
-                                class: "rubisco-dialog_prompt"
+                                class: "pageperfect-dialog_prompt"
                             }),
                             p = c.c.element("input", {
                                 autofocus: !0,
-                                class: "rubisco-input"
+                                class: "pageperfect-input"
                             }),
                             m = c.c.element("label");
                         (0, i.T)(e) && (s = e, e = void 0), a && (0, r.C)(p, "placeholder", a), m.appendChild(c.c.text(t)), h.appendChild(m), h.appendChild(p), u.onAction(c.close);
@@ -9424,7 +9424,7 @@
                         c = s(31859),
                         u = s(62994),
                         d = s(53804);
-                    const h = "rubisco-file-browser-preview",
+                    const h = "pageperfect-file-browser-preview",
                         p = (t = "next", e = "right") => `<div class="${h}__navigation ${h}__navigation_arrow_${t}">` + o.I.get("angle-" + e) + "</a>";
                     e.A = t => {
                         if (!t.o.contextMenu) return () => {};
@@ -9467,7 +9467,7 @@
                                         const e = t.dlg({
                                                 buttons: ["fullsize", "dialog.close"]
                                             }),
-                                            s = t.c.div(h, '<div class="rubisco-icon_loader"></div>'),
+                                            s = t.c.div(h, '<div class="pageperfect-icon_loader"></div>'),
                                             o = t.c.div(h + "__box"),
                                             n = t.c.fromHTML(p()),
                                             l = t.c.fromHTML(p("prev", "left")),
@@ -9481,7 +9481,7 @@
                                             };
                                         t.e.on([n, l], "click", (function() {
                                             if (a = this === n ? i.J.nextWithClass(a, t.files.getFullElName("item")) : i.J.prevWithClass(a, t.files.getFullElName("item")), !a) throw (0, r.error)("Need element");
-                                            i.J.detach(s), i.J.detach(o), s.innerHTML = '<div class="rubisco-icon_loader"></div>', c(g("href"))
+                                            i.J.detach(s), i.J.detach(o), s.innerHTML = '<div class="pageperfect-icon_loader"></div>', c(g("href"))
                                         })), t.e.on("beforeDestruct", (() => {
                                             e.destruct()
                                         })), e.container.classList.add(h + "__dialog"), e.setContent(s), e.setPosition(), e.open(), c(g("href")), t.events.on("beforeDestruct", (() => {
@@ -9660,7 +9660,7 @@
                                 n = i.showFileSize && t.size,
                                 a = i.showFileChangeTime && t.time;
                             let l = "";
-                            return void 0 !== t.file && (l = t.file), `<a\n\t\t\tdata-rubisco-file-browser-item="true"\n\t\t\tdata-is-file="${t.isImage?0:1}"\n\t\t\tdraggable="true"\n\t\t\tclass="${r}"\n\t\t\thref="${t.fileURL}"\n\t\t\tdata-source="${s}"\n\t\t\tdata-path="${t.path}"\n\t\t\tdata-name="${l}"\n\t\t\ttitle="${l}"\n\t\t\tdata-url="${t.fileURL}">\n\t\t\t\t<img\n\t\t\t\t\tdata-is-file="${t.isImage?0:1}"\n\t\t\t\t\tdata-src="${t.fileURL}"\n\t\t\t\t\tsrc="${t.imageURL}"\n\t\t\t\t\talt="${l}"\n\t\t\t\t\tloading="lazy"\n\t\t\t\t/>\n\t\t\t\t${o||n||a?`<div class="${r}-info">${o?`<span class="${r}-info-filename">${l}</span>`:""}${n?`<span class="${r}-info-filesize">${t.size}</span>`:""}${a?`<span class="${r}-info-filechanged">${a}</span>`:""}</div>`:""}\n\t\t\t</a>`
+                            return void 0 !== t.file && (l = t.file), `<a\n\t\t\tdata-pageperfect-file-browser-item="true"\n\t\t\tdata-is-file="${t.isImage?0:1}"\n\t\t\tdraggable="true"\n\t\t\tclass="${r}"\n\t\t\thref="${t.fileURL}"\n\t\t\tdata-source="${s}"\n\t\t\tdata-path="${t.path}"\n\t\t\tdata-name="${l}"\n\t\t\ttitle="${l}"\n\t\t\tdata-url="${t.fileURL}">\n\t\t\t\t<img\n\t\t\t\t\tdata-is-file="${t.isImage?0:1}"\n\t\t\t\t\tdata-src="${t.fileURL}"\n\t\t\t\t\tsrc="${t.imageURL}"\n\t\t\t\t\talt="${l}"\n\t\t\t\t\tloading="lazy"\n\t\t\t\t/>\n\t\t\t\t${o||n||a?`<div class="${r}-info">${o?`<span class="${r}-info-filename">${l}</span>`:""}${n?`<span class="${r}-info-filesize">${t.size}</span>`:""}${a?`<span class="${r}-info-filechanged">${a}</span>`:""}</div>`:""}\n\t\t\t</a>`
                         },
                         ajax: {
                             ...n.T.prototype.defaultAjaxOptions,
@@ -9815,10 +9815,10 @@
                         filter: {
                             isInput: !0,
                             getContent(t, e) {
-                                const s = e.container.querySelector(".rubisco-input");
+                                const s = e.container.querySelector(".pageperfect-input");
                                 if (s) return s;
                                 const i = t.c.element("input", {
-                                    class: "rubisco-input",
+                                    class: "pageperfect-input",
                                     placeholder: t.i18n("Filter")
                                 });
                                 return i.value = t.state.filterWord, t.e.on(i, "keydown mousedown", t.async.debounce((() => {
@@ -9829,7 +9829,7 @@
                         sort: {
                             isInput: !0,
                             getContent(t) {
-                                const e = t.c.fromHTML(`<select class="rubisco-input rubisco-select"><option value="changed-asc">${t.i18n("Sort by changed")} (⬆)</option><option value="changed-desc">${t.i18n("Sort by changed")} (⬇)</option><option value="name-asc">${t.i18n("Sort by name")} (⬆)</option><option value="name-desc">${t.i18n("Sort by name")} (⬇)</option><option value="size-asc">${t.i18n("Sort by size")} (⬆)</option><option value="size-desc">${t.i18n("Sort by size")} (⬇)</option></select>`);
+                                const e = t.c.fromHTML(`<select class="pageperfect-input pageperfect-select"><option value="changed-asc">${t.i18n("Sort by changed")} (⬆)</option><option value="changed-desc">${t.i18n("Sort by changed")} (⬇)</option><option value="name-asc">${t.i18n("Sort by name")} (⬆)</option><option value="name-desc">${t.i18n("Sort by name")} (⬇)</option><option value="size-asc">${t.i18n("Sort by size")} (⬆)</option><option value="size-desc">${t.i18n("Sort by size")} (⬇)</option></select>`);
                                 return e.value = t.state.sortBy, t.e.on("sort.filebrowser", (t => {
                                     e.value !== t && (e.value = t)
                                 })).on(e, "change", (() => {
@@ -10866,7 +10866,7 @@
                         c = s(35265),
                         u = s(36115),
                         d = (s(93027), s(24863));
-                    const h = "rubisco-image-editor",
+                    const h = "pageperfect-image-editor",
                         p = "resize",
                         m = "crop";
                     let g = i = class t extends o.vG {
@@ -10882,16 +10882,16 @@
                         open(t, e) {
                             return this.j.async.promise((s => {
                                 const i = (new Date).getTime();
-                                this.image = this.j.c.element("img"), (0, l.$$)("img,.rubisco-icon_loader", this.resize_box).forEach(a.J.safeRemove), (0, l.$$)("img,.rubisco-icon_loader", this.crop_box).forEach(a.J.safeRemove), (0, l.css)(this.cropHandler, "background", "transparent"), this.onSave = e, this.resize_box.appendChild(this.j.c.element("i", {
-                                    class: "rubisco-icon_loader"
+                                this.image = this.j.c.element("img"), (0, l.$$)("img,.pageperfect-icon_loader", this.resize_box).forEach(a.J.safeRemove), (0, l.$$)("img,.pageperfect-icon_loader", this.crop_box).forEach(a.J.safeRemove), (0, l.css)(this.cropHandler, "background", "transparent"), this.onSave = e, this.resize_box.appendChild(this.j.c.element("i", {
+                                    class: "pageperfect-icon_loader"
                                 })), this.crop_box.appendChild(this.j.c.element("i", {
-                                    class: "rubisco-icon_loader"
+                                    class: "pageperfect-icon_loader"
                                 })), this.image.setAttribute("src", t += /\?/.test(t) ? "&_tst=" + i : "?_tst=" + i), this._dialog.open();
                                 const {
                                     widthInput: r,
                                     heightInput: o
                                 } = (0, l.refs)(this.editor), n = () => {
-                                    this.isDestructed || (this.image.removeEventListener("load", n), this.naturalWidth = this.image.naturalWidth, this.naturalHeight = this.image.naturalHeight, r.value = "" + this.naturalWidth, o.value = "" + this.naturalHeight, this.ratio = this.naturalWidth / this.naturalHeight, this.resize_box.appendChild(this.image), this.cropImage = this.image.cloneNode(!0), this.crop_box.appendChild(this.cropImage), a.J.safeRemove.apply(null, (0, l.$$)(".rubisco-icon_loader", this.editor)), this.activeTab === m && this.showCrop(), this.j.e.fire(this.resizeHandler, "updatesize"), this.j.e.fire(this.cropHandler, "updatesize"), this._dialog.setPosition(), this.j.e.fire("afterImageEditor"), s(this._dialog))
+                                    this.isDestructed || (this.image.removeEventListener("load", n), this.naturalWidth = this.image.naturalWidth, this.naturalHeight = this.image.naturalHeight, r.value = "" + this.naturalWidth, o.value = "" + this.naturalHeight, this.ratio = this.naturalWidth / this.naturalHeight, this.resize_box.appendChild(this.image), this.cropImage = this.image.cloneNode(!0), this.crop_box.appendChild(this.cropImage), a.J.safeRemove.apply(null, (0, l.$$)(".pageperfect-icon_loader", this.editor)), this.activeTab === m && this.showCrop(), this.j.e.fire(this.resizeHandler, "updatesize"), this.j.e.fire(this.cropHandler, "updatesize"), this._dialog.setPosition(), this.j.e.fire("afterImageEditor"), s(this._dialog))
                                 };
                                 this.image.addEventListener("load", n), this.image.complete && n()
                             }))
@@ -10986,7 +10986,7 @@
                                         widthInput: e,
                                         heightInput: s
                                     } = (0, l.refs)(this.editor);
-                                t.j.e.on([t.editor.querySelector(".rubisco_bottomright"), t.cropHandler], "mousedown." + h, this.onResizeHandleMouseDown).on(this.j.ow, "resize." + h, (() => {
+                                t.j.e.on([t.editor.querySelector(".pageperfect_bottomright"), t.cropHandler], "mousedown." + h, this.onResizeHandleMouseDown).on(this.j.ow, "resize." + h, (() => {
                                     this.j.e.fire(t.resizeHandler, "updatesize"), t.showCrop(), this.j.e.fire(t.cropHandler, "updatesize")
                                 })), t.j.e.on((0, l.toArray)(this.editor.querySelectorAll(`.${h}__slider-title`)), "click", this.onTitleModeClick).on([e, s], "input", this.onChangeSizeInput);
                                 const {
@@ -11057,7 +11057,7 @@
                                 resizeBox: s,
                                 cropBox: r
                             } = (0, l.refs)(this.editor);
-                            this.resize_box = s, this.crop_box = r, this.sizes = this.editor.querySelector(`.${h}__area.${h}__area_crop .rubisco-image-editor__sizes`), this.resizeHandler = this.editor.querySelector(`.${h}__resizer`), this.cropHandler = this.editor.querySelector(`.${h}__croper`), this._dialog = this.j.dlg({
+                            this.resize_box = s, this.crop_box = r, this.sizes = this.editor.querySelector(`.${h}__area.${h}__area_crop .pageperfect-image-editor__sizes`), this.resizeHandler = this.editor.querySelector(`.${h}__resizer`), this.cropHandler = this.editor.querySelector(`.${h}__croper`), this._dialog = this.j.dlg({
                                 buttons: ["fullsize", "dialog.close"]
                             }), this._dialog.setContent(this.editor), this._dialog.setSize(this.o.width, this.o.height), this._dialog.setHeader([this.buttons.reset, this.buttons.save, this.buttons.saveas]), this.setHandlers()
                         }
@@ -11088,13 +11088,13 @@
                         }
                     });
                     var i = s(53048);
-                    const r = "rubisco-image-editor",
+                    const r = "pageperfect-image-editor",
                         o = i.In.get.bind(i.In),
                         n = (t, e = "jodti-image-editor_active") => t ? e : "",
                         a = (t, e) => {
                             const s = t.i18n.bind(t),
-                                i = (t, e, i = !0) => `<div class="rubisco-form__group">\n\t\t\t<label class="rubisco-switcher-wrapper">\n\t\t\t\t<span class='rubisco-switcher'>\n\t\t\t\t\t<input ${n(i,"checked")} data-ref="${e}" type="checkbox"/>\n\t\t\t\t\t<span class="rubisco-switcher__slider"></span>\n\t\t\t\t</span>\n\t\t\t\t<span>${s(t)}</span>\n\t\t\t</label>\n\t</div>`;
-                            return t.create.fromHTML(`<form class="${r} rubisco-properties">\n\t\t<div class="rubisco-grid rubisco-grid_xs-column">\n\t\t\t<div class="rubisco_col-lg-3-4 rubisco_col-sm-5-5">\n\t\t\t${e.resize?`<div class="${r}__area ${r}__area_resize ${r}_active">\n\t\t\t\t\t\t\t<div data-ref="resizeBox" class="${r}__box"></div>\n\t\t\t\t\t\t\t<div class="${r}__resizer">\n\t\t\t\t\t\t\t\t<i class="rubisco_bottomright"></i>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t${e.crop?`<div class="${r}__area ${r}__area_crop ${n(!e.resize)}">\n\t\t\t\t\t\t\t<div data-ref="cropBox" class="${r}__box">\n\t\t\t\t\t\t\t\t<div class="${r}__croper">\n\t\t\t\t\t\t\t\t\t<i class="rubisco_bottomright"></i>\n\t\t\t\t\t\t\t\t\t<i class="${r}__sizes"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t</div>\n\t\t\t<div class="rubisco_col-lg-1-4 rubisco_col-sm-5-5">\n\t\t\t${e.resize?`<div data-area="resize" class="${r}__slider ${r}_active">\n\t\t\t\t\t\t\t<div class="${r}__slider-title">\n\t\t\t\t\t\t\t\t${o("resize")}\n\t\t\t\t\t\t\t\t${s("Resize")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class="${r}__slider-content">\n\t\t\t\t\t\t\t\t<div class="rubisco-form__group">\n\t\t\t\t\t\t\t\t\t<label>\n\t\t\t\t\t\t\t\t\t\t${s("Width")}\n\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t<input type="number" data-ref="widthInput" class="rubisco-input"/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class="rubisco-form__group">\n\t\t\t\t\t\t\t\t\t<label>\n\t\t\t\t\t\t\t\t\t\t${s("Height")}\n\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t<input type="number" data-ref="heightInput" class="rubisco-input"/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t${i("Keep Aspect Ratio","keepAspectRatioResize")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t${e.crop?`<div data-area="crop" class="${r}__slider ${n(!e.resize)}'">\n\t\t\t\t\t\t\t<div class="${r}__slider-title">\n\t\t\t\t\t\t\t\t${o("crop")}\n\t\t\t\t\t\t\t\t${s("Crop")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class="${r}__slider-content">\n\t\t\t\t\t\t\t\t${i("Keep Aspect Ratio","keepAspectRatioCrop")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t</div>\n\t\t</div>\n\t</form>`)
+                                i = (t, e, i = !0) => `<div class="pageperfect-form__group">\n\t\t\t<label class="pageperfect-switcher-wrapper">\n\t\t\t\t<span class='pageperfect-switcher'>\n\t\t\t\t\t<input ${n(i,"checked")} data-ref="${e}" type="checkbox"/>\n\t\t\t\t\t<span class="pageperfect-switcher__slider"></span>\n\t\t\t\t</span>\n\t\t\t\t<span>${s(t)}</span>\n\t\t\t</label>\n\t</div>`;
+                            return t.create.fromHTML(`<form class="${r} pageperfect-properties">\n\t\t<div class="pageperfect-grid pageperfect-grid_xs-column">\n\t\t\t<div class="pageperfect_col-lg-3-4 pageperfect_col-sm-5-5">\n\t\t\t${e.resize?`<div class="${r}__area ${r}__area_resize ${r}_active">\n\t\t\t\t\t\t\t<div data-ref="resizeBox" class="${r}__box"></div>\n\t\t\t\t\t\t\t<div class="${r}__resizer">\n\t\t\t\t\t\t\t\t<i class="pageperfect_bottomright"></i>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t${e.crop?`<div class="${r}__area ${r}__area_crop ${n(!e.resize)}">\n\t\t\t\t\t\t\t<div data-ref="cropBox" class="${r}__box">\n\t\t\t\t\t\t\t\t<div class="${r}__croper">\n\t\t\t\t\t\t\t\t\t<i class="pageperfect_bottomright"></i>\n\t\t\t\t\t\t\t\t\t<i class="${r}__sizes"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t</div>\n\t\t\t<div class="pageperfect_col-lg-1-4 pageperfect_col-sm-5-5">\n\t\t\t${e.resize?`<div data-area="resize" class="${r}__slider ${r}_active">\n\t\t\t\t\t\t\t<div class="${r}__slider-title">\n\t\t\t\t\t\t\t\t${o("resize")}\n\t\t\t\t\t\t\t\t${s("Resize")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class="${r}__slider-content">\n\t\t\t\t\t\t\t\t<div class="pageperfect-form__group">\n\t\t\t\t\t\t\t\t\t<label>\n\t\t\t\t\t\t\t\t\t\t${s("Width")}\n\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t<input type="number" data-ref="widthInput" class="pageperfect-input"/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class="pageperfect-form__group">\n\t\t\t\t\t\t\t\t\t<label>\n\t\t\t\t\t\t\t\t\t\t${s("Height")}\n\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t<input type="number" data-ref="heightInput" class="pageperfect-input"/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t${i("Keep Aspect Ratio","keepAspectRatioResize")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t${e.crop?`<div data-area="crop" class="${r}__slider ${n(!e.resize)}'">\n\t\t\t\t\t\t\t<div class="${r}__slider-title">\n\t\t\t\t\t\t\t\t${o("crop")}\n\t\t\t\t\t\t\t\t${s("Crop")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class="${r}__slider-content">\n\t\t\t\t\t\t\t\t${i("Keep Aspect Ratio","keepAspectRatioCrop")}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>`:""}\n\t\t\t</div>\n\t\t</div>\n\t</form>`)
                         }
                 },
                 37435(t, e, s) {
@@ -11410,13 +11410,13 @@
                             return "StatusBar"
                         }
                         hide() {
-                            this.container.classList.add("rubisco_hidden")
+                            this.container.classList.add("pageperfect_hidden")
                         }
                         show() {
-                            this.container.classList.remove("rubisco_hidden")
+                            this.container.classList.remove("pageperfect_hidden")
                         }
                         get isShown() {
-                            return !this.container.classList.contains("rubisco_hidden")
+                            return !this.container.classList.contains("pageperfect_hidden")
                         }
                         getHeight() {
                             return this.container?.offsetHeight ?? 0
@@ -11431,7 +11431,7 @@
                             e && s.classList.add(this.getFullElName("item-right")), s.appendChild(t), this.container?.appendChild(s), this.j.o.statusbar && this.show(), this.j.e.fire("resize")
                         }
                         constructor(t, e) {
-                            super(t), this.target = e, this.mods = {}, this.container = t.c.div("rubisco-status-bar"), e.appendChild(this.container), this.hide()
+                            super(t), this.target = e, this.mods = {}, this.container = t.c.div("pageperfect-status-bar"), e.appendChild(this.container), this.hide()
                         }
                         destruct() {
                             this.isInDestruct || (this.setStatus(r.f.beforeDestruct), n.J.safeRemove(this.container), super.destruct())
@@ -11467,7 +11467,7 @@
                             this.selected.forEach((t => {
                                 const s = (0, c.cssPath)(t);
                                 s && e.push(s)
-                            })), t.innerHTML = e.length ? e.join(",") + `{${this.rubisco.options.table.selectionCellStyle}}` : ""
+                            })), t.innerHTML = e.length ? e.join(",") + `{${this.pageperfect.options.table.selectionCellStyle}}` : ""
                         }
                         addSelection(t) {
                             this.selected.add(t), this.__recalculateStyles();
@@ -11812,11 +11812,11 @@
                                 state: e
                             } = this, s = this.closest(h.Q);
                             if (!s) return;
-                            const i = t.value?.(s.rubisco, this);
-                            void 0 !== i && (e.value = i), e.disabled = this.__calculateDisabledStatus(s), e.activated = this.__calculateActivatedStatus(s), t.update?.(s.rubisco, this)
+                            const i = t.value?.(s.pageperfect, this);
+                            void 0 !== i && (e.value = i), e.disabled = this.__calculateDisabledStatus(s), e.activated = this.__calculateActivatedStatus(s), t.update?.(s.pageperfect, this)
                         }
                         __calculateActivatedStatus(t) {
-                            return !((0, a.isRubiscoObject)(this.j) && !this.j.editorIsActive || !this.control.isActive?.(this.j, this) && (!t || !t.shouldBeActive(this)))
+                            return !((0, a.isPagePerfectObject)(this.j) && !this.j.editorIsActive || !this.control.isActive?.(this.j, this) && (!t || !t.shouldBeActive(this)))
                         }
                         __calculateDisabledStatus(t) {
                             return !(!this.j.o.disabled && (!this.j.o.readonly || this.j.o.activeButtonsInReadOnly && this.j.o.activeButtonsInReadOnly.includes(this.control.name)) && !this.control.isDisabled?.(this.j, this) && (!t || !t.shouldBeDisabled(this)))
@@ -11913,7 +11913,7 @@
                             }
                         }
                         __openControlList(t) {
-                            const e = this.rubisco.options.controls ?? {},
+                            const e = this.pageperfect.options.controls ?? {},
                                 s = t => (0, c.x)(t, e),
                                 i = t.list,
                                 r = this.openPopup(),
@@ -11973,7 +11973,7 @@
                                     });
                                 if (!1 !== i && !0 !== i && (this.j?.e?.fire("synchro"), this.parentElement && this.parentElement.update(), this.j?.e?.fire("closeAllPopups afterExec")), !1 !== i) return
                             }
-                            return e.list ? this.__openControlList(e) : (0, a.isFunction)(e.popup) ? this.onTriggerClick(t) : void((e.command || e.name) && ((0, a.call)((0, a.isRubiscoObject)(this.j) ? this.j.execCommand.bind(this.j) : this.j.od.execCommand.bind(this.j.od), e.command || e.name, !1, e.args && e.args[0]), this.j.e.fire("closeAllPopups")))
+                            return e.list ? this.__openControlList(e) : (0, a.isFunction)(e.popup) ? this.onTriggerClick(t) : void((e.command || e.name) && ((0, a.call)((0, a.isPagePerfectObject)(this.j) ? this.j.execCommand.bind(this.j) : this.j.od.execCommand.bind(this.j.od), e.command || e.name, !1, e.args && e.args[0]), this.j.e.fire("closeAllPopups")))
                         }
                         destruct() {
                             return this.__closePopup(), super.destruct()
@@ -12055,7 +12055,7 @@
                                 let s = this.state.value || (e && (0, n.K)(e.currentValue) ? e.currentValue : void 0);
                                 s || (s = Object.keys(t)[0]);
                                 const i = "" + ((0, o.Q)(t) && t["" + s] || s);
-                                this.state.text = this.control.textTemplate?.(this.rubisco, i) ?? i
+                                this.state.text = this.control.textTemplate?.(this.pageperfect, i) ?? i
                             }
                         }
                     };
@@ -12191,13 +12191,13 @@
                             n.J.appendChildFirst(t, e)
                         }
                         showInline(t) {
-                            this.rubisco.e.fire("showInlineToolbar", t)
+                            this.pageperfect.e.fire("showInlineToolbar", t)
                         }
                         hide() {
-                            this.rubisco.e.fire("hidePopup"), super.hide(), this.rubisco.e.fire("toggleToolbar")
+                            this.pageperfect.e.fire("hidePopup"), super.hide(), this.pageperfect.e.fire("toggleToolbar")
                         }
                         show() {
-                            super.show(), this.rubisco.e.fire("toggleToolbar")
+                            super.show(), this.pageperfect.e.fire("toggleToolbar")
                         }
                     };
                     c = (0, i.Cg)([o.component], c)
@@ -12223,8 +12223,8 @@
                         l = s(90428);
 
                     function c(t, e) {
-                        const s = (0, i.isRubiscoObject)(t) ? new l.b(t) : new a.Q(t);
-                        return t.o.textIcons && s.container.classList.add("rubisco_text_icons"), e && (s.parentElement = e), t.o.toolbarButtonSize && (s.buttonSize = t.o.toolbarButtonSize), s
+                        const s = (0, i.isPagePerfectObject)(t) ? new l.b(t) : new a.Q(t);
+                        return t.o.textIcons && s.container.classList.add("pageperfect_text_icons"), e && (s.parentElement = e), t.o.toolbarButtonSize && (s.buttonSize = t.o.toolbarButtonSize), s
                     }
 
                     function u(t, e, s = null) {
@@ -12376,8 +12376,8 @@
                                 contenteditable: !0
                             });
                             (0, o.My)(t.j, t.constructor).appendChild(e);
-                            const i = (0, n.isRubiscoObject)(t.j) ? t.j.s.save() : null,
-                                d = () => i && (0, n.isRubiscoObject)(t.j) && t.j.s.restore();
+                            const i = (0, n.isPagePerfectObject)(t.j) ? t.j.s.save() : null,
+                                d = () => i && (0, n.isPagePerfectObject)(t.j) && t.j.s.restore();
                             e.focus(), t.j.async.setTimeout((() => {
                                 const i = e.firstChild;
                                 if (r.J.safeRemove(e), i && i.hasAttribute("src")) {
@@ -12516,7 +12516,7 @@
                     s(77334);
                     class l extends i.vG {
                         get j() {
-                            return this.rubisco
+                            return this.pageperfect
                         }
                         className() {
                             return "Uploader"
@@ -12532,7 +12532,7 @@
                         }
                         bind(t, e, s) {
                             const i = () => {
-                                    t.classList.remove("rubisco_drag_hover")
+                                    t.classList.remove("pageperfect_drag_hover")
                                 },
                                 o = this,
                                 n = t => {
@@ -12565,11 +12565,11 @@
                             r.j.e.on(t, "dragend dragover dragenter dragleave drop", (t => {
                                 t.preventDefault()
                             })).on(t, "dragover", (e => {
-                                ((0, a.YQ)(e.dataTransfer) || (0, a.Pb)(e.dataTransfer)) && (t.classList.add("rubisco_drag_hover"), e.preventDefault())
+                                ((0, a.YQ)(e.dataTransfer) || (0, a.Pb)(e.dataTransfer)) && (t.classList.add("pageperfect_drag_hover"), e.preventDefault())
                             })).on(t, "dragend dragleave", (e => {
-                                t.classList.remove("rubisco_drag_hover"), (0, a.YQ)(e.dataTransfer) && e.preventDefault()
+                                t.classList.remove("pageperfect_drag_hover"), (0, a.YQ)(e.dataTransfer) && e.preventDefault()
                             })).on(t, "drop", (o => {
-                                t.classList.remove("rubisco_drag_hover"), (0, a.YQ)(o.dataTransfer) && (o.preventDefault(), o.stopImmediatePropagation(), (0, a._9)(r, o.dataTransfer.files, e, s).finally(i))
+                                t.classList.remove("pageperfect_drag_hover"), (0, a.YQ)(o.dataTransfer) && (o.preventDefault(), o.stopImmediatePropagation(), (0, a._9)(r, o.dataTransfer.files, e, s).finally(i))
                             }));
                             const o = t.querySelector("input[type=file]");
                             o && r.j.e.on(o, "change", (() => {
@@ -12592,7 +12592,7 @@
                             })).catch((t => n.call(i, t)))
                         }
                         constructor(t, e) {
-                            super(t), this.path = "", this.source = "default", this.options = (0, o.ConfigProto)(e || {}, (0, o.ConfigProto)(n.T.defaultOptions.uploader, (0, o.isRubiscoObject)(t) ? t.o.uploader : {}))
+                            super(t), this.path = "", this.source = "default", this.options = (0, o.ConfigProto)(e || {}, (0, o.ConfigProto)(n.T.defaultOptions.uploader, (0, o.isPagePerfectObject)(t) ? t.o.uploader : {}))
                         }
                         destruct() {
                             this.setStatus(i.f.beforeDestruct);
@@ -12618,7 +12618,7 @@
                         n = s(54522);
                     o.In.set("palette", s.n(n)());
                     const a = (t, e, s) => {
-                        const n = "rubisco-color-picker",
+                        const n = "pageperfect-color-picker",
                             a = (0, r.normalizeColor)(s),
                             l = t.c.div(n),
                             c = t.o.textIcons ? `<span>${t.i18n("palette")}</span>` : o.In.get("palette"),
@@ -12664,7 +12664,7 @@
                         let u;
                         const d = [];
                         if (e.upload && t.o.uploader && (t.o.uploader.url || t.o.uploader.insertImageAsBase64URI)) {
-                            const s = t.c.fromHTML(`<div class="rubisco-drag-and-drop__file-box"><strong>${t.i18n(c?"Drop image":"Drop file")}</strong><span><br>${t.i18n("or click")}</span><input type="file" accept="${c?"image/*":"*"}" tabindex="-1" dir="auto" multiple=""/></div>`);
+                            const s = t.c.fromHTML(`<div class="pageperfect-drag-and-drop__file-box"><strong>${t.i18n(c?"Drop image":"Drop file")}</strong><span><br>${t.i18n("or click")}</span><input type="file" accept="${c?"image/*":"*"}" tabindex="-1" dir="auto" multiple=""/></div>`);
                             t.uploader.bind(s, (s => {
                                 const i = (0, r.isFunction)(e.upload) ? e.upload : t.o.uploader.defaultHandlerSuccess;
                                 (0, r.isFunction)(i) && i.call(t, s), t.e.fire("closeAllPopups")
@@ -12744,9 +12744,9 @@
                         n = s(26150),
                         a = s(53048);
                     const l = (t, e, s) => {
-                        const l = t.c.div("rubisco-tabs"),
-                            c = t.c.div("rubisco-tabs__wrapper"),
-                            u = t.c.div("rubisco-tabs__buttons");
+                        const l = t.c.div("pageperfect-tabs"),
+                            c = t.c.div("pageperfect-tabs__wrapper"),
+                            u = t.c.div("pageperfect-tabs__buttons");
                         (0, n.C)(u, {
                             role: "tablist",
                             "aria-orientation": "horizontal"
@@ -12760,19 +12760,19 @@
                                 t.state.activated = !1
                             })), Object.values(d).forEach((({
                                 tab: t
-                            }) => t.classList.remove("rubisco-tab_active"))), d[t].button.state.activated = !0, d[t].tab.classList.add("rubisco-tab_active"))
+                            }) => t.classList.remove("pageperfect-tab_active"))), d[t].button.state.activated = !0, d[t].tab.classList.add("pageperfect-tab_active"))
                         };
                         if (e.forEach((({
                                 icon: l,
                                 name: g,
                                 content: f
                             }) => {
-                                const v = t.c.div("rubisco-tab");
+                                const v = t.c.div("pageperfect-tab");
                                 (0, n.C)(v, {
                                     role: "tabpanel"
                                 });
                                 const b = (0, a.$n)(t, l || g, g);
-                                b.state.role = "tab", t.e.on(b.container, "pointerdown", (t => t.preventDefault())), p || (p = g), u.appendChild(b.container), h.push(b), b.container.classList.add("rubisco-tabs__button", "rubisco-tabs__button_columns_" + e.length), (0, o.T)(f) ? v.appendChild(t.c.div("rubisco-tab_empty")) : v.appendChild(i.uA.isInstanceOf(f, a.D$) ? f.container : f), c.appendChild(v), b.onAction((() => (m(g), (0, o.T)(f) && !r.J.isElement(f) && f.call(t), s && (s.activeTab = g), !1))), d[g] = {
+                                b.state.role = "tab", t.e.on(b.container, "pointerdown", (t => t.preventDefault())), p || (p = g), u.appendChild(b.container), h.push(b), b.container.classList.add("pageperfect-tabs__button", "pageperfect-tabs__button_columns_" + e.length), (0, o.T)(f) ? v.appendChild(t.c.div("pageperfect-tab_empty")) : v.appendChild(i.uA.isInstanceOf(f, a.D$) ? f.container : f), c.appendChild(v), b.onAction((() => (m(g), (0, o.T)(f) && !r.J.isElement(f) && f.call(t), s && (s.activeTab = g), !1))), d[g] = {
                                     button: b,
                                     tab: v
                                 }
@@ -12809,12 +12809,12 @@
                                     closeOnClickOverlay: !0
                                 }),
                                 s = t.i18n.bind(t);
-                            e.setMod("theme", t.o.theme).setHeader(s("About Rubisco")).setContent(`<div class="rubisco-about">\n\t\t\t\t\t<div>${s("Rubisco Editor")} v.${t.getVersion()}</div>\n\t\t\t\t\t<div>${s("License: %s",(0,o.isLicense)(t.o.license)?(0,o.normalizeLicense)(t.o.license):"MIT")}</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="${i.HOMEPAGE}" target="_blank">${i.HOMEPAGE}</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="https://rubisco.pages.dev/" target="_blank">${s("Rubisco User's Guide")}</a>\n\t\t\t\t\t\t${s("contains detailed help for using")}\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>${s("Copyright © Rubisco - Chupurnov Valeriy. All rights reserved.")}</div>\n\t\t\t\t</div>`), (0, o.css)(e.dialog, {
+                            e.setMod("theme", t.o.theme).setHeader(s("About PagePerfect")).setContent(`<div class="pageperfect-about">\n\t\t\t\t\t<div>${s("PagePerfect Editor")} v.${t.getVersion()}</div>\n\t\t\t\t\t<div>${s("License: %s",(0,o.isLicense)(t.o.license)?(0,o.normalizeLicense)(t.o.license):"MIT")}</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="${i.HOMEPAGE}" target="_blank">${i.HOMEPAGE}</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="https://pageperfect.pages.dev/" target="_blank">${s("PagePerfect User's Guide")}</a>\n\t\t\t\t\t\t${s("contains detailed help for using")}\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>${s("Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.")}</div>\n\t\t\t\t</div>`), (0, o.css)(e.dialog, {
                                 minHeight: 200,
                                 minWidth: 420
                             }), e.open(!0, !0)
                         },
-                        tooltip: "About Rubisco",
+                        tooltip: "About PagePerfect",
                         mode: i.MODE_SOURCE + i.MODE_WYSIWYG
                     }, r.fg.add("about", (t => {
                         t.registerButton({
@@ -12834,7 +12834,7 @@
                     const l = "addnewline";
                     class c extends a.Plugin {
                         constructor() {
-                            super(...arguments), this.__line = this.j.c.fromHTML(`<div role="button" tabindex="-1" title="${this.j.i18n("Break")}" class="rubisco-add-new-line"><span>${a.Icon.get("enter")}</span></div>`), this.__isMatchedTag = t => !(!t || !this.j.o.addNewLineTagsTriggers.includes(t.nodeName.toLowerCase())), this.__isBeforeContent = !1, this.__lineInFocus = !1, this.__isShown = !1, this.__hideForce = () => {
+                            super(...arguments), this.__line = this.j.c.fromHTML(`<div role="button" tabindex="-1" title="${this.j.i18n("Break")}" class="pageperfect-add-new-line"><span>${a.Icon.get("enter")}</span></div>`), this.__isMatchedTag = t => !(!t || !this.j.o.addNewLineTagsTriggers.includes(t.nodeName.toLowerCase())), this.__isBeforeContent = !1, this.__lineInFocus = !1, this.__isShown = !1, this.__hideForce = () => {
                                 this.__isShown && (this.__isShown = !1, this.j.async.clearTimeout(this.__timeout), this.__lineInFocus = !1, a.Dom.safeRemove(this.__line), this.__line.style.setProperty("--rb-anl-handle-offset", "0"))
                             }, this.__canGetFocus = t => null != t && a.Dom.isBlock(t) && !/^(img|table|iframe|hr)$/i.test(t.nodeName), this.__onClickLine = t => {
                                 const e = this.j,
@@ -12914,7 +12914,7 @@
                         r = s(36115),
                         o = s(86634),
                         n = s.n(o);
-                    r.T.prototype.addNewLine = !0, r.T.prototype.addNewLineOnDBLClick = !0, r.T.prototype.addNewLineTagsTriggers = ["table", "iframe", "img", "hr", "pre", "rubisco"], r.T.prototype.addNewLineDeltaShow = 20, i.I.set("enter", n())
+                    r.T.prototype.addNewLine = !0, r.T.prototype.addNewLineOnDBLClick = !0, r.T.prototype.addNewLineTagsTriggers = ["table", "iframe", "img", "hr", "pre", "pageperfect"], r.T.prototype.addNewLineDeltaShow = 20, i.I.set("enter", n())
                 },
                 64241(t, e, s) {
                     "use strict";
@@ -12928,7 +12928,7 @@
                         u = s(81026);
                     class d extends l.k {
                         get __dialog() {
-                            return this.rubisco.dlg({
+                            return this.pageperfect.dlg({
                                 buttons: ["fullsize", "dialog.close"],
                                 closeOnClickOverlay: !0,
                                 closeOnEsc: !0,
@@ -12939,7 +12939,7 @@
                         }
                         get __container() {
                             const {
-                                rubisco: t,
+                                pageperfect: t,
                                 __dialog: e
                             } = this;
                             return new c.b(t, {
@@ -12966,7 +12966,7 @@
                         }
                         onInvokeAiAssistant(t) {
                             const {
-                                rubisco: e
+                                pageperfect: e
                             } = this;
                             e.s.focus();
                             const s = e.s.html;
@@ -13187,7 +13187,7 @@
                         setPrompt(t) {
                             if (t) {
                                 const {
-                                    rubisco: e
+                                    pageperfect: e
                                 } = this, s = e.o.aiAssistant[t], {
                                     aiCommonPrefixPrompt: i,
                                     aiCommonSuffixPrompt: r
@@ -13197,7 +13197,7 @@
                             this.promptInput.focus()
                         }
                         onAiAssistentResponse(t) {
-                            this.setMod("loading", !1), n.J.detach(this.__results), this.__aiResult = t, this.__results.appendChild(this.rubisco.c.fromHTML(t)), this.__toggleSubmitButton(!1), this.__toggleInsertButton(!1)
+                            this.setMod("loading", !1), n.J.detach(this.__results), this.__aiResult = t, this.__results.appendChild(this.pageperfect.c.fromHTML(t)), this.__toggleSubmitButton(!1), this.__toggleInsertButton(!1)
                         }
                         onAiAssistentError(t) {
                             this.__aiResult = "", this.setMod("loading", !1), this.__error.textContent = t, n.J.detach(this.__results), this.__toggleSubmitButton(!1);
@@ -13781,7 +13781,7 @@
                         }
                         startWalker() {
                             const {
-                                rubisco: t
+                                pageperfect: t
                             } = this, e = (0, u.Zd)(this.j.o.cleanHTML.allowTags), s = (0, u.Zd)(this.j.o.cleanHTML.denyTags);
                             this.walker.on("visit", (i => (0, u.eZ)(t, i, e, s, this.currentSelectionNode))).on("end", (t => {
                                 this.j.e.fire(t ? "internalChange finishedCleanHTMLWorker" : "finishedCleanHTMLWorker")
@@ -14256,7 +14256,7 @@
                         },
                         icon: "brush",
                         popup(t, e, s) {
-                            if (!(0, r.isRubiscoObject)(t)) return;
+                            if (!(0, r.isPagePerfectObject)(t)) return;
                             const i = t.getInstance("Table", t.o).getAllSelectedCells();
                             if (!i.length) return !1;
                             const o = e => (0, a.Kn)(t, (o => {
@@ -14656,7 +14656,7 @@
                         __afterDeleteCommand() {
                             const t = this.j,
                                 e = t.s.current();
-                            if (e && i.J.isTag(e.firstChild, "br") && t.s.removeNode(e.firstChild), !((0, n.Bq)(t.editor.textContent || "") || t.editor.querySelector("img,table,rubisco,iframe,hr") || e && i.J.closest(e, "table", t.editor))) {
+                            if (e && i.J.isTag(e.firstChild, "br") && t.s.removeNode(e.firstChild), !((0, n.Bq)(t.editor.textContent || "") || t.editor.querySelector("img,table,pageperfect,iframe,hr") || e && i.J.closest(e, "table", t.editor))) {
                                 t.editor.innerHTML = "";
                                 const e = t.s.setCursorIn(t.editor);
                                 t.s.removeNode(e)
@@ -14664,7 +14664,7 @@
                         }
                         __onDeleteCommand() {
                             const {
-                                rubisco: t
+                                pageperfect: t
                             } = this;
                             if (t.s.isCollapsed()) return;
                             t.s.expandSelection();
@@ -14707,7 +14707,7 @@
                 },
                 96900(t, e, s) {
                     "use strict";
-                    s(36115).T.prototype.draggableTags = ["img", "rubisco-media", "rubisco"]
+                    s(36115).T.prototype.draggableTags = ["img", "pageperfect-media", "pageperfect"]
                 },
                 27509(t, e, s) {
                     "use strict";
@@ -14994,7 +14994,7 @@
                         }
                         onEnter(t) {
                             const {
-                                rubisco: e
+                                pageperfect: e
                             } = this, s = e.createInside.fake();
                             try {
                                 n.J.safeInsertNode(e.s.range, s), (0, u.Mt)(e, s, ["a"]);
@@ -15388,9 +15388,9 @@
                             "cursive": "Cursive",
                             "fantasy": "Fantasy",
                             "system-ui": "System",
-                            "'Rubisco Sans'": "Rubisco Sans",
-                            "'Rubisco Sans Text'": "RS Text",
-                            "'Rubisco Sans Code'": "RS Code",
+                            "'PagePerfect Sans'": "PagePerfect Sans",
+                            "'PagePerfect Sans Text'": "RS Text",
+                            "'PagePerfect Sans Code'": "RS Code",
                         },
                         childTemplate(t, e, s) {
                             let i = !1;
@@ -15558,9 +15558,9 @@
                                     events: a
                                 } = t;
                                 if (i) {
-                                    if (void 0 === s && (s = !i.classList.contains("rubisco_fullsize")), t.setMod("fullsize", s), t.o.fullsize = s, e = s, i.classList.toggle("rubisco_fullsize", s), t.toolbar && ((0, r.y)(t) && t.toolbarContainer?.appendChild(t.toolbar.container), (0, o.A)(t.toolbar.container, "width", "auto")), s ? n.add(i) : n.delete(i), t.o.globalFullSize && (1 === n.size && s || 0 === n.size && !s)) {
+                                    if (void 0 === s && (s = !i.classList.contains("pageperfect_fullsize")), t.setMod("fullsize", s), t.o.fullsize = s, e = s, i.classList.toggle("pageperfect_fullsize", s), t.toolbar && ((0, r.y)(t) && t.toolbarContainer?.appendChild(t.toolbar.container), (0, o.A)(t.toolbar.container, "width", "auto")), s ? n.add(i) : n.delete(i), t.o.globalFullSize && (1 === n.size && s || 0 === n.size && !s)) {
                                         let t = i.parentNode;
-                                        for (; t && t.nodeType !== Node.DOCUMENT_NODE && t.nodeType !== Node.DOCUMENT_FRAGMENT_NODE;) t.classList.toggle("rubisco_fullsize-box_true", s), t = t.parentNode;
+                                        for (; t && t.nodeType !== Node.DOCUMENT_NODE && t.nodeType !== Node.DOCUMENT_FRAGMENT_NODE;) t.classList.toggle("pageperfect_fullsize-box_true", s), t = t.parentNode;
                                         l()
                                     }
                                     a.fire("afterResize")
@@ -15725,7 +15725,7 @@
                 99689(t, e, s) {
                     "use strict";
                     var i = s(36115);
-                    i.T.prototype.iframeBaseUrl = "", i.T.prototype.iframeTitle = "Rubisco Editor", i.T.prototype.iframeDoctype = "<!DOCTYPE html>", i.T.prototype.iframeDefaultSrc = "about:blank", i.T.prototype.iframeStyle = 'html{margin:0;padding:0;min-height: 100%;}body{box-sizing:border-box;font-size:13px;line-height:1.6;padding:10px;margin:0;background:transparent;color:#000;position:relative;z-index:2;user-select:auto;margin:0px;overflow:auto;outline:none;}table{width:100%;border:none;border-collapse:collapse;empty-cells: show;max-width: 100%;}th,td{padding: 2px 5px;border:1px solid #ccc;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}p{margin-top:0;}.rubisco_editor .rubisco_iframe_wrapper{display: block;clear: both;user-select: none;position: relative;}.rubisco_editor .rubisco_iframe_wrapper:after {position:absolute;content:"";z-index:1;top:0;left:0;right: 0;bottom: 0;cursor: pointer;display: block;background: rgba(0, 0, 0, 0);} .rubisco_disabled{user-select: none;-o-user-select: none;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none}', i.T.prototype.iframeCSSLinks = [], i.T.prototype.iframeSandbox = null
+                    i.T.prototype.iframeBaseUrl = "", i.T.prototype.iframeTitle = "PagePerfect Editor", i.T.prototype.iframeDoctype = "<!DOCTYPE html>", i.T.prototype.iframeDefaultSrc = "about:blank", i.T.prototype.iframeStyle = 'html{margin:0;padding:0;min-height: 100%;}body{box-sizing:border-box;font-size:13px;line-height:1.6;padding:10px;margin:0;background:transparent;color:#000;position:relative;z-index:2;user-select:auto;margin:0px;overflow:auto;outline:none;}table{width:100%;border:none;border-collapse:collapse;empty-cells: show;max-width: 100%;}th,td{padding: 2px 5px;border:1px solid #ccc;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}p{margin-top:0;}.pageperfect_editor .pageperfect_iframe_wrapper{display: block;clear: both;user-select: none;position: relative;}.pageperfect_editor .pageperfect_iframe_wrapper:after {position:absolute;content:"";z-index:1;top:0;left:0;right: 0;bottom: 0;cursor: pointer;display: block;background: rgba(0, 0, 0, 0);} .pageperfect_disabled{user-select: none;-o-user-select: none;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none}', i.T.prototype.iframeCSSLinks = [], i.T.prototype.iframeSandbox = null
                 },
                 26495(t, e, s) {
                     "use strict";
@@ -15738,7 +15738,7 @@
                             t.isEditorMode() && t.s.focus()
                         })).on("generateDocumentStructure.iframe", ((t, s) => {
                             const i = t || s.iframe.contentWindow.document;
-                            if (i.open(), i.write(e.iframeDoctype + `<html dir="${e.direction}" class="rubisco" lang="${(0,o.defaultLanguage)(e.language)}"><head>` + `<title>${e.iframeTitle}</title>` + (e.iframeBaseUrl ? `<base href="${e.iframeBaseUrl}"/>` : "") + '</head><body class="rubisco-wysiwyg"></body></html>'), i.close(), e.iframeCSSLinks && e.iframeCSSLinks.forEach((t => {
+                            if (i.open(), i.write(e.iframeDoctype + `<html dir="${e.direction}" class="pageperfect" lang="${(0,o.defaultLanguage)(e.language)}"><head>` + `<title>${e.iframeTitle}</title>` + (e.iframeBaseUrl ? `<base href="${e.iframeBaseUrl}"/>` : "") + '</head><body class="pageperfect-wysiwyg"></body></html>'), i.close(), e.iframeCSSLinks && e.iframeCSSLinks.forEach((t => {
                                     const e = i.createElement("link");
                                     e.setAttribute("rel", "stylesheet"), e.setAttribute("href", t), i.head && i.head.appendChild(e)
                                 })), e.iframeStyle) {
@@ -15748,7 +15748,7 @@
                         })).on("createEditor", (() => {
                             if (!e.iframe) return;
                             const s = t.c.element("iframe");
-                            s.style.display = "block", s.src = "about:blank", s.className = "rubisco-wysiwyg_iframe", s.setAttribute("allowtransparency", "true"), s.setAttribute("tabindex", "" + e.tabIndex), s.setAttribute("frameborder", "0"), null != e.iframeSandbox && s.setAttribute("sandbox", e.iframeSandbox), t.workplace.appendChild(s), t.iframe = s;
+                            s.style.display = "block", s.src = "about:blank", s.className = "pageperfect-wysiwyg_iframe", s.setAttribute("allowtransparency", "true"), s.setAttribute("tabindex", "" + e.tabIndex), s.setAttribute("frameborder", "0"), null != e.iframeSandbox && s.setAttribute("sandbox", e.iframeSandbox), t.workplace.appendChild(s), t.iframe = s;
                             const r = t.e.fire("generateDocumentStructure.iframe", null, t);
                             return (0, o.callPromise)(r, (() => {
                                 if (!t.iframe) return !1;
@@ -15761,7 +15761,7 @@
                                         const e = /<body.*<\/body>/im,
                                             s = "{%%BODY%%}",
                                             i = e.exec(t);
-                                        return i && (t = t.replace(e, s).replace(/<span([^>]*?)>(.*?)<\/span>/gim, "").replace(/&lt;span([^&]*?)&gt;(.*?)&lt;\/span&gt;/gim, "").replace(s, i[0].replace(/(<body[^>]+?)min-height["'\s]*:[\s"']*[0-9]+(px|%)/im, "$1").replace(/(<body[^>]+?)([\s]*["'])?contenteditable["'\s]*=[\s"']*true["']?/im, "$1").replace(/<(style|script|span)[^>]+rubisco[^>]+>.*?<\/\1>/g, "")).replace(/(class\s*=\s*)(['"])([^"']*)(rubisco-wysiwyg|rubisco)([^"']*\2)/g, "$1$2$3$5").replace(/(<[^<]+?)\sclass="[\s]*"/gim, "$1").replace(/(<[^<]+?)\sstyle="[\s;]*"/gim, "$1").replace(/(<[^<]+?)\sdir="[\s]*"/gim, "$1")), t
+                                        return i && (t = t.replace(e, s).replace(/<span([^>]*?)>(.*?)<\/span>/gim, "").replace(/&lt;span([^&]*?)&gt;(.*?)&lt;\/span&gt;/gim, "").replace(s, i[0].replace(/(<body[^>]+?)min-height["'\s]*:[\s"']*[0-9]+(px|%)/im, "$1").replace(/(<body[^>]+?)([\s]*["'])?contenteditable["'\s]*=[\s"']*true["']?/im, "$1").replace(/<(style|script|span)[^>]+pageperfect[^>]+>.*?<\/\1>/g, "")).replace(/(class\s*=\s*)(['"])([^"']*)(pageperfect-wysiwyg|pageperfect)([^"']*\2)/g, "$1$2$3$5").replace(/(<[^<]+?)\sclass="[\s]*"/gim, "$1").replace(/(<[^<]+?)\sstyle="[\s;]*"/gim, "$1").replace(/(<[^<]+?)\sdir="[\s]*"/gim, "$1")), t
                                     };
                                 if (e.editHTMLDocumentMode) {
                                     const e = t.element.tagName;
@@ -15813,7 +15813,7 @@
                         a = s(65147),
                         l = s(71005);
                     s(67915);
-                    const c = "__rubisco_imageprocessor_binded",
+                    const c = "__pageperfect_imageprocessor_binded",
                         u = c + "blob-id";
                     class d extends l.k {
                         afterInit(t) {}
@@ -15831,7 +15831,7 @@
                         }
                         onBeforeSetElementValue(t) {
                             const {
-                                rubisco: e
+                                pageperfect: e
                             } = this;
                             if (!e.o.imageProcessor.replaceDataURIToBlobIdInView) return;
                             const s = e.buffer.get(u);
@@ -15843,7 +15843,7 @@
                         }
                         async afterChange(t) {
                             const {
-                                rubisco: e
+                                pageperfect: e
                             } = this;
                             e.editor && (0, a.$$)("img", e.editor).forEach((t => {
                                 (0, a.dataBind)(t, c) || ((0, a.dataBind)(t, c, !0), t.complete || e.e.on(t, "load", (function s() {
@@ -16056,7 +16056,7 @@
                             sourceImage: s,
                             values: l
                         } = e;
-                        return (0, r.g)(s, l), l.borderRadius = parseInt(s.style.borderRadius || "0", 10) || 0, l.id = (0, i.C)(s, "id") || "", l.imageTitle = (0, i.C)(s, "title") || "", l.imageAlt = (0, i.C)(s, "alt") || "", l.style = (0, i.C)(s, "style") || "", l.classes = ((0, i.C)(s, "class") || "").replace(/rubisco_focused_image[\s]*/, ""), (0, n.E)(s, l, e), (0, o.X)(e, t, l), l.imageSrc = (0, i.C)(s, "src") || "", (0, a.P)(s, l, e)
+                        return (0, r.g)(s, l), l.borderRadius = parseInt(s.style.borderRadius || "0", 10) || 0, l.id = (0, i.C)(s, "id") || "", l.imageTitle = (0, i.C)(s, "title") || "", l.imageAlt = (0, i.C)(s, "alt") || "", l.style = (0, i.C)(s, "style") || "", l.classes = ((0, i.C)(s, "class") || "").replace(/pageperfect_focused_image[\s]*/, ""), (0, n.E)(s, l, e), (0, o.X)(e, t, l), l.imageSrc = (0, i.C)(s, "src") || "", (0, a.P)(s, l, e)
                     }
                 },
                 33201(t, e, s) {
@@ -16148,7 +16148,7 @@
                             return null
                         }
                         constructor(t, e, s, i) {
-                            super(t), this.state = e, this.handlers = i, this.__mainTab = new u.k(this.rubisco, this.state, this.handlers), this.__positionTab = new d._(this.rubisco, this.state, this.handlers), this.getElm("tabsBox").appendChild((0, c.Zg)(t, [{
+                            super(t), this.state = e, this.handlers = i, this.__mainTab = new u.k(this.pageperfect, this.state, this.handlers), this.__positionTab = new d._(this.pageperfect, this.state, this.handlers), this.getElm("tabsBox").appendChild((0, c.Zg)(t, [{
                                 name: "Image",
                                 content: this.__mainTab
                             }, {
@@ -16157,7 +16157,7 @@
                             }], s)), this.setMod("lock-size", this.state.sizeIsLocked), this.append(this.__mainTab).append(this.__positionTab)
                         }
                         render() {
-                            return `<form>\n\t\t<div class="rubisco-grid rubisco-grid_xs-column">\n\t\t\t<div class="rubisco_col-lg-2-5 rubisco_col-xs-5-5">\n\t\t\t\t<div class="&__view-box">\n\t\t\t\t\t<div class="&__imageView">\n\t\t\t\t\t\t<img class="&__imageViewSrc" src="" alt=""/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="rubisco-form__group &__imageSizes">\n\t\t\t\t\t\t<input type="text" class="rubisco-input &__imageWidth"/>\n\t\t\t\t\t\t<a class="&__lockSize">${l.I.get("lock")}</a>\n\t\t\t\t\t\t<input type="text" class="&__imageHeight rubisco-input"/>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class="rubisco_col-lg-3-5 rubisco_col-xs-5-5 &__tabsBox"></div>\n\t\t</div>\n\t</form>`
+                            return `<form>\n\t\t<div class="pageperfect-grid pageperfect-grid_xs-column">\n\t\t\t<div class="pageperfect_col-lg-2-5 pageperfect_col-xs-5-5">\n\t\t\t\t<div class="&__view-box">\n\t\t\t\t\t<div class="&__imageView">\n\t\t\t\t\t\t<img class="&__imageViewSrc" src="" alt=""/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="pageperfect-form__group &__imageSizes">\n\t\t\t\t\t\t<input type="text" class="pageperfect-input &__imageWidth"/>\n\t\t\t\t\t\t<a class="&__lockSize">${l.I.get("lock")}</a>\n\t\t\t\t\t\t<input type="text" class="&__imageHeight pageperfect-input"/>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class="pageperfect_col-lg-3-5 pageperfect_col-xs-5-5 &__tabsBox"></div>\n\t\t</div>\n\t</form>`
                         }
                         onChangeSizeIsLocked() {
                             const t = this.getElm("lockSize"),
@@ -16225,7 +16225,7 @@
                             super(t), this.state = e, this.handlers = s
                         }
                         render() {
-                            return '<div class="rubisco-form__group &__editSrc">\n\t\t\t<label>~Src~</label>\n\t\t\t<div class="rubisco-input_group">\n\t\t\t\t<input class="rubisco-input &__imageSrc" type="text"/>\n\t\t\t\t<div class="rubisco-input_group-buttons &__fixImage">\n\t\t\t\t\t\t<a class="rubisco-button &__changeImage">*image*</a>\n\t\t\t\t\t\t<a class="rubisco-button &__editImage">*crop*</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editTitle">\n\t\t\t<label>~Title~</label>\n\t\t\t<input type="text" class="rubisco-input &__imageTitle"/>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editAlt">\n\t\t\t<label>~Alternative~</label>\n\t\t\t<input type="text" class="rubisco-input &__imageAlt"/>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editLink">\n\t\t\t<label>~Link~</label>\n\t\t\t<input type="text" class="rubisco-input &__imageLink"/>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editLinkTarget">\n\t\t\t<label class="rubisco_vertical_middle">\n\t\t\t\t<input type="checkbox" class="rubisco-checkbox &__imageLinkOpenInNewTab"/>\n\t\t\t\t<span>~Open link in new tab~</span>\n\t\t\t</label>\n\t\t</div>'
+                            return '<div class="pageperfect-form__group &__editSrc">\n\t\t\t<label>~Src~</label>\n\t\t\t<div class="pageperfect-input_group">\n\t\t\t\t<input class="pageperfect-input &__imageSrc" type="text"/>\n\t\t\t\t<div class="pageperfect-input_group-buttons &__fixImage">\n\t\t\t\t\t\t<a class="pageperfect-button &__changeImage">*image*</a>\n\t\t\t\t\t\t<a class="pageperfect-button &__editImage">*crop*</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editTitle">\n\t\t\t<label>~Title~</label>\n\t\t\t<input type="text" class="pageperfect-input &__imageTitle"/>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editAlt">\n\t\t\t<label>~Alternative~</label>\n\t\t\t<input type="text" class="pageperfect-input &__imageAlt"/>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editLink">\n\t\t\t<label>~Link~</label>\n\t\t\t<input type="text" class="pageperfect-input &__imageLink"/>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editLinkTarget">\n\t\t\t<label class="pageperfect_vertical_middle">\n\t\t\t\t<input type="checkbox" class="pageperfect-checkbox &__imageLinkOpenInNewTab"/>\n\t\t\t\t<span>~Open link in new tab~</span>\n\t\t\t</label>\n\t\t</div>'
                         }
                         async onStateImageSrcChange() {
                             this.getElm("imageSrc").value = this.state.values.imageSrc
@@ -16318,7 +16318,7 @@
                         render({
                             availableClasses: t
                         }) {
-                            return `<div class="rubisco-form__group &__editMargins">\n\t\t\t<label>~Margins~</label>\n\t\t\t<div class="rubisco-grid rubisco_vertical_middle">\n\t\t\t\t<input class="rubisco_col-lg-1-5 rubisco-input &__marginTop" type="text" placeholder="~top~"/>\n\t\t\t\t<a style="text-align: center;" class="rubisco-properties__lock rubisco_col-lg-1-5 &__lockMargin">*lock*</a>\n\t\t\t\t<input disabled="disabled" class="rubisco_col-lg-1-5 rubisco-input &__marginRight" type="text" placeholder="~right~"/>\n\t\t\t\t<input disabled="disabled" class="rubisco_col-lg-1-5 rubisco-input &__marginBottom" type="text" placeholder="~bottom~"/>\n\t\t\t\t<input disabled="disabled" class="rubisco_col-lg-1-5 rubisco-input &__marginLeft" type="text" placeholder="~left~"/>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editAlign">\n\t\t\t<label>~Align~</label>\n\t\t\t<select class="rubisco-select &__align">\n\t\t\t\t<option value="">~--Not Set--~</option>\n\t\t\t\t<option value="left">~Left~</option>\n\t\t\t\t<option value="center">~Center~</option>\n\t\t\t\t<option value="right">~Right~</option>\n\t\t\t</select>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editStyle">\n\t\t\t<label>~Styles~</label>\n\t\t\t<input type="text" class="rubisco-input &__style"/>\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editClass">\n\t\t\t<label>~Classes~</label>\n\t\t\t${(()=>{const e=[];return t&&t.length>0?(e.push('<select class="rubisco-input rubisco-select &__classes">'),t.forEach((t=>{(0,l.K)(t)?e.push(`<option value="${t}">${t}</option>`):e.push(`<option value="${t[0]}">${t[1]}</option>`)})),e.push("</select>")):e.push('<input type="text" class="rubisco-input &__classes"/>'),e.join("")})()}\n\t\t</div>\n\t\t<div class="rubisco-form__group &__editId">\n\t\t\t<label>Id</label>\n\t\t\t<input type="text" class="rubisco-input &__id"/>\n\t\t</div>\n\t\t<div\n\t\t\tclass="rubisco-form__group &__editBorderRadius"\n\t\t>\n\t\t\t<label>~Border radius~</label>\n\t\t\t<input type="number" class="rubisco-input &__borderRadius"/>\n\t\t</div>`
+                            return `<div class="pageperfect-form__group &__editMargins">\n\t\t\t<label>~Margins~</label>\n\t\t\t<div class="pageperfect-grid pageperfect_vertical_middle">\n\t\t\t\t<input class="pageperfect_col-lg-1-5 pageperfect-input &__marginTop" type="text" placeholder="~top~"/>\n\t\t\t\t<a style="text-align: center;" class="pageperfect-properties__lock pageperfect_col-lg-1-5 &__lockMargin">*lock*</a>\n\t\t\t\t<input disabled="disabled" class="pageperfect_col-lg-1-5 pageperfect-input &__marginRight" type="text" placeholder="~right~"/>\n\t\t\t\t<input disabled="disabled" class="pageperfect_col-lg-1-5 pageperfect-input &__marginBottom" type="text" placeholder="~bottom~"/>\n\t\t\t\t<input disabled="disabled" class="pageperfect_col-lg-1-5 pageperfect-input &__marginLeft" type="text" placeholder="~left~"/>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editAlign">\n\t\t\t<label>~Align~</label>\n\t\t\t<select class="pageperfect-select &__align">\n\t\t\t\t<option value="">~--Not Set--~</option>\n\t\t\t\t<option value="left">~Left~</option>\n\t\t\t\t<option value="center">~Center~</option>\n\t\t\t\t<option value="right">~Right~</option>\n\t\t\t</select>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editStyle">\n\t\t\t<label>~Styles~</label>\n\t\t\t<input type="text" class="pageperfect-input &__style"/>\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editClass">\n\t\t\t<label>~Classes~</label>\n\t\t\t${(()=>{const e=[];return t&&t.length>0?(e.push('<select class="pageperfect-input pageperfect-select &__classes">'),t.forEach((t=>{(0,l.K)(t)?e.push(`<option value="${t}">${t}</option>`):e.push(`<option value="${t[0]}">${t[1]}</option>`)})),e.push("</select>")):e.push('<input type="text" class="pageperfect-input &__classes"/>'),e.join("")})()}\n\t\t</div>\n\t\t<div class="pageperfect-form__group &__editId">\n\t\t\t<label>Id</label>\n\t\t\t<input type="text" class="pageperfect-input &__id"/>\n\t\t</div>\n\t\t<div\n\t\t\tclass="pageperfect-form__group &__editBorderRadius"\n\t\t>\n\t\t\t<label>~Border radius~</label>\n\t\t\t<input type="number" class="pageperfect-input &__borderRadius"/>\n\t\t</div>`
                         }
                         onStateAlignChange() {
                             this.getElm("align").value = this.state.values.align
@@ -16732,9 +16732,9 @@
                         img: l.A,
                         cells: n.A,
                         toolbar: c.A,
-                        rubisco: a.A,
+                        pageperfect: a.A,
                         iframe: a.A,
-                        "rubisco-media": a.A,
+                        "pageperfect-media": a.A,
                         selection: ["bold", "underline", "italic", "ul", "ol", "\n", "outdent", "indent", "fontsize", "brush", "cut", "\n", "paragraph", "link", "align", "dots"]
                     }
                 },
@@ -16869,10 +16869,10 @@
                         exec(t, e, {
                             control: s
                         }) {
-                            if (!i.J.isTag(e, new Set(["img", "rubisco", "rubisco-media"]))) return;
+                            if (!i.J.isTag(e, new Set(["img", "pageperfect", "pageperfect-media"]))) return;
                             const n = s.args && (0, r.K)(s.args[0]) ? s.args[0].toLowerCase() : "";
                             if (!n) return !1;
-                            (0, o.Mr)(e, n), i.J.isTag(e, new Set(["rubisco", "rubisco-media"])) && e.firstElementChild && (0, o.Mr)(e.firstElementChild, n), t.synchronizeValues(), t.e.fire("recalcPositionPopup")
+                            (0, o.Mr)(e, n), i.J.isTag(e, new Set(["pageperfect", "pageperfect-media"])) && e.firstElementChild && (0, o.Mr)(e.firstElementChild, n), t.synchronizeValues(), t.e.fire("recalcPositionPopup")
                         },
                         tooltip: "Horizontal align"
                     };
@@ -16924,10 +16924,10 @@
                             super(...arguments), this.type = null, this.snapRange = null, this.elmsList = (0, a.keys)(this.j.o.popup, !1).filter((t => !this.isExcludedTarget(t)))
                         }
                         get popup() {
-                            return new u.z(this.rubisco, !1)
+                            return new u.z(this.pageperfect, !1)
                         }
                         get toolbar() {
-                            return (0, d.$K)(this.rubisco, this.popup)
+                            return (0, d.$K)(this.pageperfect, this.popup)
                         }
                         onClick(t) {
                             const e = this.elmsList,
@@ -17154,7 +17154,7 @@
                         }
                         __shouldDenyInput(t) {
                             const {
-                                rubisco: e
+                                pageperfect: e
                             } = this, {
                                 limitWords: s,
                                 limitChars: i
@@ -17168,7 +17168,7 @@
                         }
                         checkPreventChanging(t, e) {
                             const {
-                                rubisco: s
+                                pageperfect: s
                             } = this;
                             this.__shouldDenyInput(!0) && (s.value = e)
                         }
@@ -17547,7 +17547,7 @@
                                         s = this.__generateForm(t.s.current(), (() => {
                                             e.close()
                                         }));
-                                    s.container.classList.add("rubisco-dialog_alert"), e.setContent(s), e.open(), t.async.requestIdleCallback((() => {
+                                    s.container.classList.add("pageperfect-dialog_alert"), e.setContent(s), e.open(), t.async.requestIdleCallback((() => {
                                         const {
                                             url_input: t
                                         } = (0, a.refs)(s.container);
@@ -17564,7 +17564,7 @@
                         }
                         onProcessPasteLink(t, e) {
                             const {
-                                rubisco: s
+                                pageperfect: s
                             } = this;
                             if ((0, a.isURL)(e) && s.o.link.processPastedLink) {
                                 if (s.e.stopPropagation("processPaste"), s.o.link.processVideoLink) {
@@ -17588,7 +17588,7 @@
                         }
                         __generateForm(t, e) {
                             const {
-                                rubisco: s
+                                pageperfect: s
                             } = this, i = s.i18n.bind(s), {
                                 openInNewTabCheckbox: r,
                                 noFollowCheckbox: n,
@@ -17646,7 +17646,7 @@
                                 s.s.restore(), s.history.snapshot.restore(x), T && o.J.unwrap(T), s.synchronizeValues(), e(), t.preventDefault()
                             }));
                             const I = () => {
-                                if (!_.value.trim().length) return _.focus(), _.classList.add("rubisco_error"), !1;
+                                if (!_.value.trim().length) return _.focus(), _.classList.add("pageperfect_error"), !1;
                                 let t;
                                 s.s.restore(), s.s.removeMarkers(), s.editor.normalize(), s.history.snapshot.restore(x);
                                 const i = E() !== C.value.trim(),
@@ -17753,7 +17753,7 @@
                 24103(t, e, s) {
                     "use strict";
                     var i = s(36115);
-                    i.T.prototype.mediaFakeTag = "rubisco-media", i.T.prototype.mediaInFakeBlock = !0, i.T.prototype.mediaBlocks = ["video", "audio"]
+                    i.T.prototype.mediaFakeTag = "pageperfect-media", i.T.prototype.mediaInFakeBlock = !0, i.T.prototype.mediaBlocks = ["video", "audio"]
                 },
                 26421(t, e, s) {
                     "use strict";
@@ -17761,7 +17761,7 @@
                         r = s(56298),
                         o = s(97369);
                     s(24103), r.fg.add("media", (t => {
-                        const e = "rubisco_fake_wrapper",
+                        const e = "pageperfect_fake_wrapper",
                             {
                                 mediaFakeTag: s,
                                 mediaBlocks: r,
@@ -17773,10 +17773,10 @@
                         })).on("change afterInit afterSetMode changePlace", t.async.debounce((() => {
                             t.isDestructed || t.getMode() === i.MODE_SOURCE || (0, o.$$)(r.join(","), t.editor).forEach((i => {
                                 (0, o.dataBind)(i, e) || ((0, o.dataBind)(i, e, !0), (i => {
-                                    if (i.parentNode && (0, o.attr)(i.parentNode, "data-rubisco_iframe_wrapper")) i = i.parentNode;
+                                    if (i.parentNode && (0, o.attr)(i.parentNode, "data-pageperfect_iframe_wrapper")) i = i.parentNode;
                                     else {
                                         const r = t.createInside.element(s, {
-                                            "data-rubisco-temp": 1,
+                                            "data-pageperfect-temp": 1,
                                             contenteditable: !1,
                                             draggable: !0,
                                             ["data-" + e]: 1
@@ -17969,14 +17969,14 @@
                             t.registerCommand("insertUnorderedList", this.onCommand).registerCommand("insertOrderedList", this.onCommand)
                         }
                         onCommand(t, e, s) {
-                            return this.rubisco.s.commitStyle({
+                            return this.pageperfect.s.commitStyle({
                                 element: "insertunorderedlist" === t ? "ul" : "ol",
                                 attributes: {
                                     style: {
                                         listStyleType: s ?? null
                                     }
                                 }
-                            }), this.rubisco.synchronizeValues(), !1
+                            }), this.pageperfect.synchronizeValues(), !1
                         }
                         beforeDestruct(t) {}
                     }(0, i.Cg)([r.autobind], a.prototype, "onCommand", null), o.fg.add("orderedList", a)
@@ -18060,7 +18060,7 @@
                                 let e = this.currentIndex; - 1 !== [i.KEY_UP, i.KEY_DOWN, i.KEY_ENTER].indexOf(t.key) && (t.key === i.KEY_UP && (0 === e ? e = this.list.length - 1 : e -= 1), t.key === i.KEY_DOWN && (e === this.list.length - 1 ? e = 0 : e += 1), t.key !== i.KEY_ENTER ? (e !== this.currentIndex && this.selectIndex(e), t.stopImmediatePropagation(), t.preventDefault()) : this.paste())
                             }, this.selectIndex = t => {
                                 this.listBox && (0, n.toArray)(this.listBox.childNodes).forEach(((e, s) => {
-                                    e.classList.remove("rubisco_active"), t === s && this.previewBox && (e.classList.add("rubisco_active"), this.previewBox.innerHTML = this.list[t], e.focus())
+                                    e.classList.remove("pageperfect_active"), t === s && this.previewBox && (e.classList.add("pageperfect_active"), this.previewBox.innerHTML = this.list[t], e.focus())
                                 })), this.currentIndex = t
                             }, this.showDialog = () => {
                                 2 > this.list.length || (this.dialog || this.createDialog(), this.listBox && (this.listBox.innerHTML = ""), this.previewBox && (this.previewBox.innerHTML = ""), this.list.forEach(((t, e) => {
@@ -18076,7 +18076,7 @@
                             const t = (0, l.$n)(this.j, "paste", "Paste", "primary");
                             t.onAction(this.paste);
                             const e = (0, l.$n)(this.j, "", "Cancel");
-                            e.onAction(this.dialog.close), this.container = this.j.c.div(), this.container.classList.add("rubisco-paste-storage"), this.listBox = this.j.c.div(), this.previewBox = this.j.c.div(), this.container.appendChild(this.listBox), this.container.appendChild(this.previewBox), this.dialog.setHeader(this.j.i18n("Choose Content to Paste")), this.dialog.setContent(this.container), this.dialog.setFooter([t, e]), this.j.e.on(this.listBox, "click dblclick", (t => {
+                            e.onAction(this.dialog.close), this.container = this.j.c.div(), this.container.classList.add("pageperfect-paste-storage"), this.listBox = this.j.c.div(), this.previewBox = this.j.c.div(), this.container.appendChild(this.listBox), this.container.appendChild(this.previewBox), this.dialog.setHeader(this.j.i18n("Choose Content to Paste")), this.dialog.setContent(this.container), this.dialog.setFooter([t, e]), this.j.e.on(this.listBox, "click dblclick", (t => {
                                 const e = t.target;
                                 return r.J.isTag(e, "a") && e.hasAttribute("data-index") && this.selectIndex(parseInt((0, n.attr)(e, "-index") || "0", 10)), "dblclick" === t.type && this.paste(), !1
                             }))
@@ -18320,7 +18320,7 @@
                             }
                         }
                         afterInit(t) {
-                            t.o.showPlaceholder && (this.placeholderElm = t.c.fromHTML(`<span data-ref="placeholder" style="display: none;" class="rubisco-placeholder">${t.i18n(t.o.placeholder)}</span>`), "rtl" === t.o.direction && (this.placeholderElm.style.right = "0px", this.placeholderElm.style.direction = "rtl"), t.e.on("readonly", (t => {
+                            t.o.showPlaceholder && (this.placeholderElm = t.c.fromHTML(`<span data-ref="placeholder" style="display: none;" class="pageperfect-placeholder">${t.i18n(t.o.placeholder)}</span>`), "rtl" === t.o.direction && (this.placeholderElm.style.right = "0px", this.placeholderElm.style.direction = "rtl"), t.e.on("readonly", (t => {
                                 t ? this.hide() : this.toggle()
                             })).on("changePlace", this.addEvents), this.addEvents())
                         }
@@ -18371,12 +18371,12 @@
                 },
                 81089(t, e, s) {
                     "use strict";
-                    s(56298).fg.add("poweredByRubisco", (t => {
+                    s(56298).fg.add("poweredByPagePerfect", (t => {
                         const {
                             o: e
                         } = t;
-                        e.hidePoweredByRubisco || e.inline || !(e.showCharsCounter || e.showWordsCounter || e.showXPathInStatusbar) || t.hookStatus("ready", (() => {
-                            t.statusbar.append(t.create.fromHTML('<a\n\t\t\t\t\t\ttabindex="-1"\n\t\t\t\t\t\tstyle="text-transform: uppercase"\n\t\t\t\t\t\tclass="rubisco-status-bar-link"\n\t\t\t\t\t\ttarget="_blank"\n\t\t\t\t\t\thref="https://rubisco.pages.dev/">\n\t\t\t\t\t\t\tPowered by Rubisco\n\t\t\t\t\t\t</a>'), !0)
+                        e.hidePoweredByPagePerfect || e.inline || !(e.showCharsCounter || e.showWordsCounter || e.showXPathInStatusbar) || t.hookStatus("ready", (() => {
+                            t.statusbar.append(t.create.fromHTML('<a\n\t\t\t\t\t\ttabindex="-1"\n\t\t\t\t\t\tstyle="text-transform: none"\n\t\t\t\t\t\tclass="pageperfect-status-bar-link"\n\t\t\t\t\t\ttarget="_blank"\n\t\t\t\t\t\thref="https://pageperfect.pages.dev/about">\n\t\t\t\t\t\t\tPowered by PagePerfect Content Editor\n\t\t\t\t\t\t</a>'), !0)
                         }))
                     }))
                 },
@@ -18574,7 +18574,7 @@
                     class d extends c.Plugin {
                         constructor() {
                             super(...arguments), this.selectMode = !1, this.resizeDelta = 0, this.createResizeHandle = () => {
-                                this.resizeHandler || (this.resizeHandler = this.j.c.div("rubisco-table-resizer"), this.j.e.on(this.resizeHandler, "mousedown.table touchstart.table", this.onHandleMouseDown).on(this.resizeHandler, "mouseenter.table", (() => {
+                                this.resizeHandler || (this.resizeHandler = this.j.c.div("pageperfect-table-resizer"), this.j.e.on(this.resizeHandler, "mousedown.table touchstart.table", this.onHandleMouseDown).on(this.resizeHandler, "mouseenter.table", (() => {
                                     this.j.async.clearTimeout(this.hideTimeout)
                                 })))
                             }, this.hideTimeout = 0, this.drag = !1, this.minX = 0, this.maxX = 0, this.startX = 0
@@ -18598,7 +18598,7 @@
                         }
                         onHandleMouseDown(t) {
                             if (this.j.isLocked) return;
-                            this.drag = !0, this.j.e.on(this.j.ow, "mouseup.resize-cells touchend.resize-cells", this.onMouseUp).on(this.j.ew, "mousemove.table touchmove.table", this.onMouseMove), this.startX = t.clientX, this.j.lock(u), this.resizeHandler.classList.add("rubisco-table-resizer_moved");
+                            this.drag = !0, this.j.e.on(this.j.ow, "mouseup.resize-cells touchend.resize-cells", this.onMouseUp).on(this.j.ew, "mousemove.table touchmove.table", this.onMouseMove), this.startX = t.clientX, this.j.lock(u), this.resizeHandler.classList.add("pageperfect-table-resizer_moved");
                             let e, s = this.workTable.getBoundingClientRect();
                             if (this.minX = 0, this.maxX = 1e6, null != this.wholeTable) s = this.workTable.parentNode.getBoundingClientRect(), this.minX = s.left, this.maxX = this.minX + s.width;
                             else {
@@ -18619,7 +18619,7 @@
                             i && i.removeAllRanges()
                         }
                         onMouseUp(t) {
-                            (this.selectMode || this.drag) && (this.selectMode = !1, this.j.unlock()), this.resizeHandler && this.drag && (this.drag = !1, this.j.e.off(this.j.ew, "mousemove.table touchmove.table", this.onMouseMove), this.resizeHandler.classList.remove("rubisco-table-resizer_moved"), this.startX !== t.clientX && (null == this.wholeTable ? this.resizeColumns() : this.resizeTable()), this.j.synchronizeValues(), this.j.s.focus())
+                            (this.selectMode || this.drag) && (this.selectMode = !1, this.j.unlock()), this.resizeHandler && this.drag && (this.drag = !1, this.j.e.off(this.j.ew, "mousemove.table touchmove.table", this.onMouseMove), this.resizeHandler.classList.remove("pageperfect-table-resizer_moved"), this.startX !== t.clientX && (null == this.wholeTable ? this.resizeColumns() : this.resizeTable()), this.j.synchronizeValues(), this.j.s.focus())
                         }
                         resizeColumns() {
                             const t = this.resizeDelta,
@@ -18714,7 +18714,7 @@
                                 y: 0,
                                 w: 0,
                                 h: 0
-                            }, this.handle = this.j.c.div("rubisco-editor__resize", l.In.get("resize_handler"))
+                            }, this.handle = this.j.c.div("pageperfect-editor__resize", l.In.get("resize_handler"))
                         }
                         afterInit(t) {
                             const {
@@ -18747,7 +18747,7 @@
                 69505(t, e, s) {
                     "use strict";
                     var i = s(36115);
-                    i.T.prototype.allowResizeTags = new Set(["img", "iframe", "table", "rubisco"]), i.T.prototype.resizer = {
+                    i.T.prototype.allowResizeTags = new Set(["img", "iframe", "table", "pageperfect"]), i.T.prototype.resizer = {
                         showSize: !0,
                         hideSizeTimeout: 1e3,
                         forImageChangeAttributes: !0,
@@ -18766,10 +18766,10 @@
                         l = s(65147),
                         c = s(29866);
                     s(69505);
-                    const u = "__rubisco-resizer_binded";
+                    const u = "__pageperfect-resizer_binded";
                     class d extends c.k {
                         constructor() {
-                            super(...arguments), this.LOCK_KEY = "resizer", this.element = null, this.isResizeMode = !1, this.isShown = !1, this.startX = 0, this.startY = 0, this.width = 0, this.height = 0, this.ratio = 0, this.rect = this.j.c.fromHTML(`<div title="${this.j.i18n("Press Alt for custom resizing")}" class="rubisco-resizer">\n\t\t\t\t<div class="rubisco-resizer__top-left"></div>\n\t\t\t\t<div class="rubisco-resizer__top-right"></div>\n\t\t\t\t<div class="rubisco-resizer__bottom-right"></div>\n\t\t\t\t<div class="rubisco-resizer__bottom-left"></div>\n\t\t\t\t<span>100x100</span>\n\t\t\t</div>`), this.sizeViewer = this.rect.getElementsByTagName("span")[0], this.pointerX = 0, this.pointerY = 0, this.isAltMode = !1, this.onClickElement = t => {
+                            super(...arguments), this.LOCK_KEY = "resizer", this.element = null, this.isResizeMode = !1, this.isShown = !1, this.startX = 0, this.startY = 0, this.width = 0, this.height = 0, this.ratio = 0, this.rect = this.j.c.fromHTML(`<div title="${this.j.i18n("Press Alt for custom resizing")}" class="pageperfect-resizer">\n\t\t\t\t<div class="pageperfect-resizer__top-left"></div>\n\t\t\t\t<div class="pageperfect-resizer__top-right"></div>\n\t\t\t\t<div class="pageperfect-resizer__bottom-right"></div>\n\t\t\t\t<div class="pageperfect-resizer__bottom-left"></div>\n\t\t\t\t<span>100x100</span>\n\t\t\t</div>`), this.sizeViewer = this.rect.getElementsByTagName("span")[0], this.pointerX = 0, this.pointerY = 0, this.isAltMode = !1, this.onClickElement = t => {
                                 this.isResizeMode || this.element === t && this.isShown || (this.element = t, this.show(), n.J.isTag(this.element, "img") && !this.element.complete && this.j.e.one(this.element, "load", this.updateSize))
                             }, this.updateSize = () => {
                                 if (!this.isInDestruct && this.isShown && this.element && this.rect) {
@@ -18795,7 +18795,7 @@
                             })), a.RR.on("hideHelpers", this.hide), t.e.on("readonly", (t => {
                                 t && this.hide()
                             })).on("afterInit changePlace", this.addEventListeners.bind(this)).on("afterGetValueFromEditor.resizer", (t => {
-                                const e = /<rubisco[^>]+data-rubisco_iframe_wrapper[^>]+>(.*?<iframe[^>]*>.*?<\/iframe>.*?)<\/rubisco>/gi;
+                                const e = /<pageperfect[^>]+data-pageperfect_iframe_wrapper[^>]+>(.*?<iframe[^>]*>.*?<\/iframe>.*?)<\/pageperfect>/gi;
                                 e.test(t.value) && (t.value = t.value.replace(e, "$1"))
                             })), this.addEventListeners(), this.__onChangeEditor()
                         }
@@ -18874,7 +18874,7 @@
                             i && (0, l.attr)(t, e, s), i && !t.style[e] || (0, l.css)(t, e, s)
                         }
                         onDelete(t) {
-                            this.element && ("RUBISCO" !== this.element.tagName ? this.j.s.select(this.element) : (n.J.safeRemove(this.element), this.hide(), t.preventDefault()))
+                            this.element && ("PAGEPERFECT" !== this.element.tagName ? this.j.s.select(this.element) : (n.J.safeRemove(this.element), this.hide(), t.preventDefault()))
                         }
                         __onChangeEditor() {
                             this.isShown && (this.element && this.element.parentNode ? this.updateSize() : this.hide()), (0, l.$$)("iframe", this.j.editor).forEach(this.__bind)
@@ -18884,17 +18884,17 @@
                             let e;
                             if ((0, l.dataBind)(t, u, !0), n.J.isTag(t, "iframe")) {
                                 const s = t;
-                                n.J.isHTMLElement(t.parentNode) && (0, l.attr)(t.parentNode, "-rubisco_iframe_wrapper") ? t = t.parentNode : (e = this.j.createInside.element("rubisco", {
-                                    "data-rubisco-temp": 1,
+                                n.J.isHTMLElement(t.parentNode) && (0, l.attr)(t.parentNode, "-pageperfect_iframe_wrapper") ? t = t.parentNode : (e = this.j.createInside.element("pageperfect", {
+                                    "data-pageperfect-temp": 1,
                                     contenteditable: !1,
                                     draggable: !0,
-                                    "data-rubisco_iframe_wrapper": 1
+                                    "data-pageperfect_iframe_wrapper": 1
                                 }), (0, l.attr)(e, "style", (0, l.attr)(t, "style")), (0, l.css)(e, {
                                     display: "inline-block" === t.style.display ? "inline-block" : "block",
                                     width: t.offsetWidth,
                                     height: t.offsetHeight
                                 }), t.parentNode && t.parentNode.insertBefore(e, t), e.appendChild(t), this.j.e.on(e, "click", (() => {
-                                    (0, l.attr)(e, "data-rubisco-wrapper_active", !0)
+                                    (0, l.attr)(e, "data-pageperfect-wrapper_active", !0)
                                 })), t = e), this.j.e.off(t, "mousedown.select touchstart.select").on(t, "mousedown.select touchstart.select", (() => {
                                     this.j.s.select(t)
                                 })).off(t, "changesize").on(t, "changesize", (() => {
@@ -18915,7 +18915,7 @@
                             this.j.o.readonly || this.isShown || (this.isShown = !0, this.rect.parentNode || ((0, l.markOwner)(this.j, this.rect), this.j.workplace.appendChild(this.rect)), this.j.isFullSize && (this.rect.style.zIndex = "" + (0, l.css)(this.j.container, "zIndex")), this.updateSize())
                         }
                         hide() {
-                            this.isResizeMode || (this.isResizeMode = !1, this.isShown = !1, this.element = null, n.J.safeRemove(this.rect), (0, l.$$)("[data-rubisco-wrapper_active='true']", this.j.editor).forEach((t => (0, l.attr)(t, "data-rubisco-wrapper_active", !1))))
+                            this.isResizeMode || (this.isResizeMode = !1, this.isShown = !1, this.element = null, n.J.safeRemove(this.rect), (0, l.$$)("[data-pageperfect-wrapper_active='true']", this.j.editor).forEach((t => (0, l.attr)(t, "data-pageperfect-wrapper_active", !1))))
                         }
                         beforeDestruct(t) {
                             this.hide(), a.RR.off("hideHelpers", this.hide), t.e.off(this.j.ow, ".resizer").off(".resizer")
@@ -18993,7 +18993,7 @@
                                             return s.setStart(e.startContainer, e.startOffset), s.setEnd(e.endContainer, e.endOffset), s
                                         })),
                                         r = new Highlight(...i);
-                                    return CSS.highlights.clear(), CSS.highlights.set("rubisco-search-result", r), s.length = 0, !0
+                                    return CSS.highlights.clear(), CSS.highlights.set("pageperfect-search-result", r), s.length = 0, !0
                                 }
                                 return !1
                             })(t, e, s)) return;
@@ -19281,7 +19281,7 @@
                             return "UISearch"
                         }
                         render() {
-                            return `<div>\n\t\t\t<div class="&__box">\n\t\t\t\t<div class="&__inputs">\n\t\t\t\t\t<input data-ref="query" tabindex="0" placeholder="~Search for~" type="text"/>\n\t\t\t\t\t<input data-ref="replace" tabindex="0" placeholder="~Replace with~" type="text"/>\n\t\t\t\t</div>\n\t\t\t\t<div class="&__counts">\n\t\t\t\t\t<span data-ref="counter-box">\n\t\t\t\t\t\t<span data-ref="current">0</span><span>/</span><span data-ref="count">0</span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<div class="&__buttons">\n\t\t\t\t\t<button data-ref="next" tabindex="0" type="button">${l.In.get("angle-down")}</button>\n\t\t\t\t\t<button data-ref="prev" tabindex="0" type="button">${l.In.get("angle-up")}</button>\n\t\t\t\t\t<button data-ref="cancel" tabindex="0" type="button">${l.In.get("cancel")}</button>\n\t\t\t\t\t<button data-ref="replace-btn" tabindex="0" type="button" class="rubisco-ui-button">~Replace~</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>`
+                            return `<div>\n\t\t\t<div class="&__box">\n\t\t\t\t<div class="&__inputs">\n\t\t\t\t\t<input data-ref="query" tabindex="0" placeholder="~Search for~" type="text"/>\n\t\t\t\t\t<input data-ref="replace" tabindex="0" placeholder="~Replace with~" type="text"/>\n\t\t\t\t</div>\n\t\t\t\t<div class="&__counts">\n\t\t\t\t\t<span data-ref="counter-box">\n\t\t\t\t\t\t<span data-ref="current">0</span><span>/</span><span data-ref="count">0</span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<div class="&__buttons">\n\t\t\t\t\t<button data-ref="next" tabindex="0" type="button">${l.In.get("angle-down")}</button>\n\t\t\t\t\t<button data-ref="prev" tabindex="0" type="button">${l.In.get("angle-up")}</button>\n\t\t\t\t\t<button data-ref="cancel" tabindex="0" type="button">${l.In.get("cancel")}</button>\n\t\t\t\t\t<button data-ref="replace-btn" tabindex="0" type="button" class="pageperfect-ui-button">~Replace~</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>`
                         }
                         get currentIndex() {
                             return this._currentIndex
@@ -19592,7 +19592,7 @@
                                 editor: s,
                                 o: i
                             } = this.j;
-                            i.select.normalizeSelectionBeforeCutAndCopy && !e.isCollapsed() && (!t || t.isTrusted && o.J.isNode(t.target) && o.J.isOrContains(s, t.target)) && this.rubisco.s.expandSelection()
+                            i.select.normalizeSelectionBeforeCutAndCopy && !e.isCollapsed() && (!t || t.isTrusted && o.J.isNode(t.target) && o.J.isOrContains(s, t.target)) && this.pageperfect.s.expandSelection()
                         }
                     }(0, i.Cg)([r.autobind], u.prototype, "onStartSelection", null), (0, i.Cg)([(0, r.watch)("ow:click")], u.prototype, "onOutsideClick", null), (0, i.Cg)([(0, r.watch)([":beforeCommandCut"])], u.prototype, "beforeCommandCut", null), (0, i.Cg)([(0, r.watch)([":beforeCommandSelectall"])], u.prototype, "beforeCommandSelectAll", null), (0, i.Cg)([(0, r.watch)([":click"])], u.prototype, "onTripleClickNormalizeSelection", null), (0, i.Cg)([(0, r.watch)([":copy", ":cut"])], u.prototype, "onCopyNormalizeSelectionBound", null), n.fg.add("select", u)
                 },
@@ -19738,7 +19738,7 @@
                         o = s(53380);
                     class n extends o.F {
                         constructor() {
-                            super(...arguments), this.className = "rubisco_ace_editor", this.proxyOnBlur = t => {
+                            super(...arguments), this.className = "pageperfect_ace_editor", this.proxyOnBlur = t => {
                                 this.j.e.fire("blur", t)
                             }, this.proxyOnFocus = t => {
                                 this.j.e.fire("focus", t)
@@ -19786,7 +19786,7 @@
                         init(t) {
                             const e = () => {
                                 if (void 0 !== this.instance || !this.aceExists()) return;
-                                const e = this.j.c.div("rubisco-source__mirror-fake");
+                                const e = this.j.c.div("pageperfect-source__mirror-fake");
                                 this.container.appendChild(e), this.instance = t.ow.ace.edit(e), "rtl" === t.o.direction && (this.instance.setOption("rtlText", !0), this.instance.setOption("rtl", !0)), this.instance.setTheme(t.o.sourceEditorNativeOptions.theme), this.instance.renderer.setShowGutter(t.o.sourceEditorNativeOptions.showGutter), this.instance.getSession().setMode(t.o.sourceEditorNativeOptions.mode), this.instance.setHighlightActiveLine(t.o.sourceEditorNativeOptions.highlightActiveLine), this.instance.getSession().setUseWrapMode(!0), this.instance.setOption("indentedSoftWrap", !1), this.instance.setOption("wrap", t.o.sourceEditorNativeOptions.wrap), this.instance.getSession().setUseWorker(!1), this.instance.$blockScrolling = 1 / 0, this.instance.on("change", this.toWYSIWYG), this.instance.on("focus", this.proxyOnFocus), this.instance.on("mousedown", this.proxyOnMouseDown), this.instance.on("blur", this.proxyOnBlur), t.getRealMode() !== i.MODE_WYSIWYG && this.setValue(this.getValue());
                                 const s = this.j.async.throttle((() => {
                                     if (t.isInDestruct || t.getMode() === i.MODE_WYSIWYG) return;
@@ -19852,7 +19852,7 @@
                         replaceUndoManager() {
                             const {
                                 history: t
-                            } = this.rubisco;
+                            } = this.pageperfect;
                             this.instance.commands.addCommand({
                                 name: "Undo",
                                 bindKey: {
@@ -19893,7 +19893,7 @@
                         }
                         init(t) {
                             this.instance = t.c.element("textarea", {
-                                class: "rubisco-source__mirror",
+                                class: "pageperfect-source__mirror",
                                 dir: "rtl" === t.o.direction ? "rtl" : void 0
                             }), this.container.appendChild(this.instance), t.e.on(this.instance, "mousedown keydown touchstart input", t.async.debounce(this.toWYSIWYG, t.defaultTimeout)).on("setMinHeight.source", (t => {
                                 (0, r.A)(this.instance, "minHeight", t)
@@ -19949,7 +19949,7 @@
                         replaceUndoManager() {
                             const {
                                 history: t
-                            } = this.rubisco;
+                            } = this.pageperfect;
                             this.j.e.on(this.instance, "keydown", (e => {
                                 if ((e.ctrlKey || e.metaKey) && "z" === e.key) return e.shiftKey ? t.redo() : t.undo(), this.setSelectionRange(this.getValue().length), !1
                             }))
@@ -20005,10 +20005,10 @@
                     });
                     class i {
                         constructor(t, e, s, i) {
-                            this.rubisco = t, this.container = e, this.toWYSIWYG = s, this.fromWYSIWYG = i, this.className = "", this.isReady = !1
+                            this.pageperfect = t, this.container = e, this.toWYSIWYG = s, this.fromWYSIWYG = i, this.className = "", this.isReady = !1
                         }
                         get j() {
-                            return this.rubisco
+                            return this.pageperfect
                         }
                         onReady() {
                             this.replaceUndoManager(), this.isReady = !0, this.j.e.fire(this, "ready")
@@ -20033,7 +20033,7 @@
                             super(...arguments), this.buttons = [{
                                 name: "source",
                                 group: "source"
-                            }], this.__lock = !1, this.__oldMirrorValue = "", this.tempMarkerStart = "{start-rubisco-selection}", this.tempMarkerStartReg = /{start-rubisco-selection}/g, this.tempMarkerEnd = "{end-rubisco-selection}", this.tempMarkerEndReg = /{end-rubisco-selection}/g, this.getSelectionStart = () => this.sourceEditor?.getSelectionStart() ?? 0, this.getSelectionEnd = () => this.sourceEditor?.getSelectionEnd() ?? 0
+                            }], this.__lock = !1, this.__oldMirrorValue = "", this.tempMarkerStart = "{start-pageperfect-selection}", this.tempMarkerStartReg = /{start-pageperfect-selection}/g, this.tempMarkerEnd = "{end-pageperfect-selection}", this.tempMarkerEndReg = /{end-pageperfect-selection}/g, this.getSelectionStart = () => this.sourceEditor?.getSelectionStart() ?? 0, this.getSelectionEnd = () => this.sourceEditor?.getSelectionEnd() ?? 0
                         }
                         onInsertHTML(t) {
                             if (!this.j.o.readonly && !this.j.isEditorMode()) return this.sourceEditor?.insertRaw(t), this.toWYSIWYG(), !1
@@ -20103,7 +20103,7 @@
                                 e = 0,
                                 s = 0;
                             try {
-                                if (t = t.replace(/<span[^>]+data-rubisco-selection_marker=(["'])start\1[^>]*>[<>]*?<\/span>/gim, this.tempMarkerStart).replace(/<span[^>]+data-rubisco-selection_marker=(["'])end\1[^>]*>[<>]*?<\/span>/gim, this.tempMarkerEnd), !this.j.o.editHTMLDocumentMode && this.j.o.beautifyHTML) {
+                                if (t = t.replace(/<span[^>]+data-pageperfect-selection_marker=(["'])start\1[^>]*>[<>]*?<\/span>/gim, this.tempMarkerStart).replace(/<span[^>]+data-pageperfect-selection_marker=(["'])end\1[^>]*>[<>]*?<\/span>/gim, this.tempMarkerEnd), !this.j.o.editHTMLDocumentMode && this.j.o.beautifyHTML) {
                                     const e = this.j.e.fire("beautifyHTML", t);
                                     (0, l.isString)(e) && (t = e)
                                 }
@@ -20123,7 +20123,7 @@
                             this.sourceEditor?.setReadOnly(this.j.o.readonly)
                         }
                         afterInit(t) {
-                            if (this.mirrorContainer = t.c.div("rubisco-source"), t.workplace.appendChild(this.mirrorContainer), t.e.on("afterAddPlace changePlace afterInit", (() => {
+                            if (this.mirrorContainer = t.c.div("pageperfect-source"), t.workplace.appendChild(this.mirrorContainer), t.e.on("afterAddPlace changePlace afterInit", (() => {
                                     t.workplace.appendChild(this.mirrorContainer)
                                 })), this.sourceEditor = (0, u.b)("area", t, this.mirrorContainer, this.toWYSIWYG, this.fromWYSIWYG), t.e.on(t.ow, "keydown", (t => {
                                     t.key === r.KEY_ESC && this.sourceEditor?.isFocused && this.sourceEditor.blur()
@@ -20414,11 +20414,11 @@
                         }
                         afterInit(t) {
                             t.e.on("afterInit afterAddPlace prepareWYSIWYGEditor", this.toggleSpellcheck), this.toggleSpellcheck(), t.registerCommand("toggleSpellcheck", (() => {
-                                this.rubisco.o.spellcheck = !this.rubisco.o.spellcheck, this.toggleSpellcheck(), this.j.e.fire("updateToolbar")
+                                this.pageperfect.o.spellcheck = !this.pageperfect.o.spellcheck, this.toggleSpellcheck(), this.j.e.fire("updateToolbar")
                             }))
                         }
                         toggleSpellcheck() {
-                            (0, n.C)(this.rubisco.editor, "spellcheck", this.rubisco.o.spellcheck)
+                            (0, n.C)(this.pageperfect.editor, "spellcheck", this.pageperfect.o.spellcheck)
                         }
                         beforeDestruct(t) {}
                     }(0, i.Cg)([r.autobind], c.prototype, "toggleSpellcheck", null), o.fg.add("spellcheck", c)
@@ -20474,9 +20474,9 @@
                     class d extends c.k {
                         constructor() {
                             super(...arguments), this.__isToolbarStuck = !1, this.__createDummy = t => {
-                                this.__dummyBox = this.j.c.div(), this.__dummyBox.classList.add("rubisco_sticky-dummy_toolbar"), this.j.container.insertBefore(this.__dummyBox, t)
+                                this.__dummyBox = this.j.c.div(), this.__dummyBox.classList.add("pageperfect_sticky-dummy_toolbar"), this.j.container.insertBefore(this.__dummyBox, t)
                             }, this.addSticky = t => {
-                                this.__isToolbarStuck || (u && !this.__dummyBox && this.__createDummy(t), this.j.container.classList.add("rubisco_sticky"), this.__isToolbarStuck = !0), (0, l.css)(t, {
+                                this.__isToolbarStuck || (u && !this.__dummyBox && this.__createDummy(t), this.j.container.classList.add("pageperfect_sticky"), this.__isToolbarStuck = !0), (0, l.css)(t, {
                                     top: this.j.o.toolbarStickyOffset || null,
                                     width: this.j.container.offsetWidth - 2
                                 }), this.__dummyBox && (0, l.css)(this.__dummyBox, {
@@ -20486,7 +20486,7 @@
                                 this.__isToolbarStuck && ((0, l.css)(t, {
                                     width: "",
                                     top: ""
-                                }), this.j.container.classList.remove("rubisco_sticky"), this.__isToolbarStuck = !1)
+                                }), this.j.container.classList.remove("pageperfect_sticky"), this.__isToolbarStuck = !1)
                             }
                         }
                         afterInit(t) {
@@ -20494,7 +20494,7 @@
                         }
                         __onScroll() {
                             const {
-                                rubisco: t
+                                pageperfect: t
                             } = this;
                             if (!t.o.toolbarSticky || !t.o.toolbar) return;
                             const e = t.ow.pageYOffset || t.od.documentElement && t.od.documentElement.scrollTop || 0,
@@ -20529,9 +20529,9 @@
                             if (i) {
                                 if (t.o.usePopupForSpecialCharacters) {
                                     const e = t.c.div();
-                                    return e.classList.add("rubisco-symbols"), e.appendChild(i), t.e.on(i, "close_dialog", s), e
+                                    return e.classList.add("pageperfect-symbols"), e.appendChild(i), t.e.on(i, "close_dialog", s), e
                                 }
-                                t.alert(i, "Select Special Character", void 0, "rubisco-symbols").bindDestruct(t);
+                                t.alert(i, "Select Special Character", void 0, "pageperfect-symbols").bindDestruct(t);
                                 const e = i.querySelector("a");
                                 e && e.focus()
                             }
@@ -20780,8 +20780,8 @@
                         }
                         afterInit(t) {
                             t.e.on("generateSpecialCharactersTable.symbols", (() => {
-                                const e = t.c.fromHTML('<div class="rubisco-symbols__container">\n\t\t\t\t\t\t<div class="rubisco-symbols__container_table">\n\t\t\t\t\t\t\t<table class="rubisco-symbols__table"><tbody></tbody></table>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class="rubisco-symbols__container_preview">\n\t\t\t\t\t\t\t<div class="rubisco-symbols__preview"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>'),
-                                    s = e.querySelector(".rubisco-symbols__preview"),
+                                const e = t.c.fromHTML('<div class="pageperfect-symbols__container">\n\t\t\t\t\t\t<div class="pageperfect-symbols__container_table">\n\t\t\t\t\t\t\t<table class="pageperfect-symbols__table"><tbody></tbody></table>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class="pageperfect-symbols__container_preview">\n\t\t\t\t\t\t\t<div class="pageperfect-symbols__preview"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>'),
+                                    s = e.querySelector(".pageperfect-symbols__preview"),
                                     o = e.querySelector("table").tBodies[0],
                                     a = [];
                                 for (let e = 0; t.o.specialCharacters.length > e;) {
@@ -21004,21 +21004,21 @@
                                 l = n.control,
                                 c = l.data && l.data.rows ? l.data.rows : 10,
                                 u = l.data && l.data.cols ? l.data.cols : 10,
-                                d = t.c.fromHTML('<form class="rubisco-form rubisco-form__inserter"><div class="rubisco-form__table-creator-box"><div class="rubisco-form__container"></div><div class="rubisco-form__options">' + (() => {
+                                d = t.c.fromHTML('<form class="pageperfect-form pageperfect-form__inserter"><div class="pageperfect-form__table-creator-box"><div class="pageperfect-form__container"></div><div class="pageperfect-form__options">' + (() => {
                                     if (!t.o.table.useExtraClassesOptions) return "";
                                     const e = [];
                                     if (l.data) {
                                         const t = l.data.classList;
                                         Object.keys(t).forEach((s => {
-                                            e.push(`<label class="rubisco_vertical_middle"><input class="rubisco-checkbox" value="${s}" type="checkbox"/>${t[s]}</label>`)
+                                            e.push(`<label class="pageperfect_vertical_middle"><input class="pageperfect-checkbox" value="${s}" type="checkbox"/>${t[s]}</label>`)
                                         }))
                                     }
                                     return e.join("")
-                                })() + '</div></div><label class="rubisco-form__center"><span>1</span> &times; <span>1</span></label></form>'),
+                                })() + '</div></div><label class="pageperfect-form__center"><span>1</span> &times; <span>1</span></label></form>'),
                                 h = d.querySelectorAll("span")[0],
                                 p = d.querySelectorAll("span")[1],
-                                m = d.querySelector(".rubisco-form__container"),
-                                g = d.querySelector(".rubisco-form__options"),
+                                m = d.querySelector(".pageperfect-form__container"),
+                                g = d.querySelector(".pageperfect-form__options"),
                                 f = [],
                                 v = c * u;
                             for (let e = 0; v > e; e += 1) f[e] || f.push(t.c.element("span", {
@@ -21030,7 +21030,7 @@
                                     const r = void 0 === e || isNaN(e) ? parseInt((0, o.attr)(s, "-index") || "0", 10) : e || 0,
                                         n = Math.ceil((r + 1) / u),
                                         a = r % u + 1;
-                                    for (let t = 0; f.length > t; t += 1) f[t].className = t % u + 1 > a || Math.ceil((t + 1) / u) > n ? "" : "rubisco_hovered";
+                                    for (let t = 0; f.length > t; t += 1) f[t].className = t % u + 1 > a || Math.ceil((t + 1) / u) > n ? "" : "pageperfect_hovered";
                                     p.textContent = "" + a, h.textContent = "" + n
                                 })).on(m, "touchstart mousedown", (e => {
                                     const n = e.target;
@@ -21175,7 +21175,7 @@
                         }
                         postProcessSetEditorValue() {
                             const {
-                                rubisco: t
+                                pageperfect: t
                             } = this;
                             if (!t.isEditorMode()) return;
                             let e = t.editor.firstChild,
@@ -21196,7 +21196,7 @@
                         }
                         preprocessInput() {
                             const {
-                                rubisco: t
+                                pageperfect: t
                             } = this, e = "afterInit" === t.e.current;
                             if (!t.isEditorMode() || t.editor.firstChild || !t.o.wrapNodes.emptyBlockAfterInit && e) return;
                             const s = t.createInside.element(t.o.enter),
@@ -21255,7 +21255,7 @@
                                 } catch {}
                                 return this.j.s.select(t), !1
                             }, this.tpl = (t, e, s, i) => {
-                                const r = this.j.c.fromHTML(`<span class="rubisco-xpath__item"><a role="button" data-path="${e}" title="${i}" tabindex="-1"'>${(0,n.trim)(s)}</a></span>`),
+                                const r = this.j.c.fromHTML(`<span class="pageperfect-xpath__item"><a role="button" data-path="${e}" title="${i}" tabindex="-1"'>${(0,n.trim)(s)}</a></span>`),
                                     o = r.firstChild;
                                 return this.j.e.on(o, "click", this.onSelectPath.bind(this, t)).on(o, "contextmenu", this.onContext.bind(this, t)), r
                             }, this.removeSelectAll = () => {
@@ -21278,7 +21278,7 @@
                             }, this.calcPath = this.j.async.debounce(this.calcPathImd, 2 * this.j.defaultTimeout)
                         }
                         afterInit() {
-                            this.j.o.showXPathInStatusbar && (this.container = this.j.c.div("rubisco-xpath"), this.j.e.off(".xpath").on("mouseup.xpath change.xpath keydown.xpath changeSelection.xpath", this.calcPath).on("afterSetMode.xpath afterInit.xpath changePlace.xpath", (() => {
+                            this.j.o.showXPathInStatusbar && (this.container = this.j.c.div("pageperfect-xpath"), this.j.e.off(".xpath").on("mouseup.xpath change.xpath keydown.xpath changeSelection.xpath", this.calcPath).on("afterSetMode.xpath afterInit.xpath changePlace.xpath", (() => {
                                 this.j.o.showXPathInStatusbar && this.container && (this.j.statusbar.append(this.container), this.j.getRealMode() === i.MODE_WYSIWYG ? this.calcPath() : (this.container && (this.container.innerHTML = i.INVISIBLE_SPACE), this.appendSelectAll()))
                             })), this.calcPath())
                         }
@@ -21428,13 +21428,13 @@
                         st = s.n(et)
                 },
                 57741(t) {
-                    t.exports.default = ["إبدأ في الكتابة...", "حول جوديت", "محرر جوديت", "دليل مستخدم جوديت", "يحتوي على مساعدة مفصلة للاستخدام", "للحصول على معلومات حول الترخيص، يرجى الذهاب لموقعنا:", "شراء النسخة الكاملة", "حقوق الطبع والنشر © Rubisco - Chupurnov Valeriy. كل الحقوق محفوظة.", "مِرْساة", "فتح في نافذة جديدة", "فتح المحرر في الحجم الكامل", "مسح التنسيق", "ملء اللون أو تعيين لون النص", "إعادة", "تراجع", "عريض", "مائل", "إدراج قائمة غير مرتبة", "إدراج قائمة مرتبة", "محاذاة للوسط", "محاذاة مثبتة", "محاذاة لليسار", "محاذاة لليمين", "إدراج خط أفقي", "إدراج صورة", "ادخال الملف", "إدراج فيديو يوتيوب/فيميو ", "إدراج رابط", "حجم الخط", "نوع الخط", "إدراج كتلة تنسيق", "عادي", "عنوان 1", "عنوان 2", "عنوان 3", "عنوان 4", "إقتباس", "كود", "إدراج", "إدراج جدول", "تقليل المسافة البادئة", "زيادة المسافة البادئة", "تحديد أحرف خاصة", "إدراج حرف خاص", "تنسيق الرسم", "تغيير الوضع", "هوامش", "أعلى", "يمين", "أسفل", "يسار", "الأنماط", "الطبقات", "محاذاة", "اليمين", "الوسط", "اليسار", "--غير مضبوط--", "Src", "العنوان", "العنوان البديل", "الرابط", "افتح الرابط في نافذة جديدة", "الصورة", "ملف", "متقدم", "خصائص الصورة", "إلغاء", "حسنا", "متصفح الملفات", "حدث خطأ في تحميل القائمة ", "حدث خطأ في تحميل المجلدات", "هل أنت واثق؟", "أدخل اسم المجلد", "إنشاء مجلد", "أكتب إسم", "إسقاط صورة", "إسقاط الملف", "أو أنقر", "النص البديل", "رفع", "تصفح", "الخلفية", "نص", "أعلى", "الوسط", "الأسفل", "إدراج عمود قبل", "إدراج عمود بعد", "إدراج صف أعلى", "إدراج صف أسفل", "حذف الجدول", "حذف الصف", "حذف العمود", "خلية فارغة", "%d حرف", "%d كلام", "اضرب من خلال", "أكد", "حرف فوقي", "مخطوطة", "قطع الاختيار", "اختر الكل", "استراحة", "البحث عن", "استبدل ب", "محل", "معجون", "اختر محتوى للصق", "مصدر", "بالخط العريض", "مائل", "شغل", "صلة", "إلغاء", "كرر", "طاولة", "صورة", "نظيف", "فقرة", "حجم الخط", "فيديو", "الخط", "حول المحرر", "طباعة", "أكد", "شطب", "المسافة البادئة", "نتوء", "ملء الشاشة", "الحجم التقليدي", "الخط", "قائمة", "قائمة مرقمة", "قطع", "اختر الكل", "قانون", "فتح الرابط", "تعديل الرابط", "سمة Nofollow", "إزالة الرابط", "تحديث", "لتحرير", "مراجعة", "URL", "تحرير", "محاذاة أفقية", "فلتر", "عن طريق التغيير", "بالاسم", "حسب الحجم", "إضافة مجلد", "إعادة", "احتفظ", "حفظ باسم", "تغيير الحجم", "حجم القطع", "عرض", "ارتفاع", "حافظ على النسب", "أن", "لا", "حذف", "تميز", "تميز %s", "محاذاة عمودية", "انشق، مزق", "اذهب", "أضف العمود", "اضف سطر", "رخصة %s", "حذف", "انقسام عمودي", "تقسيم أفقي", "الحدود", "يشبه الكود الخاص بك HTML. تبقي كما HTML؟", "الصق ك HTML", "احتفظ", "إدراج كنص", "إدراج النص فقط", "يمكنك فقط تحرير صورك الخاصة. تحميل هذه الصورة على المضيف؟", "تم تحميل الصورة بنجاح على الخادم!", "لوحة", "لا توجد ملفات في هذا الدليل.", "إعادة تسمية", "أدخل اسم جديد", "معاينة", "تحميل", "لصق من الحافظة", "متصفحك لا يدعم إمكانية الوصول المباشر إلى الحافظة.", "نسخ التحديد", "نسخ", "دائرة نصف قطرها الحدود", "عرض كل", "تطبيق", "يرجى ملء هذا المجال", "يرجى إدخال عنوان ويب", "الافتراضي", "دائرة", "نقطة", "المربعة", "البحث", "تجد السابقة", "تجد التالي", "للصق المحتوى قادم من Microsoft Word/Excel الوثيقة. هل تريد أن تبقي شكل أو تنظيفه ؟ ", "كلمة لصق الكشف عن", "نظيفة", "أدخل اسم الفصل", "اضغط البديل لتغيير حجم مخصص"]
+                    t.exports.default = ["إبدأ في الكتابة...", "حول جوديت", "محرر جوديت", "دليل مستخدم جوديت", "يحتوي على مساعدة مفصلة للاستخدام", "للحصول على معلومات حول الترخيص، يرجى الذهاب لموقعنا:", "شراء النسخة الكاملة", "حقوق الطبع والنشر © PagePerfect - Chupurnov Valeriy. كل الحقوق محفوظة.", "مِرْساة", "فتح في نافذة جديدة", "فتح المحرر في الحجم الكامل", "مسح التنسيق", "ملء اللون أو تعيين لون النص", "إعادة", "تراجع", "عريض", "مائل", "إدراج قائمة غير مرتبة", "إدراج قائمة مرتبة", "محاذاة للوسط", "محاذاة مثبتة", "محاذاة لليسار", "محاذاة لليمين", "إدراج خط أفقي", "إدراج صورة", "ادخال الملف", "إدراج فيديو يوتيوب/فيميو ", "إدراج رابط", "حجم الخط", "نوع الخط", "إدراج كتلة تنسيق", "عادي", "عنوان 1", "عنوان 2", "عنوان 3", "عنوان 4", "إقتباس", "كود", "إدراج", "إدراج جدول", "تقليل المسافة البادئة", "زيادة المسافة البادئة", "تحديد أحرف خاصة", "إدراج حرف خاص", "تنسيق الرسم", "تغيير الوضع", "هوامش", "أعلى", "يمين", "أسفل", "يسار", "الأنماط", "الطبقات", "محاذاة", "اليمين", "الوسط", "اليسار", "--غير مضبوط--", "Src", "العنوان", "العنوان البديل", "الرابط", "افتح الرابط في نافذة جديدة", "الصورة", "ملف", "متقدم", "خصائص الصورة", "إلغاء", "حسنا", "متصفح الملفات", "حدث خطأ في تحميل القائمة ", "حدث خطأ في تحميل المجلدات", "هل أنت واثق؟", "أدخل اسم المجلد", "إنشاء مجلد", "أكتب إسم", "إسقاط صورة", "إسقاط الملف", "أو أنقر", "النص البديل", "رفع", "تصفح", "الخلفية", "نص", "أعلى", "الوسط", "الأسفل", "إدراج عمود قبل", "إدراج عمود بعد", "إدراج صف أعلى", "إدراج صف أسفل", "حذف الجدول", "حذف الصف", "حذف العمود", "خلية فارغة", "%d حرف", "%d كلام", "اضرب من خلال", "أكد", "حرف فوقي", "مخطوطة", "قطع الاختيار", "اختر الكل", "استراحة", "البحث عن", "استبدل ب", "محل", "معجون", "اختر محتوى للصق", "مصدر", "بالخط العريض", "مائل", "شغل", "صلة", "إلغاء", "كرر", "طاولة", "صورة", "نظيف", "فقرة", "حجم الخط", "فيديو", "الخط", "حول المحرر", "طباعة", "أكد", "شطب", "المسافة البادئة", "نتوء", "ملء الشاشة", "الحجم التقليدي", "الخط", "قائمة", "قائمة مرقمة", "قطع", "اختر الكل", "قانون", "فتح الرابط", "تعديل الرابط", "سمة Nofollow", "إزالة الرابط", "تحديث", "لتحرير", "مراجعة", "URL", "تحرير", "محاذاة أفقية", "فلتر", "عن طريق التغيير", "بالاسم", "حسب الحجم", "إضافة مجلد", "إعادة", "احتفظ", "حفظ باسم", "تغيير الحجم", "حجم القطع", "عرض", "ارتفاع", "حافظ على النسب", "أن", "لا", "حذف", "تميز", "تميز %s", "محاذاة عمودية", "انشق، مزق", "اذهب", "أضف العمود", "اضف سطر", "رخصة %s", "حذف", "انقسام عمودي", "تقسيم أفقي", "الحدود", "يشبه الكود الخاص بك HTML. تبقي كما HTML؟", "الصق ك HTML", "احتفظ", "إدراج كنص", "إدراج النص فقط", "يمكنك فقط تحرير صورك الخاصة. تحميل هذه الصورة على المضيف؟", "تم تحميل الصورة بنجاح على الخادم!", "لوحة", "لا توجد ملفات في هذا الدليل.", "إعادة تسمية", "أدخل اسم جديد", "معاينة", "تحميل", "لصق من الحافظة", "متصفحك لا يدعم إمكانية الوصول المباشر إلى الحافظة.", "نسخ التحديد", "نسخ", "دائرة نصف قطرها الحدود", "عرض كل", "تطبيق", "يرجى ملء هذا المجال", "يرجى إدخال عنوان ويب", "الافتراضي", "دائرة", "نقطة", "المربعة", "البحث", "تجد السابقة", "تجد التالي", "للصق المحتوى قادم من Microsoft Word/Excel الوثيقة. هل تريد أن تبقي شكل أو تنظيفه ؟ ", "كلمة لصق الكشف عن", "نظيفة", "أدخل اسم الفصل", "اضغط البديل لتغيير حجم مخصص"]
                 },
                 56014(t) {
-                    t.exports.default = ["Napiš něco", "O Rubisco", "Editor Rubisco", "Rubisco Uživatelská příručka", "obsahuje detailní nápovědu", "Pro informace o licenci, prosím, přerběte na naši stránku:", "Koupit plnou verzi", "Copyright © Rubisco - Chupurnov Valeriy. Všechna práva vyhrazena.", "Anchor", "Otevřít v nové záložce", "Otevřít v celoobrazovkovém režimu", "Vyčistit formátování", "Barva výplně a písma", "Vpřed", "Zpět", "Tučné", "Kurzíva", "Odrážky", "Číslovaný seznam", "Zarovnat na střed", "Zarovnat do bloku", "Zarovnat vlevo", "Zarovnat vpravo", "Vložit horizontální linku", "Vložit obrázek", "Vložit soubor", "Vložit video (YT/Vimeo)", "Vložit odkaz", "Velikost písma", "Typ písma", "Formátovat blok", "Normální text", "Nadpis 1", "Nadpis 2", "Nadpis 3", "Nadpis 4", "Citát", "Kód", "Vložit", "Vložit tabulku", "Zmenšit odsazení", "Zvětšit odsazení", "Vybrat speciální symbol", "Vložit speciální symbol", "Použít formát", "Změnit mód", "Okraje", "horní", "pravý", "spodní", "levý", "Styly", "Třídy", "Zarovnání", "Vpravo", "Na střed", "Vlevo", "--nenastaveno--", "src", "Titulek", "Alternativní text (alt)", "Link", "Otevřít link v nové záložce", "Obrázek", "soubor", "Rozšířené", "Vlastnosti obrázku", "Zpět", "Ok", "Prohlížeč souborů", "Chyba při načítání seznamu souborů", "Chyba při načítání složek", "Jste si jistý(á)?", "Název složky", "Vytvořit složku", "název", "Přetáhněte sem obrázek", "Přetáhněte sem soubor", "nebo klikněte", "Alternativní text", "Nahrát", "Server", "Pozadí", "Text", "Nahoru", "Na střed", "Dolu", "Vložit sloupec před", "Vložit sloupec za", "Vložit řádek nad", "Vložit řádek pod", "Vymazat tabulku", "Vymazat řádku", "Vymazat sloupec", "Vyčistit buňku", "Znaky: %d", "Slova: %d", "Přeškrtnuto", "Podtrženo", "Horní index", "Dolní index", "Vyjmout označené", "Označit vše", "Zalomení", "Narbi", "Nahradit za", "Vyměňte", "Vložit", "Vyber obsah pro vložení", "HTML", "tučně", "kurzíva", "štětec", "odkaz", "zpět", "vpřed", "tabulka", "obrázek", "guma", "odstavec", "velikost písma", "video", "písmo", "о editoru", "tisk", "podtrženo", "přeškrtnuto", "zvětšit odsazení", "zmenšit odsazení", "celoobrazovkový režim", "smrsknout", "Linka", "Odrážka", "Číslovaný seznam", "Vyjmout", "Označit vše", "Kód", "Otevřít odkaz", "Upravit odkaz", "Atribut no-follow", "Odstranit odkaz", "Aktualizovat", "Chcete-li upravit", "Zobrazit", "URL", "Editovat", "Horizontální zarovnání", "Filtr", "Dle poslední změny", "Dle názvu", "Dle velikosti", "Přidat složku", "Reset", "Uložit", "Uložit jako...", "Změnit rozměr", "Ořezat", "Šířka", "Výška", "Ponechat poměr", "Ano", "Ne", "Vyjmout", "Označit", "Označit %s", "Vertikální zarovnání", "Rozdělit", "Spojit", "Přidat sloupec", "Přidat řádek", "Licence: %s", "Vymazat", "Rozdělit vertikálně", "Rozdělit horizontálně", "Okraj", "Váš text se podobá HTML. Vložit ho jako HTML?", "Vložit jako HTML", "Ponechat originál", "Vložit jako TEXT", "Vložit pouze TEXT", "Můžete upravovat pouze své obrázky. Načíst obrázek?", "Obrázek byl úspěšně nahrán!", "paleta", "V tomto adresáři nejsou žádné soubory.", "přejmenovat", "Zadejte nový název", "náhled", "Stažení", "Vložit ze schránky", "Váš prohlížeč nepodporuje přímý přístup do schránky.", "Kopírovat výběr", "kopírování", "Border radius", "Zobrazit všechny", "Platí", "Prosím, vyplňte toto pole", "Prosím, zadejte webovou adresu", "Výchozí", "Kruh", "Dot", "Quadrate", "Najít", "Najít Předchozí", "Najít Další", "Obsah, který vkládáte, je pravděpodobně z Microsoft Word / Excel. Chcete ponechat formát nebo vložit pouze text?", "Detekován fragment z Wordu nebo Excelu", "Vyčistit", "Vložte název třídy", "Stiskněte Alt pro vlastní změnu velikosti"]
+                    t.exports.default = ["Napiš něco", "O PagePerfect", "Editor PagePerfect", "PagePerfect Uživatelská příručka", "obsahuje detailní nápovědu", "Pro informace o licenci, prosím, přerběte na naši stránku:", "Koupit plnou verzi", "Copyright © PagePerfect - Chupurnov Valeriy. Všechna práva vyhrazena.", "Anchor", "Otevřít v nové záložce", "Otevřít v celoobrazovkovém režimu", "Vyčistit formátování", "Barva výplně a písma", "Vpřed", "Zpět", "Tučné", "Kurzíva", "Odrážky", "Číslovaný seznam", "Zarovnat na střed", "Zarovnat do bloku", "Zarovnat vlevo", "Zarovnat vpravo", "Vložit horizontální linku", "Vložit obrázek", "Vložit soubor", "Vložit video (YT/Vimeo)", "Vložit odkaz", "Velikost písma", "Typ písma", "Formátovat blok", "Normální text", "Nadpis 1", "Nadpis 2", "Nadpis 3", "Nadpis 4", "Citát", "Kód", "Vložit", "Vložit tabulku", "Zmenšit odsazení", "Zvětšit odsazení", "Vybrat speciální symbol", "Vložit speciální symbol", "Použít formát", "Změnit mód", "Okraje", "horní", "pravý", "spodní", "levý", "Styly", "Třídy", "Zarovnání", "Vpravo", "Na střed", "Vlevo", "--nenastaveno--", "src", "Titulek", "Alternativní text (alt)", "Link", "Otevřít link v nové záložce", "Obrázek", "soubor", "Rozšířené", "Vlastnosti obrázku", "Zpět", "Ok", "Prohlížeč souborů", "Chyba při načítání seznamu souborů", "Chyba při načítání složek", "Jste si jistý(á)?", "Název složky", "Vytvořit složku", "název", "Přetáhněte sem obrázek", "Přetáhněte sem soubor", "nebo klikněte", "Alternativní text", "Nahrát", "Server", "Pozadí", "Text", "Nahoru", "Na střed", "Dolu", "Vložit sloupec před", "Vložit sloupec za", "Vložit řádek nad", "Vložit řádek pod", "Vymazat tabulku", "Vymazat řádku", "Vymazat sloupec", "Vyčistit buňku", "Znaky: %d", "Slova: %d", "Přeškrtnuto", "Podtrženo", "Horní index", "Dolní index", "Vyjmout označené", "Označit vše", "Zalomení", "Narbi", "Nahradit za", "Vyměňte", "Vložit", "Vyber obsah pro vložení", "HTML", "tučně", "kurzíva", "štětec", "odkaz", "zpět", "vpřed", "tabulka", "obrázek", "guma", "odstavec", "velikost písma", "video", "písmo", "о editoru", "tisk", "podtrženo", "přeškrtnuto", "zvětšit odsazení", "zmenšit odsazení", "celoobrazovkový režim", "smrsknout", "Linka", "Odrážka", "Číslovaný seznam", "Vyjmout", "Označit vše", "Kód", "Otevřít odkaz", "Upravit odkaz", "Atribut no-follow", "Odstranit odkaz", "Aktualizovat", "Chcete-li upravit", "Zobrazit", "URL", "Editovat", "Horizontální zarovnání", "Filtr", "Dle poslední změny", "Dle názvu", "Dle velikosti", "Přidat složku", "Reset", "Uložit", "Uložit jako...", "Změnit rozměr", "Ořezat", "Šířka", "Výška", "Ponechat poměr", "Ano", "Ne", "Vyjmout", "Označit", "Označit %s", "Vertikální zarovnání", "Rozdělit", "Spojit", "Přidat sloupec", "Přidat řádek", "Licence: %s", "Vymazat", "Rozdělit vertikálně", "Rozdělit horizontálně", "Okraj", "Váš text se podobá HTML. Vložit ho jako HTML?", "Vložit jako HTML", "Ponechat originál", "Vložit jako TEXT", "Vložit pouze TEXT", "Můžete upravovat pouze své obrázky. Načíst obrázek?", "Obrázek byl úspěšně nahrán!", "paleta", "V tomto adresáři nejsou žádné soubory.", "přejmenovat", "Zadejte nový název", "náhled", "Stažení", "Vložit ze schránky", "Váš prohlížeč nepodporuje přímý přístup do schránky.", "Kopírovat výběr", "kopírování", "Border radius", "Zobrazit všechny", "Platí", "Prosím, vyplňte toto pole", "Prosím, zadejte webovou adresu", "Výchozí", "Kruh", "Dot", "Quadrate", "Najít", "Najít Předchozí", "Najít Další", "Obsah, který vkládáte, je pravděpodobně z Microsoft Word / Excel. Chcete ponechat formát nebo vložit pouze text?", "Detekován fragment z Wordu nebo Excelu", "Vyčistit", "Vložte název třídy", "Stiskněte Alt pro vlastní změnu velikosti"]
                 },
                 95461(t) {
-                    t.exports.default = ["Bitte geben Sie einen Text ein", "Über Rubisco", "Rubisco Editor", "Das Rubisco Benutzerhandbuch", "beinhaltet ausführliche Informationen wie Sie den Editor verwenden können.", "Für Informationen zur Lizenz, besuchen Sie bitte unsere Web-Präsenz:", "Vollversion kaufen", "Copyright © Rubisco - Chupurnov Valeriy. Alle Rechte vorbehalten.", "Anker", "In neuer Registerkarte öffnen", "Editor in voller Größe öffnen", "Formatierung löschen", "Füllfarbe oder Textfarbe ändern", "Wiederholen", "Rückgängig machen", "Fett", "Kursiv", "Unsortierte Liste einfügen", "Nummerierte Liste einfügen", "Mittig ausrichten", "Blocksatz", "Links ausrichten", "Rechts ausrichten", "Horizontale Linie einfügen", "Bild einfügen", "Datei einfügen", "Youtube/vimeo Video einfügen", "Link einfügen", "Schriftgröße", "Schriftfamilie", "Formatblock einfügen", "Normal", "Überschrift 1", "Überschrift 2", "Überschrift 3", "Überschrift 4", "Zitat", "Code", "Einfügen", "Tabelle einfügen", "Einzug verkleinern", "Einzug vergrößern", "Sonderzeichen auswählen", "Sonderzeichen einfügen", "Format kopieren", "Änderungsmodus", "Ränder", "Oben", "Rechts", "Unten", "Links", "CSS Stil", "CSS Klassen", "Ausrichtung", "Rechts", "Zentriert", "Links", "Keine", "Pfad", "Titel", "Alternativer Text", "Link", "Link in neuem Tab öffnen", "Bild", "Datei", "Fortgeschritten", "Bildeigenschaften", "Abbrechen", "OK", "Dateibrowser", "Fehler beim Laden der Liste", "Fehler beim Laden der Ordner", "Sind Sie sicher?", "Geben Sie den Verzeichnisnamen ein", "Verzeichnis erstellen", "Typname", "Bild hier hinziehen", "Datei löschen", "oder hier klicken", "Alternativtext", "Hochladen", "Auswählen", "Hintergrund", "Text", "Oben", "Mittig", "Unten", "Spalte davor einfügen", "Spalte danach einfügen", "Zeile oberhalb einfügen", "Zeile unterhalb einfügen", "Tabelle löschen", "Zeile löschen", "Spalte löschen", "Zelle leeren", "Zeichen: %d", "Wörter: %d", "Durchstreichen", "Unterstreichen", "Hochstellen", "Tiefstellen", "Auswahl ausschneiden", "Alles markieren", "Pause", "Suche nach", "Ersetzen durch", "Ersetzen", "Einfügen", "Wählen Sie den Inhalt zum Einfügen aus", "HTML", "Fett gedruckt", "Kursiv", "Bürste", "Verknüpfung", "Rückgängig machen", "Wiederholen", "Tabelle", "Bild", "Radiergummi", "Absatz", "Schriftgröße", "Video", "Schriftart", "Über", "Drucken", "Unterstreichen", "Durchstreichen", "Einzug", "Herausstellen", "Vollgröße", "Schrumpfen", "die Linie", "Liste von", "Nummerierte Liste", "Schneiden", "Wählen Sie Alle aus", "Code einbetten", "Link öffnen", "Link bearbeiten", "Nofollow-Attribut", "Link entfernen", "Aktualisieren", "Bearbeiten", "Ansehen", "URL", "Bearbeiten", "Horizontale Ausrichtung", "Filter", "Sortieren nach geändert", "Nach Name sortieren", "Nach Größe sortiert", "Ordner hinzufügen", "Wiederherstellen", "Speichern", "Speichern als", "Größe ändern", "Größe anpassen", "Breite", "Höhe", "Seitenverhältnis beibehalten", "Ja", "Nein", "Entfernen", "Markieren", "Markieren: %s", "Vertikale Ausrichtung", "Unterteilen", "Vereinen", "Spalte hinzufügen", "Zeile hinzufügen", null, "Löschen", "Vertikal unterteilen", "Horizontal unterteilen", "Rand", "Ihr Text ähnelt HTML-Code. Als HTML beibehalten?", "Als HTML einfügen?", "Original speichern", "Als Text einfügen", "Nur Text einfügen", "Sie können nur Ihre eigenen Bilder bearbeiten. Dieses Bild auf den Host herunterladen?", "Das Bild wurde erfolgreich auf den Server hochgeladen!", "Palette", "In diesem Verzeichnis befinden sich keine Dateien.", "Umbenennen", "Geben Sie einen neuen Namen ein", "Vorschau", "Herunterladen", "Aus Zwischenablage einfügen", "Ihr Browser unterstützt keinen direkten Zugriff auf die Zwischenablage.", "Auswahl kopieren", "Kopieren", "Radius für abgerundete Ecken", "Alle anzeigen", "Anwenden", "Bitte füllen Sie dieses Feld aus", "Bitte geben Sie eine Web-Adresse ein", "Standard", "Kreis", "Punkte", "Quadrate", "Suchen", "Suche vorherige", "Weitersuchen", "Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder bereinigen?", "In Word formatierter Text erkannt", "Säubern", "className (CSS) einfügen", "Drücken Sie Alt für benutzerdefinierte Größenanpassung"]
+                    t.exports.default = ["Bitte geben Sie einen Text ein", "Über PagePerfect", "PagePerfect Editor", "Das PagePerfect Benutzerhandbuch", "beinhaltet ausführliche Informationen wie Sie den Editor verwenden können.", "Für Informationen zur Lizenz, besuchen Sie bitte unsere Web-Präsenz:", "Vollversion kaufen", "Copyright © PagePerfect - Chupurnov Valeriy. Alle Rechte vorbehalten.", "Anker", "In neuer Registerkarte öffnen", "Editor in voller Größe öffnen", "Formatierung löschen", "Füllfarbe oder Textfarbe ändern", "Wiederholen", "Rückgängig machen", "Fett", "Kursiv", "Unsortierte Liste einfügen", "Nummerierte Liste einfügen", "Mittig ausrichten", "Blocksatz", "Links ausrichten", "Rechts ausrichten", "Horizontale Linie einfügen", "Bild einfügen", "Datei einfügen", "Youtube/vimeo Video einfügen", "Link einfügen", "Schriftgröße", "Schriftfamilie", "Formatblock einfügen", "Normal", "Überschrift 1", "Überschrift 2", "Überschrift 3", "Überschrift 4", "Zitat", "Code", "Einfügen", "Tabelle einfügen", "Einzug verkleinern", "Einzug vergrößern", "Sonderzeichen auswählen", "Sonderzeichen einfügen", "Format kopieren", "Änderungsmodus", "Ränder", "Oben", "Rechts", "Unten", "Links", "CSS Stil", "CSS Klassen", "Ausrichtung", "Rechts", "Zentriert", "Links", "Keine", "Pfad", "Titel", "Alternativer Text", "Link", "Link in neuem Tab öffnen", "Bild", "Datei", "Fortgeschritten", "Bildeigenschaften", "Abbrechen", "OK", "Dateibrowser", "Fehler beim Laden der Liste", "Fehler beim Laden der Ordner", "Sind Sie sicher?", "Geben Sie den Verzeichnisnamen ein", "Verzeichnis erstellen", "Typname", "Bild hier hinziehen", "Datei löschen", "oder hier klicken", "Alternativtext", "Hochladen", "Auswählen", "Hintergrund", "Text", "Oben", "Mittig", "Unten", "Spalte davor einfügen", "Spalte danach einfügen", "Zeile oberhalb einfügen", "Zeile unterhalb einfügen", "Tabelle löschen", "Zeile löschen", "Spalte löschen", "Zelle leeren", "Zeichen: %d", "Wörter: %d", "Durchstreichen", "Unterstreichen", "Hochstellen", "Tiefstellen", "Auswahl ausschneiden", "Alles markieren", "Pause", "Suche nach", "Ersetzen durch", "Ersetzen", "Einfügen", "Wählen Sie den Inhalt zum Einfügen aus", "HTML", "Fett gedruckt", "Kursiv", "Bürste", "Verknüpfung", "Rückgängig machen", "Wiederholen", "Tabelle", "Bild", "Radiergummi", "Absatz", "Schriftgröße", "Video", "Schriftart", "Über", "Drucken", "Unterstreichen", "Durchstreichen", "Einzug", "Herausstellen", "Vollgröße", "Schrumpfen", "die Linie", "Liste von", "Nummerierte Liste", "Schneiden", "Wählen Sie Alle aus", "Code einbetten", "Link öffnen", "Link bearbeiten", "Nofollow-Attribut", "Link entfernen", "Aktualisieren", "Bearbeiten", "Ansehen", "URL", "Bearbeiten", "Horizontale Ausrichtung", "Filter", "Sortieren nach geändert", "Nach Name sortieren", "Nach Größe sortiert", "Ordner hinzufügen", "Wiederherstellen", "Speichern", "Speichern als", "Größe ändern", "Größe anpassen", "Breite", "Höhe", "Seitenverhältnis beibehalten", "Ja", "Nein", "Entfernen", "Markieren", "Markieren: %s", "Vertikale Ausrichtung", "Unterteilen", "Vereinen", "Spalte hinzufügen", "Zeile hinzufügen", null, "Löschen", "Vertikal unterteilen", "Horizontal unterteilen", "Rand", "Ihr Text ähnelt HTML-Code. Als HTML beibehalten?", "Als HTML einfügen?", "Original speichern", "Als Text einfügen", "Nur Text einfügen", "Sie können nur Ihre eigenen Bilder bearbeiten. Dieses Bild auf den Host herunterladen?", "Das Bild wurde erfolgreich auf den Server hochgeladen!", "Palette", "In diesem Verzeichnis befinden sich keine Dateien.", "Umbenennen", "Geben Sie einen neuen Namen ein", "Vorschau", "Herunterladen", "Aus Zwischenablage einfügen", "Ihr Browser unterstützt keinen direkten Zugriff auf die Zwischenablage.", "Auswahl kopieren", "Kopieren", "Radius für abgerundete Ecken", "Alle anzeigen", "Anwenden", "Bitte füllen Sie dieses Feld aus", "Bitte geben Sie eine Web-Adresse ein", "Standard", "Kreis", "Punkte", "Quadrate", "Suchen", "Suche vorherige", "Weitersuchen", "Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder bereinigen?", "In Word formatierter Text erkannt", "Säubern", "className (CSS) einfügen", "Drücken Sie Alt für benutzerdefinierte Größenanpassung"]
                 },
                 63837(t) {
                     t.exports.default = {
@@ -21444,61 +21444,61 @@
                     }
                 },
                 39386(t) {
-                    t.exports.default = ["Escriba algo...", "Acerca de Rubisco", "Rubisco Editor", "Guía de usuario Rubisco", "contiene ayuda detallada para el uso.", "Para información sobre la licencia, por favor visite nuestro sitio:", "Compre la versión completa", "Copyright © Rubisco - Chupurnov Valeriy. Todos los derechos reservados.", "Anclar", "Abrir en nueva pestaña", "Abrir editor en pantalla completa", "Limpiar formato", "Color de relleno o de letra", "Rehacer", "Deshacer", "Negrita", "Cursiva", "Insertar lista no ordenada", "Insertar lista ordenada", "Alinear Centrado", "Alinear Justificado", "Alinear Izquierda", "Alinear Derecha", "Insertar línea horizontal", "Insertar imagen", "Insertar archivo", "Insertar video de Youtube/vimeo", "Insertar vínculo", "Tamaño de letra", "Familia de letra", "Insertar bloque", "Normal", "Encabezado 1", "Encabezado 2", "Encabezado 3", "Encabezado 4", "Cita", "Código", "Insertar", "Insertar tabla", "Disminuir sangría", "Aumentar sangría", "Seleccionar caracter especial", "Insertar caracter especial", "Copiar formato", "Cambiar modo", "Márgenes", "arriba", "derecha", "abajo", "izquierda", "Estilos CSS", "Clases CSS", "Alinear", "Derecha", "Centrado", "Izquierda", "--No Establecido--", "Fuente", "Título", "Texto Alternativo", "Vínculo", "Abrir vínculo en nueva pestaña", "Imagen", "Archivo", "Avanzado", "Propiedades de imagen", "Cancelar", "Aceptar", "Buscar archivo", "Error al cargar la lista", "Error al cargar las carpetas", "¿Está seguro?", "Entre nombre de carpeta", "Crear carpeta", "Entre el nombre", "Soltar imagen", "Soltar archivo", "o click", "Texto alternativo", "Subir", "Buscar", "Fondo", "Texto", "Arriba", "Centro", "Abajo", "Insertar columna antes", "Interar columna después", "Insertar fila arriba", "Insertar fila debajo", "Borrar tabla", "Borrar fila", "Borrar columna", "Vaciar celda", "Caracteres: %d", "Palabras: %d", "Tachado", "Subrayado", "superíndice", "subíndice", "Cortar selección", "Seleccionar todo", "Pausa", "Buscar", "Reemplazar con", "Reemplazar", "Pegar", "Seleccionar contenido para pegar", "HTML", "negrita", "cursiva", "Brocha", "Vínculo", "deshacer", "rehacer", "Tabla", "Imagen", "Borrar", "Párrafo", "Tamaño de letra", "Video", "Letra", "Acerca de", "Imprimir", "subrayar", "tachar", "sangría", "quitar sangría", "Tamaño completo", "encoger", "línea horizontal", "lista sin ordenar", "lista ordenada", "Cortar", "Seleccionar todo", "Incluir código", "Abrir vínculo", "Editar vínculo", "No seguir", "Desvincular", "Actualizar", "Para editar", "Ver", "URL", "Editar", "Alineación horizontal", "Filtrar", "Ordenar por fecha modificación", "Ordenar por nombre", "Ordenar por tamaño", "Agregar carpeta", "Resetear", "Guardar", "Guardar como...", "Redimensionar", "Recortar", "Ancho", "Alto", "Mantener relación de aspecto", "Si", "No", "Quitar", "Seleccionar", "Seleccionar: %s", "Alineación vertical", "Dividir", "Mezclar", "Agregar columna", "Agregar fila", null, "Borrar", "Dividir vertical", "Dividir horizontal", "Borde", "El código es similar a HTML. ¿Mantener como HTML?", "Pegar como HTML?", "Mantener", "Insertar como texto", "Insertar solo texto", "Solo puedes editar tus propias imágenes. ¿Descargar esta imagen en el servidor?", "¡La imagen se ha subido correctamente al servidor!", "paleta", "No hay archivos en este directorio.", "renombrar", "Ingresa un nuevo nombre", "avance", "Descargar", "Pegar desde el portapapeles", "Su navegador no soporta el acceso directo en el portapapeles.", "Selección de copia", "copia", "Radio frontera", "Mostrar todos los", "Aplicar", "Por favor, rellene este campo", "Por favor, introduzca una dirección web", "Predeterminado", "Círculo", "Punto", "Cuadro", "Encontrar", "Buscar Anterior", "Buscar Siguiente", "El contenido pegado proviene de un documento de Microsoft Word/Excel. ¿Desea mantener el formato o limpiarlo?", "Pegado desde Word detectado", "Limpiar", "Insertar nombre de clase", "Presione Alt para cambiar el tamaño personalizado"]
+                    t.exports.default = ["Escriba algo...", "Acerca de PagePerfect", "PagePerfect Editor", "Guía de usuario PagePerfect", "contiene ayuda detallada para el uso.", "Para información sobre la licencia, por favor visite nuestro sitio:", "Compre la versión completa", "Copyright © PagePerfect - Chupurnov Valeriy. Todos los derechos reservados.", "Anclar", "Abrir en nueva pestaña", "Abrir editor en pantalla completa", "Limpiar formato", "Color de relleno o de letra", "Rehacer", "Deshacer", "Negrita", "Cursiva", "Insertar lista no ordenada", "Insertar lista ordenada", "Alinear Centrado", "Alinear Justificado", "Alinear Izquierda", "Alinear Derecha", "Insertar línea horizontal", "Insertar imagen", "Insertar archivo", "Insertar video de Youtube/vimeo", "Insertar vínculo", "Tamaño de letra", "Familia de letra", "Insertar bloque", "Normal", "Encabezado 1", "Encabezado 2", "Encabezado 3", "Encabezado 4", "Cita", "Código", "Insertar", "Insertar tabla", "Disminuir sangría", "Aumentar sangría", "Seleccionar caracter especial", "Insertar caracter especial", "Copiar formato", "Cambiar modo", "Márgenes", "arriba", "derecha", "abajo", "izquierda", "Estilos CSS", "Clases CSS", "Alinear", "Derecha", "Centrado", "Izquierda", "--No Establecido--", "Fuente", "Título", "Texto Alternativo", "Vínculo", "Abrir vínculo en nueva pestaña", "Imagen", "Archivo", "Avanzado", "Propiedades de imagen", "Cancelar", "Aceptar", "Buscar archivo", "Error al cargar la lista", "Error al cargar las carpetas", "¿Está seguro?", "Entre nombre de carpeta", "Crear carpeta", "Entre el nombre", "Soltar imagen", "Soltar archivo", "o click", "Texto alternativo", "Subir", "Buscar", "Fondo", "Texto", "Arriba", "Centro", "Abajo", "Insertar columna antes", "Interar columna después", "Insertar fila arriba", "Insertar fila debajo", "Borrar tabla", "Borrar fila", "Borrar columna", "Vaciar celda", "Caracteres: %d", "Palabras: %d", "Tachado", "Subrayado", "superíndice", "subíndice", "Cortar selección", "Seleccionar todo", "Pausa", "Buscar", "Reemplazar con", "Reemplazar", "Pegar", "Seleccionar contenido para pegar", "HTML", "negrita", "cursiva", "Brocha", "Vínculo", "deshacer", "rehacer", "Tabla", "Imagen", "Borrar", "Párrafo", "Tamaño de letra", "Video", "Letra", "Acerca de", "Imprimir", "subrayar", "tachar", "sangría", "quitar sangría", "Tamaño completo", "encoger", "línea horizontal", "lista sin ordenar", "lista ordenada", "Cortar", "Seleccionar todo", "Incluir código", "Abrir vínculo", "Editar vínculo", "No seguir", "Desvincular", "Actualizar", "Para editar", "Ver", "URL", "Editar", "Alineación horizontal", "Filtrar", "Ordenar por fecha modificación", "Ordenar por nombre", "Ordenar por tamaño", "Agregar carpeta", "Resetear", "Guardar", "Guardar como...", "Redimensionar", "Recortar", "Ancho", "Alto", "Mantener relación de aspecto", "Si", "No", "Quitar", "Seleccionar", "Seleccionar: %s", "Alineación vertical", "Dividir", "Mezclar", "Agregar columna", "Agregar fila", null, "Borrar", "Dividir vertical", "Dividir horizontal", "Borde", "El código es similar a HTML. ¿Mantener como HTML?", "Pegar como HTML?", "Mantener", "Insertar como texto", "Insertar solo texto", "Solo puedes editar tus propias imágenes. ¿Descargar esta imagen en el servidor?", "¡La imagen se ha subido correctamente al servidor!", "paleta", "No hay archivos en este directorio.", "renombrar", "Ingresa un nuevo nombre", "avance", "Descargar", "Pegar desde el portapapeles", "Su navegador no soporta el acceso directo en el portapapeles.", "Selección de copia", "copia", "Radio frontera", "Mostrar todos los", "Aplicar", "Por favor, rellene este campo", "Por favor, introduzca una dirección web", "Predeterminado", "Círculo", "Punto", "Cuadro", "Encontrar", "Buscar Anterior", "Buscar Siguiente", "El contenido pegado proviene de un documento de Microsoft Word/Excel. ¿Desea mantener el formato o limpiarlo?", "Pegado desde Word detectado", "Limpiar", "Insertar nombre de clase", "Presione Alt para cambiar el tamaño personalizado"]
                 },
                 62327(t) {
-                    t.exports.default = ["Kirjoita jotain...", "Tietoja Rubisco:ista", "Rubisco Editor", "Rubisco käyttäjän ohje", "sisältää tarkempaa tietoa käyttämiseen", "Tietoa lisensoinnista, vieraile verkkosivuillamme:", "Osta täysi versio", "Copyright © Rubisco - Chupurnov Valeriy. Kaikki oikeudet pidätetään.", "Ankkuri", "Avaa uudessa välilehdessä", "Avaa täysikokoisena", "Poista muotoilu", "Täytä värillä tai aseta tekstin väri", "Tee uudelleen", "Peruuta", "Lihavoitu", "Kursiivi", "Lisää järjestämätön lista", "Lisää järjestetty lista", "Asemoi keskelle", "Asemoi tasavälein", "Asemoi vasemmalle", "Asemoi oikealle", "Lisää vaakasuuntainen viiva", "Lisää kuva", "Lisää tiedosto", "Lisää Youtube-/vimeo- video", "Lisää linkki", "Kirjasimen koko", "Kirjasimen nimi", "Lisää muotoilualue", "Normaali", "Otsikko 1", "Otsikko 2", "Otsikko 3", "Otsikko 4", "Lainaus", "Koodi", "Lisää", "Lisää taulukko", "Pienennä sisennystä", "Lisää sisennystä", "Valitse erikoismerkki", "Lisää erikoismerkki", "Maalaa muotoilu", "Vaihda tilaa", "Marginaalit", "ylös", "oikealle", "alas", "vasemmalle", "CSS-tyylit", "CSS-luokat", "Asemointi", "Oikea", "Keskellä", "Vasen", "--Ei asetettu--", "Fuente", "Otsikko", "Vaihtoehtoinen teksti", "Linkki", "Avaa uudessa välilehdessä", "Kuva", "Tiedosto", "Avanzado", "Kuvan ominaisuudet", "Peruuta", "Ok", "Tiedostoselain", "Virhe listan latauksessa", "Virhe kansioiden latauksessa", "Oletko varma?", "Syötä hakemiston nimi", "Luo hakemisto", "Syötä nimi", "Pudota kuva", "Pudota tiedosto", "tai klikkaa", "Vaihtoehtoinen teksti", "Lataa", "Selaa", "Tausta", "Teksti", "Ylös", "Keskelle", "Alas", "Lisää sarake ennen", "Lisää sarake jälkeen", "Lisää rivi ylös", "Lisää rivi alle", "Poista taulukko", "Poista rivi", "Poista sarake", "Tyhjennä solu", "Merkit: %d", "Sanat: %d", "Yliviivaus", "Alleviivaus", "yläviite", "alaviite", "Leikkaa valinta", "Valitse kaikki", "Vaihto", "Etsi arvoa", "Korvaa arvolla", "Korvaa", "Liitä", "Valitse liitettävä sisältö", "HTML", "lihavoitu", "kursiivi", "sivellin", "linkki", "peruuta", "tee uudelleen", "taulukko", "kuva", "pyyhekumi", "kappale", "tekstin koko", "video", "kirjasin", "tietoja", "tulosta", "alleviivaa", "yliviivaa", "sisennä", "pienennä sisennystä", "täysikokoinen", "pienennä", "vaakaviiva", "järjestetty lista", "järjestämätön lista", "leikkaa", "valitse kaikki", "Sisällytä koodi", "Avaa linkki", "Muokkaa linkkiä", "Älä seuraa", "Pura linkki", "Päivitä", "Muokkaa", "Ver", "URL", "Muokkaa", "Vaaka-asemointi", "Suodatin", "Järjestä muuttuneilla", "Järjestä nimellä", "Järjestä koolla", "Lisää kansio", "Nollaa", "Tallenna", "Tallenna nimellä ...", "Muuta kokoa", "Rajaa", "Leveys", "Korkeus", "Säilytä kuvasuhde", "Kyllä", "Ei", "Poista", "Valitse", "Valitse: %s", "Pystyasemointi", "Jaa", "Yhdistä", "Lisää sarake", "Lisää rivi", null, "Poista", "Jaa pystysuuntaisesti", "Jaa vaakasuuntaisesti", "Reuna", "Koodi on HTML:n tapaista. Säilytetäänkö HTML?", "Liitä HTML:nä?", "Säilytä", "Lisää tekstinä", "Lisää vain teksti", "Voit muokata vain omia kuvia. Lataa tämä kuva palvelimelle?", "Kuva on onnistuneesti ladattu palvelimelle!", "paletti", "Tiedostoja ei ole", "Nimeä uudelleen", "Syötä uusi nimi", "esikatselu", "Lataa", "Liitä leikepöydältä", "Selaimesi ei tue suoraa pääsyä leikepöydälle.", "Kopioi valinta", "kopioi", "Reunan pyöristys", "Näytä kaikki", "Käytä", "Täytä tämä kenttä", "Annan web-osoite", "Oletus", "Ympyrä", "Piste", "Neliö", "Hae", "Hae edellinen", "Hae seuraava", "Liitetty sisältö tulee Microsoft Word-/Excel- tiedostosta. Haluatko säilyttää muotoilun vai poistaa sen?", "Word liittäminen havaittu", "Tyhjennä", "Lisää luokkanimi", "Paina Alt muokattuun koon muuttamiseen"]
+                    t.exports.default = ["Kirjoita jotain...", "Tietoja PagePerfect:ista", "PagePerfect Editor", "PagePerfect käyttäjän ohje", "sisältää tarkempaa tietoa käyttämiseen", "Tietoa lisensoinnista, vieraile verkkosivuillamme:", "Osta täysi versio", "Copyright © PagePerfect - Chupurnov Valeriy. Kaikki oikeudet pidätetään.", "Ankkuri", "Avaa uudessa välilehdessä", "Avaa täysikokoisena", "Poista muotoilu", "Täytä värillä tai aseta tekstin väri", "Tee uudelleen", "Peruuta", "Lihavoitu", "Kursiivi", "Lisää järjestämätön lista", "Lisää järjestetty lista", "Asemoi keskelle", "Asemoi tasavälein", "Asemoi vasemmalle", "Asemoi oikealle", "Lisää vaakasuuntainen viiva", "Lisää kuva", "Lisää tiedosto", "Lisää Youtube-/vimeo- video", "Lisää linkki", "Kirjasimen koko", "Kirjasimen nimi", "Lisää muotoilualue", "Normaali", "Otsikko 1", "Otsikko 2", "Otsikko 3", "Otsikko 4", "Lainaus", "Koodi", "Lisää", "Lisää taulukko", "Pienennä sisennystä", "Lisää sisennystä", "Valitse erikoismerkki", "Lisää erikoismerkki", "Maalaa muotoilu", "Vaihda tilaa", "Marginaalit", "ylös", "oikealle", "alas", "vasemmalle", "CSS-tyylit", "CSS-luokat", "Asemointi", "Oikea", "Keskellä", "Vasen", "--Ei asetettu--", "Fuente", "Otsikko", "Vaihtoehtoinen teksti", "Linkki", "Avaa uudessa välilehdessä", "Kuva", "Tiedosto", "Avanzado", "Kuvan ominaisuudet", "Peruuta", "Ok", "Tiedostoselain", "Virhe listan latauksessa", "Virhe kansioiden latauksessa", "Oletko varma?", "Syötä hakemiston nimi", "Luo hakemisto", "Syötä nimi", "Pudota kuva", "Pudota tiedosto", "tai klikkaa", "Vaihtoehtoinen teksti", "Lataa", "Selaa", "Tausta", "Teksti", "Ylös", "Keskelle", "Alas", "Lisää sarake ennen", "Lisää sarake jälkeen", "Lisää rivi ylös", "Lisää rivi alle", "Poista taulukko", "Poista rivi", "Poista sarake", "Tyhjennä solu", "Merkit: %d", "Sanat: %d", "Yliviivaus", "Alleviivaus", "yläviite", "alaviite", "Leikkaa valinta", "Valitse kaikki", "Vaihto", "Etsi arvoa", "Korvaa arvolla", "Korvaa", "Liitä", "Valitse liitettävä sisältö", "HTML", "lihavoitu", "kursiivi", "sivellin", "linkki", "peruuta", "tee uudelleen", "taulukko", "kuva", "pyyhekumi", "kappale", "tekstin koko", "video", "kirjasin", "tietoja", "tulosta", "alleviivaa", "yliviivaa", "sisennä", "pienennä sisennystä", "täysikokoinen", "pienennä", "vaakaviiva", "järjestetty lista", "järjestämätön lista", "leikkaa", "valitse kaikki", "Sisällytä koodi", "Avaa linkki", "Muokkaa linkkiä", "Älä seuraa", "Pura linkki", "Päivitä", "Muokkaa", "Ver", "URL", "Muokkaa", "Vaaka-asemointi", "Suodatin", "Järjestä muuttuneilla", "Järjestä nimellä", "Järjestä koolla", "Lisää kansio", "Nollaa", "Tallenna", "Tallenna nimellä ...", "Muuta kokoa", "Rajaa", "Leveys", "Korkeus", "Säilytä kuvasuhde", "Kyllä", "Ei", "Poista", "Valitse", "Valitse: %s", "Pystyasemointi", "Jaa", "Yhdistä", "Lisää sarake", "Lisää rivi", null, "Poista", "Jaa pystysuuntaisesti", "Jaa vaakasuuntaisesti", "Reuna", "Koodi on HTML:n tapaista. Säilytetäänkö HTML?", "Liitä HTML:nä?", "Säilytä", "Lisää tekstinä", "Lisää vain teksti", "Voit muokata vain omia kuvia. Lataa tämä kuva palvelimelle?", "Kuva on onnistuneesti ladattu palvelimelle!", "paletti", "Tiedostoja ei ole", "Nimeä uudelleen", "Syötä uusi nimi", "esikatselu", "Lataa", "Liitä leikepöydältä", "Selaimesi ei tue suoraa pääsyä leikepöydälle.", "Kopioi valinta", "kopioi", "Reunan pyöristys", "Näytä kaikki", "Käytä", "Täytä tämä kenttä", "Annan web-osoite", "Oletus", "Ympyrä", "Piste", "Neliö", "Hae", "Hae edellinen", "Hae seuraava", "Liitetty sisältö tulee Microsoft Word-/Excel- tiedostosta. Haluatko säilyttää muotoilun vai poistaa sen?", "Word liittäminen havaittu", "Tyhjennä", "Lisää luokkanimi", "Paina Alt muokattuun koon muuttamiseen"]
                 },
                 25090(t) {
-                    t.exports.default = ["Ecrivez ici", "A propos de Rubisco", "Editeur Rubisco", "Guide de l'utilisateur", "Aide détaillée à l'utilisation", "Consulter la licence sur notre site web:", "Acheter la version complète", "Copyright © Rubisco - Chupurnov Valeriy. Tous droits réservés.", "Ancre", "Ouvrir dans un nouvel onglet", "Ouvrir l'éditeur en pleine page", "Supprimer le formattage", "Modifier la couleur du fond ou du texte", "Refaire", "Défaire", "Gras", "Italique", "Liste non ordonnée", "Liste ordonnée", "Centrer", "Justifier", "Aligner à gauche ", "Aligner à droite", "Insérer une ligne horizontale", "Insérer une image", "Insérer un fichier", "Insérer une vidéo", "Insérer un lien", "Taille des caractères", "Famille des caractères", "Bloc formatté", "Normal", "Titre 1", "Titre 2", "Titre 3", "Titre 4", "Citation", "Code", "Insérer", "Insérer un tableau", "Diminuer le retrait", "Retrait plus", "Sélectionnez un caractère spécial", "Insérer un caractère spécial", "Cloner le format", "Mode wysiwyg <-> code html", "Marges", "haut", "droite", "Bas", "gauche", "Styles", "Classes", "Alignement", "Droite", "Centre", "Gauche", "--Non disponible--", "Source", "Titre", "Alternative", "Lien", "Ouvrir le lien dans un nouvel onglet", "Image", "fichier", "Avancé", "Propriétés de l'image", "Annuler", "OK", "Explorateur de fichiers", "Erreur de liste de chargement", "Erreur de dossier de chargement", "Etes-vous sûrs ?", "Entrer le nom de dossier", "Créer un dossier", "type de fichier", "Coller une image", "Déposer un fichier", "ou cliquer", "Texte de remplacemement", "Charger", "Chercher", "Arrière-plan", "Texte", "Haut", "Milieu", "Bas", "Insérer une colonne avant", "Insérer une colonne après", "Insérer une ligne au dessus", "Insérer une ligne en dessous", "Supprimer le tableau", "Supprimer la ligne", "Supprimer la colonne", "Vider la cellule", "Symboles: %d", "Mots: %d", "Barrer", "Souligner", "exposant", "indice", "Couper la sélection", "Tout sélectionner", "Pause", "Rechercher", "Remplacer par", "Remplacer", "Coller", "Choisissez le contenu à coller", "la source", "gras", "italique", "pinceau", "lien", "annuler", "refaire", "tableau", "image", "gomme", "clause", "taille de police", "Video", "police", "à propos de l'éditeur", "impression", "souligné", "barré", "indentation", "retrait", "taille réelle", "taille conventionnelle", "la ligne", "Liste", "Liste numérotée", "Couper", "Sélectionner tout", null, "Ouvrir le lien", "Modifier le lien", "Attribut Nofollow", "Supprimer le lien", "Mettre à jour", "Pour éditer", "Voir", "URL", null, "Alignement horizontal", "Filtre", "Trier par modification", "Trier par nom", "Trier par taille", "Créer le dossier", "Restaurer", "Sauvegarder", "Enregistrer sous", "Changer la taille", "Taille de garniture", "Largeur", "Hauteur", "Garder les proportions", "Oui", "Non", "Supprimer", "Mettre en évidence", "Mettre en évidence: %s", "Alignement vertical", "Split", "aller", "Ajouter une colonne", "Ajouter une rangée", null, "Effacer", "Split vertical", "Split horizontal", "Bordure", "Votre texte que vous essayez de coller est similaire au HTML. Collez-le en HTML?", "Coller en HTML?", "Sauvegarder l'original", "Coller en tant que texte", "Coller le texte seulement", "Vous ne pouvez éditer que vos propres images. Téléchargez cette image sur l'hôte?", "L'image a été téléchargée avec succès sur le serveur!", "Palette", "Il n'y a aucun fichier dans ce répertoire.", "renommer", "Entrez un nouveau nom", "Aperçu", "Télécharger", "Coller à partir du presse-papiers", "Votre navigateur ne prend pas en charge l'accès direct au presse-papiers.", "Copier la sélection", "copie", "Rayon des bordures", "Afficher tous", "Appliquer", "Veuillez remplir ce champ", "Veuillez entrer une adresse web", "Par défaut", "Cercle", "Point", "Quadratique", "Trouver", "Précédent", "Suivant", "Le contenu que vous insérez provient d'un document Microsoft Word / Excel. Voulez-vous enregistrer le format ou l'effacer?", "C'est peut-être un fragment de Word ou Excel", "Nettoyer", "Insérer un nom de classe", "Appuyez sur Alt pour un redimensionnement personnalisé"]
+                    t.exports.default = ["Ecrivez ici", "A propos de PagePerfect", "Editeur PagePerfect", "Guide de l'utilisateur", "Aide détaillée à l'utilisation", "Consulter la licence sur notre site web:", "Acheter la version complète", "Copyright © PagePerfect - Chupurnov Valeriy. Tous droits réservés.", "Ancre", "Ouvrir dans un nouvel onglet", "Ouvrir l'éditeur en pleine page", "Supprimer le formattage", "Modifier la couleur du fond ou du texte", "Refaire", "Défaire", "Gras", "Italique", "Liste non ordonnée", "Liste ordonnée", "Centrer", "Justifier", "Aligner à gauche ", "Aligner à droite", "Insérer une ligne horizontale", "Insérer une image", "Insérer un fichier", "Insérer une vidéo", "Insérer un lien", "Taille des caractères", "Famille des caractères", "Bloc formatté", "Normal", "Titre 1", "Titre 2", "Titre 3", "Titre 4", "Citation", "Code", "Insérer", "Insérer un tableau", "Diminuer le retrait", "Retrait plus", "Sélectionnez un caractère spécial", "Insérer un caractère spécial", "Cloner le format", "Mode wysiwyg <-> code html", "Marges", "haut", "droite", "Bas", "gauche", "Styles", "Classes", "Alignement", "Droite", "Centre", "Gauche", "--Non disponible--", "Source", "Titre", "Alternative", "Lien", "Ouvrir le lien dans un nouvel onglet", "Image", "fichier", "Avancé", "Propriétés de l'image", "Annuler", "OK", "Explorateur de fichiers", "Erreur de liste de chargement", "Erreur de dossier de chargement", "Etes-vous sûrs ?", "Entrer le nom de dossier", "Créer un dossier", "type de fichier", "Coller une image", "Déposer un fichier", "ou cliquer", "Texte de remplacemement", "Charger", "Chercher", "Arrière-plan", "Texte", "Haut", "Milieu", "Bas", "Insérer une colonne avant", "Insérer une colonne après", "Insérer une ligne au dessus", "Insérer une ligne en dessous", "Supprimer le tableau", "Supprimer la ligne", "Supprimer la colonne", "Vider la cellule", "Symboles: %d", "Mots: %d", "Barrer", "Souligner", "exposant", "indice", "Couper la sélection", "Tout sélectionner", "Pause", "Rechercher", "Remplacer par", "Remplacer", "Coller", "Choisissez le contenu à coller", "la source", "gras", "italique", "pinceau", "lien", "annuler", "refaire", "tableau", "image", "gomme", "clause", "taille de police", "Video", "police", "à propos de l'éditeur", "impression", "souligné", "barré", "indentation", "retrait", "taille réelle", "taille conventionnelle", "la ligne", "Liste", "Liste numérotée", "Couper", "Sélectionner tout", null, "Ouvrir le lien", "Modifier le lien", "Attribut Nofollow", "Supprimer le lien", "Mettre à jour", "Pour éditer", "Voir", "URL", null, "Alignement horizontal", "Filtre", "Trier par modification", "Trier par nom", "Trier par taille", "Créer le dossier", "Restaurer", "Sauvegarder", "Enregistrer sous", "Changer la taille", "Taille de garniture", "Largeur", "Hauteur", "Garder les proportions", "Oui", "Non", "Supprimer", "Mettre en évidence", "Mettre en évidence: %s", "Alignement vertical", "Split", "aller", "Ajouter une colonne", "Ajouter une rangée", null, "Effacer", "Split vertical", "Split horizontal", "Bordure", "Votre texte que vous essayez de coller est similaire au HTML. Collez-le en HTML?", "Coller en HTML?", "Sauvegarder l'original", "Coller en tant que texte", "Coller le texte seulement", "Vous ne pouvez éditer que vos propres images. Téléchargez cette image sur l'hôte?", "L'image a été téléchargée avec succès sur le serveur!", "Palette", "Il n'y a aucun fichier dans ce répertoire.", "renommer", "Entrez un nouveau nom", "Aperçu", "Télécharger", "Coller à partir du presse-papiers", "Votre navigateur ne prend pas en charge l'accès direct au presse-papiers.", "Copier la sélection", "copie", "Rayon des bordures", "Afficher tous", "Appliquer", "Veuillez remplir ce champ", "Veuillez entrer une adresse web", "Par défaut", "Cercle", "Point", "Quadratique", "Trouver", "Précédent", "Suivant", "Le contenu que vous insérez provient d'un document Microsoft Word / Excel. Voulez-vous enregistrer le format ou l'effacer?", "C'est peut-être un fragment de Word ou Excel", "Nettoyer", "Insérer un nom de classe", "Appuyez sur Alt pour un redimensionnement personnalisé"]
                 },
                 53113(t) {
-                    t.exports.default = ["הקלד משהו...", "About Rubisco", "Rubisco Editor", "Rubisco User's Guide", "contains detailed help for using.", "For information about the license, please go to our website:", "Buy full version", "Copyright © Rubisco - Chupurnov Valeriy. All rights reserved.", "מקום עיגון", "פתח בכרטיסיה חדשה", "פתח את העורך בחלון חדש", "נקה עיצוב", "שנה צבע טקסט או רקע", "בצע שוב", "בטל", "מודגש", "נטוי", "הכנס רשימת תבליטים", "הכנס רשימה ממוספרת", "מרכז", "ישר ", "ישר לשמאל", "ישר לימין", "הכנס קו אופקי", "הכנס תמונה", "הכנס קובץ", "הכנס סרטון וידאו מYouTube/Vimeo", "הכנס קישור", "גודל גופן", "גופן", "מעוצב מראש", "רגיל", "כותרת 1", "כותרת 2", "כותרת 3", "כותרת 4", "ציטוט", "קוד", "הכנס", "הכנס טבלה", "הקטן כניסה", "הגדל כניסה", "בחר תו מיוחד", "הכנס תו מיוחד", "העתק עיצוב", "החלף מצב", "ריווח", "עליון", "ימין", "תחתון", "שמאל", "עיצוב CSS", "מחלקת CSS", "יישור", "ימין", "מרכז", "שמאל", "--לא נקבע--", "מקור", "כותרת", "כיתוב חלופי", "קישור", "פתח בכרטיסיה חדשה", "תמונה", "קובץ", "מתקדם", "מאפייני תמונה", "ביטול", "אישור", "סייר הקבצים", "שגיאה  בזמן טעינת רשימה", "שגיאה בזמן טעינת תקיות", "האם אתה בטוח?", "הכנס שם תקיה", "צור תקיה", "סוג הקובץ", "הסר תמונה", "הסר קובץ", "או לחץ", "כיתוב חלופי", "העלה", "סייר", "רקע", "טקסט", "עליון", "מרכז", "תחתון", "הכנס עמודה לפני", "הכנס עמודה אחרי", "הכנס שורה מעל", "הכנס שורה מתחת", "מחק טבלה", "מחק שורה", "מחק עמודה", "רוקן תא", "תווים: %d", "מילים: %d", "קו חוצה", "קו תחתון", "superscript", "subscript", "גזור בחירה", "בחר הכל", "שבירת שורה", "חפש", "החלף ב", "להחליף", "הדבק", "בחר תוכן להדבקה", "HTML", "מודגש", "נטוי", "מברשת", "קישור", "בטל", "בצע שוב", "טבלה", "תמונה", "מחק", "פסקה", "גודל גופן", "וידאו", "גופן", "עלינו", "הדפס", "קו תחתון", "קו חוצה", "הגדל כניסה", "הקטן כניסה", "גודל מלא", "כווץ", "קו אופקי", "רשימת תבליטים", "רשימה ממוספרת", "חתוך", "בחר הכל", "הוסף קוד", "פתח קישור", "ערוך קישור", "ללא מעקב", "בטל קישור", "עדכן", "כדי לערוך", "הצג", "כתובת", "ערוך", "יישור אופקי", "סנן", "מין לפי שינוי", "מיין לפי שם", "מיין לפי גודל", "הוסף תקייה", "אפס", "שמור", "שמור בשם...", "שנה גודל", "חתוך", "רוחב", "גובה", "שמור יחס", "כן", "לא", "הסר", "בחר", "נבחר: %s", "יישור אנכי", "פיצול", "מזג", "הוסף עמודה", "הוסף שורה", null, "מחק", "פיצול אנכי", "פיצול אופקי", "מסגרת", "הקוד דומה לHTML, האם להשאיר כHTML", "הדבק כHTML", "השאר", "הכנס כטקסט", "הכנס טקסט בלבד", "רק קבצים המשוייכים שלך ניתנים לעריכה. האם להוריד את הקובץ?", "התמונה עלתה בהצלחה!", "לוח", "אין קבצים בספריה זו.", "הונגרית", "הזן שם חדש", "תצוגה מקדימה", "הורד", "להדביק מהלוח", "הדפדפן שלך לא תומך גישה ישירה ללוח.", "העתק בחירה", "העתק", "רדיוס הגבול", "הצג את כל", "החל", "נא למלא שדה זה", "אנא הזן כתובת אינטרנט", "ברירת המחדל", "מעגל", "נקודה", "הריבוע הזה", "למצוא", "מצא את הקודם", "חפש את הבא", "התוכן המודבק מגיע ממסמך וורד/אקסל. האם ברצונך להשאיר את העיצוב או לנקותו", 'זוהתה הדבקה מ"וורד"', "נקה", "הכנס את שם הכיתה", "לחץ על אלט לשינוי גודל מותאם אישית"]
+                    t.exports.default = ["הקלד משהו...", "About PagePerfect", "PagePerfect Editor", "PagePerfect User's Guide", "contains detailed help for using.", "For information about the license, please go to our website:", "Buy full version", "Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.", "מקום עיגון", "פתח בכרטיסיה חדשה", "פתח את העורך בחלון חדש", "נקה עיצוב", "שנה צבע טקסט או רקע", "בצע שוב", "בטל", "מודגש", "נטוי", "הכנס רשימת תבליטים", "הכנס רשימה ממוספרת", "מרכז", "ישר ", "ישר לשמאל", "ישר לימין", "הכנס קו אופקי", "הכנס תמונה", "הכנס קובץ", "הכנס סרטון וידאו מYouTube/Vimeo", "הכנס קישור", "גודל גופן", "גופן", "מעוצב מראש", "רגיל", "כותרת 1", "כותרת 2", "כותרת 3", "כותרת 4", "ציטוט", "קוד", "הכנס", "הכנס טבלה", "הקטן כניסה", "הגדל כניסה", "בחר תו מיוחד", "הכנס תו מיוחד", "העתק עיצוב", "החלף מצב", "ריווח", "עליון", "ימין", "תחתון", "שמאל", "עיצוב CSS", "מחלקת CSS", "יישור", "ימין", "מרכז", "שמאל", "--לא נקבע--", "מקור", "כותרת", "כיתוב חלופי", "קישור", "פתח בכרטיסיה חדשה", "תמונה", "קובץ", "מתקדם", "מאפייני תמונה", "ביטול", "אישור", "סייר הקבצים", "שגיאה  בזמן טעינת רשימה", "שגיאה בזמן טעינת תקיות", "האם אתה בטוח?", "הכנס שם תקיה", "צור תקיה", "סוג הקובץ", "הסר תמונה", "הסר קובץ", "או לחץ", "כיתוב חלופי", "העלה", "סייר", "רקע", "טקסט", "עליון", "מרכז", "תחתון", "הכנס עמודה לפני", "הכנס עמודה אחרי", "הכנס שורה מעל", "הכנס שורה מתחת", "מחק טבלה", "מחק שורה", "מחק עמודה", "רוקן תא", "תווים: %d", "מילים: %d", "קו חוצה", "קו תחתון", "superscript", "subscript", "גזור בחירה", "בחר הכל", "שבירת שורה", "חפש", "החלף ב", "להחליף", "הדבק", "בחר תוכן להדבקה", "HTML", "מודגש", "נטוי", "מברשת", "קישור", "בטל", "בצע שוב", "טבלה", "תמונה", "מחק", "פסקה", "גודל גופן", "וידאו", "גופן", "עלינו", "הדפס", "קו תחתון", "קו חוצה", "הגדל כניסה", "הקטן כניסה", "גודל מלא", "כווץ", "קו אופקי", "רשימת תבליטים", "רשימה ממוספרת", "חתוך", "בחר הכל", "הוסף קוד", "פתח קישור", "ערוך קישור", "ללא מעקב", "בטל קישור", "עדכן", "כדי לערוך", "הצג", "כתובת", "ערוך", "יישור אופקי", "סנן", "מין לפי שינוי", "מיין לפי שם", "מיין לפי גודל", "הוסף תקייה", "אפס", "שמור", "שמור בשם...", "שנה גודל", "חתוך", "רוחב", "גובה", "שמור יחס", "כן", "לא", "הסר", "בחר", "נבחר: %s", "יישור אנכי", "פיצול", "מזג", "הוסף עמודה", "הוסף שורה", null, "מחק", "פיצול אנכי", "פיצול אופקי", "מסגרת", "הקוד דומה לHTML, האם להשאיר כHTML", "הדבק כHTML", "השאר", "הכנס כטקסט", "הכנס טקסט בלבד", "רק קבצים המשוייכים שלך ניתנים לעריכה. האם להוריד את הקובץ?", "התמונה עלתה בהצלחה!", "לוח", "אין קבצים בספריה זו.", "הונגרית", "הזן שם חדש", "תצוגה מקדימה", "הורד", "להדביק מהלוח", "הדפדפן שלך לא תומך גישה ישירה ללוח.", "העתק בחירה", "העתק", "רדיוס הגבול", "הצג את כל", "החל", "נא למלא שדה זה", "אנא הזן כתובת אינטרנט", "ברירת המחדל", "מעגל", "נקודה", "הריבוע הזה", "למצוא", "מצא את הקודם", "חפש את הבא", "התוכן המודבק מגיע ממסמך וורד/אקסל. האם ברצונך להשאיר את העיצוב או לנקותו", 'זוהתה הדבקה מ"וורד"', "נקה", "הכנס את שם הכיתה", "לחץ על אלט לשינוי גודל מותאם אישית"]
                 },
                 81321(t) {
-                    t.exports.default = ["Írjon be valamit", "Rubiscoról", "Rubisco Editor", "Rubisco útmutató", "további segítséget tartalmaz", "További licence információkért látogassa meg a weboldalunkat:", "Teljes verzió megvásárlása", "Copyright © Rubisco - Chupurnov Valeriy. Minden jog fenntartva.", "Horgony", "Megnyitás új lapon", "Megnyitás teljes méretben", "Formázás törlése", "Háttér/szöveg szín", "Újra", "Visszavon", "Félkövér", "Dőlt", "Pontozott lista", "Számozott lista", "Középre zárt", "Sorkizárt", "Balra zárt", "Jobbra zárt", "Vízszintes vonal beszúrása", "Kép beszúrás", "Fájl beszúrás", "Youtube videó beszúrása", "Link beszúrás", "Betűméret", "Betűtípus", "Formázott blokk beszúrása", "Normál", "Fejléc 1", "Fejléc 2", "Fejléc 3", "Fejléc 4", "Idézet", "Kód", "Beszúr", "Táblázat beszúrása", "Behúzás csökkentése", "Behúzás növelése", "Speciális karakter kiválasztása", "Speciális karakter beszúrása", "Kép formázása", "Nézet váltása", "Szegélyek", "felső", "jobb", "alsó", "bal", "CSS stílusok", "CSS osztályok", "Igazítás", "Jobbra", "Középre", "Balra", "Nincs", "Forrás", "Cím", "Helyettesítő szöveg", "Link", "Link megnyitása új lapon", "Kép", "Fájl", "Haladó", "Kép tularbonságai", "Mégsem", "OK", "Fájl tallózó", "Hiba a lista betöltése közben", "Hiba a mappák betöltése közben", "Biztosan ezt szeretné?", "Írjon be egy mappanevet", "Mappa létrehozása", "írjon be bevet", "Húzza ide a képet", "Húzza ide a fájlt", "vagy kattintson", "Helyettesítő szöveg", "Feltölt", "Tallóz", "Háttér", "Szöveg", "Fent", "Középen", "Lent", "Oszlop beszúrás elé", "Oszlop beszúrás utána", "Sor beszúrás fölé", "Sor beszúrás alá", "Táblázat törlése", "Sor törlése", "Oszlop törlése", "Cella tartalmának törlése", "Karakterek száma: %d", "Szavak száma: %d", "Áthúzott", "Aláhúzott", "Felső index", "Alsó index", "Kivágás", "Összes kijelölése", "Szünet", "Keresés", "Csere erre", "Cserélje ki", "Beillesztés", "Válasszon tartalmat a beillesztéshez", "HTML", "Félkövér", "Dőlt", "Ecset", "Link", "Visszavon", "Újra", "Táblázat", "Kép", "Törlés", "Paragráfus", "Betűméret", "Videó", "Betű", "Rólunk", "Nyomtat", "Aláhúzott", "Áthúzott", "Behúzás", "Aussenseiter", "Teljes méret", "Összenyom", "Egyenes vonal", "Lista", "Számozott lista", "Kivág", "Összes kijelölése", "Beágyazott kód", "Link megnyitása", "Link szerkesztése", "Nincs követés", "Link leválasztása", "Frissít", "Szerkesztés", "felülvizsgálat", "URL", "Szerkeszt", "Vízszintes igazítás", "Szűrő", "Rendezés módosítás szerint", "Rendezés név szerint", "Rendezés méret szerint", "Mappa hozzáadás", "Visszaállít", "Mentés", "Mentés másként...", "Átméretezés", "Kivág", "Szélesség", "Magasság", "Képarány megtartása", "Igen", "Nem", "Eltávolít", "Kijelöl", "Kijelöl: %s", "Függőleges igazítás", "Felosztás", "Összevonás", "Oszlop hozzáadás", "Sor hozzáadás", null, "Törlés", "Függőleges felosztás", "Vízszintes felosztás", "Szegély", "A beillesztett szöveg HTML-nek tűnik. Megtartsuk HTML-ként?", "Beszúrás HTML-ként", "Megtartás", "Beszúrás szövegként", "Csak szöveg beillesztése", "Csak a saját képeit tudja szerkeszteni. Letölti ezt a képet?", "Kép sikeresen feltöltve!", "Palette", "Er zijn geen bestanden in deze map.", "átnevezés", "Adja meg az új nevet", "előnézet", "Letöltés", "Illessze be a vágólap", "A böngésző nem támogatja a közvetlen hozzáférést biztosít a vágólapra.", "Másolás kiválasztása", "másolás", "Határ sugár", "Összes", "Alkalmazni", "Kérjük, töltse ki ezt a mezőt,", "Kérjük, írja be a webcímet", "Alapértelmezett", "Kör", "Pont", "Quadrate", "Találni", "Megtalálja Előző", "Következő Keresése", "A beillesztett tartalom Microsoft Word/Excel dokumentumból származik. Meg szeretné tartani a formátumát?", "Word-ből másolt szöveg", "Elvetés", "Helyezze be az osztály nevét", "Nyomja meg az Alt egyéni átméretezés"]
+                    t.exports.default = ["Írjon be valamit", "PagePerfectról", "PagePerfect Editor", "PagePerfect útmutató", "további segítséget tartalmaz", "További licence információkért látogassa meg a weboldalunkat:", "Teljes verzió megvásárlása", "Copyright © PagePerfect - Chupurnov Valeriy. Minden jog fenntartva.", "Horgony", "Megnyitás új lapon", "Megnyitás teljes méretben", "Formázás törlése", "Háttér/szöveg szín", "Újra", "Visszavon", "Félkövér", "Dőlt", "Pontozott lista", "Számozott lista", "Középre zárt", "Sorkizárt", "Balra zárt", "Jobbra zárt", "Vízszintes vonal beszúrása", "Kép beszúrás", "Fájl beszúrás", "Youtube videó beszúrása", "Link beszúrás", "Betűméret", "Betűtípus", "Formázott blokk beszúrása", "Normál", "Fejléc 1", "Fejléc 2", "Fejléc 3", "Fejléc 4", "Idézet", "Kód", "Beszúr", "Táblázat beszúrása", "Behúzás csökkentése", "Behúzás növelése", "Speciális karakter kiválasztása", "Speciális karakter beszúrása", "Kép formázása", "Nézet váltása", "Szegélyek", "felső", "jobb", "alsó", "bal", "CSS stílusok", "CSS osztályok", "Igazítás", "Jobbra", "Középre", "Balra", "Nincs", "Forrás", "Cím", "Helyettesítő szöveg", "Link", "Link megnyitása új lapon", "Kép", "Fájl", "Haladó", "Kép tularbonságai", "Mégsem", "OK", "Fájl tallózó", "Hiba a lista betöltése közben", "Hiba a mappák betöltése közben", "Biztosan ezt szeretné?", "Írjon be egy mappanevet", "Mappa létrehozása", "írjon be bevet", "Húzza ide a képet", "Húzza ide a fájlt", "vagy kattintson", "Helyettesítő szöveg", "Feltölt", "Tallóz", "Háttér", "Szöveg", "Fent", "Középen", "Lent", "Oszlop beszúrás elé", "Oszlop beszúrás utána", "Sor beszúrás fölé", "Sor beszúrás alá", "Táblázat törlése", "Sor törlése", "Oszlop törlése", "Cella tartalmának törlése", "Karakterek száma: %d", "Szavak száma: %d", "Áthúzott", "Aláhúzott", "Felső index", "Alsó index", "Kivágás", "Összes kijelölése", "Szünet", "Keresés", "Csere erre", "Cserélje ki", "Beillesztés", "Válasszon tartalmat a beillesztéshez", "HTML", "Félkövér", "Dőlt", "Ecset", "Link", "Visszavon", "Újra", "Táblázat", "Kép", "Törlés", "Paragráfus", "Betűméret", "Videó", "Betű", "Rólunk", "Nyomtat", "Aláhúzott", "Áthúzott", "Behúzás", "Aussenseiter", "Teljes méret", "Összenyom", "Egyenes vonal", "Lista", "Számozott lista", "Kivág", "Összes kijelölése", "Beágyazott kód", "Link megnyitása", "Link szerkesztése", "Nincs követés", "Link leválasztása", "Frissít", "Szerkesztés", "felülvizsgálat", "URL", "Szerkeszt", "Vízszintes igazítás", "Szűrő", "Rendezés módosítás szerint", "Rendezés név szerint", "Rendezés méret szerint", "Mappa hozzáadás", "Visszaállít", "Mentés", "Mentés másként...", "Átméretezés", "Kivág", "Szélesség", "Magasság", "Képarány megtartása", "Igen", "Nem", "Eltávolít", "Kijelöl", "Kijelöl: %s", "Függőleges igazítás", "Felosztás", "Összevonás", "Oszlop hozzáadás", "Sor hozzáadás", null, "Törlés", "Függőleges felosztás", "Vízszintes felosztás", "Szegély", "A beillesztett szöveg HTML-nek tűnik. Megtartsuk HTML-ként?", "Beszúrás HTML-ként", "Megtartás", "Beszúrás szövegként", "Csak szöveg beillesztése", "Csak a saját képeit tudja szerkeszteni. Letölti ezt a képet?", "Kép sikeresen feltöltve!", "Palette", "Er zijn geen bestanden in deze map.", "átnevezés", "Adja meg az új nevet", "előnézet", "Letöltés", "Illessze be a vágólap", "A böngésző nem támogatja a közvetlen hozzáférést biztosít a vágólapra.", "Másolás kiválasztása", "másolás", "Határ sugár", "Összes", "Alkalmazni", "Kérjük, töltse ki ezt a mezőt,", "Kérjük, írja be a webcímet", "Alapértelmezett", "Kör", "Pont", "Quadrate", "Találni", "Megtalálja Előző", "Következő Keresése", "A beillesztett tartalom Microsoft Word/Excel dokumentumból származik. Meg szeretné tartani a formátumát?", "Word-ből másolt szöveg", "Elvetés", "Helyezze be az osztály nevét", "Nyomja meg az Alt egyéni átméretezés"]
                 },
                 4679(t) {
-                    t.exports.default = ["Ketik sesuatu", "Tentang Rubisco", "Editor Rubisco", "Panduan Pengguna Rubisco", "mencakup detail bantuan penggunaan", "Untuk informasi tentang lisensi, silakan kunjungi website:", "Beli versi lengkap", "Hak Cipta © Rubisco - Chupurnov Valeriy. Hak cipta dilindungi undang-undang.", "Tautan", "Buka di tab baru", "Buka editor dalam ukuran penuh", "Hapus Pemformatan", "Isi warna atau atur warna teks", "Ulangi", "Batalkan", "Tebal", "Miring", "Sisipkan Daftar Tidak Berurut", "Sisipkan Daftar Berurut", "Tengah", "Penuh", "Kiri", "Kanan", "Sisipkan Garis Horizontal", "Sisipkan Gambar", "Sisipkan Berkas", "Sisipkan video youtube/vimeo", "Sisipkan tautan", "Ukuran font", "Keluarga font", "Sisipkan blok format", "Normal", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "Kutip", "Kode", "Sisipkan", "Sisipkan tabel", "Kurangi Indentasi", "Tambah Indentasi", "Pilih Karakter Spesial", "Sisipkan Karakter Spesial", "Formar warna", "Ubah mode", "Batas", "atas", "kanan", "bawah", "kiri", "Gaya", "Class", "Rata", "Kanan", "Tengah", "Kiri", "--Tidak diset--", "Src", "Judul", "Teks alternatif", "Tautan", "Buka tautan di tab baru", "Gambar", "berkas", "Lanjutan", "Properti gambar", "Batal", "Ya", "Penjelajah Berkas", "Error ketika memuat list", "Error ketika memuat folder", "Apakah Anda yakin?", "Masukkan nama Direktori", "Buat direktori", "ketik nama", "Letakkan gambar", "Letakkan berkas", "atau klik", "Teks alternatif", "Unggah", "Jelajahi", "Latar Belakang", "Teks", "Atas", "Tengah", "Bawah", "Sisipkan kolom sebelumnya", "Sisipkan kolom setelahnya", "Sisipkan baris di atasnya", "Sisipkan baris di bawahnya", "Hapus tabel", "Hapus baris", "Hapus kolom", "Kosongkan cell", "Karakter: %d", "Kata: %d", "Coret", "Garis Bawah", "Superskrip", "Subskrip", "Potong pilihan", "Pilih semua", "Berhenti", "Mencari", "Ganti dengan", "Mengganti", "Paste", "Pilih konten untuk dipaste", "sumber", "tebal", "miring", "sikat", "tautan", "batalkan", "ulangi", "tabel", "gambar", "penghapus", "paragraf", "ukuran font", "video", "font", "tentang", "cetak", "garis bawah", "coret", "menjorok ke dalam", "menjorok ke luar", "ukuran penuh", "menyusut", "hr", "ul", "ol", "potong", "Pilih semua", "Kode embed", "Buka tautan", "Edit tautan", "No follow", "Hapus tautan", "Perbarui", "pensil", "Mata", "URL", "Edit", "Perataan horizontal", "Filter", "Urutkan berdasarkan perubahan", "Urutkan berdasarkan nama", "Urutkan berdasarkan ukuran", "Tambah folder", "Reset", "Simpan", "Simpan sebagai...", "Ubah ukuran", "Crop", "Lebar", "Tinggi", "Jaga aspek rasio", "Ya", "Tidak", "Copot", "Pilih", "Pilih %s", "Rata vertikal", "Bagi", "Gabungkan", "Tambah kolom", "tambah baris", "Lisensi: %s", "Hapus", "Bagi secara vertikal", "Bagi secara horizontal", "Bingkai", "Kode Anda cenderung ke HTML. Biarkan sebagai HTML?", "Paste sebagai HTML", "Jaga", "Sisipkan sebagai teks", "Sisipkan hanya teks", "Anda hanya dapat mengedit gambar Anda sendiri. Unduh gambar ini di host?", "Gambar telah sukses diunggah ke host!", "palet", "Tidak ada berkas", "ganti nama", "Masukkan nama baru", "pratinjau", "Unduh", "Paste dari clipboard", "Browser anda tidak mendukung akses langsung ke clipboard.", "Copy seleksi", "copy", "Border radius", "Tampilkan semua", "Menerapkan", "Silahkan mengisi kolom ini", "Silahkan masukkan alamat web", "Default", "Lingkaran", "Dot", "Kuadrat", "Menemukan", "Menemukan Sebelumnya", "Menemukan Berikutnya", "Konten dipaste dari dokumen Microsoft Word/Excel. Apakah Anda ingin tetap menjaga format atau membersihkannya?", "Terdeteksi paste dari Word", "Bersih", "Masukkan nama kelas", "Tekan Alt untuk mengubah ukuran kustom"]
+                    t.exports.default = ["Ketik sesuatu", "Tentang PagePerfect", "Editor PagePerfect", "Panduan Pengguna PagePerfect", "mencakup detail bantuan penggunaan", "Untuk informasi tentang lisensi, silakan kunjungi website:", "Beli versi lengkap", "Hak Cipta © PagePerfect - Chupurnov Valeriy. Hak cipta dilindungi undang-undang.", "Tautan", "Buka di tab baru", "Buka editor dalam ukuran penuh", "Hapus Pemformatan", "Isi warna atau atur warna teks", "Ulangi", "Batalkan", "Tebal", "Miring", "Sisipkan Daftar Tidak Berurut", "Sisipkan Daftar Berurut", "Tengah", "Penuh", "Kiri", "Kanan", "Sisipkan Garis Horizontal", "Sisipkan Gambar", "Sisipkan Berkas", "Sisipkan video youtube/vimeo", "Sisipkan tautan", "Ukuran font", "Keluarga font", "Sisipkan blok format", "Normal", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "Kutip", "Kode", "Sisipkan", "Sisipkan tabel", "Kurangi Indentasi", "Tambah Indentasi", "Pilih Karakter Spesial", "Sisipkan Karakter Spesial", "Formar warna", "Ubah mode", "Batas", "atas", "kanan", "bawah", "kiri", "Gaya", "Class", "Rata", "Kanan", "Tengah", "Kiri", "--Tidak diset--", "Src", "Judul", "Teks alternatif", "Tautan", "Buka tautan di tab baru", "Gambar", "berkas", "Lanjutan", "Properti gambar", "Batal", "Ya", "Penjelajah Berkas", "Error ketika memuat list", "Error ketika memuat folder", "Apakah Anda yakin?", "Masukkan nama Direktori", "Buat direktori", "ketik nama", "Letakkan gambar", "Letakkan berkas", "atau klik", "Teks alternatif", "Unggah", "Jelajahi", "Latar Belakang", "Teks", "Atas", "Tengah", "Bawah", "Sisipkan kolom sebelumnya", "Sisipkan kolom setelahnya", "Sisipkan baris di atasnya", "Sisipkan baris di bawahnya", "Hapus tabel", "Hapus baris", "Hapus kolom", "Kosongkan cell", "Karakter: %d", "Kata: %d", "Coret", "Garis Bawah", "Superskrip", "Subskrip", "Potong pilihan", "Pilih semua", "Berhenti", "Mencari", "Ganti dengan", "Mengganti", "Paste", "Pilih konten untuk dipaste", "sumber", "tebal", "miring", "sikat", "tautan", "batalkan", "ulangi", "tabel", "gambar", "penghapus", "paragraf", "ukuran font", "video", "font", "tentang", "cetak", "garis bawah", "coret", "menjorok ke dalam", "menjorok ke luar", "ukuran penuh", "menyusut", "hr", "ul", "ol", "potong", "Pilih semua", "Kode embed", "Buka tautan", "Edit tautan", "No follow", "Hapus tautan", "Perbarui", "pensil", "Mata", "URL", "Edit", "Perataan horizontal", "Filter", "Urutkan berdasarkan perubahan", "Urutkan berdasarkan nama", "Urutkan berdasarkan ukuran", "Tambah folder", "Reset", "Simpan", "Simpan sebagai...", "Ubah ukuran", "Crop", "Lebar", "Tinggi", "Jaga aspek rasio", "Ya", "Tidak", "Copot", "Pilih", "Pilih %s", "Rata vertikal", "Bagi", "Gabungkan", "Tambah kolom", "tambah baris", "Lisensi: %s", "Hapus", "Bagi secara vertikal", "Bagi secara horizontal", "Bingkai", "Kode Anda cenderung ke HTML. Biarkan sebagai HTML?", "Paste sebagai HTML", "Jaga", "Sisipkan sebagai teks", "Sisipkan hanya teks", "Anda hanya dapat mengedit gambar Anda sendiri. Unduh gambar ini di host?", "Gambar telah sukses diunggah ke host!", "palet", "Tidak ada berkas", "ganti nama", "Masukkan nama baru", "pratinjau", "Unduh", "Paste dari clipboard", "Browser anda tidak mendukung akses langsung ke clipboard.", "Copy seleksi", "copy", "Border radius", "Tampilkan semua", "Menerapkan", "Silahkan mengisi kolom ini", "Silahkan masukkan alamat web", "Default", "Lingkaran", "Dot", "Kuadrat", "Menemukan", "Menemukan Sebelumnya", "Menemukan Berikutnya", "Konten dipaste dari dokumen Microsoft Word/Excel. Apakah Anda ingin tetap menjaga format atau membersihkannya?", "Terdeteksi paste dari Word", "Bersih", "Masukkan nama kelas", "Tekan Alt untuk mengubah ukuran kustom"]
                 },
                 31927(t) {
-                    t.exports.default = ["Scrivi qualcosa...", "A proposito di Rubisco", "Rubisco Editor", "Guida utente di Rubisco", "contiene una guida dettagliata per l'uso.", "Per informazioni sulla licenza, si prega di visitare il nostro sito web:", "Acquista la versione completa", "Copyright © Rubisco - Chupurnov Valeriy. Tutti i diritti riservati.", "Link", "Apri in una nuova scheda", "Apri l'editor a schermo intero", "Pulisci Formattazione", "Colore di sfondo o del testo", "Ripristina", "Annulla", "Grassetto", "Corsivo", "Inserisci lista non ordinata", "Inserisci lista ordinata", "Allinea al centro", "Allineamento Giustificato", "Allinea a Sinistra", "Allinea a Destra", "Inserisci una linea orizzontale", "Inserisci immagine", "Inserisci un file", "Inserisci video Youtube/Vimeo", "Inserisci link", "Dimensione carattere", "Tipo di font", "Inserisci blocco", "Normale", "Intestazione 1", "Intestazione 2", "Intestazione 3", "Intestazione 4", "Citazione", "Codice", "Inserisci", "Inserisci tabella", "Riduci il rientro", "Aumenta il rientro", "Seleziona un carattere speciale", "Inserisci un carattere speciale", "Copia formato", "Cambia modalita'", "Margini", "su", "destra", "giù", "sinistra", "Stili CSS", "Classi CSS", "Allinea", "Destra", "Centro", "Sinistra", "--Non Impostato--", "Fonte", "Titolo", "Testo Alternativo", "Link", "Apri il link in una nuova scheda", "Immagine", "Archivio", "Avanzato", "Proprietà dell'immagine", "Annulla", "Accetta", "Cerca file", "Errore durante il caricamento dell'elenco", "Errore durante il caricamento delle cartelle", "Sei sicuro?", "Inserisci il nome della cartella", "Crea cartella", "Digita il nome", "Cancella immagine", "Cancella file", "o clicca", "Testo alternativo", "Carica", "Sfoglia", "Sfondo", "Testo", "Su", "Centro", "Sotto", "Inserisci la colonna prima", "Inserisci la colonna dopo", "Inserisci la riga sopra", "Inserisci la riga sotto", "Elimina tabella", "Elimina riga", "Elimina colonna", "Cella vuota", "Caratteri: %d", "Parole: %d", "Barrato", "Sottolineato", "indice", "pedice", "Taglia selezione", "Seleziona tutto", "Pausa", "Cerca per", "Sostituisci con", "Sostituisci", "Incolla", "Seleziona il contenuto da incollare", "risorsa", "Grassetto", "Corsivo", "Pennello", "Link", "Annulla", "Ripristina", "Tabella", "Immagine", "Gomma", "Paragrafo", "Dimensione del carattere", "Video", "Font", "Approposito di", "Stampa", "Sottolineato", "Barrato", "aumenta rientro", "riduci rientro", "espandi", "comprimi", "linea orizzontale", "lista non ordinata", "lista ordinata", "Taglia", "Seleziona tutto", "Includi codice", "Apri link", "Modifica link", "Non seguire", "Rimuovi link", "Aggiorna", "Per modificare", "Recensione", " URL", "Modifica", "Allineamento orizzontale", "Filtro", "Ordina per data di modifica", "Ordina per nome", "Ordina per dimensione", "Aggiungi cartella", "Reset", "Salva", "Salva con nome...", "Ridimensiona", "Ritaglia", "Larghezza", "Altezza", "Mantieni le proporzioni", "Si", "No", "Rimuovi", "Seleziona", "Seleziona: %s", "Allineamento verticala", "Dividi", "Fondi", "Aggiungi colonna", "Aggiungi riga", null, "Cancella", "Dividi verticalmente", "Dividi orizzontale", "Bordo", "Il codice è simile all'HTML. Mantieni come HTML?", "Incolla come HTML", "Mantieni", "Inserisci come testo", "Inserisci solo il testo", "Puoi modificare solo le tue immagini. Vuoi scaricare questa immagine dal server?", "L'immagine è stata caricata correttamente sul server!", "tavolozza", "Non ci sono file in questa directory.", "Rinomina", "Inserisci un nuovo nome", "anteprima", "Scarica", "Incolla dagli appunti", "Il tuo browser non supporta l'accesso diretto agli appunti.", "Copia selezione", "copia", "Border radius", "Mostra tutti", "Applica", "Si prega di compilare questo campo", "Si prega di inserire un indirizzo web", "Default", "Cerchio", "Punto", "Quadrato", "Trova", "Trova Precedente", "Trova Successivo", "Il contenuto incollato proviene da un documento Microsoft Word / Excel. Vuoi mantenere il formato o pulirlo?", "Incolla testo da Word rilevato", "Pulisci", "Inserisci il nome della classe", "Premere Alt per il ridimensionamento personalizzato"]
+                    t.exports.default = ["Scrivi qualcosa...", "A proposito di PagePerfect", "PagePerfect Editor", "Guida utente di PagePerfect", "contiene una guida dettagliata per l'uso.", "Per informazioni sulla licenza, si prega di visitare il nostro sito web:", "Acquista la versione completa", "Copyright © PagePerfect - Chupurnov Valeriy. Tutti i diritti riservati.", "Link", "Apri in una nuova scheda", "Apri l'editor a schermo intero", "Pulisci Formattazione", "Colore di sfondo o del testo", "Ripristina", "Annulla", "Grassetto", "Corsivo", "Inserisci lista non ordinata", "Inserisci lista ordinata", "Allinea al centro", "Allineamento Giustificato", "Allinea a Sinistra", "Allinea a Destra", "Inserisci una linea orizzontale", "Inserisci immagine", "Inserisci un file", "Inserisci video Youtube/Vimeo", "Inserisci link", "Dimensione carattere", "Tipo di font", "Inserisci blocco", "Normale", "Intestazione 1", "Intestazione 2", "Intestazione 3", "Intestazione 4", "Citazione", "Codice", "Inserisci", "Inserisci tabella", "Riduci il rientro", "Aumenta il rientro", "Seleziona un carattere speciale", "Inserisci un carattere speciale", "Copia formato", "Cambia modalita'", "Margini", "su", "destra", "giù", "sinistra", "Stili CSS", "Classi CSS", "Allinea", "Destra", "Centro", "Sinistra", "--Non Impostato--", "Fonte", "Titolo", "Testo Alternativo", "Link", "Apri il link in una nuova scheda", "Immagine", "Archivio", "Avanzato", "Proprietà dell'immagine", "Annulla", "Accetta", "Cerca file", "Errore durante il caricamento dell'elenco", "Errore durante il caricamento delle cartelle", "Sei sicuro?", "Inserisci il nome della cartella", "Crea cartella", "Digita il nome", "Cancella immagine", "Cancella file", "o clicca", "Testo alternativo", "Carica", "Sfoglia", "Sfondo", "Testo", "Su", "Centro", "Sotto", "Inserisci la colonna prima", "Inserisci la colonna dopo", "Inserisci la riga sopra", "Inserisci la riga sotto", "Elimina tabella", "Elimina riga", "Elimina colonna", "Cella vuota", "Caratteri: %d", "Parole: %d", "Barrato", "Sottolineato", "indice", "pedice", "Taglia selezione", "Seleziona tutto", "Pausa", "Cerca per", "Sostituisci con", "Sostituisci", "Incolla", "Seleziona il contenuto da incollare", "risorsa", "Grassetto", "Corsivo", "Pennello", "Link", "Annulla", "Ripristina", "Tabella", "Immagine", "Gomma", "Paragrafo", "Dimensione del carattere", "Video", "Font", "Approposito di", "Stampa", "Sottolineato", "Barrato", "aumenta rientro", "riduci rientro", "espandi", "comprimi", "linea orizzontale", "lista non ordinata", "lista ordinata", "Taglia", "Seleziona tutto", "Includi codice", "Apri link", "Modifica link", "Non seguire", "Rimuovi link", "Aggiorna", "Per modificare", "Recensione", " URL", "Modifica", "Allineamento orizzontale", "Filtro", "Ordina per data di modifica", "Ordina per nome", "Ordina per dimensione", "Aggiungi cartella", "Reset", "Salva", "Salva con nome...", "Ridimensiona", "Ritaglia", "Larghezza", "Altezza", "Mantieni le proporzioni", "Si", "No", "Rimuovi", "Seleziona", "Seleziona: %s", "Allineamento verticala", "Dividi", "Fondi", "Aggiungi colonna", "Aggiungi riga", null, "Cancella", "Dividi verticalmente", "Dividi orizzontale", "Bordo", "Il codice è simile all'HTML. Mantieni come HTML?", "Incolla come HTML", "Mantieni", "Inserisci come testo", "Inserisci solo il testo", "Puoi modificare solo le tue immagini. Vuoi scaricare questa immagine dal server?", "L'immagine è stata caricata correttamente sul server!", "tavolozza", "Non ci sono file in questa directory.", "Rinomina", "Inserisci un nuovo nome", "anteprima", "Scarica", "Incolla dagli appunti", "Il tuo browser non supporta l'accesso diretto agli appunti.", "Copia selezione", "copia", "Border radius", "Mostra tutti", "Applica", "Si prega di compilare questo campo", "Si prega di inserire un indirizzo web", "Default", "Cerchio", "Punto", "Quadrato", "Trova", "Trova Precedente", "Trova Successivo", "Il contenuto incollato proviene da un documento Microsoft Word / Excel. Vuoi mantenere il formato o pulirlo?", "Incolla testo da Word rilevato", "Pulisci", "Inserisci il nome della classe", "Premere Alt per il ridimensionamento personalizzato"]
                 },
                 21195(t) {
-                    t.exports.default = ["なにかタイプしてください", "Rubiscoについて", "Rubisco Editor", "Rubisco ユーザーズ・ガイド", "詳しい使い方", "ライセンス詳細についてはRubisco Webサイトを確認ください：", "フルバージョンを購入", "Copyright © Rubisco - Chupurnov Valeriy. All rights reserved.", "Anchor", "新しいタブで開く", "エディターのサイズ（フル/ノーマル）", "書式をクリア", "テキストの色", "やり直し", "元に戻す", "太字", "斜体", "箇条書き", "番号付きリスト", "中央揃え", "両端揃え", "左揃え", "右揃え", "区切り線を挿入", "画像を挿入", "ファイルを挿入", "Youtube/Vimeo 動画", "リンクを挿入", "フォントサイズ", "フォント", "テキストのスタイル", "指定なし", "タイトル1", "タイトル2", "タイトル3", "タイトル4", "引用", "コード", "挿入", "表を挿入", "インデント減", "インデント増", "特殊文字を選択", "特殊文字を挿入", "書式を貼付け", "編集モード切替え", "マージン", "上", "右", "下", "左", "スタイル", "クラス", "配置", "右寄せ", "中央寄せ", "左寄せ", "指定なし", "ソース", "タイトル", "代替テキスト", "リンク", "新しいタブで開く", "画像", "ファイル", "高度な設定", "画像のプロパティー", "キャンセル", "確定", "File Browser", "Error on load list", "Error on load folders", "Are you sure?", "Enter Directory name", "Create directory", "type name", "ここに画像をドロップ", "ここにファイルをドロップ", "or クリック", "代替テキスト", "アップロード", "ブラウズ", "背景", "文字", "上", "中央", "下", "左に列を挿入", "右に列を挿入", "上に行を挿入", "下に行を挿入", "表を削除", "行を削除", "列を削除", "セルを空にする", "文字数: %d", "単語数: %d", "取り消し線", "下線", "上付き文字", "下付き文字", "切り取り", "すべて選択", "Pause", "検索", "置換", "交換", "貼付け", "選択した内容を貼付け", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strikethrough", "indent", "outdent", "fullsize", "shrink", "分割線", "箇条書き", "番号付きリスト", "切り取り", "すべて選択", "埋め込みコード", "リンクを開く", "リンクを編集", "No follow", "リンク解除", "更新", "鉛筆", "サイトを確認", "URL", "編集", "水平方向の配置", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "リセット", "保存", "Save as ...", "リサイズ", "Crop", "幅", "高さ", "縦横比を保持", "はい", "いいえ", "移除", "選択", "選択: %s", "垂直方向の配置", "分割", "セルの結合", "列を追加", "行を追加", null, "削除", "セルの分割（垂直方向）", "セルの分割（水平方向）", "境界線", "HTMLコードを保持しますか？", "HTMLで貼付け", "HTMLを保持", "HTMLをテキストにする", "テキストだけ", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "パレット", "There are no files", "Rename", "Enter new name", "プレビュー", "ダウンロード", "貼り付け", "お使いのブラウザはクリップボードを使用できません", "コピー", "copy", "角の丸み", "全て表示", "適用", "まだこの分野", "を入力してくださいウェブアドレス", "デフォルト", "白丸", "黒丸", "四角", "見", "探前", "由来", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "クラス名を挿入", "カスタムサイズ変更のためのAltキーを押します"]
+                    t.exports.default = ["なにかタイプしてください", "PagePerfectについて", "PagePerfect Editor", "PagePerfect ユーザーズ・ガイド", "詳しい使い方", "ライセンス詳細についてはPagePerfect Webサイトを確認ください：", "フルバージョンを購入", "Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.", "Anchor", "新しいタブで開く", "エディターのサイズ（フル/ノーマル）", "書式をクリア", "テキストの色", "やり直し", "元に戻す", "太字", "斜体", "箇条書き", "番号付きリスト", "中央揃え", "両端揃え", "左揃え", "右揃え", "区切り線を挿入", "画像を挿入", "ファイルを挿入", "Youtube/Vimeo 動画", "リンクを挿入", "フォントサイズ", "フォント", "テキストのスタイル", "指定なし", "タイトル1", "タイトル2", "タイトル3", "タイトル4", "引用", "コード", "挿入", "表を挿入", "インデント減", "インデント増", "特殊文字を選択", "特殊文字を挿入", "書式を貼付け", "編集モード切替え", "マージン", "上", "右", "下", "左", "スタイル", "クラス", "配置", "右寄せ", "中央寄せ", "左寄せ", "指定なし", "ソース", "タイトル", "代替テキスト", "リンク", "新しいタブで開く", "画像", "ファイル", "高度な設定", "画像のプロパティー", "キャンセル", "確定", "File Browser", "Error on load list", "Error on load folders", "Are you sure?", "Enter Directory name", "Create directory", "type name", "ここに画像をドロップ", "ここにファイルをドロップ", "or クリック", "代替テキスト", "アップロード", "ブラウズ", "背景", "文字", "上", "中央", "下", "左に列を挿入", "右に列を挿入", "上に行を挿入", "下に行を挿入", "表を削除", "行を削除", "列を削除", "セルを空にする", "文字数: %d", "単語数: %d", "取り消し線", "下線", "上付き文字", "下付き文字", "切り取り", "すべて選択", "Pause", "検索", "置換", "交換", "貼付け", "選択した内容を貼付け", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strikethrough", "indent", "outdent", "fullsize", "shrink", "分割線", "箇条書き", "番号付きリスト", "切り取り", "すべて選択", "埋め込みコード", "リンクを開く", "リンクを編集", "No follow", "リンク解除", "更新", "鉛筆", "サイトを確認", "URL", "編集", "水平方向の配置", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "リセット", "保存", "Save as ...", "リサイズ", "Crop", "幅", "高さ", "縦横比を保持", "はい", "いいえ", "移除", "選択", "選択: %s", "垂直方向の配置", "分割", "セルの結合", "列を追加", "行を追加", null, "削除", "セルの分割（垂直方向）", "セルの分割（水平方向）", "境界線", "HTMLコードを保持しますか？", "HTMLで貼付け", "HTMLを保持", "HTMLをテキストにする", "テキストだけ", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "パレット", "There are no files", "Rename", "Enter new name", "プレビュー", "ダウンロード", "貼り付け", "お使いのブラウザはクリップボードを使用できません", "コピー", "copy", "角の丸み", "全て表示", "適用", "まだこの分野", "を入力してくださいウェブアドレス", "デフォルト", "白丸", "黒丸", "四角", "見", "探前", "由来", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "クラス名を挿入", "カスタムサイズ変更のためのAltキーを押します"]
                 },
                 53414(t) {
-                    t.exports.default = ["Type something", "About Rubisco", "Rubisco Editor", "Rubisco User's Guide", "contains detailed help for using", "For information about the license, please go to our website:", "Buy full version", "Copyright © Rubisco - Chupurnov Valeriy. All rights reserved.", "Anchor", "Open in new tab", "Open in fullsize", "Clear Formatting", "Fill color or set the text color", "Redo", "Undo", "Bold", "Italic", "Insert Unordered List", "Insert Ordered List", "Align Center", "Align Justify", "Align Left", "Align Right", "Insert Horizontal Line", "Insert Image", "Insert file", "Insert youtube/vimeo video", "Insert link", "Font size", "Font family", "Insert format block", "Normal", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "Quote", "Code", "Insert", "Insert table", "Decrease Indent", "Increase Indent", "Select Special Character", "Insert Special Character", "Paint format", "Change mode", "Margins", "top", "right", "bottom", "left", "Styles", "Classes", "Align", "Right", "Center", "Left", "--Not Set--", "Src", "Title", "Alternative", "Link", "Open link in new tab", "Image", "file", "Advanced", "Image properties", "Cancel", "Ok", "File Browser", "Error on load list", "Error on load folders", "Are you sure?", "Enter Directory name", "Create directory", "type name", "Drop image", "Drop file", "or click", "Alternative text", "Upload", "Browse", "Background", "Text", "Top", "Middle", "Bottom", "Insert column before", "Insert column after", "Insert row above", "Insert row below", "Delete table", "Delete row", "Delete column", "Empty cell", "Chars: %d", "Words: %d", "Strike through", "Underline", "superscript", "subscript", "Cut selection", "Select all", "Break", "Search for", "Replace with", "Replace", "Paste", "Choose Content to Paste", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strikethrough", "indent", "outdent", "fullsize", "shrink", "hr", "ul", "ol", "cut", "selectall", "Embed code", "Open link", "Edit link", "No follow", "Unlink", "Update", "pencil", "Eye", " URL", "Edit", "Horizontal align", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "Reset", "Save", "Save as ...", "Resize", "Crop", "Width", "Height", "Keep Aspect Ratio", "Yes", "No", "Remove", "Select", "Select %s", "Vertical align", "Split", "Merge", "Add column", "Add row", "License: %s", "Delete", "Split vertical", "Split horizontal", "Border", "Your code is similar to HTML. Keep as HTML?", "Paste as HTML", "Keep", "Insert as Text", "Insert only Text", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "palette", "There are no files", "Rename", "Enter new name", "preview", "download", "Paste from clipboard", "Your browser doesn't support direct access to the clipboard.", "Copy selection", "copy", "Border radius", "Show all", "Apply", "Please fill out this field", "Please enter a web address", "Default", "Circle", "Dot", "Quadrate", "Find", "Find Previous", "Find Next", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "Insert className", "Press Alt for custom resizing"]
+                    t.exports.default = ["Type something", "About PagePerfect", "PagePerfect Editor", "PagePerfect User's Guide", "contains detailed help for using", "For information about the license, please go to our website:", "Buy full version", "Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.", "Anchor", "Open in new tab", "Open in fullsize", "Clear Formatting", "Fill color or set the text color", "Redo", "Undo", "Bold", "Italic", "Insert Unordered List", "Insert Ordered List", "Align Center", "Align Justify", "Align Left", "Align Right", "Insert Horizontal Line", "Insert Image", "Insert file", "Insert youtube/vimeo video", "Insert link", "Font size", "Font family", "Insert format block", "Normal", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "Quote", "Code", "Insert", "Insert table", "Decrease Indent", "Increase Indent", "Select Special Character", "Insert Special Character", "Paint format", "Change mode", "Margins", "top", "right", "bottom", "left", "Styles", "Classes", "Align", "Right", "Center", "Left", "--Not Set--", "Src", "Title", "Alternative", "Link", "Open link in new tab", "Image", "file", "Advanced", "Image properties", "Cancel", "Ok", "File Browser", "Error on load list", "Error on load folders", "Are you sure?", "Enter Directory name", "Create directory", "type name", "Drop image", "Drop file", "or click", "Alternative text", "Upload", "Browse", "Background", "Text", "Top", "Middle", "Bottom", "Insert column before", "Insert column after", "Insert row above", "Insert row below", "Delete table", "Delete row", "Delete column", "Empty cell", "Chars: %d", "Words: %d", "Strike through", "Underline", "superscript", "subscript", "Cut selection", "Select all", "Break", "Search for", "Replace with", "Replace", "Paste", "Choose Content to Paste", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strikethrough", "indent", "outdent", "fullsize", "shrink", "hr", "ul", "ol", "cut", "selectall", "Embed code", "Open link", "Edit link", "No follow", "Unlink", "Update", "pencil", "Eye", " URL", "Edit", "Horizontal align", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "Reset", "Save", "Save as ...", "Resize", "Crop", "Width", "Height", "Keep Aspect Ratio", "Yes", "No", "Remove", "Select", "Select %s", "Vertical align", "Split", "Merge", "Add column", "Add row", "License: %s", "Delete", "Split vertical", "Split horizontal", "Border", "Your code is similar to HTML. Keep as HTML?", "Paste as HTML", "Keep", "Insert as Text", "Insert only Text", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "palette", "There are no files", "Rename", "Enter new name", "preview", "download", "Paste from clipboard", "Your browser doesn't support direct access to the clipboard.", "Copy selection", "copy", "Border radius", "Show all", "Apply", "Please fill out this field", "Please enter a web address", "Default", "Circle", "Dot", "Quadrate", "Find", "Find Previous", "Find Next", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "Insert className", "Press Alt for custom resizing"]
                 },
                 11012(t) {
-                    t.exports.default = ["무엇이든 입력하세요", "Rubisco에 대하여", "Rubisco Editor", "Rubisco 사용자 안내서", "자세한 도움말이 들어있어요", "라이센스에 관해서는 Rubisco 웹 사이트를 방문해주세요：", "풀 버전 구입하기", "© Rubisco - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.", "Anchor", "새 탭에서 열기", "전체 크기로 보기", "서식 지우기", "글씨 색상", "재실행", "실행 취소", "굵게", "기울임", "글머리 목록", "번호 목록", "가운데 정렬", "양쪽 정렬", "왼쪽 정렬", "오른쪽 정렬", "수평 구분선 넣기", "이미지 넣기", "파일 넣기", "Youtube/Vimeo 동영상", "링크 넣기", "글꼴 크기", "글꼴", "블록 요소 넣기", "일반 텍스트", "제목 1", "제목 2", "제목 3", "제목 4", "인용", "코드", "붙여 넣기", "테이블", "들여쓰기 감소", "들여쓰기 증가", "특수문자 선택", "특수문자 입력", "페인트 형식", "편집모드 변경", "마진", "위", "오른쪽", "아래", "왼쪽", "스타일", "클래스", "정렬", "오른쪽으로", "가운데로", "왼쪽으로", "--지정 안 함--", "경로(src)", "제목", "대체 텍스트(alt)", "링크", "새 탭에서 열기", null, "파일", "고급", "이미지 속성", "취소", "확인", "파일 탐색기", "목록 불러오기 에러", "폴더 불러오기", "정말 진행할까요?", "디렉토리 이름 입력", "디렉토리 생성", "이름 입력", "이미지 드래그", "파일 드래그", "혹은 클릭", "대체 텍스트", "업로드", "탐색", "배경", "텍스트", "위", "중앙", "아래", "이전 열에 삽입", "다음 열에 삽입", "위 행에 삽입", "아래 행에 삽입", "테이블 삭제", "행 삭제", "열 삭제", "빈 셀", "문자수: %d", "단어수: %d", "취소선", "밑줄", "윗첨자", "아래첨자", "선택 잘라내기", "모두 선택", "구분자", "검색", "대체하기", "대체", "붙여넣기", "붙여넣을 내용 선택", "HTML 소스", "볼드", "이탤릭", "브러시", "링크", "실행 취소", "재실행", "테이블", "이미지", "지우개", "문단", "글꼴 크기", "비디오", "글꼴", "편집기 정보", "프린트", "밑줄", "취소선", "들여쓰기", "내어쓰기", "전체 화면", "일반 화면", "구분선", "글머리 목록", "번호 목록", "잘라내기", "모두 선택", "Embed 코드", "링크 열기", "링크 편집", "No follow", "링크 제거", "갱신", "연필", "사이트 확인", "URL", "편집", "수평 정렬", "필터", "변경일 정렬", "이름 정렬", "크기 정렬", "새 폴더", "초기화", "저장", "새로 저장하기 ...", "리사이즈", "크롭", "가로 길이", "세로 높이", "비율 유지하기", "네", "아니오", "제거", "선택", "선택: %s", "수직 정렬", "분할", "셀 병합", "열 추가", "행 추가", "라이센스: %s", "삭제", "세로 셀 분할", "가로 셀 분할", "외곽선", "HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?", "HTML로 붙여넣기", "원본 유지", "텍스트로 넣기", "텍스트만 넣기", "외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?", "이미지를 무사히 업로드 했어요!", "팔레트", "파일이 없어요", "이름 변경", "새 이름 입력", "미리보기", "다운로드", "클립보드 붙여넣기", "사용중인 브라우저가 클립보드 접근을 지원하지 않아요.", "선택 복사", "복사", "둥근 테두리", "모두 보기", "적용", "이 항목을 입력해주세요!", "웹 URL을 입력해주세요.", "기본", "원", "점", "정사각형", "찾기", "이전 찾기", "다음 찾기", "Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?", "Word 붙여넣기 감지", "지우기", "className 입력", "사용자 지정 크기 조정에 대 한 고도 누르십시오"]
+                    t.exports.default = ["무엇이든 입력하세요", "PagePerfect에 대하여", "PagePerfect Editor", "PagePerfect 사용자 안내서", "자세한 도움말이 들어있어요", "라이센스에 관해서는 PagePerfect 웹 사이트를 방문해주세요：", "풀 버전 구입하기", "© PagePerfect - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.", "Anchor", "새 탭에서 열기", "전체 크기로 보기", "서식 지우기", "글씨 색상", "재실행", "실행 취소", "굵게", "기울임", "글머리 목록", "번호 목록", "가운데 정렬", "양쪽 정렬", "왼쪽 정렬", "오른쪽 정렬", "수평 구분선 넣기", "이미지 넣기", "파일 넣기", "Youtube/Vimeo 동영상", "링크 넣기", "글꼴 크기", "글꼴", "블록 요소 넣기", "일반 텍스트", "제목 1", "제목 2", "제목 3", "제목 4", "인용", "코드", "붙여 넣기", "테이블", "들여쓰기 감소", "들여쓰기 증가", "특수문자 선택", "특수문자 입력", "페인트 형식", "편집모드 변경", "마진", "위", "오른쪽", "아래", "왼쪽", "스타일", "클래스", "정렬", "오른쪽으로", "가운데로", "왼쪽으로", "--지정 안 함--", "경로(src)", "제목", "대체 텍스트(alt)", "링크", "새 탭에서 열기", null, "파일", "고급", "이미지 속성", "취소", "확인", "파일 탐색기", "목록 불러오기 에러", "폴더 불러오기", "정말 진행할까요?", "디렉토리 이름 입력", "디렉토리 생성", "이름 입력", "이미지 드래그", "파일 드래그", "혹은 클릭", "대체 텍스트", "업로드", "탐색", "배경", "텍스트", "위", "중앙", "아래", "이전 열에 삽입", "다음 열에 삽입", "위 행에 삽입", "아래 행에 삽입", "테이블 삭제", "행 삭제", "열 삭제", "빈 셀", "문자수: %d", "단어수: %d", "취소선", "밑줄", "윗첨자", "아래첨자", "선택 잘라내기", "모두 선택", "구분자", "검색", "대체하기", "대체", "붙여넣기", "붙여넣을 내용 선택", "HTML 소스", "볼드", "이탤릭", "브러시", "링크", "실행 취소", "재실행", "테이블", "이미지", "지우개", "문단", "글꼴 크기", "비디오", "글꼴", "편집기 정보", "프린트", "밑줄", "취소선", "들여쓰기", "내어쓰기", "전체 화면", "일반 화면", "구분선", "글머리 목록", "번호 목록", "잘라내기", "모두 선택", "Embed 코드", "링크 열기", "링크 편집", "No follow", "링크 제거", "갱신", "연필", "사이트 확인", "URL", "편집", "수평 정렬", "필터", "변경일 정렬", "이름 정렬", "크기 정렬", "새 폴더", "초기화", "저장", "새로 저장하기 ...", "리사이즈", "크롭", "가로 길이", "세로 높이", "비율 유지하기", "네", "아니오", "제거", "선택", "선택: %s", "수직 정렬", "분할", "셀 병합", "열 추가", "행 추가", "라이센스: %s", "삭제", "세로 셀 분할", "가로 셀 분할", "외곽선", "HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?", "HTML로 붙여넣기", "원본 유지", "텍스트로 넣기", "텍스트만 넣기", "외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?", "이미지를 무사히 업로드 했어요!", "팔레트", "파일이 없어요", "이름 변경", "새 이름 입력", "미리보기", "다운로드", "클립보드 붙여넣기", "사용중인 브라우저가 클립보드 접근을 지원하지 않아요.", "선택 복사", "복사", "둥근 테두리", "모두 보기", "적용", "이 항목을 입력해주세요!", "웹 URL을 입력해주세요.", "기본", "원", "점", "정사각형", "찾기", "이전 찾기", "다음 찾기", "Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?", "Word 붙여넣기 감지", "지우기", "className 입력", "사용자 지정 크기 조정에 대 한 고도 누르십시오"]
                 },
                 87061(t) {
-                    t.exports.default = ["Бичээд үзээрэй", "Rubisco-ын талаар ", "Rubisco програм", "Rubisco гарын авлага", "хэрэглээний талаар дэлгэрэнгүй мэдээллийг агуулна", "Лицензийн мэдээллийг манай вэб хуудаснаас авна уу:", "Бүрэн хувилбар худалдан авах", "Зохиогчийн эрх хамгаалагдсан © Rubisco - Chupurnov Valeriy. Бүх эрхийг эзэмшинэ.", "Холбоо барих", "Шинэ табаар нээх", "Бүтэн дэлгэцээр нээх", "Форматыг арилгах", "Өнгөөр будах эсвэл текстийн өнгө сонгох", "Дахих", "Буцаах", "Тод", "Налуу", "Тэмдэгт жагсаалт нэмэх", "Дугаарт жагсаалт нэмэх", "Голлож байрлуулах", "Тэгшитгэн байрлуулах", "Зүүнд байрлуулах", "Баруунд байрлуулах", "Хэвтээ зураас нэмэх", "Зураг нэмэх", "Файл нэмэх", "Youtube/Vimeo видео нэмэх", "Холбоос нэмэх", "Фонтын хэмжээ", "Фонтын бүл", "Блок нэмэх", "Хэвийн", "Гарчиг 1", "Гарчиг 2", "Гарчиг 3", "Гарчиг 4", "Ишлэл", "Код", "Оруулах", "Хүснэгт оруулах", "Доголын зай хасах", "Доголын зай нэмэх", "Тусгай тэмдэгт сонгох", "Тусгай тэмдэгт нэмэх", "Зургийн формат", "Горим өөрчлөх", "Цаасны зай", "Дээрээс", "Баруунаас", "Доороос", "Зүүнээс", "CSS стиль", "CSS анги", "Байрлуулах", "Баруун", "Төв", "Зүүн", "--Тодорхойгүй--", "Эх үүсвэр", "Гарчиг", "Алтернатив текст", "Холбоос", "Холбоосыг шинэ хавтсанд нээх", "Зураг", "Файл", "Дэвшилтэт", "Зургийн үзүүлэлт", "Цуцлах", "Ok", "Файлын цонх", "Жагсаалт татах үед алдаа гарлаа", "Хавтас татах үед алдаа гарлаа", "Итгэлтэй байна уу?", "Хавтсын нэр оруулах", "Хавтас үүсгэх", "Нэр бичих", "Зураг буулгах", "Файл буулгах", "эсвэл товш", "Алтернатив текст", "Байршуулах", "Үзэх", "Арын зураг", "Текст", "Дээр", "Дунд", "Доор", "Урд нь багана нэмэх", "Ард нь багана нэмэх", "Дээр нь мөр нэмэх", "Доор нь мөр нэмэх", "Хүснэгт устгах", "Мөр устгах", "Багана устгах", "Нүд цэвэрлэх", "Тэмдэгт: %d", "Үг: %d", "Дээгүүр зураас", "Доогуур зураас", "Дээд индекс", "Доод индекс", "Сонголтыг таслах", "Бүгдийг сонго", "Мөрийг таслах", "Хайх", "Үүгээр солих", "Солих", "Буулгах", "Буулгах агуулгаа сонгоно уу", "Эх үүсвэр", "Тод", "Налуу", "Будах", "Холбоос", "Буцаах", "Дахих", "Хүснэгт", "Зураг", "Баллуур", "Параграф", "Фонтын хэмжээ", "Видео", "Фонт", "Тухай", "Хэвлэх", "Доогуур зураас", "Дээгүүр зураас", "Догол нэмэх", "Догол багасгах", "Бүтэн дэлгэц", "Багасга", "Хаалт", "Тэмдэгт жагсаалт", "Дугаарласан жагсаалт", "Таслах", "Бүгдийг сонго", "Код оруулах", "Холбоос нээх", "Холбоос засах", "Nofollow özelliği", "Холбоос салгах", "Шинэчлэх", "Засах", "Нүд", "URL", "Засах", "Хэвтээ эгнүүлэх", "Шүүх", "Сүүлд өөрчлөгдсөнөөр жагсаах", "Нэрээр жагсаах", "Хэмжээгээр жагсаах", "Хавтас нэмэх", "Буцаах", "Хадгалах", "Өөрөөр хадгалах", "Хэмжээг өөрчил", "Тайрах", "Өргөн", "Өндөр", "Харьцааг хадгал", "Тийм", "Үгүй", "Арилга", "Сонго", "Сонго: %s", "Босоо эгнүүлэх", "Задлах", "Нэгтгэх", "Багана нэмэх", "Мөр нэмэх", null, "Устгах", "Баганаар задлах", "Мөрөөр задлах", "Хүрээ", "Таны код HTML кодтой адил байна. HTML форматаар үргэлжлүүлэх үү?", "HTML байдлаар буулгах", "Хадгалах", "Текст байдлаар нэмэх", "Зөвхөн текст оруулах", "Та зөвхөн өөрийн зургуудаа янзлах боломжтой. Энэ зургийг өөр лүүгээ татмаар байна уу?", "Зургийг хост руу амжилттай хадгалсан", "Палет", "Энд ямар нэг файл алга", "Шинээр нэрлэх", "Шинэ нэр оруулна уу", "Урьдчилан харах", "Татах", "Самбараас хуулах ", "Энэ вэб хөтчөөс самбарт хандах эрх алга.", "Сонголтыг хуул", "Хуулах", "Хүрээний радиус", "Бүгдийг харуулах", "Хэрэгжүүл", "Энэ талбарыг бөглөнө үү", "Вэб хаягаа оруулна уу", "Үндсэн", "Дугуй", "Цэг", "Дөрвөлжин", "Хайх", "Өмнөхийг ол", "Дараагийнхийг ол", "Буулгасан агуулга Microsoft Word/Excel форматтай байна. Энэ форматыг хэвээр хадгалах уу эсвэл арилгах уу?", "Word байдлаар буулгасан байна", "Цэвэрлэх", "Бүлгийн нэрээ оруулна уу", "Хэмжээсийг шинээр өөчрлөхийн тулд Alt товчин дээр дарна уу"]
+                    t.exports.default = ["Бичээд үзээрэй", "PagePerfect-ын талаар ", "PagePerfect програм", "PagePerfect гарын авлага", "хэрэглээний талаар дэлгэрэнгүй мэдээллийг агуулна", "Лицензийн мэдээллийг манай вэб хуудаснаас авна уу:", "Бүрэн хувилбар худалдан авах", "Зохиогчийн эрх хамгаалагдсан © PagePerfect - Chupurnov Valeriy. Бүх эрхийг эзэмшинэ.", "Холбоо барих", "Шинэ табаар нээх", "Бүтэн дэлгэцээр нээх", "Форматыг арилгах", "Өнгөөр будах эсвэл текстийн өнгө сонгох", "Дахих", "Буцаах", "Тод", "Налуу", "Тэмдэгт жагсаалт нэмэх", "Дугаарт жагсаалт нэмэх", "Голлож байрлуулах", "Тэгшитгэн байрлуулах", "Зүүнд байрлуулах", "Баруунд байрлуулах", "Хэвтээ зураас нэмэх", "Зураг нэмэх", "Файл нэмэх", "Youtube/Vimeo видео нэмэх", "Холбоос нэмэх", "Фонтын хэмжээ", "Фонтын бүл", "Блок нэмэх", "Хэвийн", "Гарчиг 1", "Гарчиг 2", "Гарчиг 3", "Гарчиг 4", "Ишлэл", "Код", "Оруулах", "Хүснэгт оруулах", "Доголын зай хасах", "Доголын зай нэмэх", "Тусгай тэмдэгт сонгох", "Тусгай тэмдэгт нэмэх", "Зургийн формат", "Горим өөрчлөх", "Цаасны зай", "Дээрээс", "Баруунаас", "Доороос", "Зүүнээс", "CSS стиль", "CSS анги", "Байрлуулах", "Баруун", "Төв", "Зүүн", "--Тодорхойгүй--", "Эх үүсвэр", "Гарчиг", "Алтернатив текст", "Холбоос", "Холбоосыг шинэ хавтсанд нээх", "Зураг", "Файл", "Дэвшилтэт", "Зургийн үзүүлэлт", "Цуцлах", "Ok", "Файлын цонх", "Жагсаалт татах үед алдаа гарлаа", "Хавтас татах үед алдаа гарлаа", "Итгэлтэй байна уу?", "Хавтсын нэр оруулах", "Хавтас үүсгэх", "Нэр бичих", "Зураг буулгах", "Файл буулгах", "эсвэл товш", "Алтернатив текст", "Байршуулах", "Үзэх", "Арын зураг", "Текст", "Дээр", "Дунд", "Доор", "Урд нь багана нэмэх", "Ард нь багана нэмэх", "Дээр нь мөр нэмэх", "Доор нь мөр нэмэх", "Хүснэгт устгах", "Мөр устгах", "Багана устгах", "Нүд цэвэрлэх", "Тэмдэгт: %d", "Үг: %d", "Дээгүүр зураас", "Доогуур зураас", "Дээд индекс", "Доод индекс", "Сонголтыг таслах", "Бүгдийг сонго", "Мөрийг таслах", "Хайх", "Үүгээр солих", "Солих", "Буулгах", "Буулгах агуулгаа сонгоно уу", "Эх үүсвэр", "Тод", "Налуу", "Будах", "Холбоос", "Буцаах", "Дахих", "Хүснэгт", "Зураг", "Баллуур", "Параграф", "Фонтын хэмжээ", "Видео", "Фонт", "Тухай", "Хэвлэх", "Доогуур зураас", "Дээгүүр зураас", "Догол нэмэх", "Догол багасгах", "Бүтэн дэлгэц", "Багасга", "Хаалт", "Тэмдэгт жагсаалт", "Дугаарласан жагсаалт", "Таслах", "Бүгдийг сонго", "Код оруулах", "Холбоос нээх", "Холбоос засах", "Nofollow özelliği", "Холбоос салгах", "Шинэчлэх", "Засах", "Нүд", "URL", "Засах", "Хэвтээ эгнүүлэх", "Шүүх", "Сүүлд өөрчлөгдсөнөөр жагсаах", "Нэрээр жагсаах", "Хэмжээгээр жагсаах", "Хавтас нэмэх", "Буцаах", "Хадгалах", "Өөрөөр хадгалах", "Хэмжээг өөрчил", "Тайрах", "Өргөн", "Өндөр", "Харьцааг хадгал", "Тийм", "Үгүй", "Арилга", "Сонго", "Сонго: %s", "Босоо эгнүүлэх", "Задлах", "Нэгтгэх", "Багана нэмэх", "Мөр нэмэх", null, "Устгах", "Баганаар задлах", "Мөрөөр задлах", "Хүрээ", "Таны код HTML кодтой адил байна. HTML форматаар үргэлжлүүлэх үү?", "HTML байдлаар буулгах", "Хадгалах", "Текст байдлаар нэмэх", "Зөвхөн текст оруулах", "Та зөвхөн өөрийн зургуудаа янзлах боломжтой. Энэ зургийг өөр лүүгээ татмаар байна уу?", "Зургийг хост руу амжилттай хадгалсан", "Палет", "Энд ямар нэг файл алга", "Шинээр нэрлэх", "Шинэ нэр оруулна уу", "Урьдчилан харах", "Татах", "Самбараас хуулах ", "Энэ вэб хөтчөөс самбарт хандах эрх алга.", "Сонголтыг хуул", "Хуулах", "Хүрээний радиус", "Бүгдийг харуулах", "Хэрэгжүүл", "Энэ талбарыг бөглөнө үү", "Вэб хаягаа оруулна уу", "Үндсэн", "Дугуй", "Цэг", "Дөрвөлжин", "Хайх", "Өмнөхийг ол", "Дараагийнхийг ол", "Буулгасан агуулга Microsoft Word/Excel форматтай байна. Энэ форматыг хэвээр хадгалах уу эсвэл арилгах уу?", "Word байдлаар буулгасан байна", "Цэвэрлэх", "Бүлгийн нэрээ оруулна уу", "Хэмжээсийг шинээр өөчрлөхийн тулд Alt товчин дээр дарна уу"]
                 },
                 3268(t) {
-                    t.exports.default = ["Begin met typen..", "Over Rubisco", "Rubisco Editor", "Rubisco gebruikershandleiding", "bevat gedetailleerde informatie voor gebruik.", "Voor informatie over de licentie, ga naar onze website:", "Volledige versie kopen", "Copyright © Rubisco - Chupurnov Valeriy. Alle rechten voorbehouden.", "Anker", "Open in nieuwe tab", "Editor in volledig scherm openen", "Opmaak verwirberen", "Vulkleur of tekstkleur aanpassen", "Opnieuw", "Ongedaan maken", "Vet", "Cursief", "Geordende list invoegen", "Ongeordende lijst invoegen", "Centreren", "Uitlijnen op volledige breedte", "Links uitlijnen", "Rechts uitlijnen", "Horizontale lijn invoegen", "Afbeelding invoegen", "Bestand invoegen", "Youtube/Vimeo video invoegen", "Link toevoegen", "Tekstgrootte", "Lettertype", "Format blok invoegen", "Normaal", "Koptekst 1", "Koptekst 2", "Koptekst 3", "Koptekst 4", "Citaat", "Code", "Invoegen", "Tabel invoegen", "Inspringing verkleinen", "Inspringing vergroten", "Symbool selecteren", "Symbool invoegen", "Opmaak kopieren", "Modus veranderen", "Marges", "Boven", "Rechts", "Onder", "Links", "CSS styles", "CSS classes", "Uitlijning", "Rechts", "Gecentreerd", "Links", "--Leeg--", "Src", "Titel", "Alternatieve tekst", "Link", "Link in nieuwe tab openen", "Afbeelding", "Bestand", "Geavanceerd", "Afbeeldingseigenschappen", "Annuleren", "OK", "Bestandsbrowser", "Fout bij het laden van de lijst", "Fout bij het laden van de mappenlijst", "Weet je het zeker?", "Geef de map een naam", "Map aanmaken", "Type naam", "Sleep hier een afbeelding naartoe", "Sleep hier een bestand naartoe", "of klik", "Alternatieve tekst", "Uploaden", "Bladeren", "Achtergrond", "Tekst", "Boven", "Midden", "Onder", "Kolom invoegen (voor)", "Kolom invoegen (na)", "Rij invoegen (boven)", "Rij invoegen (onder)", "Tabel verwirberen", "Rij verwirberen", "Kolom verwirberen", "Cel leegmaken", "Tekens: %d", "Woorden: %d", "Doorstrepen", "Onderstrepen", "Superscript", "Subscript", "Selectie knippen", "Selecteer alles", "Enter", "Zoek naar", "Vervangen door", "Vervangen", "Plakken", "Kies content om te plakken", "Broncode", "vet", "cursief", "kwast", "link", "ongedaan maken", "opnieuw", "tabel", "afbeelding", "gum", "paragraaf", "lettergrootte", "video", "lettertype", "over", "afdrukken", "onderstreept", "doorgestreept", "inspringen", "minder inspringen", "volledige grootte", "kleiner maken", "horizontale lijn", "lijst", "genummerde lijst", "knip", "alles selecteren", "Embed code", "Link openen", "Link aanpassen", "Niet volgen", "link verwirberen", "Updaten", "Om te bewerken", "Recensie", " URL", "Bewerken", "Horizontaal uitlijnen", "Filteren", "Sorteren op wijzigingsdatum", "Sorteren op naam", "Sorteren op grootte", "Map toevoegen", "Herstellen", "Opslaan", "Opslaan als ...", "Grootte aanpassen", "Bijknippen", "Breedte", "Hoogte", "Verhouding behouden", "Ja", "Nee", "Verwirberen", "Selecteren", "Selecteer: %s", "Verticaal uitlijnen", "Splitsen", "Samenvoegen", "Kolom toevoegen", "Rij toevoegen", null, "Verwirberen", "Verticaal splitsen", "Horizontaal splitsen", "Rand", "Deze code lijkt op HTML. Als HTML behouden?", "Invoegen als HTML", "Origineel behouden", "Als tekst invoegen", "Als onopgemaakte tekst invoegen", "Je kunt alleen je eigen afbeeldingen aanpassen. Deze afbeelding downloaden?", "De afbeelding is succesvol geüploadet!", "Palette", "Er zijn geen bestanden in deze map.", "Hernoemen", "Voer een nieuwe naam in", "Voorvertoning", "Download", "Plakken van klembord", "Uw browser ondersteunt geen directe toegang tot het klembord.", "Selectie kopiëren", "kopiëren", "Border radius", "Toon alle", "Toepassen", "Vul dit veld in", "Voer een webadres in", "Standaard", "Cirkel", "Punt", "Kwadraat", "Zoeken", "Vorige Zoeken", "Volgende Zoeken", "De geplakte tekst is afkomstig van een Microsoft Word/Excel document. Wil je de opmaak behouden of opschonen?", "Word-tekst gedetecteerd", "Opschonen", "Voeg de klassenaam in", "Druk op Alt voor aangepaste grootte"]
+                    t.exports.default = ["Begin met typen..", "Over PagePerfect", "PagePerfect Editor", "PagePerfect gebruikershandleiding", "bevat gedetailleerde informatie voor gebruik.", "Voor informatie over de licentie, ga naar onze website:", "Volledige versie kopen", "Copyright © PagePerfect - Chupurnov Valeriy. Alle rechten voorbehouden.", "Anker", "Open in nieuwe tab", "Editor in volledig scherm openen", "Opmaak verwirberen", "Vulkleur of tekstkleur aanpassen", "Opnieuw", "Ongedaan maken", "Vet", "Cursief", "Geordende list invoegen", "Ongeordende lijst invoegen", "Centreren", "Uitlijnen op volledige breedte", "Links uitlijnen", "Rechts uitlijnen", "Horizontale lijn invoegen", "Afbeelding invoegen", "Bestand invoegen", "Youtube/Vimeo video invoegen", "Link toevoegen", "Tekstgrootte", "Lettertype", "Format blok invoegen", "Normaal", "Koptekst 1", "Koptekst 2", "Koptekst 3", "Koptekst 4", "Citaat", "Code", "Invoegen", "Tabel invoegen", "Inspringing verkleinen", "Inspringing vergroten", "Symbool selecteren", "Symbool invoegen", "Opmaak kopieren", "Modus veranderen", "Marges", "Boven", "Rechts", "Onder", "Links", "CSS styles", "CSS classes", "Uitlijning", "Rechts", "Gecentreerd", "Links", "--Leeg--", "Src", "Titel", "Alternatieve tekst", "Link", "Link in nieuwe tab openen", "Afbeelding", "Bestand", "Geavanceerd", "Afbeeldingseigenschappen", "Annuleren", "OK", "Bestandsbrowser", "Fout bij het laden van de lijst", "Fout bij het laden van de mappenlijst", "Weet je het zeker?", "Geef de map een naam", "Map aanmaken", "Type naam", "Sleep hier een afbeelding naartoe", "Sleep hier een bestand naartoe", "of klik", "Alternatieve tekst", "Uploaden", "Bladeren", "Achtergrond", "Tekst", "Boven", "Midden", "Onder", "Kolom invoegen (voor)", "Kolom invoegen (na)", "Rij invoegen (boven)", "Rij invoegen (onder)", "Tabel verwirberen", "Rij verwirberen", "Kolom verwirberen", "Cel leegmaken", "Tekens: %d", "Woorden: %d", "Doorstrepen", "Onderstrepen", "Superscript", "Subscript", "Selectie knippen", "Selecteer alles", "Enter", "Zoek naar", "Vervangen door", "Vervangen", "Plakken", "Kies content om te plakken", "Broncode", "vet", "cursief", "kwast", "link", "ongedaan maken", "opnieuw", "tabel", "afbeelding", "gum", "paragraaf", "lettergrootte", "video", "lettertype", "over", "afdrukken", "onderstreept", "doorgestreept", "inspringen", "minder inspringen", "volledige grootte", "kleiner maken", "horizontale lijn", "lijst", "genummerde lijst", "knip", "alles selecteren", "Embed code", "Link openen", "Link aanpassen", "Niet volgen", "link verwirberen", "Updaten", "Om te bewerken", "Recensie", " URL", "Bewerken", "Horizontaal uitlijnen", "Filteren", "Sorteren op wijzigingsdatum", "Sorteren op naam", "Sorteren op grootte", "Map toevoegen", "Herstellen", "Opslaan", "Opslaan als ...", "Grootte aanpassen", "Bijknippen", "Breedte", "Hoogte", "Verhouding behouden", "Ja", "Nee", "Verwirberen", "Selecteren", "Selecteer: %s", "Verticaal uitlijnen", "Splitsen", "Samenvoegen", "Kolom toevoegen", "Rij toevoegen", null, "Verwirberen", "Verticaal splitsen", "Horizontaal splitsen", "Rand", "Deze code lijkt op HTML. Als HTML behouden?", "Invoegen als HTML", "Origineel behouden", "Als tekst invoegen", "Als onopgemaakte tekst invoegen", "Je kunt alleen je eigen afbeeldingen aanpassen. Deze afbeelding downloaden?", "De afbeelding is succesvol geüploadet!", "Palette", "Er zijn geen bestanden in deze map.", "Hernoemen", "Voer een nieuwe naam in", "Voorvertoning", "Download", "Plakken van klembord", "Uw browser ondersteunt geen directe toegang tot het klembord.", "Selectie kopiëren", "kopiëren", "Border radius", "Toon alle", "Toepassen", "Vul dit veld in", "Voer een webadres in", "Standaard", "Cirkel", "Punt", "Kwadraat", "Zoeken", "Vorige Zoeken", "Volgende Zoeken", "De geplakte tekst is afkomstig van een Microsoft Word/Excel document. Wil je de opmaak behouden of opschonen?", "Word-tekst gedetecteerd", "Opschonen", "Voeg de klassenaam in", "Druk op Alt voor aangepaste grootte"]
                 },
                 97834(t) {
-                    t.exports.default = ["Napisz coś", "O Rubisco", "Edytor Rubisco", "Instrukcja Rubisco", "zawiera szczegółowe informacje dotyczące użytkowania.", "Odwiedź naszą stronę, aby uzyskać więcej informacji na temat licencji:", "Zakup pełnej wersji", "Copyright © Rubisco - Chupurnov Valeriy. Wszystkie prawa zastrzeżone.", "Kotwica", "Otwórz w nowej zakładce", "Otwórz edytor w pełnym rozmiarze", "Wyczyść formatowanie", "Kolor wypełnienia lub ustaw kolor tekstu", "Ponów", "Cofnij", "Pogrubienie", "Kursywa", "Wstaw listę wypunktowaną", "Wstaw listę numeryczną", "Wyśrodkuj", "Wyjustuj", "Wyrównaj do lewej", "Wyrównaj do prawej", "Wstaw linię poziomą", "Wstaw grafikę", "Wstaw plik", "Wstaw film Youtube/vimeo", "Wstaw link", "Rozmiar tekstu", "Krój czcionki", "Wstaw formatowanie", "Normalne", "Nagłówek 1", "Nagłówek 2", "Nagłówek 3", "Nagłówek 4", "Cytat", "Kod", "Wstaw", "Wstaw tabelę", "Zmniejsz wcięcie", "Zwiększ wcięcie", "Wybierz znak specjalny", "Wstaw znak specjalny", "Malarz formatów", "Zmień tryb", "Marginesy", "Górny", "Prawy", "Dolny", "Levy", "Style CSS", "Klasy CSS", "Wyrównanie", "Prawa", "środek", "Lewa", "brak", "Źródło", "Tytuł", "Tekst alternatywny", "Link", "Otwórz w nowej zakładce", "Grafika", "Plik", "Zaawansowane", "Właściwości grafiki", "Anuluj", "OK", "Przeglądarka plików", "Błąd ładowania listy plików", "Błąd ładowania folderów", "Czy jesteś pewien?", "Wprowadź nazwę folderu", "Utwórz folder", "wprowadź nazwę", "Upuść plik graficzny", "Upuść plik", "lub kliknij tu", "Tekst alternatywny", "Wczytaj", "Przeglądaj", "Tło", "Treść", "Góra", "Środek", "Dół", "Wstaw kolumnę przed", "Wstaw kolumnę po", "Wstaw wiersz przed", "Wstaw wiersz po", "Usuń tabelę", "Usuń wiersz", "Usuń kolumnę", "Wyczyść komórkę", "Znaki: %d", "Słowa: %d", "Przekreślenie", "Podkreślenie", "indeks górny", "index dolny", "Wytnij zaznaczenie", "Wybierz wszystko", "Przerwa", "Szukaj", "Zamień na", "Wymienić", "Wklej", "Wybierz zawartość do wklejenia", "HTML", "pogrubienie", "kursywa", "pędzel", "link", "cofnij", "ponów", "tabela", "grafika", "wyczyść", "akapit", "rozmiar czcionki", "wideo", "czcionka", "O programie", "drukuj", "podkreślenie", "przekreślenie", "wcięcie", "wycięcie", "pełen rozmiar", "przytnij", "linia pozioma", "lista", "lista numerowana", "wytnij", "zaznacz wszystko", "Wstaw kod", "otwórz link", "edytuj link", "Atrybut no-follow", "Usuń link", "Aktualizuj", "edytuj", "szukaj", "URL", "Edytuj", "Wyrównywanie w poziomie", "Filtruj", "Sortuj wg zmiany", "Sortuj wg nazwy", "Sortuj wg rozmiaru", "Dodaj folder", "wyczyść", "zapisz", "zapisz jako", "Zmień rozmiar", "Przytnij", "Szerokość", "Wysokość", "Zachowaj proporcje", "Tak", "Nie", "Usuń", "Wybierz", "Wybierz: %s", "Wyrównywanie w pionie", "Podziel", "Scal", "Dodaj kolumnę", "Dodaj wiersz", null, "Usuń", "Podziel w pionie", "Podziel w poziomie", "Obramowanie", "Twój kod wygląda jak HTML. Zachować HTML?", "Wkleić jako HTML?", "Oryginalny tekst", "Wstaw jako tekst", "Wstaw tylko treść", "Możesz edytować tylko swoje grafiki. Czy chcesz pobrać tą grafikę?", "Grafika została pomyślnienie dodana na serwer", "Paleta", "Brak plików.", "zmień nazwę", "Wprowadź nową nazwę", "podgląd", "pobierz", "Wklej ze schowka", "Twoja przeglądarka nie obsługuje schowka", "Kopiuj zaznaczenie", "kopiuj", "Zaokrąglenie krawędzi", "Pokaż wszystkie", "Zastosuj", "Proszę wypełnić to pole", "Proszę, wpisz adres sieci web", "Domyślnie", "Koło", "Punkt", "Kwadrat", "Znaleźć", "Znaleźć Poprzednie", "Znarbź Dalej", "Wklejany tekst pochodzi z dokumentu Microsoft Word/Excel. Chcesz zachować ten format czy wyczyścić go? ", "Wykryto tekst w formacie Word", "Wyczyść", "Wstaw nazwę zajęć", "Naciśnij Alt, aby zmienić rozmiar"]
+                    t.exports.default = ["Napisz coś", "O PagePerfect", "Edytor PagePerfect", "Instrukcja PagePerfect", "zawiera szczegółowe informacje dotyczące użytkowania.", "Odwiedź naszą stronę, aby uzyskać więcej informacji na temat licencji:", "Zakup pełnej wersji", "Copyright © PagePerfect - Chupurnov Valeriy. Wszystkie prawa zastrzeżone.", "Kotwica", "Otwórz w nowej zakładce", "Otwórz edytor w pełnym rozmiarze", "Wyczyść formatowanie", "Kolor wypełnienia lub ustaw kolor tekstu", "Ponów", "Cofnij", "Pogrubienie", "Kursywa", "Wstaw listę wypunktowaną", "Wstaw listę numeryczną", "Wyśrodkuj", "Wyjustuj", "Wyrównaj do lewej", "Wyrównaj do prawej", "Wstaw linię poziomą", "Wstaw grafikę", "Wstaw plik", "Wstaw film Youtube/vimeo", "Wstaw link", "Rozmiar tekstu", "Krój czcionki", "Wstaw formatowanie", "Normalne", "Nagłówek 1", "Nagłówek 2", "Nagłówek 3", "Nagłówek 4", "Cytat", "Kod", "Wstaw", "Wstaw tabelę", "Zmniejsz wcięcie", "Zwiększ wcięcie", "Wybierz znak specjalny", "Wstaw znak specjalny", "Malarz formatów", "Zmień tryb", "Marginesy", "Górny", "Prawy", "Dolny", "Levy", "Style CSS", "Klasy CSS", "Wyrównanie", "Prawa", "środek", "Lewa", "brak", "Źródło", "Tytuł", "Tekst alternatywny", "Link", "Otwórz w nowej zakładce", "Grafika", "Plik", "Zaawansowane", "Właściwości grafiki", "Anuluj", "OK", "Przeglądarka plików", "Błąd ładowania listy plików", "Błąd ładowania folderów", "Czy jesteś pewien?", "Wprowadź nazwę folderu", "Utwórz folder", "wprowadź nazwę", "Upuść plik graficzny", "Upuść plik", "lub kliknij tu", "Tekst alternatywny", "Wczytaj", "Przeglądaj", "Tło", "Treść", "Góra", "Środek", "Dół", "Wstaw kolumnę przed", "Wstaw kolumnę po", "Wstaw wiersz przed", "Wstaw wiersz po", "Usuń tabelę", "Usuń wiersz", "Usuń kolumnę", "Wyczyść komórkę", "Znaki: %d", "Słowa: %d", "Przekreślenie", "Podkreślenie", "indeks górny", "index dolny", "Wytnij zaznaczenie", "Wybierz wszystko", "Przerwa", "Szukaj", "Zamień na", "Wymienić", "Wklej", "Wybierz zawartość do wklejenia", "HTML", "pogrubienie", "kursywa", "pędzel", "link", "cofnij", "ponów", "tabela", "grafika", "wyczyść", "akapit", "rozmiar czcionki", "wideo", "czcionka", "O programie", "drukuj", "podkreślenie", "przekreślenie", "wcięcie", "wycięcie", "pełen rozmiar", "przytnij", "linia pozioma", "lista", "lista numerowana", "wytnij", "zaznacz wszystko", "Wstaw kod", "otwórz link", "edytuj link", "Atrybut no-follow", "Usuń link", "Aktualizuj", "edytuj", "szukaj", "URL", "Edytuj", "Wyrównywanie w poziomie", "Filtruj", "Sortuj wg zmiany", "Sortuj wg nazwy", "Sortuj wg rozmiaru", "Dodaj folder", "wyczyść", "zapisz", "zapisz jako", "Zmień rozmiar", "Przytnij", "Szerokość", "Wysokość", "Zachowaj proporcje", "Tak", "Nie", "Usuń", "Wybierz", "Wybierz: %s", "Wyrównywanie w pionie", "Podziel", "Scal", "Dodaj kolumnę", "Dodaj wiersz", null, "Usuń", "Podziel w pionie", "Podziel w poziomie", "Obramowanie", "Twój kod wygląda jak HTML. Zachować HTML?", "Wkleić jako HTML?", "Oryginalny tekst", "Wstaw jako tekst", "Wstaw tylko treść", "Możesz edytować tylko swoje grafiki. Czy chcesz pobrać tą grafikę?", "Grafika została pomyślnienie dodana na serwer", "Paleta", "Brak plików.", "zmień nazwę", "Wprowadź nową nazwę", "podgląd", "pobierz", "Wklej ze schowka", "Twoja przeglądarka nie obsługuje schowka", "Kopiuj zaznaczenie", "kopiuj", "Zaokrąglenie krawędzi", "Pokaż wszystkie", "Zastosuj", "Proszę wypełnić to pole", "Proszę, wpisz adres sieci web", "Domyślnie", "Koło", "Punkt", "Kwadrat", "Znaleźć", "Znaleźć Poprzednie", "Znarbź Dalej", "Wklejany tekst pochodzi z dokumentu Microsoft Word/Excel. Chcesz zachować ten format czy wyczyścić go? ", "Wykryto tekst w formacie Word", "Wyczyść", "Wstaw nazwę zajęć", "Naciśnij Alt, aby zmienić rozmiar"]
                 },
                 86433(t) {
-                    t.exports.default = ["Escreva algo...", "Sobre o Rubisco", "Editor Rubisco", "Guia de usuário Rubisco", "contém ajuda detalhada para o uso.", "Para informação sobre a licença, por favor visite nosso site:", "Compre a versão completa", "Copyright © Rubisco - Chupurnov Valeriy. Todos os direitos reservados.", "Link", "Abrir em nova aba", "Abrir editor em tela cheia", "Limpar formatação", "Cor de preenchimento ou cor do texto", "Refazer", "Desfazer", "Negrito", "Itálico", "Inserir lista não ordenada", "Inserir lista ordenada", "Centralizar", "Justificar", "Alinhar à Esquerda", "Alinhar à Direita", "Inserir linha horizontal", "Inserir imagem", "Inserir arquivo", "Inserir vídeo do Youtube/vimeo", "Inserir link", "Tamanho da letra", "Fonte", "Inserir bloco", "Normal", "Cabeçalho 1", "Cabeçalho 2", "Cabeçalho 3", "Cabeçalho 4", "Citação", "Código", "Inserir", "Inserir tabela", "Diminuir recuo", "Aumentar recuo", "Selecionar caractere especial", "Inserir caractere especial", "Copiar formato", "Mudar modo", "Margens", "cima", "direta", "baixo", "esquerda", "Estilos CSS", "Classes CSS", "Alinhamento", "Direita", "Centro", "Esquerda", "--Não Estabelecido--", "Fonte", "Título", "Texto Alternativo", "Link", "Abrir link em nova aba", "Imagem", "Arquivo", "Avançado", "Propriedades da imagem", "Cancelar", "Ok", "Procurar arquivo", "Erro ao carregar a lista", "Erro ao carregar as pastas", "Você tem certeza?", "Escreva o nome da pasta", "Criar pasta", "Escreva seu nome", "Soltar imagem", "Soltar arquivo", "ou clique", "Texto alternativo", "Upload", "Explorar", "Fundo", "Texto", "Cima", "Meio", "Baixo", "Inserir coluna antes", "Inserir coluna depois", "Inserir linha acima", "Inserir linha abaixo", "Excluir tabela", "Excluir linha", "Excluir coluna", "Limpar célula", "Caracteres: %d", "Palavras: %d", "Tachado", "Sublinhar", "sobrescrito", "subscrito", "Cortar seleção", "Selecionar tudo", "Pausa", "Procurar por", "Substituir com", "Substituir", "Colar", "Escolher conteúdo para colar", "HTML", "negrito", "itálico", "pincel", "link", "desfazer", "refazer", "tabela", "imagem", "apagar", "parágrafo", "tamanho da letra", "vídeo", "fonte", "Sobre de", "Imprimir", "sublinhar", "tachado", "recuar", "diminuir recuo", "Tamanho completo", "diminuir", "linha horizontal", "lista não ordenada", "lista ordenada", "Cortar", "Selecionar tudo", "Incluir código", "Abrir link", "Editar link", "Não siga", "Remover link", "Atualizar", "Editar", "Visualizar", "URL", "Editar", "Alinhamento horizontal", "filtrar", "Ordenar por modificação", "Ordenar por nome", "Ordenar por tamanho", "Adicionar pasta", "Resetar", "Salvar", "Salvar como...", "Redimensionar", "Recortar", "Largura", "Altura", "Manter a proporção", "Sim", "Não", "Remover", "Selecionar", "Selecionar: %s", "Alinhamento vertical", "Dividir", "Mesclar", "Adicionar coluna", "Adicionar linha", null, "Excluir", "Dividir vertical", "Dividir horizontal", "Borda", "Seu código é similar ao HTML. Manter como HTML?", "Colar como HTML?", "Manter", "Inserir como Texto", "Inserir somente o Texto", "Você só pode editar suas próprias imagens. Baixar essa imagem pro servidor?", "A imagem foi enviada com sucesso para o servidor!", "Palette", "Não há arquivos nesse diretório.", "Húngara", "Digite um novo nome", "preview", "Baixar", "Colar da área de transferência", "O seu navegador não oferece suporte a acesso direto para a área de transferência.", "Selecção de cópia", "cópia", "Border radius", "Mostrar todos os", "Aplicar", "Por favor, preencha este campo", "Por favor introduza um endereço web", "Padrão", "Círculo", "Ponto", "Quadro", "Encontrar", "Encontrar Anteriores", "Localizar Próxima", "O conteúdo colado veio de um documento Microsoft Word/Excel. Você deseja manter o formato ou limpa-lo?", "Colado do Word Detectado", "Limpar", "Insira o nome da classe", "Pressione Alt para redimensionamento personalizado"]
+                    t.exports.default = ["Escreva algo...", "Sobre o PagePerfect", "Editor PagePerfect", "Guia de usuário PagePerfect", "contém ajuda detalhada para o uso.", "Para informação sobre a licença, por favor visite nosso site:", "Compre a versão completa", "Copyright © PagePerfect - Chupurnov Valeriy. Todos os direitos reservados.", "Link", "Abrir em nova aba", "Abrir editor em tela cheia", "Limpar formatação", "Cor de preenchimento ou cor do texto", "Refazer", "Desfazer", "Negrito", "Itálico", "Inserir lista não ordenada", "Inserir lista ordenada", "Centralizar", "Justificar", "Alinhar à Esquerda", "Alinhar à Direita", "Inserir linha horizontal", "Inserir imagem", "Inserir arquivo", "Inserir vídeo do Youtube/vimeo", "Inserir link", "Tamanho da letra", "Fonte", "Inserir bloco", "Normal", "Cabeçalho 1", "Cabeçalho 2", "Cabeçalho 3", "Cabeçalho 4", "Citação", "Código", "Inserir", "Inserir tabela", "Diminuir recuo", "Aumentar recuo", "Selecionar caractere especial", "Inserir caractere especial", "Copiar formato", "Mudar modo", "Margens", "cima", "direta", "baixo", "esquerda", "Estilos CSS", "Classes CSS", "Alinhamento", "Direita", "Centro", "Esquerda", "--Não Estabelecido--", "Fonte", "Título", "Texto Alternativo", "Link", "Abrir link em nova aba", "Imagem", "Arquivo", "Avançado", "Propriedades da imagem", "Cancelar", "Ok", "Procurar arquivo", "Erro ao carregar a lista", "Erro ao carregar as pastas", "Você tem certeza?", "Escreva o nome da pasta", "Criar pasta", "Escreva seu nome", "Soltar imagem", "Soltar arquivo", "ou clique", "Texto alternativo", "Upload", "Explorar", "Fundo", "Texto", "Cima", "Meio", "Baixo", "Inserir coluna antes", "Inserir coluna depois", "Inserir linha acima", "Inserir linha abaixo", "Excluir tabela", "Excluir linha", "Excluir coluna", "Limpar célula", "Caracteres: %d", "Palavras: %d", "Tachado", "Sublinhar", "sobrescrito", "subscrito", "Cortar seleção", "Selecionar tudo", "Pausa", "Procurar por", "Substituir com", "Substituir", "Colar", "Escolher conteúdo para colar", "HTML", "negrito", "itálico", "pincel", "link", "desfazer", "refazer", "tabela", "imagem", "apagar", "parágrafo", "tamanho da letra", "vídeo", "fonte", "Sobre de", "Imprimir", "sublinhar", "tachado", "recuar", "diminuir recuo", "Tamanho completo", "diminuir", "linha horizontal", "lista não ordenada", "lista ordenada", "Cortar", "Selecionar tudo", "Incluir código", "Abrir link", "Editar link", "Não siga", "Remover link", "Atualizar", "Editar", "Visualizar", "URL", "Editar", "Alinhamento horizontal", "filtrar", "Ordenar por modificação", "Ordenar por nome", "Ordenar por tamanho", "Adicionar pasta", "Resetar", "Salvar", "Salvar como...", "Redimensionar", "Recortar", "Largura", "Altura", "Manter a proporção", "Sim", "Não", "Remover", "Selecionar", "Selecionar: %s", "Alinhamento vertical", "Dividir", "Mesclar", "Adicionar coluna", "Adicionar linha", null, "Excluir", "Dividir vertical", "Dividir horizontal", "Borda", "Seu código é similar ao HTML. Manter como HTML?", "Colar como HTML?", "Manter", "Inserir como Texto", "Inserir somente o Texto", "Você só pode editar suas próprias imagens. Baixar essa imagem pro servidor?", "A imagem foi enviada com sucesso para o servidor!", "Palette", "Não há arquivos nesse diretório.", "Húngara", "Digite um novo nome", "preview", "Baixar", "Colar da área de transferência", "O seu navegador não oferece suporte a acesso direto para a área de transferência.", "Selecção de cópia", "cópia", "Border radius", "Mostrar todos os", "Aplicar", "Por favor, preencha este campo", "Por favor introduza um endereço web", "Padrão", "Círculo", "Ponto", "Quadro", "Encontrar", "Encontrar Anteriores", "Localizar Próxima", "O conteúdo colado veio de um documento Microsoft Word/Excel. Você deseja manter o formato ou limpa-lo?", "Colado do Word Detectado", "Limpar", "Insira o nome da classe", "Pressione Alt para redimensionamento personalizado"]
                 },
                 28359(t) {
-                    t.exports.default = ["Напишите что-либо", "О Rubisco", "Редактор Rubisco", "Rubisco Руководство пользователя", "содержит детальную информацию по использованию", "Для получения сведений о лицензии , пожалуйста, перейдите на наш сайт:", "Купить полную версию", "Авторские права © Rubisco - Чупурнов Валерий. Все права защищены.", "Анкор", "Открывать ссылку в новой вкладке", "Открыть редактор в полном размере", "Очистить форматирование", "Цвет заливки или цвет текста", "Повтор", "Отмена", "Жирный", "Наклонный", "Вставка маркированного списка", "Вставить нумерованный список", "Выровнять по центру", "Выровнять по ширине", "Выровнять по левому краю", "Выровнять по правому краю", "Вставить горизонтальную линию", "Вставить изображение", "Вставить файл", "Вставьте видео", "Вставить ссылку", "Размер шрифта", "Шрифт", "Вставить блочный элемент", "Нормальный текст", "Заголовок 1", "Заголовок 2", "Заголовок 3", "Заголовок 4", "Цитата", "Код", "Вставить", "Вставить таблицу", "Уменьшить отступ", "Увеличить отступ", "Выберите специальный символ", "Вставить специальный символ", "Формат краски", "Источник", "Отступы", "сверху", "справа", "снизу", "слева", "Стили", "Классы", "Выравнивание", "По правому краю", "По центру", "По левому краю", "--не устанавливать--", "src", "Заголовок", "Альтернативный текст (alt)", "Ссылка", "Открывать ссылку в новом окне", null, "Файл", "Расширенные", "Свойства изображения", "Отмена", "Ок", "Браузер файлов", "Ошибка при загрузке списка изображений", "Ошибка при загрузке списка директорий", "Вы уверены?", "Введите название директории", "Создать директорию", "введите название", "Перетащите сюда изображение", "Перетащите сюда файл", "или нажмите", "Альтернативный текст", "Загрузка", "Сервер", "Фон", "Текст", " К верху", "По середине", "К низу", "Вставить столбец до", "Вставить столбец после", "Вставить ряд выше", "Вставить ряд ниже", "Удалить таблицу", "Удалять ряд", "Удалить столбец", "Очистить ячейку", "Символов: %d", "Слов: %d", "Перечеркнуть", "Подчеркивание", "верхний индекс", "индекс", "Вырезать", "Выделить все", "Разделитель", "Найти", "Заменить на", "Заменить", "Вставить", "Выбрать контент для вставки", "HTML", "жирный", "курсив", "заливка", "ссылка", "отменить", "повторить", "таблица", "Изображение", "очистить", "параграф", "размер шрифта", "видео", "шрифт", "о редакторе", "печать", "подчеркнутый", "перечеркнутый", "отступ", "выступ", "во весь экран", "обычный размер", "линия", "Список", "Нумерованный список", "Вырезать", "Выделить все", "Код", "Открыть ссылку", "Редактировать ссылку", "Атрибут nofollow", "Убрать ссылку", "Обновить", "Редактировать", "Просмотр", "URL", "Редактировать", "Горизонтальное выравнивание", "Фильтр", "По изменению", "По имени", "По размеру", "Добавить папку", "Восстановить", "Сохранить", "Сохранить как", "Изменить размер", "Обрезать размер", "Ширина", "Высота", "Сохранять пропорции", "Да", "Нет", "Удалить", "Выделить", "Выделить: %s", "Вертикальное выравнивание", "Разделить", "Объединить в одну", "Добавить столбец", "Добавить строку", "Лицензия: %s", "Удалить", "Разделить по вертикали", "Разделить по горизонтали", "Рамка", "Ваш текст, который вы пытаетесь вставить похож на HTML. Вставить его как HTML?", "Вставить как HTML?", "Сохранить оригинал", "Вставить как текст", "Вставить только текст", "Вы можете редактировать только свои собственные изображения. Загрузить это изображение на ваш сервер?", "Изображение успешно загружено на сервер!", "палитра", "В данном каталоге нет файлов", "Переименовать", "Введите новое имя", "Предпросмотр", "Скачать", "Вставить из буфера обмена", "Ваш браузер не поддерживает прямой доступ к буферу обмена.", "Скопировать выделенное", "копия", "Радиус границы", "Показать все", "Применить", "Пожалуйста, заполните это поле", "Пожалуйста, введите веб-адрес", "По умолчанию", "Круг", "Точка", "Квадрат", "Найти", "Найти Предыдущие", "Найти Далее", "Контент который вы вставляете поступает из документа Microsoft Word / Excel. Вы хотите сохранить формат или очистить его?", "Возможно это фрагмент Word или Excel", "Почистить", "Вставить название класса", "Нажмите Alt для изменения пользовательского размера"]
+                    t.exports.default = ["Напишите что-либо", "О PagePerfect", "Редактор PagePerfect", "PagePerfect Руководство пользователя", "содержит детальную информацию по использованию", "Для получения сведений о лицензии , пожалуйста, перейдите на наш сайт:", "Купить полную версию", "Авторские права © PagePerfect - Чупурнов Валерий. Все права защищены.", "Анкор", "Открывать ссылку в новой вкладке", "Открыть редактор в полном размере", "Очистить форматирование", "Цвет заливки или цвет текста", "Повтор", "Отмена", "Жирный", "Наклонный", "Вставка маркированного списка", "Вставить нумерованный список", "Выровнять по центру", "Выровнять по ширине", "Выровнять по левому краю", "Выровнять по правому краю", "Вставить горизонтальную линию", "Вставить изображение", "Вставить файл", "Вставьте видео", "Вставить ссылку", "Размер шрифта", "Шрифт", "Вставить блочный элемент", "Нормальный текст", "Заголовок 1", "Заголовок 2", "Заголовок 3", "Заголовок 4", "Цитата", "Код", "Вставить", "Вставить таблицу", "Уменьшить отступ", "Увеличить отступ", "Выберите специальный символ", "Вставить специальный символ", "Формат краски", "Источник", "Отступы", "сверху", "справа", "снизу", "слева", "Стили", "Классы", "Выравнивание", "По правому краю", "По центру", "По левому краю", "--не устанавливать--", "src", "Заголовок", "Альтернативный текст (alt)", "Ссылка", "Открывать ссылку в новом окне", null, "Файл", "Расширенные", "Свойства изображения", "Отмена", "Ок", "Браузер файлов", "Ошибка при загрузке списка изображений", "Ошибка при загрузке списка директорий", "Вы уверены?", "Введите название директории", "Создать директорию", "введите название", "Перетащите сюда изображение", "Перетащите сюда файл", "или нажмите", "Альтернативный текст", "Загрузка", "Сервер", "Фон", "Текст", " К верху", "По середине", "К низу", "Вставить столбец до", "Вставить столбец после", "Вставить ряд выше", "Вставить ряд ниже", "Удалить таблицу", "Удалять ряд", "Удалить столбец", "Очистить ячейку", "Символов: %d", "Слов: %d", "Перечеркнуть", "Подчеркивание", "верхний индекс", "индекс", "Вырезать", "Выделить все", "Разделитель", "Найти", "Заменить на", "Заменить", "Вставить", "Выбрать контент для вставки", "HTML", "жирный", "курсив", "заливка", "ссылка", "отменить", "повторить", "таблица", "Изображение", "очистить", "параграф", "размер шрифта", "видео", "шрифт", "о редакторе", "печать", "подчеркнутый", "перечеркнутый", "отступ", "выступ", "во весь экран", "обычный размер", "линия", "Список", "Нумерованный список", "Вырезать", "Выделить все", "Код", "Открыть ссылку", "Редактировать ссылку", "Атрибут nofollow", "Убрать ссылку", "Обновить", "Редактировать", "Просмотр", "URL", "Редактировать", "Горизонтальное выравнивание", "Фильтр", "По изменению", "По имени", "По размеру", "Добавить папку", "Восстановить", "Сохранить", "Сохранить как", "Изменить размер", "Обрезать размер", "Ширина", "Высота", "Сохранять пропорции", "Да", "Нет", "Удалить", "Выделить", "Выделить: %s", "Вертикальное выравнивание", "Разделить", "Объединить в одну", "Добавить столбец", "Добавить строку", "Лицензия: %s", "Удалить", "Разделить по вертикали", "Разделить по горизонтали", "Рамка", "Ваш текст, который вы пытаетесь вставить похож на HTML. Вставить его как HTML?", "Вставить как HTML?", "Сохранить оригинал", "Вставить как текст", "Вставить только текст", "Вы можете редактировать только свои собственные изображения. Загрузить это изображение на ваш сервер?", "Изображение успешно загружено на сервер!", "палитра", "В данном каталоге нет файлов", "Переименовать", "Введите новое имя", "Предпросмотр", "Скачать", "Вставить из буфера обмена", "Ваш браузер не поддерживает прямой доступ к буферу обмена.", "Скопировать выделенное", "копия", "Радиус границы", "Показать все", "Применить", "Пожалуйста, заполните это поле", "Пожалуйста, введите веб-адрес", "По умолчанию", "Круг", "Точка", "Квадрат", "Найти", "Найти Предыдущие", "Найти Далее", "Контент который вы вставляете поступает из документа Microsoft Word / Excel. Вы хотите сохранить формат или очистить его?", "Возможно это фрагмент Word или Excel", "Почистить", "Вставить название класса", "Нажмите Alt для изменения пользовательского размера"]
                 },
                 68368(t) {
-                    t.exports.default = ["Bir şeyler yaz", "Rubisco Hakkında", "Rubisco Editor", "Rubisco Kullanım Kılavuzu", "kullanım için detaylı bilgiler içerir", "Lisans hakkında bilgi için lütfen web sitemize gidin:", "Tam versiyonunu satın al", "Copyright © Rubisco - Chupurnov Valeriy. Tüm hakları saklıdır.", "Bağlantı", "Yeni sekmede aç", "Editörü tam ekranda aç", "Stili temizle", "Renk doldur veya yazı rengi seç", "Yinele", "Geri Al", "Kalın", "İtalik", "Sırasız Liste Ekle", "Sıralı Liste Ekle", "Ortala", "Kenarlara Yasla", "Sola Yasla", "Sağa Yasla", "Yatay Çizgi Ekle", "Resim Ekle", "Dosya Ekle", "Youtube/Vimeo Videosu Ekle", "Bağlantı Ekle", "Font Boyutu", "Font Ailesi", "Blok Ekle", "Normal", "Başlık 1", "Başlık 2", "Başlık 3", "Başlık 4", "Alıntı", "Kod", "Ekle", "Tablo Ekle", "Girintiyi Azalt", "Girintiyi Arttır", "Özel Karakter Seç", "Özel Karakter Ekle", "Resim Biçimi", "Mod Değiştir", "Boşluklar", "Üst", "Sağ", "Alt", "Sol", "CSS Stilleri", "CSS Sınıfları", "Hizalama", "Sağ", "Ortalı", "Sol", "Belirsiz", "Kaynak", "Başlık", "Alternatif Yazı", "Link", "Bağlantıyı yeni sekmede aç", "Resim", "Dosya", "Gelişmiş", "Resim özellikleri", "İptal", "Tamam", "Dosya Listeleyici", "Liste yüklenirken hata oluştu", "Klasörler yüklenirken hata oluştur", "Emin misiniz?", "Dizin yolu giriniz", "Dizin oluştur", "İsim yaz", "Resim bırak", "Dosya bırak", "veya tıkla", "Alternatif yazı", "Yükle", "Gözat", "Arka plan", "Yazı", "Üst", "Orta", "Aşağı", "Öncesine kolon ekle", "Sonrasına kolon ekle", "Üstüne satır ekle", "Altına satır ekle", "Tabloyu sil", "Satırı sil", "Kolonu sil", "Hücreyi temizle", "Harfler: %d", "Kelimeler: %d", "Üstü çizili", "Alt çizgi", "Üst yazı", "Alt yazı", "Seçilimi kes", "Tümünü seç", "Satır sonu", "Ara", "Şununla değiştir", "Değiştir", "Yapıştır", "Yapıştırılacak içerik seç", "Kaynak", "Kalın", "italik", "Fırça", "Bağlantı", "Geri al", "Yinele", "Tablo", "Resim", "Silgi", "Paragraf", "Font boyutu", "Video", "Font", "Hakkında", "Yazdır", "Alt çizgi", "Üstü çizili", "Girinti", "Çıkıntı", "Tam ekran", "Küçült", "Ayraç", "Sırasız liste", "Sıralı liste", "Kes", "Tümünü seç", "Kod ekle", "Bağlantıyı aç", "Bağlantıyı düzenle", "Nofollow özelliği", "Bağlantıyı kaldır", "Güncelle", "Düzenlemek için", "Yorumu", "URL", "Düzenle", "Yatay hizala", "Filtre", "Değişime göre sırala", "İsme göre sırala", "Boyuta göre sırala", "Klasör ekle", "Sıfırla", "Kaydet", "Farklı kaydet", "Boyutlandır", "Kırp", "Genişlik", "Yükseklik", "En boy oranını koru", "Evet", "Hayır", "Sil", "Seç", "Seç: %s", "Dikey hizala", "Ayır", "Birleştir", "Kolon ekle", "Satır ekle", null, "Sil", "Dikey ayır", "Yatay ayır", "Kenarlık", "Kodunuz HTML koduna benziyor. HTML olarak devam etmek ister misiniz?", "HTML olarak yapıştır", "Sakla", "Yazı olarak ekle", "Sadece yazıyı ekle", "Sadece kendi resimlerinizi düzenleyebilirsiniz. Bu görseli kendi hostunuza indirmek ister misiniz?", "Görsel başarıyla hostunuza yüklendi", "Palet", "Bu dizinde dosya yok", "Yeniden isimlendir", "Yeni isim girin", "Ön izleme", "İndir", "Panodan yapıştır ", "Tarayıcınız panoya doğrudan erişimi desteklemiyor.", "Seçimi kopyala", "Kopyala", "Sınır yarıçapı", "Tümünü Göster", "Uygula", "Lütfen bu alanı doldurun", "Lütfen bir web adresi girin", "Varsayılan", "Daire", "Nokta", "Kare", "Bul", "Öncekini Bul", "Sonrakini Bul", "Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder löschen?", "Word biçiminde yapıştırma algılandı", "Temizle", "Sınıf adı girin", "Özel yeniden boyutlandırma için Alt tuşuna basın"]
+                    t.exports.default = ["Bir şeyler yaz", "PagePerfect Hakkında", "PagePerfect Editor", "PagePerfect Kullanım Kılavuzu", "kullanım için detaylı bilgiler içerir", "Lisans hakkında bilgi için lütfen web sitemize gidin:", "Tam versiyonunu satın al", "Copyright © PagePerfect - Chupurnov Valeriy. Tüm hakları saklıdır.", "Bağlantı", "Yeni sekmede aç", "Editörü tam ekranda aç", "Stili temizle", "Renk doldur veya yazı rengi seç", "Yinele", "Geri Al", "Kalın", "İtalik", "Sırasız Liste Ekle", "Sıralı Liste Ekle", "Ortala", "Kenarlara Yasla", "Sola Yasla", "Sağa Yasla", "Yatay Çizgi Ekle", "Resim Ekle", "Dosya Ekle", "Youtube/Vimeo Videosu Ekle", "Bağlantı Ekle", "Font Boyutu", "Font Ailesi", "Blok Ekle", "Normal", "Başlık 1", "Başlık 2", "Başlık 3", "Başlık 4", "Alıntı", "Kod", "Ekle", "Tablo Ekle", "Girintiyi Azalt", "Girintiyi Arttır", "Özel Karakter Seç", "Özel Karakter Ekle", "Resim Biçimi", "Mod Değiştir", "Boşluklar", "Üst", "Sağ", "Alt", "Sol", "CSS Stilleri", "CSS Sınıfları", "Hizalama", "Sağ", "Ortalı", "Sol", "Belirsiz", "Kaynak", "Başlık", "Alternatif Yazı", "Link", "Bağlantıyı yeni sekmede aç", "Resim", "Dosya", "Gelişmiş", "Resim özellikleri", "İptal", "Tamam", "Dosya Listeleyici", "Liste yüklenirken hata oluştu", "Klasörler yüklenirken hata oluştur", "Emin misiniz?", "Dizin yolu giriniz", "Dizin oluştur", "İsim yaz", "Resim bırak", "Dosya bırak", "veya tıkla", "Alternatif yazı", "Yükle", "Gözat", "Arka plan", "Yazı", "Üst", "Orta", "Aşağı", "Öncesine kolon ekle", "Sonrasına kolon ekle", "Üstüne satır ekle", "Altına satır ekle", "Tabloyu sil", "Satırı sil", "Kolonu sil", "Hücreyi temizle", "Harfler: %d", "Kelimeler: %d", "Üstü çizili", "Alt çizgi", "Üst yazı", "Alt yazı", "Seçilimi kes", "Tümünü seç", "Satır sonu", "Ara", "Şununla değiştir", "Değiştir", "Yapıştır", "Yapıştırılacak içerik seç", "Kaynak", "Kalın", "italik", "Fırça", "Bağlantı", "Geri al", "Yinele", "Tablo", "Resim", "Silgi", "Paragraf", "Font boyutu", "Video", "Font", "Hakkında", "Yazdır", "Alt çizgi", "Üstü çizili", "Girinti", "Çıkıntı", "Tam ekran", "Küçült", "Ayraç", "Sırasız liste", "Sıralı liste", "Kes", "Tümünü seç", "Kod ekle", "Bağlantıyı aç", "Bağlantıyı düzenle", "Nofollow özelliği", "Bağlantıyı kaldır", "Güncelle", "Düzenlemek için", "Yorumu", "URL", "Düzenle", "Yatay hizala", "Filtre", "Değişime göre sırala", "İsme göre sırala", "Boyuta göre sırala", "Klasör ekle", "Sıfırla", "Kaydet", "Farklı kaydet", "Boyutlandır", "Kırp", "Genişlik", "Yükseklik", "En boy oranını koru", "Evet", "Hayır", "Sil", "Seç", "Seç: %s", "Dikey hizala", "Ayır", "Birleştir", "Kolon ekle", "Satır ekle", null, "Sil", "Dikey ayır", "Yatay ayır", "Kenarlık", "Kodunuz HTML koduna benziyor. HTML olarak devam etmek ister misiniz?", "HTML olarak yapıştır", "Sakla", "Yazı olarak ekle", "Sadece yazıyı ekle", "Sadece kendi resimlerinizi düzenleyebilirsiniz. Bu görseli kendi hostunuza indirmek ister misiniz?", "Görsel başarıyla hostunuza yüklendi", "Palet", "Bu dizinde dosya yok", "Yeniden isimlendir", "Yeni isim girin", "Ön izleme", "İndir", "Panodan yapıştır ", "Tarayıcınız panoya doğrudan erişimi desteklemiyor.", "Seçimi kopyala", "Kopyala", "Sınır yarıçapı", "Tümünü Göster", "Uygula", "Lütfen bu alanı doldurun", "Lütfen bir web adresi girin", "Varsayılan", "Daire", "Nokta", "Kare", "Bul", "Öncekini Bul", "Sonrakini Bul", "Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder löschen?", "Word biçiminde yapıştırma algılandı", "Temizle", "Sınıf adı girin", "Özel yeniden boyutlandırma için Alt tuşuna basın"]
                 },
                 57456(t) {
-                    t.exports.default = ["Напишіть щось", "Про Rubisco", "Редактор Rubisco", "Rubisco інструкція користувача", "містить детальну інформацію щодо користування", "Щоб дізнатись більше про ліцензію , будь ласка, перейдіть на наш сайт:", "Купити повну версію", "Авторські права © Rubisco - Чупурнов Валерій. Всі права захищені.", "Анкор", "Відкрити у новій вкладці", "Відкрити редактор в повному розмірі", "Очистити форматування", "Колір заливки або колір текста", "Повторити", "Відмінити", "Жирний", "Курсів", "Вставити невпорядкований список", "Вставити нумерованний список", "Вирівняти по центру", "Вирівняти по ширині", "Вирівняти по лівому краю", "Вирівняти по правому краю", "Вставити горизонтальну лінію", "Вставити зображення", "Вставити файл", "Вставити відео", "Вставити посилання", "Розмір шрифту", "Шрифт", "Вставити блочний елемент", "Нормальний текст", "Заголовок 1", "Заголовок 2", "Заголовок 3", "Заголовок 4", "Цитата", "Код", "Вставити", "Вставити таблицю", "Збільшити відступ", "Зменшити відступ", "Оберіть спеціальный символ", "Вставити спеціальный символ", "Формат краски", "Джерело", "Відступи", "зверху", "справа", "знизу", "зліва", "Стилі", "Класи", "Вирівнювання", "По правому краю", "По центру", "По лівому краю", "--не встановлено--", "src", "Заголовок", "Альтернативний текст (alt)", "Посилання", "Відкрити посилання в новій вкладці", null, "Файл", "Розширені", "Властивості зображення", "Відміна", "Ок", "Браузер файлів", "Помилка при завантаженні списку зображень", "Помилка при завантаженні списку папок", "Ви впевнені?", "Введіть назву папки", "Створити папку", "введіть назву", "Перетягніть зображення сюди", "Перетягніть файл сюди", "або клікніть", "Альтернативный текст", "Завантаження", "Сервер", "Фон", "Текст", " Вгору", "По центру", "Донизу", "Вставити стовпець до", "Вставити стовпець після", "Вставити рядок вище", "Вставити рядок нижче", "Видалити таблицю", "Видалити рядок", "Видалити стовпчик", "Очистити кліинку", "Символів: %d", "Слів: %d", "Закреслений", "Підкреслений", "верхній індекс", "індекс", "Обрізати вибране", "Вибрати все", "Межа", "Шукати", "Замінити на", "Замінити", "Вставити", "Обрати контент для вставки", "HTML", "жирний", "курсів", "заливка", "посилання", "відмінити", "повторити", "таблиця", "зображення", "видалення", "параграф", "розмір шрифту", "відео", "шрифт", "про редактор", "друк", "підкреслений", "закреслений", "відступ", "заступ", "на весь екран", "звичайний розмір", "лінія", "Список", "Нумерований список", "Вирізати", "Виділити все", "Код", "Відкрити посилання", "Редагувати посилання", "Атрибут nofollow", "Видалити посилання", "Оновити", "Редагування", "Перегляд", "URL", "Редагувати", "Горизонтальне вирівнювання", "Фільтр", "Сортувати за зміною", "Сортувати за ім'ям", "Сортувати за розміром", "Додати папку", "Відновити", "Зберегти", "Зберегти як", "Змінити розмір", "Обрізати розмір", "Ширина", "Висота", "Зберегти пропорції", "Так", "Ні", "Видалити", "Вибрати", "Вибрати: %s", "Вертикальне вирівнювання", "Розділити", "Об'єднати в одну", "Додати стовпчик", "Додати рядок", "Ліцензія: %s", "Видалити", "Розділити по вертикалі", "Розділити по горизонталі", "Рамка", "Текст, який Ви намагаєтесь вставити схожий на HTML. Вставити його як HTML?", "Вставити його як HTML", "Зберегти оригінал", "Вставити як текст", "Вставити тільки текст", "Ви можете редагувати лише власні зображення. Завантажити зображення на ваш сервер?", "Зображення успішно завантажено на сервер!", "палітра", "Файли відсутні", "Змінити назву", "Введіть нове імя'", "Попередній перегляд", "Завантажити", "Вставити з буфера обміну", "Ваш браузер не підтримує доступ до буфера обміну.", "Копіювати виділене", "копія", "Радіус рамки", "Показати все", "Застосувати", "Будь ласка, заповніть це поле", "Будь ласка, введіть веб-адресу", "За замовченням", "Коло", "Крапка", "Квадрат", "Знайти", "Знайти попередні", "Знайти наступні", "Ви вставляєте контент з документа Microsoft Word або Excel. Бажаєте зберегти форматування?", "Можливо це фрагмент Word або Excel", "Почистити", "Вставити клас", "Натисніть Alt для зміни розміру"]
+                    t.exports.default = ["Напишіть щось", "Про PagePerfect", "Редактор PagePerfect", "PagePerfect інструкція користувача", "містить детальну інформацію щодо користування", "Щоб дізнатись більше про ліцензію , будь ласка, перейдіть на наш сайт:", "Купити повну версію", "Авторські права © PagePerfect - Чупурнов Валерій. Всі права захищені.", "Анкор", "Відкрити у новій вкладці", "Відкрити редактор в повному розмірі", "Очистити форматування", "Колір заливки або колір текста", "Повторити", "Відмінити", "Жирний", "Курсів", "Вставити невпорядкований список", "Вставити нумерованний список", "Вирівняти по центру", "Вирівняти по ширині", "Вирівняти по лівому краю", "Вирівняти по правому краю", "Вставити горизонтальну лінію", "Вставити зображення", "Вставити файл", "Вставити відео", "Вставити посилання", "Розмір шрифту", "Шрифт", "Вставити блочний елемент", "Нормальний текст", "Заголовок 1", "Заголовок 2", "Заголовок 3", "Заголовок 4", "Цитата", "Код", "Вставити", "Вставити таблицю", "Збільшити відступ", "Зменшити відступ", "Оберіть спеціальный символ", "Вставити спеціальный символ", "Формат краски", "Джерело", "Відступи", "зверху", "справа", "знизу", "зліва", "Стилі", "Класи", "Вирівнювання", "По правому краю", "По центру", "По лівому краю", "--не встановлено--", "src", "Заголовок", "Альтернативний текст (alt)", "Посилання", "Відкрити посилання в новій вкладці", null, "Файл", "Розширені", "Властивості зображення", "Відміна", "Ок", "Браузер файлів", "Помилка при завантаженні списку зображень", "Помилка при завантаженні списку папок", "Ви впевнені?", "Введіть назву папки", "Створити папку", "введіть назву", "Перетягніть зображення сюди", "Перетягніть файл сюди", "або клікніть", "Альтернативный текст", "Завантаження", "Сервер", "Фон", "Текст", " Вгору", "По центру", "Донизу", "Вставити стовпець до", "Вставити стовпець після", "Вставити рядок вище", "Вставити рядок нижче", "Видалити таблицю", "Видалити рядок", "Видалити стовпчик", "Очистити кліинку", "Символів: %d", "Слів: %d", "Закреслений", "Підкреслений", "верхній індекс", "індекс", "Обрізати вибране", "Вибрати все", "Межа", "Шукати", "Замінити на", "Замінити", "Вставити", "Обрати контент для вставки", "HTML", "жирний", "курсів", "заливка", "посилання", "відмінити", "повторити", "таблиця", "зображення", "видалення", "параграф", "розмір шрифту", "відео", "шрифт", "про редактор", "друк", "підкреслений", "закреслений", "відступ", "заступ", "на весь екран", "звичайний розмір", "лінія", "Список", "Нумерований список", "Вирізати", "Виділити все", "Код", "Відкрити посилання", "Редагувати посилання", "Атрибут nofollow", "Видалити посилання", "Оновити", "Редагування", "Перегляд", "URL", "Редагувати", "Горизонтальне вирівнювання", "Фільтр", "Сортувати за зміною", "Сортувати за ім'ям", "Сортувати за розміром", "Додати папку", "Відновити", "Зберегти", "Зберегти як", "Змінити розмір", "Обрізати розмір", "Ширина", "Висота", "Зберегти пропорції", "Так", "Ні", "Видалити", "Вибрати", "Вибрати: %s", "Вертикальне вирівнювання", "Розділити", "Об'єднати в одну", "Додати стовпчик", "Додати рядок", "Ліцензія: %s", "Видалити", "Розділити по вертикалі", "Розділити по горизонталі", "Рамка", "Текст, який Ви намагаєтесь вставити схожий на HTML. Вставити його як HTML?", "Вставити його як HTML", "Зберегти оригінал", "Вставити як текст", "Вставити тільки текст", "Ви можете редагувати лише власні зображення. Завантажити зображення на ваш сервер?", "Зображення успішно завантажено на сервер!", "палітра", "Файли відсутні", "Змінити назву", "Введіть нове імя'", "Попередній перегляд", "Завантажити", "Вставити з буфера обміну", "Ваш браузер не підтримує доступ до буфера обміну.", "Копіювати виділене", "копія", "Радіус рамки", "Показати все", "Застосувати", "Будь ласка, заповніть це поле", "Будь ласка, введіть веб-адресу", "За замовченням", "Коло", "Крапка", "Квадрат", "Знайти", "Знайти попередні", "Знайти наступні", "Ви вставляєте контент з документа Microsoft Word або Excel. Бажаєте зберегти форматування?", "Можливо це фрагмент Word або Excel", "Почистити", "Вставити клас", "Натисніть Alt для зміни розміру"]
                 },
                 25182(t) {
-                    t.exports.default = ["输入一些内容", "关于Rubisco", "Rubisco Editor", "开发者指南", "使用帮助", "有关许可证的信息，请访问我们的网站：", "购买完整版本", "Copyright © Rubisco - Chupurnov Valeriy. 版权所有", "Anchor", "在新窗口打开", "全屏编辑", "清除样式", "颜色", "重做", "撤销", "粗体", "斜体", "符号列表", "编号", "居中", "对齐文本", "左对齐", "右对齐", "分割线", "图片", "文件", "视频", "链接", "字号", "字体", "格式块", "默认", "标题1", "标题2", "标题3", "标题4", "引用", "代码", "插入", "表格", "减少缩进", "增加缩进", "选择特殊符号", "特殊符号", "格式复制", "改变模式", "外边距（Margins）", "top", "right", "bottom", "left", "样式", "Classes", "对齐方式", "居右", "居中", "居左", "无", "Src", "Title", "Alternative", "Link", "在新窗口打开链接", "图片", "file", "高级", "图片属性", "取消", "确定", "文件管理", "加载list错误", "加载folders错误", "你确定吗？", "输入路径", "创建路径", "type name", "拖动图片到此", "拖动文件到此", "或点击", "Alternative text", "上传", "浏览", "背景色", "文字", "顶部", "中间", "底部", "在之前插入列", "在之后插入列", "在之前插入行", "在之后插入行", "删除表格", "删除行", "删除列", "清除内容", "字符数: %d", "单词数: %d", "删除线", "下划线", "上标", "下标", "剪切", "全选", "Break", "查找", "替换为", "替换", "粘贴", "选择内容并粘贴", "源码", "粗体", "斜体", "颜色", "链接", "撤销", "重做", "表格", "图片", "橡皮擦", "段落", "字号", "视频", "字体", "关于", "打印", "下划线", "上出现", "增加缩进", "减少缩进", "全屏", "收缩", "分割线", "无序列表", "顺序列表", "剪切", "全选", "嵌入代码", "打开链接", "编辑链接", "No follow", "取消链接", "更新", "铅笔", "预览", "URL", "编辑", "水平对齐", "筛选", "修改时间排序", "名称排序", "大小排序", "新建文件夹", "重置", "保存", "保存为", "调整大小", "剪切", "宽", "高", "保持长宽比", "是", "不", "移除", "选择", "选择: %s", "垂直对齐", "拆分", "合并", "添加列", "添加行", null, "删除", "垂直拆分", "水平拆分", "边框", "你粘贴的文本是一段html代码，是否保留源格式", "html粘贴", "保留源格式", "把html代码视为普通文本", "只保留文本", "你只能编辑你自己的图片。Download this image on the host?", "图片上传成功", "调色板", "此目录中沒有文件。", "重命名", "输入新名称", "预览", "下载", "粘贴从剪贴板", "你浏览器不支持直接访问的剪贴板。", "复制选中内容", "复制", "边界半径", "显示所有", "应用", "请填写这个字段", "请输入一个网址", "默认", "圆圈", "点", "方形", "搜索", "查找上一个", "查找下一个", "正在粘贴 Word/Excel 的文本，是否保留源格式？", "文本粘贴", "匹配目标格式", "插入班级名称", "按Alt自定义调整大小"]
+                    t.exports.default = ["输入一些内容", "关于PagePerfect", "PagePerfect Editor", "开发者指南", "使用帮助", "有关许可证的信息，请访问我们的网站：", "购买完整版本", "Copyright © PagePerfect - Chupurnov Valeriy. 版权所有", "Anchor", "在新窗口打开", "全屏编辑", "清除样式", "颜色", "重做", "撤销", "粗体", "斜体", "符号列表", "编号", "居中", "对齐文本", "左对齐", "右对齐", "分割线", "图片", "文件", "视频", "链接", "字号", "字体", "格式块", "默认", "标题1", "标题2", "标题3", "标题4", "引用", "代码", "插入", "表格", "减少缩进", "增加缩进", "选择特殊符号", "特殊符号", "格式复制", "改变模式", "外边距（Margins）", "top", "right", "bottom", "left", "样式", "Classes", "对齐方式", "居右", "居中", "居左", "无", "Src", "Title", "Alternative", "Link", "在新窗口打开链接", "图片", "file", "高级", "图片属性", "取消", "确定", "文件管理", "加载list错误", "加载folders错误", "你确定吗？", "输入路径", "创建路径", "type name", "拖动图片到此", "拖动文件到此", "或点击", "Alternative text", "上传", "浏览", "背景色", "文字", "顶部", "中间", "底部", "在之前插入列", "在之后插入列", "在之前插入行", "在之后插入行", "删除表格", "删除行", "删除列", "清除内容", "字符数: %d", "单词数: %d", "删除线", "下划线", "上标", "下标", "剪切", "全选", "Break", "查找", "替换为", "替换", "粘贴", "选择内容并粘贴", "源码", "粗体", "斜体", "颜色", "链接", "撤销", "重做", "表格", "图片", "橡皮擦", "段落", "字号", "视频", "字体", "关于", "打印", "下划线", "上出现", "增加缩进", "减少缩进", "全屏", "收缩", "分割线", "无序列表", "顺序列表", "剪切", "全选", "嵌入代码", "打开链接", "编辑链接", "No follow", "取消链接", "更新", "铅笔", "预览", "URL", "编辑", "水平对齐", "筛选", "修改时间排序", "名称排序", "大小排序", "新建文件夹", "重置", "保存", "保存为", "调整大小", "剪切", "宽", "高", "保持长宽比", "是", "不", "移除", "选择", "选择: %s", "垂直对齐", "拆分", "合并", "添加列", "添加行", null, "删除", "垂直拆分", "水平拆分", "边框", "你粘贴的文本是一段html代码，是否保留源格式", "html粘贴", "保留源格式", "把html代码视为普通文本", "只保留文本", "你只能编辑你自己的图片。Download this image on the host?", "图片上传成功", "调色板", "此目录中沒有文件。", "重命名", "输入新名称", "预览", "下载", "粘贴从剪贴板", "你浏览器不支持直接访问的剪贴板。", "复制选中内容", "复制", "边界半径", "显示所有", "应用", "请填写这个字段", "请输入一个网址", "默认", "圆圈", "点", "方形", "搜索", "查找上一个", "查找下一个", "正在粘贴 Word/Excel 的文本，是否保留源格式？", "文本粘贴", "匹配目标格式", "插入班级名称", "按Alt自定义调整大小"]
                 },
                 44906(t) {
-                    t.exports.default = ["輸入一些內容", "關於Rubisco", "Rubisco Editor", "開發者指南", "使用幫助", "相關授權條款資訊，請造訪我們的網站：", "購買完整版本", "Copyright © Rubisco - Chupurnov Valeriy. All rights reserved.", "錨點", "在新分頁開啟", "全螢幕編輯", "清除樣式", "顏色", "取消復原", "復原", "粗體", "斜體", "項目符號清單", "編號清單", "置中", "文字對齊", "靠左", "靠右", "分割線", "圖片", "檔案", "插入 youtube/vimeo 影片", "插入連結", "文字大小", "字型", "格式化區塊", "內文", "標題1", "標題2", "標題3", "標題4", "引文", "程式碼", "插入", "表格", "減少縮排", "增加縮排", "選擇特殊符號", "特殊符號", "格式複製", "檢視原始碼", "邊距", "上", "右", "下", "左", "樣式", "Classes", "對齊方式", "靠右", "置中", "靠左", "無", "Src", "Title", "替代", "Link", "在新分頁開啟連結", "圖片", "檔案", "進階", "圖片屬性", "取消", "確定", "檔案瀏覽", "清單載入錯誤", "資料夾載入錯誤", "您確定嗎？", "輸入路徑", "創建路徑", "type name", "拖曳圖片至此", "拖曳檔案至此", "或點擊", "替代文字", "上傳", "瀏覽", "背景色", "文字", "頂部", "中間", "底部", "插入左方欄", "插入右方欄", "插入上方列", "插入下方列", "刪除表格", "刪除整列", "刪除整欄", "清除內容", "字元數: %d", "單字數: %d", "刪除線", "底線", "上標", "下標", "剪下", "全選", "斷行", "尋找", "取代為", "取代", "貼上", "選擇內容並貼上", "原始碼", "粗體", "斜體", "顏色", "連結", "復原", "取消復原", "表格", "圖片", "橡皮擦", "段落", "文字大小", "影片", "字型", "關於", "列印", "底線", "刪除線", "增加縮排", "減少縮排", "全螢幕", "縮減", "分隔線", "項目符號清單", "編號清單", "剪下", "全選", "嵌入程式碼", "打開連結", "編輯連結", "No follow", "取消連結", "更新", "鉛筆", "查看", "URL", null, "水平對齊", "篩選", "修改時間排序", "名稱排序", "大小排序", "新增資料夾", "重設", "儲存", "另存為...", "調整大小", "裁切", "寬", "高", "維持長寬比", "是", "否", "移除", "選擇", "選擇: %s", "垂直對齊", "分割", "合併", "新增欄", "新增列", null, "刪除", "垂直分割", "水平分割", "邊框", "您的程式碼與 HTML 類似，是否貼上 HTML 格式？", "貼上 HTML", "保留原始格式", "以純文字貼上", "僅貼上內文", "您只能編輯您自己的圖片。是否下載此圖片?", "圖片上傳成功", "調色盤", "沒有檔案", "重新命名", "輸入新名稱", "預覽", "下載", "從剪貼簿貼上", "瀏覽器無法存取剪貼簿。", "複製已選取項目", "複製", "邊框圓角", "顯示全部", "應用", "請輸入此欄位", "請輸入網址", "預設", "圓圈", "點", "方形", "尋找", "尋找上一個", "尋找下一個", "正在貼上 Word/Excel 文件的內容，是否保留原始格式？", "貼上 Word 格式", "清除格式", "插入 class 名稱", "按住 Alt 以調整自訂大小"]
+                    t.exports.default = ["輸入一些內容", "關於PagePerfect", "PagePerfect Editor", "開發者指南", "使用幫助", "相關授權條款資訊，請造訪我們的網站：", "購買完整版本", "Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.", "錨點", "在新分頁開啟", "全螢幕編輯", "清除樣式", "顏色", "取消復原", "復原", "粗體", "斜體", "項目符號清單", "編號清單", "置中", "文字對齊", "靠左", "靠右", "分割線", "圖片", "檔案", "插入 youtube/vimeo 影片", "插入連結", "文字大小", "字型", "格式化區塊", "內文", "標題1", "標題2", "標題3", "標題4", "引文", "程式碼", "插入", "表格", "減少縮排", "增加縮排", "選擇特殊符號", "特殊符號", "格式複製", "檢視原始碼", "邊距", "上", "右", "下", "左", "樣式", "Classes", "對齊方式", "靠右", "置中", "靠左", "無", "Src", "Title", "替代", "Link", "在新分頁開啟連結", "圖片", "檔案", "進階", "圖片屬性", "取消", "確定", "檔案瀏覽", "清單載入錯誤", "資料夾載入錯誤", "您確定嗎？", "輸入路徑", "創建路徑", "type name", "拖曳圖片至此", "拖曳檔案至此", "或點擊", "替代文字", "上傳", "瀏覽", "背景色", "文字", "頂部", "中間", "底部", "插入左方欄", "插入右方欄", "插入上方列", "插入下方列", "刪除表格", "刪除整列", "刪除整欄", "清除內容", "字元數: %d", "單字數: %d", "刪除線", "底線", "上標", "下標", "剪下", "全選", "斷行", "尋找", "取代為", "取代", "貼上", "選擇內容並貼上", "原始碼", "粗體", "斜體", "顏色", "連結", "復原", "取消復原", "表格", "圖片", "橡皮擦", "段落", "文字大小", "影片", "字型", "關於", "列印", "底線", "刪除線", "增加縮排", "減少縮排", "全螢幕", "縮減", "分隔線", "項目符號清單", "編號清單", "剪下", "全選", "嵌入程式碼", "打開連結", "編輯連結", "No follow", "取消連結", "更新", "鉛筆", "查看", "URL", null, "水平對齊", "篩選", "修改時間排序", "名稱排序", "大小排序", "新增資料夾", "重設", "儲存", "另存為...", "調整大小", "裁切", "寬", "高", "維持長寬比", "是", "否", "移除", "選擇", "選擇: %s", "垂直對齊", "分割", "合併", "新增欄", "新增列", null, "刪除", "垂直分割", "水平分割", "邊框", "您的程式碼與 HTML 類似，是否貼上 HTML 格式？", "貼上 HTML", "保留原始格式", "以純文字貼上", "僅貼上內文", "您只能編輯您自己的圖片。是否下載此圖片?", "圖片上傳成功", "調色盤", "沒有檔案", "重新命名", "輸入新名稱", "預覽", "下載", "從剪貼簿貼上", "瀏覽器無法存取剪貼簿。", "複製已選取項目", "複製", "邊框圓角", "顯示全部", "應用", "請輸入此欄位", "請輸入網址", "預設", "圓圈", "點", "方形", "尋找", "尋找上一個", "尋找下一個", "正在貼上 Word/Excel 文件的內容，是否保留原始格式？", "貼上 Word 格式", "清除格式", "插入 class 名稱", "按住 Alt 以調整自訂大小"]
                 },
                 928(t) {
                     t.exports = '<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox="0 0 1792 1792"> <path d="M621 1280h595v-595zm-45-45l595-595h-595v595zm1152 77v192q0 14-9 23t-23 9h-224v224q0 14-9 23t-23 9h-192q-14 0-23-9t-9-23v-224h-864q-14 0-23-9t-9-23v-864h-224q-14 0-23-9t-9-23v-192q0-14 9-23t23-9h224v-224q0-14 9-23t23-9h192q14 0 23 9t9 23v224h851l246-247q10-9 23-9t23 9q9 10 9 23t-9 23l-247 246v851h224q14 0 23 9t9 23z"/> </svg>'
@@ -21821,7 +21821,7 @@
                     for (e && e(s); n.length > c; c++) i.o(t, o = n[c]) && t[o] && t[o][0](), t[o] = 0;
                     return i.O(u)
                 },
-                s = self.webpackChunkrubisco = self.webpackChunkrubisco || [];
+                s = self.webpackChunkpageperfect = self.webpackChunkpageperfect || [];
             s.forEach(e.bind(null, 0)), s.push = e.bind(null, s.push.bind(s))
         })();
         var r = {};
@@ -21831,7 +21831,7 @@
                 CommitMode() {
                     return u
                 },
-                Rubisco() {
+                PagePerfect() {
                     return t.x
                 }
             });
