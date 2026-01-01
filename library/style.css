@@ -1,4 +1,4 @@
-@import url(https://vortixsys.pages.dev/fonts/library.css);
+@import url(https://pageperfect.pages.dev/fonts/library.css);
 
 .rubisco-ui-group {
     display: inline-flex;
@@ -5056,8 +5056,8 @@ html.rubisco_fullsize-box_true {
     --rb-color-button-background-hover: #dcdcdc;
     --rb-color-button-background-hover-opacity40: hsla(0, 0%, 86%, .4);
     --rb-color-button-background-hover-opacity60: hsla(0, 0%, 86%, .6);
-    --rb-font-ui: sans-serif;
-    --rb-font-default: sans-serif;
+    --rb-font-ui: 'Rubisco Sans Text', sans-serif;
+    --rb-font-default: 'Rubisco Sans Text', sans-serif;
     --rb-font-size-default: 14px;
     --rb-font-size-small: 11px;
     --rb-color-text-icons: rgba(0, 0, 0, .75);

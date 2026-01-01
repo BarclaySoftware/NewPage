@@ -1,0 +1,77 @@
+/* Rubisco Sans */
+@font-face {
+    font-family: 'Rubisco Sans';
+    src: url(./RubiscoSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubisco Sans';
+    src: url(./RubiscoSans-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubisco Sans';
+    src: url(./RubiscoSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubisco Sans';
+    src: url(./RubiscoSans-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Rubisco Sans Text */
+@font-face {
+    font-family: 'Rubisco Sans Text';
+    src: url(./RubiscoSansText-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubisco Sans Text';
+    src: url(./RubiscoSansText-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubisco Sans Text';
+    src: url(./RubiscoSansText-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubisco Sans Text';
+    src: url(./RubiscoSansText-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Rubisco Sans Code */
+@font-face {
+    font-family: 'Rubisco Sans Code';
+    src: url(./RubiscoSansCode-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubisco Sans Code';
+    src: url(./RubiscoSansCode-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubisco Sans Code';
+    src: url(./RubiscoSansCode-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubisco Sans Code';
+    src: url(./RubiscoSansCode-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}

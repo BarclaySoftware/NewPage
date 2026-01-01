@@ -10,7 +10,7 @@ const editor = new Rubisco('#editor', {
 document.getElementById('saveBtn').addEventListener('click', function() {
     const content = editor.value;
     if(content) {
-        const blob = new Blob([`<!DOCTYPE html>\n<html>\n<head>\n<meta charset='UTF-8'>\n<title>Saved Content</title>\n<link rel='stylesheet' type='text/css' href='https://docsuite.pages.dev/page2html/global.css'>\n</head>\n<body>\n${content}\n</body>\n</html>`], { type: 'text/html' });
+        const blob = new Blob([`<!DOCTYPE html>\n<html>\n<head>\n<meta charset='UTF-8'>\n<title>Saved Content</title>\n<link rel='stylesheet' type='text/css' href='https://pageperfect.pages.dev/global.css'>\n</head>\n<body>\n${content}\n</body>\n</html>`], { type: 'text/html' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
         a.download = 'saved_content.html';
