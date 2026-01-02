@@ -9742,7 +9742,7 @@
                     }, n.T.prototype.controls.filebrowser = {
                         upload: {
                             icon: "plus",
-                            tooltip: "Upload file",
+                            tooltip: "Upload File",
                             isInput: !0,
                             isDisabled(t) {
                                 return !t.dataProvider.canI("FileUpload")
@@ -9757,7 +9757,7 @@
                         },
                         remove: {
                             icon: "bin",
-                            tooltip: "Remove file",
+                            tooltip: "Remove File",
                             isDisabled(t) {
                                 return !t.state.activeElements.length || !t.dataProvider.canI("FileRemove")
                             },
@@ -9766,13 +9766,13 @@
                             }
                         },
                         update: {
-                            tooltip: "Update file list",
+                            tooltip: "Update File List",
                             exec(t) {
                                 t.e.fire("update.filebrowser")
                             }
                         },
                         select: {
-                            tooltip: "Select file",
+                            tooltip: "Select File",
                             icon: "check",
                             isDisabled(t) {
                                 return !t.state.activeElements.length
@@ -9782,7 +9782,7 @@
                             }
                         },
                         edit: {
-                            tooltip: "Edit image",
+                            tooltip: "Edit Image",
                             icon: "pencil",
                             isDisabled(t) {
                                 const e = t.state.activeElements;
@@ -9793,7 +9793,7 @@
                             }
                         },
                         tiles: {
-                            tooltip: "Tiles view",
+                            tooltip: "Tiles View",
                             icon: "th",
                             isActive(t) {
                                 return "tiles" === t.state.view
@@ -9803,7 +9803,7 @@
                             }
                         },
                         list: {
-                            tooltip: "List view",
+                            tooltip: "List View",
                             icon: "th-list",
                             isActive(t) {
                                 return "list" === t.state.view
@@ -12809,7 +12809,7 @@
                                     closeOnClickOverlay: !0
                                 }),
                                 s = t.i18n.bind(t);
-                            e.setMod("theme", t.o.theme).setHeader(s("About PagePerfect")).setContent(`<div class="pageperfect-about">\n\t\t\t\t\t<div>${s("PagePerfect Editor")} v.${t.getVersion()}</div>\n\t\t\t\t\t<div>${s("License: %s",(0,o.isLicense)(t.o.license)?(0,o.normalizeLicense)(t.o.license):"MIT")}</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="${i.HOMEPAGE}" target="_blank">${i.HOMEPAGE}</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="https://pageperfect.pages.dev/" target="_blank">${s("PagePerfect User's Guide")}</a>\n\t\t\t\t\t\t${s("contains detailed help for using")}\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>${s("Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.")}</div>\n\t\t\t\t</div>`), (0, o.css)(e.dialog, {
+                            e.setMod("theme", t.o.theme).setHeader(s("About PagePerfect")).setContent(`<div class="pageperfect-about">\n\t\t\t\t\t<div>${s("PagePerfect Editor")} v.${t.getVersion()}</div>\n\t\t\t\t\t<div>${s("License: %s",(0,o.isLicense)(t.o.license)?(0,o.normalizeLicense)(t.o.license):"MIT License")}</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="${i.HOMEPAGE}" target="_blank">${i.HOMEPAGE}</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href="https://pageperfect.pages.dev/about" target="_blank">${s("PagePerfect Guide")}</a>\n\t\t\t\t\t\t${s("")}\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>${s("Copyright © PagePerfect. All Rights Reserved.")}</div>\n\t\t\t\t</div>`), (0, o.css)(e.dialog, {
                                 minHeight: 200,
                                 minWidth: 420
                             }), e.open(!0, !0)
@@ -13663,10 +13663,10 @@
                     var i = s(36115);
                     i.T.prototype.controls.subscript = {
                         tags: ["sub"],
-                        tooltip: "subscript"
+                        tooltip: "Subscript"
                     }, i.T.prototype.controls.superscript = {
                         tags: ["sup"],
-                        tooltip: "superscript"
+                        tooltip: "Superscript"
                     }, i.T.prototype.controls.bold = {
                         tagRegExp: /^(strong|b)$/i,
                         tags: ["strong", "b"],
@@ -13694,7 +13694,7 @@
                         css: {
                             "text-decoration-line": "line-through"
                         },
-                        tooltip: "Strike through"
+                        tooltip: "Strikethrough"
                     }
                 },
                 98341(t, e, s) {
@@ -14194,17 +14194,17 @@
                         isDisabled(t) {
                             return t.s.isCollapsed()
                         },
-                        tooltip: "Cut selection"
+                        tooltip: "Cut Selection"
                     }, r.T.prototype.controls.copy = {
                         command: "copy",
                         isDisabled(t) {
                             return t.s.isCollapsed()
                         },
-                        tooltip: "Copy selection"
+                        tooltip: "Copy Selection"
                     }, r.T.prototype.controls.selectall = {
                         icon: "select-all",
                         command: "selectall",
-                        tooltip: "Select all"
+                        tooltip: "Select All"
                     }, i.I.set("copy", n()).set("cut", l()).set("paste", u()).set("select-all", h())
                 },
                 36293(t, e, s) {
@@ -14334,7 +14334,7 @@
                                     e.style.backgroundColor = n
                             } else t.execCommand("background" === o ? o : "forecolor", !1, n)
                         },
-                        tooltip: "Fill color or set the text color"
+                        tooltip: "Fill/Text Color"
                     }
                 },
                 38373(t, e, s) {
@@ -14389,7 +14389,7 @@
                         isActive(t) {
                             return t.buffer.exists(d)
                         },
-                        tooltip: "Paint format"
+                        tooltip: "Paint Format"
                     }, r.fg.add("copyformat", (t => {
                         t.registerButton({
                             name: "copyformat",
@@ -15273,7 +15273,7 @@
                             }, o, s, !1)
                         },
                         tags: ["a"],
-                        tooltip: "Insert file"
+                        tooltip: "Insert File"
                     }, r.fg.add("file", (t => {
                         t.registerButton({
                             name: "file",
@@ -15333,7 +15333,7 @@
                         childTemplate(t, e, s) {
                             return `${s}${t.o.defaultFontSizePoints}`
                         },
-                        tooltip: "Font size",
+                        tooltip: "Font Size",
                         value(t, e) {
                             const s = t.s.current();
                             if (!s) return;
@@ -15405,7 +15405,7 @@
                                 return t.toLowerCase().replace(/['"]+/g, "").replace(/[^a-z0-9-]+/g, ",")
                             }
                         },
-                        tooltip: "Font family"
+                        tooltip: "Font Family"
                     }
                 },
                 73077(t, e, s) {
@@ -15488,7 +15488,7 @@
                         childTemplate(t, e, s) {
                             return `<${e} style="margin:0;padding:0"><span>${t.i18n(s)}</span></${e}>`
                         },
-                        tooltip: "Insert format block"
+                        tooltip: "Insert Format Block"
                     }
                 },
                 88429(t, e, s) {
@@ -15520,7 +15520,7 @@
                             const s = t.isFullSize ? "shrink" : "fullsize";
                             e.state.activated = t.isFullSize, t.o.textIcons ? e.state.text = s : e.state.icon.name = s
                         },
-                        tooltip: "Open in fullsize",
+                        tooltip: "Open in Fullscreen",
                         mode: i.MODE_SOURCE + i.MODE_WYSIWYG
                     }
                 },
@@ -16743,14 +16743,14 @@
                     var i = s(26150);
                     e.A = [{
                         name: "eye",
-                        tooltip: "Open link",
+                        tooltip: "Open Link",
                         exec(t, e) {
                             const s = (0, i.C)(e, "href");
                             e && s && t.ow.open(s)
                         }
                     }, {
                         name: "link",
-                        tooltip: "Edit link",
+                        tooltip: "Edit Link",
                         icon: "pencil"
                     }, "unlink", "brush", "file"]
                 },
@@ -16773,7 +16773,7 @@
                                 (0, r.A)(t, "vertical-align", "normal" === i ? "" : i)
                             }))
                         },
-                        tooltip: "Vertical align"
+                        tooltip: "Vertical Align"
                     }, {
                         name: "splitv",
                         list: {
@@ -16802,7 +16802,7 @@
                             const r = o(s);
                             t.execCommand(r, !1, e)
                         },
-                        tooltip: "Add column"
+                        tooltip: "Add Column"
                     }, {
                         name: "addrow",
                         list: {
@@ -16817,7 +16817,7 @@
                             const r = o(s);
                             t.execCommand(r, !1, e)
                         },
-                        tooltip: "Add row"
+                        tooltip: "Add Row"
                     }, {
                         name: "delete",
                         icon: "bin",
@@ -16874,7 +16874,7 @@
                             if (!n) return !1;
                             (0, o.Mr)(e, n), i.J.isTag(e, new Set(["pageperfect", "pageperfect-media"])) && e.firstElementChild && (0, o.Mr)(e.firstElementChild, n), t.synchronizeValues(), t.e.fire("recalcPositionPopup")
                         },
-                        tooltip: "Horizontal align"
+                        tooltip: "Horizontal Align"
                     };
                     e.A = [{
                         name: "delete",
@@ -16892,7 +16892,7 @@
                     }, {
                         name: "valign",
                         list: ["Top", "Middle", "Bottom", "Normal"],
-                        tooltip: "Vertical align",
+                        tooltip: "Vertical Align",
                         exec(t, e, {
                             control: s
                         }) {
@@ -17194,7 +17194,7 @@
                     o.T.prototype.defaultLineHeight = null, r.I.set("line-height", a()), o.T.prototype.controls.lineHeight = {
                         command: "applyLineHeight",
                         tags: ["ol"],
-                        tooltip: "Line height",
+                        tooltip: "Line Height",
                         list: [1, 1.1, 1.2, 1.3, 1.4, 1.5, 2],
                         exec(t, e, {
                             control: s
@@ -17519,7 +17519,7 @@
                             return t.e.fire("generateLinkForm.link", e, s)
                         },
                         tags: ["a"],
-                        tooltip: "Insert link"
+                        tooltip: "Insert Link"
                     }
                 },
                 47791(t, e, s) {
@@ -17875,7 +17875,7 @@
                                 }
                             }, i.control.data = o), o.rebuild(), o.toolbar
                         },
-                        tooltip: "Show all"
+                        tooltip: "Show All"
                     }
                 },
                 76967(t, e, s) {
@@ -18111,7 +18111,7 @@
                     }], r.T.prototype.memorizeChoiceWhenPasteFragment = !1, r.T.prototype.nl2brInPlainText = !0;
                     const n = "pasteStorage";
                     r.T.prototype.controls.paste = {
-                        tooltip: "Paste from clipboard",
+                        tooltip: "Paste from Clipboard",
                         async exec(t, e, {
                             control: s
                         }) {
@@ -19723,7 +19723,7 @@
                         isActive(t) {
                             return t.getRealMode() === i.MODE_SOURCE
                         },
-                        tooltip: "Change mode"
+                        tooltip: "Change Mode"
                     }
                 },
                 5533(t, e, s) {
@@ -21069,7 +21069,7 @@
                             }
                             return d
                         },
-                        tooltip: "Insert table"
+                        tooltip: "Insert Table"
                     }
                 },
                 76385(t, e, s) {
@@ -21132,7 +21132,7 @@
                             })), (0, l.Zg)(t, c)
                         },
                         tags: ["iframe"],
-                        tooltip: "Insert youtube/vimeo video"
+                        tooltip: "Insert YouTube/Vimeo Video"
                     }
                 },
                 38309(t, e, s) {
@@ -21468,7 +21468,7 @@
                     t.exports.default = ["なにかタイプしてください", "PagePerfectについて", "PagePerfect Editor", "PagePerfect ユーザーズ・ガイド", "詳しい使い方", "ライセンス詳細についてはPagePerfect Webサイトを確認ください：", "フルバージョンを購入", "Copyright © PagePerfect - Chupurnov Valeriy. All rights reserved.", "Anchor", "新しいタブで開く", "エディターのサイズ（フル/ノーマル）", "書式をクリア", "テキストの色", "やり直し", "元に戻す", "太字", "斜体", "箇条書き", "番号付きリスト", "中央揃え", "両端揃え", "左揃え", "右揃え", "区切り線を挿入", "画像を挿入", "ファイルを挿入", "Youtube/Vimeo 動画", "リンクを挿入", "フォントサイズ", "フォント", "テキストのスタイル", "指定なし", "タイトル1", "タイトル2", "タイトル3", "タイトル4", "引用", "コード", "挿入", "表を挿入", "インデント減", "インデント増", "特殊文字を選択", "特殊文字を挿入", "書式を貼付け", "編集モード切替え", "マージン", "上", "右", "下", "左", "スタイル", "クラス", "配置", "右寄せ", "中央寄せ", "左寄せ", "指定なし", "ソース", "タイトル", "代替テキスト", "リンク", "新しいタブで開く", "画像", "ファイル", "高度な設定", "画像のプロパティー", "キャンセル", "確定", "File Browser", "Error on load list", "Error on load folders", "Are you sure?", "Enter Directory name", "Create directory", "type name", "ここに画像をドロップ", "ここにファイルをドロップ", "or クリック", "代替テキスト", "アップロード", "ブラウズ", "背景", "文字", "上", "中央", "下", "左に列を挿入", "右に列を挿入", "上に行を挿入", "下に行を挿入", "表を削除", "行を削除", "列を削除", "セルを空にする", "文字数: %d", "単語数: %d", "取り消し線", "下線", "上付き文字", "下付き文字", "切り取り", "すべて選択", "Pause", "検索", "置換", "交換", "貼付け", "選択した内容を貼付け", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strikethrough", "indent", "outdent", "fullsize", "shrink", "分割線", "箇条書き", "番号付きリスト", "切り取り", "すべて選択", "埋め込みコード", "リンクを開く", "リンクを編集", "No follow", "リンク解除", "更新", "鉛筆", "サイトを確認", "URL", "編集", "水平方向の配置", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "リセット", "保存", "Save as ...", "リサイズ", "Crop", "幅", "高さ", "縦横比を保持", "はい", "いいえ", "移除", "選択", "選択: %s", "垂直方向の配置", "分割", "セルの結合", "列を追加", "行を追加", null, "削除", "セルの分割（垂直方向）", "セルの分割（水平方向）", "境界線", "HTMLコードを保持しますか？", "HTMLで貼付け", "HTMLを保持", "HTMLをテキストにする", "テキストだけ", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "パレット", "There are no files", "Rename", "Enter new name", "プレビュー", "ダウンロード", "貼り付け", "お使いのブラウザはクリップボードを使用できません", "コピー", "copy", "角の丸み", "全て表示", "適用", "まだこの分野", "を入力してくださいウェブアドレス", "デフォルト", "白丸", "黒丸", "四角", "見", "探前", "由来", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "クラス名を挿入", "カスタムサイズ変更のためのAltキーを押します"]
                 },
                 53414(t) {
-                    t.exports.default = ["Start creating something great...", "About PagePerfect", "PagePerfect Editor", "PagePerfect User Guide", "for help", "For information about the license, please go to our website:", "Buy full version", "Copyright © PagePerfect. All Rights Reserved.", "Anchor", "Open in New Tab", "Open in Fullscreen", "Clear Formatting", "Fill Color or set the Text Color", "Redo", "Undo", "Bold", "Italic", "Insert Unordered List", "Insert Ordered List", "Align Center", "Align Justify", "Align Left", "Align Right", "Insert Horizontal Line", "Insert Image", "Insert file", "Insert YouTube/Vimeo video", "Insert Link", "Font Size", "Font Family", "Insert Format Block", "Normal", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "Quote", "Code", "Insert", "Insert Table", "Decrease Indent", "Increase Indent", "Select Special Character", "Insert Special Character", "Paint Format", "Change Mode", "Margins", "Top", "Right", "Bottom", "Feft", "Styles", "Classes", "Align", "Right", "Center", "Left", "--Not Set--", "SRC", "Title", "Alternative", "Link", "Open Link in New Tab", "Image", "File", "Advanced", "Image Properties", "Cancel", "Ok", "File Browser", "Error on Load List", "Error on Load Folders", "Are you sure?", "Enter Directory Name", "Create Directory", "Type Name", "Drop Image", "Drop File", "or click", "Alt Text", "Upload", "Browse", "Background", "Text", "Top", "Middle", "Bottom", "Insert Column Before", "Insert Column After", "Insert Row Above", "Insert Row Below", "Delete Table", "Delete Row", "Delete Column", "Empty Sell", "Chars: %d", "Words: %d", "Strikethrough", "Underline", "Superscript", "Subscript", "Cut Selection", "Select All", "Break", "Search for", "Replace with", "Replace", "Paste", "Choose Content to Paste", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strikethrough", "indent", "outdent", "fullsize", "shrink", "hr", "ul", "ol", "cut", "selectall", "Embed code", "Open link", "Edit link", "No follow", "Unlink", "Update", "pencil", "Eye", " URL", "Edit", "Horizontal align", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "Reset", "Save", "Save as ...", "Resize", "Crop", "Width", "Height", "Keep Aspect Ratio", "Yes", "No", "Remove", "Select", "Select %s", "Vertical align", "Split", "Merge", "Add column", "Add row", "License: %s", "Delete", "Split vertical", "Split horizontal", "Border", "Your code is similar to HTML. Keep as HTML?", "Paste as HTML", "Keep", "Insert as Text", "Insert only Text", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "palette", "There are no files", "Rename", "Enter new name", "preview", "download", "Paste from clipboard", "Your browser doesn't support direct access to the clipboard.", "Copy selection", "copy", "Border radius", "Show all", "Apply", "Please fill out this field", "Please enter a web address", "Default", "Circle", "Dot", "Quadrate", "Find", "Find Previous", "Find Next", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "Insert className", "Press Alt for custom resizing"]
+                    t.exports.default = ["Start creating something great...", "About PagePerfect", "PagePerfect Editor", "PagePerfect User Guide", "for help", "For information about the license, please go to our website:", "Buy full version", "Copyright © PagePerfect. All Rights Reserved.", "Anchor", "Open in New Tab", "Open in Fullscreen", "Clear Formatting", "Fill Color or set the Text Color", "Redo", "Undo", "Bold", "Italic", "Insert Unordered List", "Insert Ordered List", "Align Center", "Align Justify", "Align Left", "Align Right", "Insert Horizontal Line", "Insert Image", "Insert file", "Insert YouTube/Vimeo video", "Insert Link", "Font Size", "Font Family", "Insert Format Block", "Normal", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "Quote", "Code", "Insert", "Insert Table", "Decrease Indent", "Increase Indent", "Select Special Character", "Insert Special Character", "Paint Format", "Change Mode", "Margins", "Top", "Right", "Bottom", "Feft", "Styles", "Classes", "Align", "Right", "Center", "Left", "--Not Set--", "SRC", "Title", "Alternative", "Link", "Open Link in New Tab", "Image", "File", "Advanced", "Image Properties", "Cancel", "Ok", "File Browser", "Error on Load List", "Error on Load Folders", "Are you sure?", "Enter Directory Name", "Create Directory", "Type Name", "Drop Image", "Drop File", "or click", "Alt Text", "Upload", "Browse", "Background", "Text", "Top", "Middle", "Bottom", "Insert Column Before", "Insert Column After", "Insert Row Above", "Insert Row Below", "Delete Table", "Delete Row", "Delete Column", "Empty Sell", "Chars: %d", "Words: %d", "Strikethrough", "Underline", "Superscript", "Subscript", "Cut Selection", "Select All", "Break", "Search for", "Replace with", "Replace", "Paste", "Choose Content to Paste", "source", "bold", "italic", "brush", "link", "undo", "redo", "table", "image", "eraser", "paragraph", "fontsize", "video", "font", "about", "print", "underline", "strike through", "indent", "outdent", "fullsize", "shrink", "hr", "ul", "ol", "cut", "selectall", "Embed code", "Open link", "Edit link", "No follow", "Unlink", "Update", "pencil", "Eye", " URL", "Edit", "Horizontal align", "Filter", "Sort by changed", "Sort by name", "Sort by size", "Add folder", "Reset", "Save", "Save as ...", "Resize", "Crop", "Width", "Height", "Keep Aspect Ratio", "Yes", "No", "Remove", "Select", "Select %s", "Vertical align", "Split", "Merge", "Add column", "Add row", "License: %s", "Delete", "Split vertical", "Split horizontal", "Border", "Your code is similar to HTML. Keep as HTML?", "Paste as HTML", "Keep", "Insert as Text", "Insert only Text", "You can only edit your own images. Download this image on the host?", "The image has been successfully uploaded to the host!", "palette", "There are no files", "Rename", "Enter new name", "preview", "download", "Paste from clipboard", "Your browser doesn't support direct access to the clipboard.", "Copy selection", "copy", "Border radius", "Show all", "Apply", "Please fill out this field", "Please enter a web address", "Default", "Circle", "Dot", "Quadrate", "Find", "Find Previous", "Find Next", "The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?", "Word Paste Detected", "Clean", "Insert className", "Press Alt for custom resizing"]
                 },
                 11012(t) {
                     t.exports.default = ["무엇이든 입력하세요", "PagePerfect에 대하여", "PagePerfect Editor", "PagePerfect 사용자 안내서", "자세한 도움말이 들어있어요", "라이센스에 관해서는 PagePerfect 웹 사이트를 방문해주세요：", "풀 버전 구입하기", "© PagePerfect - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.", "Anchor", "새 탭에서 열기", "전체 크기로 보기", "서식 지우기", "글씨 색상", "재실행", "실행 취소", "굵게", "기울임", "글머리 목록", "번호 목록", "가운데 정렬", "양쪽 정렬", "왼쪽 정렬", "오른쪽 정렬", "수평 구분선 넣기", "이미지 넣기", "파일 넣기", "Youtube/Vimeo 동영상", "링크 넣기", "글꼴 크기", "글꼴", "블록 요소 넣기", "일반 텍스트", "제목 1", "제목 2", "제목 3", "제목 4", "인용", "코드", "붙여 넣기", "테이블", "들여쓰기 감소", "들여쓰기 증가", "특수문자 선택", "특수문자 입력", "페인트 형식", "편집모드 변경", "마진", "위", "오른쪽", "아래", "왼쪽", "스타일", "클래스", "정렬", "오른쪽으로", "가운데로", "왼쪽으로", "--지정 안 함--", "경로(src)", "제목", "대체 텍스트(alt)", "링크", "새 탭에서 열기", null, "파일", "고급", "이미지 속성", "취소", "확인", "파일 탐색기", "목록 불러오기 에러", "폴더 불러오기", "정말 진행할까요?", "디렉토리 이름 입력", "디렉토리 생성", "이름 입력", "이미지 드래그", "파일 드래그", "혹은 클릭", "대체 텍스트", "업로드", "탐색", "배경", "텍스트", "위", "중앙", "아래", "이전 열에 삽입", "다음 열에 삽입", "위 행에 삽입", "아래 행에 삽입", "테이블 삭제", "행 삭제", "열 삭제", "빈 셀", "문자수: %d", "단어수: %d", "취소선", "밑줄", "윗첨자", "아래첨자", "선택 잘라내기", "모두 선택", "구분자", "검색", "대체하기", "대체", "붙여넣기", "붙여넣을 내용 선택", "HTML 소스", "볼드", "이탤릭", "브러시", "링크", "실행 취소", "재실행", "테이블", "이미지", "지우개", "문단", "글꼴 크기", "비디오", "글꼴", "편집기 정보", "프린트", "밑줄", "취소선", "들여쓰기", "내어쓰기", "전체 화면", "일반 화면", "구분선", "글머리 목록", "번호 목록", "잘라내기", "모두 선택", "Embed 코드", "링크 열기", "링크 편집", "No follow", "링크 제거", "갱신", "연필", "사이트 확인", "URL", "편집", "수평 정렬", "필터", "변경일 정렬", "이름 정렬", "크기 정렬", "새 폴더", "초기화", "저장", "새로 저장하기 ...", "리사이즈", "크롭", "가로 길이", "세로 높이", "비율 유지하기", "네", "아니오", "제거", "선택", "선택: %s", "수직 정렬", "분할", "셀 병합", "열 추가", "행 추가", "라이센스: %s", "삭제", "세로 셀 분할", "가로 셀 분할", "외곽선", "HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?", "HTML로 붙여넣기", "원본 유지", "텍스트로 넣기", "텍스트만 넣기", "외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?", "이미지를 무사히 업로드 했어요!", "팔레트", "파일이 없어요", "이름 변경", "새 이름 입력", "미리보기", "다운로드", "클립보드 붙여넣기", "사용중인 브라우저가 클립보드 접근을 지원하지 않아요.", "선택 복사", "복사", "둥근 테두리", "모두 보기", "적용", "이 항목을 입력해주세요!", "웹 URL을 입력해주세요.", "기본", "원", "점", "정사각형", "찾기", "이전 찾기", "다음 찾기", "Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?", "Word 붙여넣기 감지", "지우기", "className 입력", "사용자 지정 크기 조정에 대 한 고도 누르십시오"]
