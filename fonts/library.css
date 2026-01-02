@@ -75,3 +75,11 @@
     font-weight: 700;
     font-style: italic;
 }
+
+/* PagePerfect */
+@font-face {
+    font-family: 'PagePerfect';
+    src: url(./PagePerfect-Regular.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
