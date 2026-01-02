@@ -5109,8 +5109,8 @@ html.pageperfect_fullsize-box_true {
 
 .pageperfect-wysiwyg ::selection,
 .pageperfect-wysiwyg::selection {
-    background: #b5d6fd;
-    color: #4c4c4c
+    background: #3366cc;
+    color: #ffffff;
 }
 
 .pageperfect-container:not(.pageperfect_inline) .pageperfect-wysiwyg {
