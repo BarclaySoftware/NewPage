@@ -5057,7 +5057,7 @@ html.pageperfect_fullsize-box_true {
     --rb-color-button-background-hover-opacity40: hsla(0, 0%, 86%, .4);
     --rb-color-button-background-hover-opacity60: hsla(0, 0%, 86%, .6);
     --rb-font-ui: 'Rubisco Sans Text', sans-serif;
-    --rb-font-default: 'Rubisco Sans Text', sans-serif;
+    --rb-font-default: sans-serif;
     --rb-font-size-default: 14px;
     --rb-font-size-small: 11px;
     --rb-color-text-icons: rgba(0, 0, 0, .75);
