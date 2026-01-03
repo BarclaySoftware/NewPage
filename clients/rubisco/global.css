@@ -1,0 +1,126 @@
+@import url(https://pageperfect.pages.dev/fonts/library.css);
+
+/* General Styles */
+body {
+    font-family: 'Rubisco Sans Text', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    /* color: #2c3e50; */
+    font-size: 2em;
+    /* border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px; */
+}
+
+h2 {
+    /* color: #34495e; */
+    font-size: 1.75em;
+}
+
+h3, h4 {
+    /* color: #555; */
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Blockquote */
+blockquote {
+    /* font-style: italic;
+    color: #666; */
+    padding: 10px;
+    /* border-left: 5px solid #2c3e50;
+    background: #ecf0f1; */
+}
+
+/* Preformatted Text */
+pre {
+    font-family: monospace;
+    /* background: #333;
+    color: #fff; */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Text Styling */
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #e6e6e6;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    /* background: #2c3e50;
+    color: white; */
+}
+
+/* Links */
+a {
+    /* color: #3498db;
+    text-decoration: none; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Text Alignment */
+p[style*="text-align: center"] {
+    text-align: center;
+}
+
+p[style*="text-align: right"] {
+    text-align: right;
+}
+
+p[style*="text-align: justify"] {
+    text-align: justify;
+}
+
+/* Background and Font Colors */
+p span[style*="background-color"] {
+    padding: 3px;
+    border-radius: 3px;
+}
+
+p span[style*="color"] {
+    font-weight: bold;
+}
