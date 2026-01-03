@@ -12,6 +12,7 @@ body {
 /* Headings */
 h1 {
     /* color: #2c3e50; */
+    font-family: 'Rubisco Sans', sans-serif;
     font-size: 2em;
     /* border-bottom: 2px solid #2c3e50;
     padding-bottom: 5px; */
@@ -19,10 +20,12 @@ h1 {
 
 h2 {
     /* color: #34495e; */
+    font-family: 'Rubisco Sans', sans-serif;
     font-size: 1.75em;
 }
 
 h3, h4 {
+    font-family: 'Rubisco Sans', sans-serif;
     /* color: #555; */
 }
 
@@ -33,6 +36,7 @@ p {
 
 /* Blockquote */
 blockquote {
+    font-family: 'Rubisco Sans', sans-serif;
     /* font-style: italic;
     color: #666; */
     padding: 10px;
@@ -42,7 +46,7 @@ blockquote {
 
 /* Preformatted Text */
 pre {
-    font-family: monospace;
+    font-family: 'Rubisco Sans Code', monospace;
     /* background: #333;
     color: #fff; */
     padding: 10px;
