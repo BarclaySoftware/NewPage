@@ -29,7 +29,7 @@
         document.getElementById('saveBtn').addEventListener('click', function() {
             const content = editor.value;
             if(content) {
-                const blob = new Blob([`<!doctype html>\n<html>\n<head>\n    <meta charset='UTF-8'>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Untitled Page | PagePerfect 26</title>\n    <link rel="shortcut icon" href="https://pageperfect.pages.dev/favicon.svg" type="image/x-icon">\n    <link rel='stylesheet' type='text/css' href='https://pageperfect.pages.dev/clients/barclay/global.css'>\n</head>\n<body>\n    ${content}\n</body>\n</html>`], { type: 'text/html' });
+                const blob = new Blob([`<!doctype html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n\n    <title>Untitled Page | PagePerfect 26</title>\n\n    <link rel="shortcut icon" href="https://pageperfect.pages.dev/favicon.svg" type="image/x-icon">\n    <link rel="stylesheet" type="text/css" href="https://pageperfect.pages.dev/clients/barclay/global.css">\n</head>\n<body>\n    <main class="content-container">\n        ${content}\n    </main>\n</body>\n</html>\n`], { type: 'text/html' });
                 const a = document.createElement('a');
                 a.href = URL.createObjectURL(blob);
                 a.download = 'untitled_page.html';
