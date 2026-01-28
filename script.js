@@ -65,5 +65,9 @@ document.getElementById('clearBtn').addEventListener('click', function () {
     }
 });
 
+document.getElementById('helpBtn').addEventListener('click', function () {
+    window.open("https://pageperfect.pages.dev/help/");
+})
+
 // Prevent users from losing unsaved progress
 window.addEventListener('beforeunload',function(e){const content=editor.value;if(content){e.preventDefault();}});
