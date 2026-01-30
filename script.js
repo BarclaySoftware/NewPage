@@ -7,8 +7,27 @@
 // Build the PagePerfect(TM) Content Editor (the core component of PagePerfect(TM))
 const editor=new PagePerfect('#editor',{height:400,toolbarSticky:false,buttons:"find,undo,redo,print,spellcheck,copyformat,eraser,about, |,paragraph, |,font, |,fontsize, |,bold,italic,underline,strikethrough,brush, |,cut,copy,paste,selectall, |,hr,fullsize |,link,image,video,file,table,symbols |,align,lineHeight,ul,ol, |,indent,outdent, |,superscript,subscript, |,source,preview",spellcheck:true});
 
+// Ask the user what they want to call their project
+let projectName = null;
+function askForProjectName() {
+    if (projectName) return projectName;
+
+    const name = prompt(
+        'Name your project:\n\nThis will be used as the page title and file name.',
+        'Untitled Page'
+    );
+
+    if (!name) return null;
+
+    projectName = name.trim();
+    return projectName;
+}
+
 // Creates the template HTML on export
-function buildHTML(content){return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="PagePerfect 26"><title>Untitled Page | PagePerfect 26</title><link rel="shortcut icon" href="https://pageperfect.pages.dev/branding/favicon.png" type="image/x-icon"><link rel="stylesheet" type="text/css" href="https://pageperfect.pages.dev/global.css"></head>\n<body><main class="content-container">${content}</main></body></html>`;}
+function buildHTML(content, title = 'Untitled Page') {
+    return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="PagePerfect 26"><title>${title} | PagePerfect 26</title><link rel="shortcut icon" href="https://pageperfect.pages.dev/branding/favicon.png" type="image/x-icon"><link rel="stylesheet" type="text/css" href="https://pageperfect.pages.dev/global.css"></head>\n<body><main class="content-container">${content}</main></body></html>`;
+}
+
 
 // The PagePerfect(TM) Project (p^3)/.p3 file format is the current PROPRIETARY format for PagePerfect(TM)
 function extractContentFromHTML(html) {
@@ -32,20 +51,22 @@ function extractContentFromHTML(html) {
 // Save the .p3 file (see 'downloadBtn' for HTML code)
 document.getElementById('saveBtn').addEventListener('click', function () {
     const content = editor.value;
-
     if (!content) {
         alert('FAILURE: Your page is empty.');
         return;
     }
 
+    const name = askForProjectName();
+    if (!name) return;
+
     const blob = new Blob(
-        [buildHTML(content)],
+        [buildHTML(content, name)],
         { type: 'application/x-pageperfect-project' }
     );
 
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'untitled_project.p3';
+    link.download = `${name}.p3`;
 
     document.body.appendChild(link);
     link.click();
@@ -93,17 +114,22 @@ document.getElementById('openBtn').addEventListener('click', function () {
 // Save the HTML code (see 'saveBtn' for .p3 file)
 document.getElementById('downloadBtn').addEventListener('click', function () {
     const content = editor.value;
-
     if (!content) {
         alert('FAILURE: Your page is empty.');
         return;
     }
 
-    const blob = new Blob([buildHTML(content)], { type: 'text/html' });
-    const link = document.createElement('a');
+    const name = askForProjectName();
+    if (!name) return;
 
+    const blob = new Blob(
+        [buildHTML(content, name)],
+        { type: 'text/html' }
+    );
+
+    const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'untitled_page.html';
+    link.download = `${name}.html`;
 
     document.body.appendChild(link);
     link.click();
@@ -113,17 +139,22 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
 // Copy the HTML to the user's clipboard
 document.getElementById('copyBtn').addEventListener('click', async function () {
     const content = editor.value;
-
     if (!content) {
         alert('FAILURE: Your page is empty.');
         return;
     }
 
+    const name = askForProjectName();
+    if (!name) return;
+
     try {
-        await navigator.clipboard.writeText(buildHTML(content));
+        await navigator.clipboard.writeText(buildHTML(content, name));
         alert('SUCCESS: The content has been copied to your clipboard.');
     } catch (err) {
-        alert('FAILURE: The content was not copied to your clipboard.\n\nSUGGESTION: Ensure PagePerfect has permission to access your clipboard.');
+        alert(
+            'FAILURE: The content was not copied to your clipboard.\n\n' +
+            'SUGGESTION: Ensure PagePerfect has permission to access your clipboard.'
+        );
         console.error(err);
     }
 });
