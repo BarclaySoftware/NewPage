@@ -8,7 +8,7 @@
 const editor=new PagePerfect('#editor',{height:400,toolbarSticky:false,buttons:"find,undo,redo,print,spellcheck,copyformat,eraser,about, |,paragraph, |,font, |,fontsize, |,bold,italic,underline,strikethrough,brush, |,cut,copy,paste,selectall, |,hr,fullsize |,link,image,video,file,table,symbols |,align,lineHeight,ul,ol, |,indent,outdent, |,superscript,subscript, |,source,preview",spellcheck:true});
 
 // Creates the template HTML on export
-function buildHTML(content){return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="PagePerfect 26"<title>Untitled Page | PagePerfect 26</title><link rel="shortcut icon" href="https://pageperfect.pages.dev/favicon.svg" type="image/x-icon"><link rel="stylesheet" type="text/css" href="https://pageperfect.pages.dev/global.css"></head>\n<body><main class="content-container">${content}</main></body></html>`;}
+function buildHTML(content){return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="PagePerfect 26"><title>Untitled Page | PagePerfect 26</title><link rel="shortcut icon" href="https://pageperfect.pages.dev/branding/favicon.png" type="image/x-icon"><link rel="stylesheet" type="text/css" href="https://pageperfect.pages.dev/global.css"></head>\n<body><main class="content-container">${content}</main></body></html>`;}
 
 // The PagePerfect(TM) Project (p^3)/.p3 file format is the current PROPRIETARY format for PagePerfect(TM)
 function extractContentFromHTML(html) {
