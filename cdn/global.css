@@ -1,4 +1,4 @@
-@import url(https://pageperfect.pages.dev/fonts/library.css);
+@import url(https://pageperfect.pages.dev/cdn/fonts/library.css);
 
 /* General Styles */
 body {
@@ -22,9 +22,9 @@ h2 {
     font-size: 1.75em;
 }
 
-h3, h4 {
-    /* color: #555; */
-}
+/* h3, h4 {
+    color: #555;
+} */
 
 /* Paragraphs */
 p {
@@ -80,16 +80,16 @@ th, td {
     text-align: left;
 }
 
-th {
-    /* background: #2c3e50;
-    color: white; */
-}
+/* th {
+    background: #2c3e50;
+    color: white;
+} */
 
 /* Links */
-a {
-    /* color: #3498db;
-    text-decoration: none; */
-}
+/* a {
+    color: #3498db;
+    text-decoration: none;
+} */
 
 a:hover {
     text-decoration: underline;
