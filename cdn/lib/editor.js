@@ -9130,7 +9130,7 @@
                             u.appendChild(i.J.isNode(t) ? t : c.c.fromHTML(t))
                         })), d.onAction((() => {
                             s && (0, o.T)(s) && !1 === s(c) || c.close()
-                        })), c.setFooter([d]), c.open(u, e || "&nbsp;", !0, !0), d.focus(), c
+                        })), c.setFooter([d]), c.open(u, e || "", !0, !0), d.focus(), c
                     }
                 },
                 23132(t, e, s) {
@@ -9156,7 +9156,7 @@
                             },
                             u = (0, r.$n)(n, "cancel", "Cancel"),
                             d = (0, r.$n)(n, "ok", "Yes");
-                        return u.onAction(c(!1)), d.onAction(c(!0)), n.e.on(a, "submit", (() => (c(!0)(), !1))), n.setFooter([d, u]), n.open(a, e || "&nbsp;", !0, !0), d.focus(), n
+                        return u.onAction(c(!1)), d.onAction(c(!0)), n.e.on(a, "submit", (() => (c(!0)(), !1))), n.setFooter([d, u]), n.open(a, e || "", !0, !0), d.focus(), n
                     }
                 },
                 58006(t, e, s) {
@@ -9410,7 +9410,7 @@
                         const g = () => {
                             s && (0, i.T)(s) && !1 === s(p.value) || c.close()
                         };
-                        return d.onAction(g), c.e.on(h, "submit", (() => (g(), !1))), c.setFooter([d, u]), c.open(h, e || "&nbsp;", !0, !0), p.focus(), void 0 !== l && l.length && (p.value = l, p.select()), c
+                        return d.onAction(g), c.e.on(h, "submit", (() => (g(), !1))), c.setFooter([d, u]), c.open(h, e || "", !0, !0), p.focus(), void 0 !== l && l.length && (p.value = l, p.select()), c
                     }
                 },
                 49931(t, e, s) {
