@@ -19417,7 +19417,7 @@
                             for (let t = r[0][0]; r[1][0] >= t; t += 1)
                                 for (let e = r[0][1]; r[1][1] >= e; e += 1) this.__tableModule.addSelection(o[t][e]);
                             this.__tableModule.getAllSelectedCells().length > 1 && this.j.s.sel?.removeAllRanges(), this.j.e.fire("hidePopup"), e.stopPropagation(), (() => {
-                                const t = this.j.createInside.fromHTML('<div style="color:rgba(0,0,0,0.01);width:0;height:0">&nbsp;</div>');
+                                const t = this.j.createInside.fromHTML('<div style="color:rgba(0,0,0,0.01);width:0;height:0"></div>');
                                 i.appendChild(t), this.j.async.setTimeout((() => {
                                     t.parentNode?.removeChild(t)
                                 }), this.j.defaultTimeout / 5)
