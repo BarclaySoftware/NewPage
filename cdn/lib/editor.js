@@ -663,7 +663,8 @@
                         d = () => l = !0,
                         h = {},
                         p = "\ufeff",
-                        m = " ",
+                        // m = " ",
+                        m = "",
                         g = () => /[\uFEFF]/g,
                         f = () => /[\uFEFF]+$/g,
                         v = () => /^[\uFEFF]+/g,
@@ -9130,7 +9131,7 @@
                             u.appendChild(i.J.isNode(t) ? t : c.c.fromHTML(t))
                         })), d.onAction((() => {
                             s && (0, o.T)(s) && !1 === s(c) || c.close()
-                        })), c.setFooter([d]), c.open(u, e || "", !0, !0), d.focus(), c
+                        })), c.setFooter([d]), c.open(u, e || "&nbsp;", !0, !0), d.focus(), c
                     }
                 },
                 23132(t, e, s) {
@@ -9156,7 +9157,7 @@
                             },
                             u = (0, r.$n)(n, "cancel", "Cancel"),
                             d = (0, r.$n)(n, "ok", "Yes");
-                        return u.onAction(c(!1)), d.onAction(c(!0)), n.e.on(a, "submit", (() => (c(!0)(), !1))), n.setFooter([d, u]), n.open(a, e || "", !0, !0), d.focus(), n
+                        return u.onAction(c(!1)), d.onAction(c(!0)), n.e.on(a, "submit", (() => (c(!0)(), !1))), n.setFooter([d, u]), n.open(a, e || "&nbsp;", !0, !0), d.focus(), n
                     }
                 },
                 58006(t, e, s) {
@@ -9410,7 +9411,7 @@
                         const g = () => {
                             s && (0, i.T)(s) && !1 === s(p.value) || c.close()
                         };
-                        return d.onAction(g), c.e.on(h, "submit", (() => (g(), !1))), c.setFooter([d, u]), c.open(h, e || "", !0, !0), p.focus(), void 0 !== l && l.length && (p.value = l, p.select()), c
+                        return d.onAction(g), c.e.on(h, "submit", (() => (g(), !1))), c.setFooter([d, u]), c.open(h, e || "&nbsp;", !0, !0), p.focus(), void 0 !== l && l.length && (p.value = l, p.select()), c
                     }
                 },
                 49931(t, e, s) {
@@ -13417,7 +13418,7 @@
                         return a = e && 0 > c ? [] : a.slice(e ? 0 : c + 1, e ? c : l), ((t, e, s) => {
                             if (!t || !r.J.isText(t) || (e ? /^ / : / $/).test(t.nodeValue ?? "") || !(0, o.trimInv)(t.nodeValue || "").length)
                                 for (let t = e ? s.length - 1 : 0;
-                                    (e ? t >= 0 : s.length > t) && " " === s[t]; t += e ? -1 : 1) s[t] = i.NBSP_SPACE
+                                    (e ? t >= 0 : s.length > t) && " " === s[t]; t += e ? -1 : 1) s[t]
                         })(n, e, a), t.nodeValue = a.join(""), u
                     }
 
@@ -13815,7 +13816,7 @@
                         timeout: 300,
                         removeEmptyElements: !0,
                         fillEmptyParagraph: !0,
-                        replaceNBSP: !0,
+                        // replaceNBSP: !0,
                         replaceOldTags: {
                             i: "em",
                             b: "strong"
@@ -19417,7 +19418,7 @@
                             for (let t = r[0][0]; r[1][0] >= t; t += 1)
                                 for (let e = r[0][1]; r[1][1] >= e; e += 1) this.__tableModule.addSelection(o[t][e]);
                             this.__tableModule.getAllSelectedCells().length > 1 && this.j.s.sel?.removeAllRanges(), this.j.e.fire("hidePopup"), e.stopPropagation(), (() => {
-                                const t = this.j.createInside.fromHTML('<div style="color:rgba(0,0,0,0.01);width:0;height:0"></div>');
+                                const t = this.j.createInside.fromHTML('<div style="color:rgba(0,0,0,0.01);width:0;height:0">&nbsp;</div>');
                                 i.appendChild(t), this.j.async.setTimeout((() => {
                                     t.parentNode?.removeChild(t)
                                 }), this.j.defaultTimeout / 5)
